@@ -58,7 +58,7 @@ author:
   bio    : "Welcome to BIO 331!"
   links:
    - label: "Pressly 100B (in between 100 and 102)"
-      icon: "fab fa-solid fa-location-dot"
+      icon: "fab fa-fw fa-github"
     - label: "Office Hours:"
       icon: "fab fa-solid fa-clock"
     - label: "Or by appointment"
