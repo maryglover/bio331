@@ -1,7 +1,6 @@
 --- 
-title: "Environmental Topics and Analysis"
-layout: single
-permalink: /about
+title: "Course Overview"
+permalink: /about/
 author_profile: true
 ---
 
