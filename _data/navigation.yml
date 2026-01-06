@@ -1,5 +1,7 @@
 main:
-  - title: "Syllabus"
-    url: /syllabus/
+  - title: "Course Overview"
+    url: /about/
   - title: "Schedule"
     url: /schedule.html
+  - title: "Resources"
+    url: /resources/
