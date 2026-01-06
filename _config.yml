@@ -57,11 +57,25 @@ author:
   name   : "Mary Glover"
   bio    : "Welcome to BIO 331!"
   links:
+   - label: "Pressly 100B (in between 100 and 102)"
+      icon: "fab fa-solid fa-location-dot"
+    - label: "Office Hours:"
+      icon: "fab fa-solid fa-clock"
+    - label: "Or by appointment"
+      icon: "fab fa-solid fa-link"
+      url: "https://peace.starfishsolutions.com/starfish-ops/dl/instructor/serviceCatalog.html?bookmark=connection/1243084/schedule"
+    - label: "Class Chat"
+      icon: "fab fa-brands fa-google"
+      url: "https://chat.google.com/room/AAQA35tszjY?cls=7"
+   - label: "Syllabus"
+      icon: "fab fa-solid fa-file"
+      url: /bio231-syllabus.pdf
+    - label: "R Posit Cloud"
+      icon: "fab fa-solid fa-r"
+      url: "https://posit.cloud/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/maryglover"
-
-
 
 #footer:
 #  links:
