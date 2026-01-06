@@ -1,4 +1,8 @@
-# Welcome to BIO 331!
+--- 
+title: "Environmental Topics and Analysis"
+layout: single
+author_profile: true
+---
 
 ### Spring 2026: Evaluating the water quality of local streams
 
