@@ -1,4 +1,12 @@
-# Welcome to BIO 231!
+--
+layout: splash
+author_profile: true
+--
+
+## Welcome to BIO 331!
+
+Environmental Topics and Analysis
+
 
 ### Spring 2026: Evaluating the water quality of local streams
 
@@ -10,5 +18,4 @@ At the end of the semester, students can expect to be able to:
 1. Communicate original research findings to a variety of audiences. 
 1. Evaluate water quality using field and lab tests. 
 
-#<a href="bio231-syllabus"> <img src="./images/syllabus.png" width='25%'></a> <a href="schedule.html"> <img src="./images/schedule.png" width='25%'></a> <a href="https://chat.google.com/room/AAQA35tszjY?cls=7"> <img src="./images/gchat.png" width='15%'></a>
-
+ <a href="bio231-syllabus"> <img src="./images/syllabus.png" width='25%'></a> <a href="schedule.html"> <img src="./images/schedule.png" width='25%'></a> <a href="https://chat.google.com/room/AAQA35tszjY?cls=7"> <img src="./images/gchat.png" width='15%'></a>
