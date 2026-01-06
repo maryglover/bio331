@@ -6,6 +6,7 @@ output:
   pdf_document: default
   html_document: default
 layout: default
+permalink: /syllabus/
 ---
 
 # Course information

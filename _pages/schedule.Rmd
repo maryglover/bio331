@@ -2,7 +2,7 @@
 title: "Course schedule"
 output:
   prettydoc::html_pretty:
-    theme: cayman
+permalink: /schedule/
 ---
 
 Schedule subject to change. All changes will be announced to students. 
