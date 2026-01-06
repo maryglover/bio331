@@ -55,18 +55,12 @@ plugins:
 
 author:
   name   : "Mary Glover"
+  avatar : "/images/Mary.jpg"
   bio    : "Welcome to BIO 131"
   links:
     - label: "Class Chat"
       icon: "fas fa-fw fa-link"
       url: "https://chat.google.com/room/AAQA35tszjY?cls=7"
-   - label: "Office Hours Appointment"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://peace.starfishsolutions.com/starfish-ops/dl/instructor/serviceCatalog.html?bookmark=connection/1243084/schedule"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/maryglover"
-
 
 #footer:
 #  links:
