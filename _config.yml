@@ -57,10 +57,6 @@ author:
   name   : "Mary Glover"
   bio    : "Welcome to BIO 331!"
   links:
-   - label: "Pressly 100B (in between 100 and 102)"
-      icon: "fab fa-fw fa-github"
-    - label: "Office Hours:"
-      icon:  "fab fa-fw fa-github"
     - label: "Or by appointment"
       icon: "fab fa-fw fa-github"
       url: "https://peace.starfishsolutions.com/starfish-ops/dl/instructor/serviceCatalog.html?bookmark=connection/1243084/schedule"
