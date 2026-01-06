@@ -55,22 +55,21 @@ plugins:
 
 author:
   name   : "Mary Glover"
+  avatar : 
+  bio    : "My awesome biography constrained to a sentence or two goes here."
   links:
-    - label: "Or by appointment"
-      icon: "fab fa-fw fa-github"
-      url: "https://peace.starfishsolutions.com/starfish-ops/dl/instructor/serviceCatalog.html?bookmark=connection/1243084/schedule"
     - label: "Class Chat"
-      icon: "fab fa-fw fa-github"
+      icon: "fas fa-fw fa-link"
       url: "https://chat.google.com/room/AAQA35tszjY?cls=7"
-   - label: "Syllabus"
-      icon: "fab fa-fw fa-github"
-      url: /bio231-syllabus.pdf
-    - label: "R Posit Cloud"
-      icon: "fab fa-fw fa-github"
-      url: "https://posit.cloud/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/maryglover"
+ #   - label: "Twitter"
+#      icon: "fab fa-fw fa-twitter-square"
+#      url: "https://twitter.com/"
+ #   - label: "GitHub"
+#      icon: "fab fa-fw fa-github"
+#      url: "https://github.com/"
+#    - label: "Instagram"
+#      icon: "fab fa-fw fa-instagram"
+#      url: "https://instagram.com/"
 
 #footer:
 #  links:
