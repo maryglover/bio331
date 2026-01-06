@@ -55,7 +55,6 @@ plugins:
 
 author:
   name   : "Mary Glover"
-  bio    : "Welcome to BIO 331!"
   links:
     - label: "Or by appointment"
       icon: "fab fa-fw fa-github"
