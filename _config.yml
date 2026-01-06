@@ -55,7 +55,7 @@ plugins:
 
 author:
   name   : "Mary Glover"
-  avatar : "/images/Mary.jpg"
+#  avatar : "/images/Mary.jpg"
   bio    : "Welcome to BIO 331!"
   links:
     - label: "Pressly 100B (in between 100 and 102)"
