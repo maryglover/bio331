@@ -57,6 +57,7 @@ author:
   name   : "Mary Glover"
   avatar : "/images/Mary.jpg"
   bio    : "Welcome to BIO 131"
+  location: "Pressly 100B"
   links:
     - label: "Class Chat"
       icon: "fas fa-fw fa-link"

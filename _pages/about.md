@@ -1,7 +1,10 @@
 --- 
 title: "Course Overview"
-permalink: /about/
 author_profile: true
+output:
+  pdf_document: default
+  html_document: default
+permalink: /about/
 ---
 
 ## About Environmental Topics and Analysis
