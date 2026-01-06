@@ -4,3 +4,8 @@ _site
 Gemfile.lock
 .Rproj.user
 bio331.Rproj
+data/
+exam1/
+exam2/
+prism-climate-data/
+.DS_Store

@@ -1,0 +1,504 @@
+---
+title: "Mapping in R"
+output:
+  html_document:
+    toc: true 
+    toc_float: true
+    toc_collapsed: true
+    toc_depth: 3  
+layout: default
+---
+
+```{r klippy, echo=FALSE, include=TRUE}
+klippy::klippy()
+```
+
+## Spatial Data
+
+In this lesson, students will learn how to work with spatial data, or data with geographic information. There are different packages that in R that handle spatial data. In these packages, spatial data is stored as a special class (ex. character, number, etc.) which stores the geographic information. 
+
+To start, let's plot North Carolina with county lines. `ggplot2` contains some mapping data that you can use without having to import from your computer. Here, we will use the function `map_data` to get the USA map data, and then filter by "north carolina" as you would with data frames usually.
+
+```{r, message = FALSE}
+library(ggplot2)
+library(dplyr)
+
+map <- map_data("county")
+nc <- filter(map, region =="north carolina")
+
+head(nc)
+```
+In this data, there are points that will be connected into polygons to plot each county based on the "group". In the aesthetics, we set x equal to the longitude and y equal to the latitude. 
+
+```{r}
+ggplot(data = nc, aes(x = long, y = lat, group = group)) +
+  geom_polygon() 
+```
+You can edit the plot in the same way that you did other plots in `ggplot`. For example, I'll color each of the the counties, which are in the "subregion" column, a different color and change the theme. 
+
+```{r}
+ggplot(data = nc, aes(x = long, y = lat, group = group)) +
+  geom_polygon(aes( fill = subregion))+
+  theme_minimal()+
+  theme(legend.position = 'none') 
+```
+
+With plotting spatial data, you have to consider the *coordinate* system, which determines how the spherical data from the earth is plotted flattened as a 2-D map. There are different coordinate systems that you can use. The default is cartesian coordinates, where x and y coordinates are 1:1. 
+
+See what happens when you change the coordinate systems by adding some of the following layers:
+
+1. `coord_map() `: Mercator projection
+1. `coord_map("conic", lat0 = 30)`
+1. `coord_map('gilbert')`
+1.`coord_map('orthographic')`
+
+
+## Plotting polygons in sf
+
+In the last example, we plotted a polygon simply by connecting points with lines. However, other data sources have polygon spatial data stored differently. In the next example, we will plot using a shape (.shp) file in the package `sf`. We will plot the major rivers or streams in Wake County. The file is already in your Posit Cloud workspace. To load in the shape file using `sf`, you will use the function `st_read`.
+
+```{r, include=FALSE}
+library(sf)
+rivers <- st_read('../../data/Major_Rivers/')
+```
+
+```{r, eval = F}
+library(sf)
+rivers <- st_read('data/Major_Rivers/')
+```
+You can already see that this is different than a regular csv file, with information about the geographic data shown as you import the data. Specifically, you can see that the coordinates are XY, a "bounding box" or dimensions, and a coordinate system (Projected CRS). 
+
+You can also see in the data a column for the geometry. This determines the shape of each stream. 
+
+```{r}
+head(rivers)
+rivers$geometry[1]
+```
+
+You can use the functions `st_bbox` to find the boundaries of the file and `st_crs` to view the coordinate system information. 
+
+```{r}
+st_bbox(rivers)
+st_crs(rivers)
+```
+
+To plot the streams, you can use the layer `geom_sf`. You do not need to specify any x and y values here as you did in the last example. Because there is already a coordinate system associated with the file, ggplot will automatically plot in the given coordinate system. 
+
+```{r}
+ggplot() +
+  geom_sf(data = rivers, color = 'blue')
+```
+
+Although the data has associated geometries, you can still manipulate the data frame, for example, using `dplyr`. 
+
+We can use `distinct` to find each stream in the data or can filter for specific streams. 
+
+```{r}
+rivers |>
+  distinct(NAME)
+
+rivers |>
+  filter(NAME == 'Cemetery Branch') 
+```
+
+For fun, let's plot just Cemetery Branch over the other streams in a different color to highlight it. 
+
+```{r}
+cemetery_branch<- filter(rivers, NAME == 'Cemetery Branch')
+
+ggplot() +
+  geom_sf(data = rivers, color ='cornflowerblue') +
+  geom_sf(data = cemetery_branch, color = 'red') + 
+  theme_minimal()
+```
+
+In addition, you can layer multiple shape files. In your data folder, you also have a shape file for the Wake County Line. 
+
+#### Practice 
+
+Plot the Wake County line with the stream data. This file is called "Wake_County_Line-shp".
+
+## Plotting points and changing coordinate systems
+
+It is pretty straightforward to plot points on maps since you can plot based on the x and y coordinates. You can plot points in the same way that you have done before with x and y values. With GPS coordinates, the x is longitude and the y is latitude. 
+
+You can also use the function `st_point` in the `sf` package for geographic points. 
+
+```{r}
+park <- st_point(c(-78.6247498208728, 35.7947396684644))
+```
+
+To add the point to the plot, again use `geom_sf` since you have make stored the point as an `sf` object. 
+
+*What happens when you add the point to the previous plot?*
+
+When plotting different layers, you have to make sure the coordinate systems are the same.
+
+**What happened here?**
+
+You can see that the units for each are still not the same. 
+
+```{r}
+st_bbox(park)
+st_bbox(rivers)
+```
+
+We can change the coordinate systems using `st_transform.` We will do this for each of the objects to make sure they are on the same system. Most coordinate systems have a unique EPSG number. Here, we will use [EPSG 4269](https://epsg.io/4269), which is the same North American Datum 1983 system as before, but by transforming it, it will turn units to GPS coordinates. We also have to set the crs when making the point in for the point by setting the crs with `st_stc`. 
+
+```{r}
+rivers <- st_transform(rivers, crs = 4269)
+park <- st_sfc(park,crs =4269)
+```
+
+Now, plot again. 
+
+```{r}
+ggplot() +
+  geom_sf(data = rivers, color = 'blue') + 
+  geom_sf(data = park, color = 'red') +
+  theme_minimal()
+```
+
+This previous way of plotted points used a spatial data object for the points. However, it can also be done by simply using `geom_point()`. This does require again that the *units* of the axes be in GPS coordinates. 
+
+```{r}
+ggplot() +
+  geom_sf(data = rivers, color = 'blue')+
+  geom_point(aes(x = -78.62475, y = 35.79474), color = 'red') +
+    theme_minimal()
+```
+
+### Working with multiple shape files
+
+We are only scratching the surface of all you can do with spatial data. For example, you may want to work with multiple shape files or different types of spatial data. There are many functions in `sf` to work with multiple files including: 
+
+- st_intersection
+- st_join
+- st_crop
+- st_mask
+- st_union
+
+As you work on different projects, you can investigate these more. We will go over one example here to crop one shape file based on another. Let's say we only want to show the streams that are in Raleigh, since that is what we are using for our project. We can use `st_crop` to crop the streams map based on a shape file with the polygon for the City of Raleigh. We can use a shape file of the townships in Wake County. We will first read this into R.
+
+```{r, include=FALSE}
+towns <- st_read('../../data/Townships-shp/')
+```
+
+```{r, eval = F}
+towns <- st_read('data/Townships-shp/')
+```
+The Townships data has polygons for every township in Wake County.
+
+```{r}
+ggplot()+
+  geom_sf(data= towns)
+```
+
+We will just get the township for Raleigh using our usual `filter`.
+
+```{r}
+raleigh <- filter(towns, NAME == 'RALEIGH')
+```
+
+Now, we can use `st_crop` to crop the streams based on the shape file for Raleigh. Again, we have to make the coordinates the same. 
+
+```{r, message=FALSE}
+raleigh <- st_transform(raleigh, crs = 4269)
+raleigh_stream <- st_crop(rivers, raleigh) 
+
+ggplot() +
+  geom_sf(data = raleigh, fill = 'lightgray', linewidth = 1) +
+  geom_sf(data = raleigh_stream, color = 'cornflowerblue', linewidth = 1.5) +
+  theme_bw()
+
+```
+
+### Displaying data in shape files
+
+In this last example with shape files, we will go over displaying data in polygons. In the data frames that include the geometries, you can also have associated data with each polygon. This data can be plotted with the polygon, for example as a fill or color. 
+
+Here, we have a shape file for the census tract in Wake County and their associated CDC social vulnerability index. 
+
+Again, we will load in the data with `st_read`.
+
+```{r, include=FALSE}
+svi <- st_read('../../data/CDC_SVI/')
+head(svi)
+```
+
+```{r, eval = F}
+library(sf)
+svi <- st_read('data/CDC_SVI/')
+```
+
+As an example, let's plot the proportion of the population without a high school diploma for each tract. We will show this data by coloring in the polygon using the aesthetic "fill".
+
+```{r}
+ggplot(data = svi) +
+  geom_sf(aes(fill = EP_NOHSDP))
+```
+
+## Raster data
+
+The other main type of spatial data is stored as rasters, where every point or pixel contains information. In this example, we will work with climate data from PRISM with the University of Oregon. We can download the data with the `prism` package. This has been done for you and the data is in your folder. If you want to learn how to get this data on your own, see the optional lesson at the end.
+
+We will also use the `terra` package to work with the raster files. We will first use the `rast` function to load in a raster object with the average temperature for 2023. This is stored as a .grd file. You may also see .tif files for rasters. 
+
+```{r, include = F}
+library(terra)
+temp2023 <-rast('../../data/tmean_2023.grd')
+```
+
+```{r, eval = F}
+library(terra)
+temp2023 <-rast('data/tmean_2023.grd')
+```
+
+Now, lets look at the file. You can see it has similar format to the spatial data from the shape files, with projection, units, etc. 
+
+```{r}
+temp2023
+```
+
+For a simple look at the raster, you can use `plot`. You can see that each pixel has an associated mean temeperature value across the US.
+
+```{r}
+plot(temp2023)
+```
+
+Let's say however, that we wanted to compare the temperature from the 1990's to now. To do this, we will get data for each year from 1991-1995 and 2019-2023. You could do more years, but we are keeping it small because it can be slow to work with large raster datasets in R. These data sets are in your data folder. Again, we will use `rast` to load them in. 
+
+```{r, include = F}
+tmean_90s <- rast('../../data/tmean_1991_1995.grd')
+tmean_20s <- rast('../../data/tmean_2019_2023.grd')
+```
+
+```{r, eval = F}
+tmean_90s <- rast('data/tmean_1991_1995.grd')
+tmean_20s <- rast('data/tmean_2019_2023.grd')
+```
+
+Now, see what happens when you plot one of the files you just imported. You see that a raster stack contains many raster "layers" - here, one for each year. 
+
+```{r}
+plot(tmean_90s)
+```
+
+With rasters, you can perform mathematical functions on the rasters. What this does is it performs the math on each of the matching pixels. We can get the average temperature for each set using `mean`. 
+
+```{r}
+avg90s <- mean(tmean_90s)
+avg20s <- mean(tmean_20s)
+```
+
+Again, what happens when we plot?
+
+```{r}
+plot(avg90s)
+```
+
+Now, we can see the difference between the two groups by simply subtracting. 
+
+```{r}
+temp_change <- avg20s - avg90s
+plot(temp_change)
+```
+
+**What do you notice about the plot?**
+
+### Plotting raster data in ggplot
+
+The last section showed the basics of rasters in R. But now, let's say you wanted to combine the raster information with the shape files that you have. To plot the raster data, we will use another package `tidyterra` which will allow us to combine the geom layers from `sf` in `ggplot2`
+
+To make this a simpler, we will crop the file down to just Wake County, which we are working with. It is very slow to plot maps like this with ggplot. We will go back the the county line file to get the bounds for cropping the raster. This can take a minute to run. 
+
+```{r, message = F}
+county <- st_read('../../data/Wake_County_Line-shp/')
+county <- st_transform(county, crs = 4269)
+wake_temp <- crop(avg20s, county)
+wake_temp <- mask(wake_temp, county)
+
+```
+
+To plot this, we can then use the `geom_spatraster` from the `tidyterra` package.  Here, to show the temperature, we have to set the fill to the column "mean", which is the name of the values in the raster file. You can find this out using the `names` function on the raster. 
+
+```{r, message = F}
+library(tidyterra)
+ggplot()+
+  geom_spatraster(data = wake_temp, aes(fill = mean)) +
+  theme_minimal()
+```
+
+We can also add additional layers to the plot just like usual in ggplot. For example, I'll add in the streams and Wake County line. You can also see that the NA values (those outside of Wake County) are automatically diplayed as gray. You can change that in the `scale_fill_continuous` layer by setting na.value to "transparent"
+
+```{r}
+ggplot()+
+  geom_spatraster(data = wake_temp, aes(fill = mean)) +
+  geom_sf(data = county, fill = 'transparent', linewidth = 1.5) + 
+  geom_sf(data = rivers, color = 'orange')+
+   theme_minimal()+
+  scale_fill_continuous(na.value = "transparent") 
+```
+
+There are multiple packages that allow you to work with and plot spatial data. We are just working with a few. So you may find other options when troubleshooting. It is fine to use other packages, but gets confusing when mixing them as the format of the spatial data can be different. I would recommend searching within the packages that we are using. 
+
+## Changing the colors
+
+A major component of editing figures, including maps, in R is changing the color scheme. It is fairly easy to change the color of a single layer by setting the color or fill to a single value. When more colors are involved, it is more complicated and is useful to set a palette. To change the color, the function to use often depends on whether the color is based on a discrete or continuous variable. For example, earlier when we changed the color of the counties, each county had a different color. This is a discrete variable, as there are 100 different discrete counties. However, with the raster data, the value of the temperature could be anywhere on a continuum of temperatures. This is a continuous variable. 
+
+### Discrete colors 
+
+To change the value for discrete values you could use `scale_discrete_manual`, however, this would required you to put in values for each 100 counties. However, there are many color palettes already in R or packages that you can use. Here are some examples. 
+
+- scale_fill_terrain
+- scale_fill_hypso
+- scale_fill_viridis: Within `scale_fill_viridis`, you can set the option to A - H for additional color schemes.
+
+For each, you also must specify if it is discrete or continuous by adding `_d` or `_c` at the end of the function. For example, let's use the hypso palette for the county map.
+
+```{r}
+ggplot(data = nc, aes(x = long, y = lat, group = group)) +
+  geom_polygon(aes( fill = subregion))+
+  theme_minimal()+
+  theme(legend.position = 'none') +
+  scale_fill_hypso_d() 
+
+```
+
+#### Practice 
+
+Try a few others and see what you like.**
+
+### Continuous color
+
+For continuous color values, you can use the same palettes as previous but with a _c ending. For example, let's use the viridis color scheme for the temperature data. Notice that we move the `na.value` argument into the new continuous scale function. 
+
+```{r}
+ggplot()+
+  geom_spatraster(data = wake_temp, aes(fill = mean)) +
+  scale_fill_viridis_c(na.value = "transparent") +
+  theme_minimal()
+```
+
+You can alternatively use the `scale_colour_gradient` function, where you give a high and a low color for a gradient. 
+
+
+```{r}
+ggplot()+
+  geom_spatraster(data = wake_temp, aes(fill = mean)) +
+  scale_fill_gradient(low = 'lightyellow', high= 'darkgreen', na.value = "transparent") +
+  theme_minimal()
+```
+    
+You can also use set palettes in the `scale_fill_gradientn` function, such as terrain.colors, rainbow, heat.colors, topo.colors. 
+
+```{r}
+ggplot()+
+  geom_spatraster(data = wake_temp, aes(fill = mean)) +
+  scale_fill_gradientn(colors = topo.colors(10),  na.value = "transparent") +
+  theme_minimal()
+```
+
+Again, there are many palettes available loaded in R or that you can load from additional packages. Feel free to search and have fun with it!
+
+## Exercises
+
+Complete the following exercises for homework. Submit your code in Moodle. 
+
+1. Plot the streams in Wake County. Add the points for each of the locations that were evaluated by the City of Raleigh. You will need to use the modified stream codes file, where you separated the latitude and longitude into separate columns. 
+
+2. Upload the precipitation raster file from the class data folder into your R workspace titled precip_2013_2023.grd. Also, upload the associated .gri file into the folder.  Read in the .grd raster and take the average of all the stacks (years 2013 - 2023). Plot the raster file using `geom_spatraster` and change the color scheme to one of your choice.
+
+**Optional Reach problem**
+
+This one is optional, but I encourage you to give it a go for more advanced mapping. 
+
+With the City of Raleigh water quality data set, choose 1 parameter to investigate. 
+
+- Group_by the sites and summarize the parameter to get the average across all of the years (or filter for a subset of the years). 
+- Join in the latitude and longitude data from the stream codes data with the summary table. 
+- Plot the streams from the stream shape file *and* the points for each of the stream sites. 
+- Change the color of the plot based on the parameter that you summarized. 
+
+## New functions
+
+*ggplot2*
+
+- geom_polygon()
+- coord_map()
+
+*sf*
+
+- st_read()
+- st_transform()
+- st_bbox()
+- st_crs()
+- st_sfc()
+- geom_sf()
+
+*terra*
+
+- rast()
+
+*tidyterra*
+
+- geom_spatraster()
+
+## Resources
+
+- [Color in `ggplot`](https://ggplot2-book.org/scales-colour)
+- [Shape files and vector data](https://tmieno2.github.io/R-as-GIS-for-Economists/geom-raster.html)
+- [Coordinate systems](https://datacarpentry.org/organization-geospatial/03-crs.html)
+- [Raster maps](https://rspatial.org/spatial/9-maps.html)
+- [tidyterra](https://dieghernan.github.io/tidyterra/articles/tidyterra.html)
+
+
+## Optional lessons
+
+Below are some optional lessons to review if you need them for your project or to learn for fun. 
+
+### How to get PRISM climate data
+
+The following information is not required for your exercise, but could be useful if you would like to get climate data in the future. 
+
+First, you have to download the raster files that we will need. To get the files from the example, need need average temperature data for 1991-1995 and 2019-2023. We will download the yearly data for these years. We have to make a folder to put all the prism files. I called mine "prism-climate-data". Then you can use `prism_set_dl_dir` to indicate where downloaded files should go. This may take a minute to run. The more file you download or the more resolution, the longer it will take. For example, if you are trying to get the daily data for multiple years, this could take hours. With PRISM, you can download daily, monthly, or yearly data for average temperature (tmean), minimum temperature (tmin), maximum temperature (tmin), and precipitation (ppt). Use `?get_prism_annual` for more information and examples.
+
+So here is the code to download the yearly average temperature
+
+```{r, include=F}
+library(prism)
+# get yearly data
+prism_set_dl_dir('prism-climate-data/')
+get_prism_annual(type = 'tmean', year = 1991:1995, keepZip = F)
+get_prism_annual(type = 'tmean', year = 2019:2023, keepZip = F)
+```
+This only downloaded the files -- we still need to load them into our R workspace. To do this, we will first use `prism_archive_subset` which will allow us to specify which files we want to load into R. First, we want to get the 'tmean' files for 1991-1995. This gives us a list of the files we want to load in. Then we load the files and "stack" them using `pd_stack`
+
+```{r}
+tmean90s_files<- prism_archive_subset('tmean', 'annual', years = 1991: 1995)
+tmean90s <- pd_stack(tmean90s_files)
+```
+
+This gives you the raster stack that you can work with.
+
+### Road map layers
+
+In the maps we have been making so far, we are simply plotting on an empty map. However, it is nice to add in some map features in the background, like roads or sateline images. To do this we can use the `ggspatial` package which has some "map tiles" loaded in. We can do this with the `annotation_map_tile` function. There are different types of tiles you can use including:
+
+- cartolight
+- osm
+- opencycle
+- cartodark
+- loviniacycle
+
+Here, I am plotting the Raleigh stream system, that we used before, and the 'cartolight' map. 
+
+```{r}
+library(ggspatial) 
+ggplot() +
+annotation_map_tile(type = 'cartolight', zoomin = -1)+
+geom_sf(data = raleigh_stream, color = 'darkblue', linewidth = 1.5) +
+theme_void()  
+```
+
+There are additional map layers that you can find to use as base plot, but it may take some searching to find 1) free ones and 2) how to download them. 
