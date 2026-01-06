@@ -1,10 +1,13 @@
 --- 
 title: "Environmental Topics and Analysis"
 layout: single
+permalink: /about
 author_profile: true
 ---
 
-### Spring 2026: Evaluating the water quality of local streams
+## About Environmental Topics and Analysis
+
+Download a copy of the [syllabus](../bio231-syllabus.pdf)
 
 This semester, students will evaluate the quality of local water ways using data analysis of large water quality data sets and physical, chemical, and invertebrate assessments in the field. 
 
