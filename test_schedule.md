@@ -1,6 +1,5 @@
 ---
 title: "Weekly Schedule"
-layout: pages
 author_profile: true
 ---
 
