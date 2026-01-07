@@ -4,7 +4,7 @@ main:
   - title: "Course Overview"
     url: /about/
   - title: "Schedule"
-    url: /test_schedule/
+    url: /schedule/
   - title: "Resources"
     url: /resources/
     
