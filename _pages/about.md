@@ -1,13 +1,10 @@
 --- 
 title: "Course Overview"
 author_profile: true
-output:
-  pdf_document: default
-  html_document: default
 permalink: /about/
 ---
 
-## About Environmental Topics and Analysis
+## Course Overview
 
 Download a copy of the [syllabus](../bio231-syllabus.pdf)
 

@@ -4,6 +4,8 @@ permalink: /schedule/
 author_profile: true
 ---
 
+## Weekly schedule
+
 Schedule subject to change. All changes will be announced to students. 
 
 *Unless noted otherwise, all assignments are due at the* ***beginning*** *of class*

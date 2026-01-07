@@ -18,7 +18,7 @@ description: >-
   This site contains the information that students will need to complete BIO 331 at William Peace University
 github_username: maryglover
 minimal_mistakes_skin: contrast
-search: true
+search: false
 
 # Build settings
 markdown: kramdown
@@ -70,7 +70,7 @@ author:
       url: "https://posit.cloud/"
     - label: "Syllabus"
       icon: "fas fa-fw fa-file"
-      url: /bio231-syllabus.pdf
+      url: "https://maryglover.github.io/bio331/bio231-syllabus.pdf"
       
 #footer:
 #  links:
@@ -99,6 +99,3 @@ defaults:
 #tag_archive:
 #  type: liquid
 #  path: /tags/
-
-bio231-syllabus:
-  path: /syllabus/
