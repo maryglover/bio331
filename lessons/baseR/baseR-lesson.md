@@ -2,8 +2,6 @@
 layout: pages
 author_profile: true
 title: 'Basic R lesson'
-output:
-  html_document
 ---
 
 ## Learning objectives

@@ -14,7 +14,7 @@ title: 'Introduction'
 
 ## Class materials 
 
-[Link to slides](introduction-slides)
+[Link to slides](introduction-slides.html)
  
 ## Homework 
 
