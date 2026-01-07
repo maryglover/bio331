@@ -4,6 +4,8 @@ author_profile: true
 permalink: /about/
 ---
 
+## Course Overview
+
 Download a copy of the [syllabus](../bio231-syllabus.pdf) and the brief summary.
 
 This semester, students will evaluate the quality of local water ways using data analysis of large water quality data sets and physical, chemical, and invertebrate assessments in the field. 
