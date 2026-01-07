@@ -2,7 +2,6 @@
 title: "Course schedule"
 output:
   prettydoc::html_pretty:
-permalink: /schedule/
 ---
 
 Schedule subject to change. All changes will be announced to students. 

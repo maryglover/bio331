@@ -1,6 +1,6 @@
 ---
 title: "Weekly Schedule"
-permalink: /schedule/
+layout: pages
 author_profile: true
 ---
 
