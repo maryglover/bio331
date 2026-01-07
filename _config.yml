@@ -62,9 +62,10 @@ author:
     - label: "Class Chat"
       icon: "fas fa-fw fa-link"
       url: "https://chat.google.com/room/AAQA35tszjY?cls=7"
-     - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/maryglover"
+    - label: "R Posit Cloud"
+      icon: "fas fa-fw fa-r"
+      url: "https://posit.cloud/"
+      
 #footer:
 #  links:
   #  - label: "Twitter"
