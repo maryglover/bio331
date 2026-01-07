@@ -1,8 +1,9 @@
 ---
+layout: pages
+author_profile: true
 title: 'Basic R lesson'
 output:
   html_document
-layout: default
 ---
 
 ## Learning objectives

@@ -56,14 +56,14 @@ plugins:
 author:
   name   : "Mary Glover"
   avatar : "/images/Mary.jpg"
-  bio    : "Welcome to BIO 131! My office hours are Thursdays 11:45 - 2:00, or by appointment"
+  bio    : "My office hours are Thursdays 11:45 - 2:00, or by appointment. Don't be shy -- stop by!"
   location: "Pressly 100B; b/t 100 and 102"
   links:
     - label: "Class Chat"
       icon: "fas fa-fw fa-link"
       url: "https://chat.google.com/room/AAQA35tszjY?cls=7"
     - label: "Office hours appointment"
-      icon: "fas fa-fw fa-link"
+      icon: "fas fa-fw fa-clock"
       url: "https://peace.starfishsolutions.com/starfish-ops/dl/instructor/serviceCatalog.html?bookmark=connection/1243084/schedule"
     - label: "R Posit Cloud"
       icon: "fas fa-fw fa-r"

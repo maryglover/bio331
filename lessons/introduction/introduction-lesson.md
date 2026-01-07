@@ -1,6 +1,7 @@
 ---
+layout: pages
+author_profile: true
 title: 'Introduction'
-layout: splash
 ---
 
 ## Learning objectives
