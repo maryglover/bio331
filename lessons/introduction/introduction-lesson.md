@@ -1,8 +1,6 @@
 ---
 title: 'Introduction'
-output:
-  html_document
-layout: default
+layout: splash
 ---
 
 ## Learning objectives
