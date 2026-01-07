@@ -1,5 +1,5 @@
 ---
-layout: pages
+layout: default
 author_profile: true
 title: 'Basic R lesson'
 ---
