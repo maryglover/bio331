@@ -2,8 +2,6 @@
 layout: pages
 author_profile: true
 title: 'Introduction'
-layout: default
----
 
 ## Learning objectives
 
