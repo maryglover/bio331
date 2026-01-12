@@ -1,7 +1,8 @@
 ---
-layout: pages
+layout: single
 author_profile: true
 title: 'Introduction'
+---
 
 ## Learning objectives
 
