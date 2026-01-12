@@ -1,10 +1,8 @@
 --- 
-title: "Environmental Topics and Analysis"
+title: "Spring 2026: Evaluating the water quality of local streams"
 layout: single
 author_profile: true
 ---
-
-### Spring 2026: Evaluating the water quality of local streams
 
 ## Weekly schedule
 
@@ -14,7 +12,9 @@ Schedule subject to change. All changes will be announced to students.
 
 | Week | Date | Topic  |
 |:---- |:-----|:------|
-|1| Thursday, Jan. 15| [Experimental design and introduction](../lessons/introduction/introduction-lesson) |
-|2| Tuesday, Jan. 20|   [Basic R](../lessons/baseR/baseR-lesson) <br> *Last day to add/drop course* |
-|| Thursday, Jan. 22|    [Data manipulation and tidy data](lessons/data-manip/data-manip-lesson) |
+|1| Thursday, Jan. 15| [Data collection and experimental design](lessons/introduction/introduction-lesson) |
+|2| Tuesday, Jan. 20|   [Using R programming for data analysis](lessons/baseR/baseR-lesson) <br> *Last day to add/drop course*
+|| Thursday, Jan. 22|Stream Ecology|
+|3| Tuesday, Jan. 27 [Data manipulation and managment](lessons/data-manip/data-manip-lesson) |
+|| Thursday, January 29 | Graphing |
 
