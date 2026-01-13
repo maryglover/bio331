@@ -13,27 +13,161 @@ editor: visual
 
 1.  Introduction (5 minutes)
 2.  Course details and syllabus review (15 minutes)
-3. Class survey (10 minutes)
-3.  Scientific report activity (30 minutes)
-4.  Data analysis activity (45 minutes)
+3.  Class survey (10 minutes)
+4.  Scientific report activity (30 minutes)
+5.  Data analysis activity (45 minutes)
 
 ------------------------------------------------------------------------
 
-## Spring 2026: Evaluating the water quality of local streams
+## Dr. Mary Glover (she/her)    
 
-![](slide-images/stream.jpeg){fig-align="center"}
+**Email**: mmglover@peace.edu. Kindly allow 24 hours for a response.
+
+**Office**: Pressly 100B (between 100 and 102)
+
+**Office hours**: Thursdays, 11:45AM - 2:00PM or by appointment on Mondays and Wednesdays. Appointments can be made in Pacer Connect
 
 ------------------------------------------------------------------------
 
-## Dr. Mary Glover (she/her)
+## Spring 2026: Evaluating the water quality of local streams 
 
-![](slide-images/Lake_Lynn_Raleigh.jpeg){fig-align="center"}
+![](slide-images/stream.jpeg){fig-align="center"}         
 
-------
+------------------------------------------------------------------------
 
-## How do you feel about numbers and computer programming in biology?
+## Why do we care about quality of water?
 
-![](slide-images/math.jpeg){fig-align="center"}
+![](slide-images/meadow_brook2.jpeg){fig-align = 'center'}
+
+------------------------------------------------------------------------
+
+![](slide-images/course_components.png){fig-align="center"}  
+
+------------------------------------------------------------------------
+
+At the end of the semester, students can expect to be able to:
+
+1.	Analyze data using R programming, including importing and manipulating data, calculating simple statistical measurements, and producing graphs.
+2.	Evaluate water quality using field and lab tests.
+3.	Communicate original research findings to a variety of audiences.
+
+------------------------------------------------------------------------
+
+## Learning objectives
+
+**Analyze data in R**
+
+- Manipulate data into a format that can be analyzed
+- Calculate summary statistics
+- Determine the best type of graph to display data and plot figures
+- Test hypotheses with simple statistical tests
+- Interpret results and form conclusions.
+
+------------------------------------------------------------------------
+
+## Learning objectives
+
+**Communicate research and findings**
+
+- Communicate results to a scientific audience in written and spoken format
+- Communicate results to broad, non-scientific audiences.
+- Design a scientific presentation summarizing the overall class research project.
+
+------------------------------------------------------------------------
+
+## Learning objectives
+
+**Evaluate water quality**
+
+-   Describe human activities that impact water quality and evaluate human impact of waterways in Raleigh. 
+- Measure stream quality through physical, chemical, and biological metrics, using field and lab tests
+- Interpret data to evaluate overall water quality in local streams.
+
+------------------------------------------------------------------------
+
+## City of Raleigh
+
+![](slide-images/Raleigh-stormwater.png)
+
+
+------------------------------------------------------------------------
+
+## Technology requirements
+
+------------
+
+## Course website contains course materials and detailed schedule
+
+![](slide-images/website-image.png)
+[maryglover.github.io/bio331/](https://maryglover.github.io/bio331/)
+
+-----------
+
+## Assignments are submitted on Moodle
+
+---------
+
+## Google Chat Workspace
+
+![](slide-images/gchat.png)
+
+We will use the course chat workspace for questions and help during class. This is a great place to share code when needed.
+
+**Homework** Make a post in the class google chat
+
+-----
+
+## Posit Cloud
+
+![](slide-images/posit-cloud-logo.png)
+We will complete coding exercise on the website posit Cloud. You will receive a link to our class workspace soon!
+
+**Homework** Make a Posit Cloud Account
+
+-----------------
+
+## Google Docs and Slides
+
+For writing assignments, students must complete work in a shared google document or google slideshow. Many of the writing assignments will be worked on throughout the semester. This will help emphasize the writing process. 
+
+------------------------------------------------------------------------
+
+## Course Components
+
+| Component  | Percentage of grade |
+|:-----|:------|
+|Data analysis exams (15% + 15%) | 30%|
+|Assignments (coding exercises and scientific writing) |25% |
+|Field data collection|5%|
+|Final poster presentation |25%|
+|Showcase presentation |5%|
+|Participation |10%|
+|Total |100%|
+
+
+------------------------------------------------------------------------
+
+## AI is not allowed in this course
+
+![](slide-images/noAI.png)
+
+------------------------------------------------------------------------
+
+## Participation
+
+Students are expected to attend class and actively participate!
+
+------------------------------------------------------------------------
+
+## Late policy
+
+- Previous coding exercises must be submitted before grading subsequent coding assignments
+- All assignments must be completed before the next exam to be graded. 
+- All writing drafts of showcase presentation and poster presentation must be submitted on time to receive credit
+
+------------------------------------------------------------------------
+
+## Course survey
 
 ------------------------------------------------------------------------
 
@@ -51,12 +185,102 @@ editor: visual
 
 ------------------------------------------------------------------------
 
+## Scientific articles
+
+![](slide-images/scientific_articles.png){fig-align="center"}
+
+-------------
+
+## Scientific articles have a predictable format
+
+1. Abstract
+1. Introduction
+1. Methods
+1. Results
+1. Discussion
+1. References
+
+-------------
+
+## Read the abstract
+
+
+![](slide-images/tropic_cascades/knight_screenshot.png){fig-align='center'}
+
+-----
+
+## Question: Do species interactions cross ecosystems
+
+![](slide-images/tropic_cascades/fig1.png){fig-align='center'}
+
+------
+
+## Prediction
+
+"We proposed that fish would reduce larval and adult dragonfly abundances and that this would permit a higher abundance of insect pollinators, thus indirectly increasing the pollination and reproductive success of nearby terrestrial plants."
+
+------
+
+## How do fish affect dragonflies?
+
+- The study was done using 8 ponds at a study site in Florida
+- 4 of the ponds had fish, 4 did not have fish
+- To measure the abundance of dragonfly larva, they put metal boxes in each of the ponds at 5 random locations to collect and count dragonflies. They also used sweep nets in the ponds. 
+- To measure the abundance of dragonfly adults, had one observer count the number of dragonflies they saw in a 5 minute window. They made 2 counts at each pond. 
+
+-----
+
+![](slide-images/tropic_cascades/fig2.png)
+
+-----
+ 
+ ![](slide-images/tropic_cascades/fig2_caption.png)
+-----
+
+## Measuring pollinators
+
+- At each of the ponds, they measured the number of pollinators on St. John's Wort shrubs. 
+- They watched each shrub for 20 minutes and counted the number of pollinator visits. 
+
+----
+
+![](slide-images/tropic_cascades/fig3.png)
+
+-----
+
+## Dragonfly predation
+
+- They measured the direct effect of dragonflies on the pollinators. 
+- They built cages around the shrubs. In some, they added a dragonfly. In some, they did not. 
+- The dragonflies could not escape, but pollinators could easily enter the cages. 
+- They counted the number of pollinator visits in each cage over 30 minutes
+
+----
+
+![](slide-images/tropic_cascades/cage_results.png)
+
+-----
+
+## Do their results support their prediction?
+
+----
+
+## What does this mean?
+
+"Understanding interactions across ecosystem types may be crucial for gauging the effects of anthropogenic environmental change. Deliberate introductions of fish by humans are ubiquitous through- out the world (for example for recreation or pest control)26,27. Our results reveal that such introductions might have cascading effects on adjacent terrestrial ecosystems."
+
+------
+
 ## What is data?
 
 ::: incremental
 -   Data is a collection of facts
 -   Data can be *quantitative* or *qualitative*
 :::
+
+-----
+
+![](slide-images/tropic_cascades/fig3.png)
 
 ------------------------------------------------------------------------
 
@@ -66,19 +290,6 @@ editor: visual
 
 **Observational studies**: Groups are observed and measured by not manipulated.
 
-------------------------------------------------------------------------
-
-## Question: How does drinking tea at night impact sleep?
-
-**Experiment**: Split adults into two groups. One group drinks tea evyry night for a week and the other does not. Researchers measure the amount of sleep by both groups.
-
-**Observation**: Adults answer questions about the amount of sleep they get and tea drinking habits.
-
-------------------------------------------------------------------------
-
-## Question: How does sea level rise affect plants in the Chesapeake Bay?
-
-![](slide-images/chesapeake-bay.png){fig-align="center"}
 
 ------------------------------------------------------------------------
 
@@ -98,82 +309,18 @@ editor: visual
 
 The **independent variable** is the variable that is changed or manipulated in the experiment.
 
-What are the dependent and independent variables in the tea and sea level rise studies?
-
 ------------------------------------------------------------------------
 
-## Class activity: In groups of 3
+## Class Activity: Paper Airplanes!
 
-1.  Come up with a research question.
-2.  Form a hypothesis.
-3.  Identify your independent and dependent variables
-4.  Go collect data! (And record it!)
+- In 2 groups complete the paper airplane activity
 
-------------------------------------------------------------------------
-
-## Class activity
-
-1.  How did you set up the table of your data observations?
-2.  What do you think are the next steps with your data?
-3.  What do you think is the best way to visualize or present your data on a graph or table? Draw it out.
-4.  What are your results? Are the groups you measured different or do you see a relationship?
-5.  Compare the results to your hypothesis
-6.  What are you conclusions? Why do you think you got the results you did?
-
-------------------------------------------------------------------------
-
-## Learning objectives
-
-**Analyze data in R**
-
--   Import data into R
--   Manipulate data into a format that can be analyzed
--   Calculate summary statistics
--   Determine the best type of graph to display data and plot figures
--   Test hypotheses with simple statistical tests
--   Interpret results and form conclusions
-
-------------------------------------------------------------------------
-
-## Learning objectives
-
-**Communicate research and findings**
-
--   Communicate results to a scientific audience in written and spoken format
--   Design infographics of results to communicate with broad audiences
--   Create a scientific poster summarizing overall class research project
-
-------------------------------------------------------------------------
-
-## Learning objectives
-
-**Evaluate water quality**
-
--   Describe human activities that impact water quality in Wake County
--   Measure water quality with field and lab tests (nutrients, dissolved oxygen, turbidity, pH)
--   Identify aquatic invertebrate species and calculate a bioassessment index
--   Interpret data to evaluate overall water quality in local streams
-
-------------------------------------------------------------------------
-
-## City of Raleigh
-
-![](slide-images/Raleigh-stormwater.png)
 
 ------------------------------------------------------------------------
 
 ## For next week:
 
--   Join and introduce yourself in the class slack
+-   Introduce yourself on the class Google Chat
+-   Make an account on Posit Cloud
+- Read the article on the Scientific Method
 
--   Download R and Rstudio on your computer
-
-------------------------------------------------------------------------
-
-## Class activity
-
-1.  Go to google sheets and record your data.
-2.  Save your data as a csv file
-3.  Share among your group
-
-------------------------------------------------------------------------
