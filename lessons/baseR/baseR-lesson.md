@@ -1,6 +1,7 @@
 ---
-layout: splash
-author_profile: false
+layout: single
+class: wide
+author_profile: true
 title: 'Basic R lesson'
 ---
 
