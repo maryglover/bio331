@@ -1,4 +1,6 @@
 main:
+  - title: "Schedule"
+    url: /
   - title: "Course Overview"
     url: /about/
 #  - title: "Schedule"
