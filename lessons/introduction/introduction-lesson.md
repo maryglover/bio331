@@ -9,7 +9,6 @@ title: 'Introduction'
 1. Familiarize yourself with course structure
 1. Describe different types of data
 1. Explain the scientific method
-1. Design an experiment
 1. Collect and record data
 
 ## Class materials 
@@ -18,6 +17,7 @@ title: 'Introduction'
  
 ## Homework 
 
-- Introduce yourself in the class slack [link to join](https://join.slack.com/t/env231-sp24/shared_invite/zt-29yx0au0z-aC7TxX0x5s2tAGS0uwfa4g)
-- [Sign up to empty the compost bin](https://docs.google.com/spreadsheets/d/1cySwaGXz33zHNNWfCN_nsgK2P9n7WBICAfZ08-5X9FI/edit?usp=sharing)
-- Download R and Rstudio on your computer. You need to download *both*. Rstudio can only be used if you download R as well. Use these [instructions](./download-R.html) OR [Rstudio cloud](https://posit.cloud)
+Before the next class: 
+
+- Introduce yourself in the class google chat workspace. You will receive an invitation to your class emai. You will then be able to access the class chat [here](https://chat.google.com/room/AAQA35tszjY?cls=7)
+- Create an account on [Rstudio cloud](https://posit.cloud) using your Peace email. You will receive an invitation to join the class workspace. You will need to have an account to access the material. 

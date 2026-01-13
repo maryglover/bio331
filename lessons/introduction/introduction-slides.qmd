@@ -11,13 +11,15 @@ editor: visual
 
 ## Agenda
 
-1.  Introduction
-2.  Data analysis activity
-3.  Course details and syllabus review
+1.  Introduction (5 minutes)
+2.  Course details and syllabus review (15 minutes)
+3. Class survey (10 minutes)
+3.  Scientific report activity (30 minutes)
+4.  Data analysis activity (45 minutes)
 
 ------------------------------------------------------------------------
 
-## Spring 2024: Evaluating the water quality of local streams
+## Spring 2026: Evaluating the water quality of local streams
 
 ![](slide-images/stream.jpeg){fig-align="center"}
 
@@ -25,19 +27,9 @@ editor: visual
 
 ## Dr. Mary Glover (she/her)
 
-![](slide-images/bio.png){fig-align="center"}
-
-------------------------------------------------------------------------
-
-## Attendance
-
 ![](slide-images/Lake_Lynn_Raleigh.jpeg){fig-align="center"}
 
-------------------------------------------------------------------------
-
-## What do you like about biology?
-
-------------------------------------------------------------------------
+------
 
 ## How do you feel about numbers and computer programming in biology?
 
@@ -130,10 +122,6 @@ What are the dependent and independent variables in the tea and sea level rise s
 
 ------------------------------------------------------------------------
 
-![R for Data Science](slide-images/tidy-workflow.png){fig-align="center"}
-
-------------------------------------------------------------------------
-
 ## Learning objectives
 
 **Analyze data in R**
@@ -174,90 +162,11 @@ What are the dependent and independent variables in the tea and sea level rise s
 
 ------------------------------------------------------------------------
 
-## R: Why are we using it?
-
-![](slide-images/R-logo.jpeg){fig-align="center" fig-width="300"}
-
-------------------------------------------------------------------------
-
-## Organize and manage data
-
-```{r, echo = F}
-
-rhago <- read.csv('~/Dropbox/M/Rhagoletis/SDM/clean-data/full_sdm_data.csv')
-rhago
-
-```
-
-------------------------------------------------------------------------
-
-## Organize and manage data
-
-```{r, echo = T}
-
-library(dplyr)
-rhago %>%
-  group_by(species)%>%
-  summarize(N = n())
-
-```
-
-------------------------------------------------------------------------
-
-## Create figures
-
-![](slide-images/emergence.png)
-
-------------------------------------------------------------------------
-
-## Create figures
-
-![](slide-images/humidity.png)
-
-------------------------------------------------------------------------
-
-## Make maps
-
-![](slide-images/map.png)
-
-------------------------------------------------------------------------
-
-## Make maps
-
-## ![](slide-images/Figure%204%20Midwest.jpg)
-
-------------------------------------------------------------------------
-
-## Design websites and files
-
-![](slide-images/syllabus.png)
-
-[Syllabus](https://maryglover.github.io/wpu-bio231/bio231-syllabus)
-
-------------------------------------------------------------------------
-
-## Compost
-
-::: {layout-ncol="2"}
-![](slide-images/compost.png){width="200%"}
-
-![](slide-images/earth-machine.jpeg)
-:::
-
-------------------------------------------------------------------------
-
 ## For next week:
 
 -   Join and introduce yourself in the class slack
--   Sign up for compost
+
 -   Download R and Rstudio on your computer
-
-Questions:
-
-1.  Tell me about your computer situation
-2.  What questions do you have about the class?
-
-[Homework link](https://maryglover.github.io/wpu-bio231/lessons/introduction/introduction-lesson)
 
 ------------------------------------------------------------------------
 
