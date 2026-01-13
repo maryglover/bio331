@@ -14,11 +14,14 @@ title: 'Introduction'
 
 ## Class materials 
 
-[Link to slides](introduction-slides.html)
+- [Link to slides](introduction-slides.html)
+- [*Trophic Cascades Across Ecosystems*](Knightetal2005.pdf)
+- [Paper airplane activity](airplane-activity.html)
  
 ## Homework 
 
 Before the next class: 
 
-- Introduce yourself in the class google chat workspace. You will receive an invitation to your class emai. You will then be able to access the class chat [here](https://chat.google.com/room/AAQA35tszjY?cls=7)
+- Introduce yourself in the class google chat workspace. You will receive an invitation to your class email. You will then be able to access the class chat [here](https://chat.google.com/room/AAQA35tszjY?cls=7)
 - Create an account on [Rstudio cloud](https://posit.cloud) using your Peace email. You will receive an invitation to join the class workspace. You will need to have an account to access the material. 
+- Read the article on the scientific method
