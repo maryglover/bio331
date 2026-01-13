@@ -1,14 +1,13 @@
 --- 
 title: "Spring 2026: Evaluating the water quality of local streams"
 layout: single
+classes: wide
 author_profile: true
 ---
 
 ## Weekly schedule
 
-Schedule subject to change. All changes will be announced to students. 
-
-The following schedule links to the information you will need for each lesson. *All assignments are submitted on the course [Moodle page](https://lms.peace.edu)*
+The following schedule links to the information you will need for each lesson. *All assignments are submitted on the course [Moodle page](https://lms.peace.edu)* Any changes will be announced to students. 
 
 | Week | Date | Topic  |
 |:---- |:-----|:------|
