@@ -6,7 +6,7 @@ permalink: /about/
 
 ## Course Overview
 
-Download a copy of the [syllabus](../BIO331-Sp26-syllabus.pdf) and the brief summary.
+Download a copy of the [syllabus](../BIO331-Sp26-syllabus.pdf) and the [brief summary](../images/brief-summary-331.pdf).
 
 <img align="right" width = "30%" padding-left = "10px" src="../images/meadow_brook2.jpeg">
 
@@ -28,7 +28,7 @@ In Environmental Topics and Analysis, students will evaluate water quality in Ra
 
 #### Data analysis
 
-<img align="left" width = "40%" padding-right = "10px" src="../images/students_stream.jpeg">
+<img align="left" width = "40%" padding-right = "20px" src="../images/students_stream.jpeg">
 
 Students will learn the programming language R to analysis the water quality data of 18 different streams in Raleigh using data collected by the City of Raleigh from 2008 - 2023. Data analysis in R is a valuable and marketable skill that can be used in your future careers in and out of science! Students will summarizing data, presenting data in tables and figures, and statistically analyze data in R. 
 
