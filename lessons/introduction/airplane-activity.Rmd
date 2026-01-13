@@ -13,7 +13,7 @@ layout: default
 klippy::klippy()
 ```
 
-## **Question**: Which paper airplane is the best flyer?
+### **Question**: Which paper airplane is the best flyer?
 
 In this activity, you will design an experiment to test which paper airplane can fly the farthest. 
 
