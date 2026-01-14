@@ -111,7 +111,7 @@ At the end of the semester, students can expect to be able to:
 
 We will use the course chat workspace for questions and help during class. This is a great place to share code when needed.
 
-<span style="color:blue">**Homework**: Make a post in the class google chat</span>.
+[**Homework**: Make a post in the class google chat]{style="color:blue"}.
 
 ------------------------------------------------------------------------
 
@@ -121,7 +121,7 @@ We will use the course chat workspace for questions and help during class. This 
 
 We will complete coding exercise on the website posit Cloud. You will receive a link to our class workspace soon!
 
-<span style="color:blue">**Homework**: Make a Posit Cloud Account</span>
+[**Homework**: Make a Posit Cloud Account]{style="color:blue"}
 
 ------------------------------------------------------------------------
 
@@ -129,7 +129,7 @@ We will complete coding exercise on the website posit Cloud. You will receive a 
 
 For writing assignments, students must complete work in a shared google document or google slideshow. Many of the writing assignments will be worked on throughout the semester. This will help emphasize the writing process.
 
-<span style="color:blue">**Homework**: Make a shared google document to complete the scientific writing assignments.</span>
+[**Homework**: Make a shared google document to complete the scientific writing assignments.]{style="color:blue"}
 
 ------------------------------------------------------------------------
 
