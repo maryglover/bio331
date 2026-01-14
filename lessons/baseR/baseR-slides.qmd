@@ -32,6 +32,69 @@ knitr::opts_chunk$set(echo = TRUE)
 
 R is a free, open source computing *software* used for statistical analysis and graphing. R is also a computing *language*. This means that R software interprets the R language, which is a specific set of vocabulary, formatting, and structure, to perform specific tasks. Other coding languages are Java, C++, python, etc.
 
+------------------------------------------------------------------------
+
+## R: Why are we using it?
+
+![](slide-images/R-logo.jpeg){fig-align="center" fig-width="300"}
+
+------------------------------------------------------------------------
+
+## Organize and manage data
+
+```{r, echo = F}
+
+rhago <- read.csv('~/Dropbox/M/Rhagoletis/SDM/clean-data/full_sdm_data.csv')
+rhago
+
+```
+
+------------------------------------------------------------------------
+
+## Organize and manage data
+
+```{r, echo = T}
+
+library(dplyr)
+rhago %>%
+  group_by(species)%>%
+  summarize(N = n())
+
+```
+
+------------------------------------------------------------------------
+
+## Create figures
+
+![](slide-images/emergence.png)
+
+------------------------------------------------------------------------
+
+## Create figures
+
+![](slide-images/humidity.png)
+
+------------------------------------------------------------------------
+
+## Make maps
+
+![](slide-images/map.png)
+
+------------------------------------------------------------------------
+
+## Make maps
+
+## ![](slide-images/Figure%204%20Midwest.jpg)
+
+------------------------------------------------------------------------
+
+## Design websites and files
+
+![](slide-images/syllabus.png)
+
+[Syllabus](https://maryglover.github.io/wpu-bio231/bio231-syllabus)
+
+------------------------------------------------------------------------
 ---
 
 ### What is Rstudio?

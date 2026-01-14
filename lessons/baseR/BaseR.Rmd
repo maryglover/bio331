@@ -18,7 +18,7 @@ klippy::klippy()
 **By the end of this lesson, you should be able to:**
 
 - Navigate Rstudio
-- Run code from console notebook
+- Run code from console and an R notebook
 - Perform mathematical operations in R
 - Assign variables
 - Describe different data types
@@ -37,32 +37,21 @@ R is a free, open source computing *software* used for statistical analysis and 
 
 Rstudio is an interface that runs the R software in a user friendly format. Rstudio allows the user to run R code, take notes, view graphs, and view files in one window.
 
-We will be using Rstudio in class for computing assignments. When you open Rstudio, you should see three main panes. 
+In this course, we will be using Rstudio through the [Posit Cloud website](https://posit.cloud/). This is a browser based way to use Rstudio. This allows you to access your R projects on any computer. This will be convenient for this class because you are able to work on projects in class and then go home and access your work on your on computer by logging in to your account. 
+
+You should already have a posit cloud account and should have received an email with a link to our class workspace. Follow the email link and log in using your posit cloud account. 
+
+In Rstudio, you can set up an *R project* which is a folder on your computer. In Posit Cloud, all work is organized in projects. A project is basically a folder where all your work is contained, including data files, notes, etc. 
+
+We will learn how to make a project in Posit Cloud later. For now, open the **Learn R** project. You will complete the first few lessons here.  
+
+When you open the project, you should see three main panes. 
 
 - The *console* is where the R code is run
-- The *environment* shows you varables that have been created in R. You can also click to see history or code run in this pane. 
+- The *environment* shows you variables that have been created in R. You can also click to see history or code run in this pane. 
 - The *viewer* has tabs to display plots, files on your computer, and help documentation.
 
-![Rstudio](images/Rstudio.png)
-
-## File management
-
-Before we start coding, it is important to set up a folder where you will be working this semester so that everything is organized and R knows where to find your files. In Rstudio, you can set up an *R project* which is a folder on your computer. When you open the project, Rstudio will automatically go to that folder, making it easier to work with data (importing and exporting) and create coding scripts. 
-
-You will make an R project for the class work. When you open Rstudio it will automatically open the last project. Or you can open by using File --> Open Project. 
-
-### Tips for naming files and directories
-
-A large part of coding is moving through directories (folders) and accessing files. 
-
-When naming files and directories, it is important that they will be easy to work with.
-
-- R is case sensitive! So be aware of your capitalization
-- Do *not* use spaces in your names. If you would like to separrate words you can use "_" or "-"
-- Pay attention to file extensions (i.e. .jpg, .pdf, .txt). You will need to use full name when working with files. 
-- Folders in names are separated by "/". So for example the directory "Documents/bio_files" is a folder "bio_files" inside the folder "Documents." "Documents/bio_files/photosynthesis.pdf" Is a PDF file inside the bio_files folder. 
-
-**Exercise**: Complete the make an R project [exercise](#make-an-r-project)
+![](images/Rstudio.png)
 
 ## Using R
 
@@ -78,7 +67,7 @@ For example for 5 times 2:
 5 * 2
 ```
 
-One your own, try some mathematical calculations in the Console.
+<span style="color:blue">**On your own**</span>, try some mathematical calculations in the Console.
 
 ### Using a R script
 
@@ -88,16 +77,16 @@ Open up a new script by going to File --> New File --> R script. A script file w
 
 ![](images/R-studio-notebook.png)
 
-All of your code should be typed in the script. To run the code from the notebook, but your cursor on the line that you want to run. Then click "Ctrl + enter" on a Windows or Linux machine or 'Cmd + enter' on a Mac.
+**All of your code should be typed in the script.** To run the code from the notebook, but your cursor on the line that you want to run. Then click "Ctrl + enter" on a Windows or Linux machine or 'Cmd + enter' on a Mac.
 
-To add notes, add a '\#' to the beginning of a line. This line will not be run in R. For example:
+To add notes, add a '\#' to the beginning of a line. This line will *not* be run in R. For example:
 
 ```{r}
 # I am doing math
 5 * 10
 ```
 
-**Exercise** Try out some code in a script. Complete steps one and two of [exercise 2](#create-a-script).
+<span style="color:blue">**On your own**</span>, try out some math in a script. Add some notes as well. 
 
 ### Functions in R
 
@@ -105,33 +94,35 @@ Most tasks in R will be accomplished using **functions**. Functions is code that
 
 Functions are run using the function name followed by the "arguments." A function can have any number of arguments.
 
-![Functions](images/function.png){width="50%"}
+![](images/function.png){width="50%"}
 
 Functions can range from very simple to very complex. Many functions exist in R without doing anything, you can "load" additional functions through "packages", or you can even make your own functions.
 
-For example, `log` is a function that will take the natural log of the value given as an argument.
+For example, `log` is a function that will take the natural log of the value given as an argument, x.
 
 ```{r}
-log(1.5)
+log(x = 1.5)
 ```
 
 The `log` function can also take an addition argument which sets the base that the logarithms are computed. Two arguments are possible with `log`, x (or the value) and base. So to take the base 10 logarithm of the value 1.5, you could do the following:
 
 ```{r}
+log(x = 1.5, base = 10)
+```
+
+This could be written without the argument names, but you must be very careful to put the arguments in the correct order.
+
+```{r}
 log(1.5, 10)
 ```
 
-This could be written to include the names of the arguments to avoid confusion.
+Hint: To get help with a specific function, use '?' followed by the function name.
 
 ```{r}
-log(x=1.5, base =10)
+?log
 ```
 
 There are many other mathematical function such as sum, max, min, mean, median, sd (standard deviation). 
-
-Hint: To get help with a specific function, use '?' followed by the function name
-
-**Exercise** Try out a function in your script. Complete step three [exercise 2](#create-a-script).
 
 ### Assigning variables
 
@@ -153,6 +144,8 @@ You can now treat `a` as 1.5. For example, you can take the log of `a`, which is
 log(a)
 ```
 
+**Note** R is case sensitive! So be aware of your capitalization. "a" and "A" are not the same!
+
 ### Data types
 
 So far, we have only dealt with single numbers, but R can handle numbers or text. With numbers, you can type them in regularly and R will recognize them as such. Text is put into quotations (""). You can use single(') or double (") in R. Without the quotation mark R will try to find a variable of the same name.  
@@ -163,10 +156,17 @@ For example, instead of a number, you can store text in a variable:
 b <- "hello"
 ```
 
-Then when your run the varable `b`, you get the text as the output.
+Then when your run the variable `b`, you get the text as the output.
 
 ```{r}
 b
+```
+
+We can try out using text with the `say` function, giving arguments for the text and the animal. 
+
+```{r}
+library(cowsay)
+say(b, 'owl')
 ```
 
 There are other types of data, but numbers (*numeric*) and text (*characters*) are the two main types we will use in this class.
@@ -175,20 +175,21 @@ There are other types of data, but numbers (*numeric*) and text (*characters*) a
 
 Data can be stored in different data structures including vectors, data frames, and matrices.
 
+**Vectors** are a one dimensional way to put together data of the *same* type (i.e. all text or all characters). The most common way to create a vector is by using the `c()` function, which concatenates, or combines, values into a vector.
 
-**Vectors** are a one dimensional way to put together data of the *same* type (i.e. all text or all characters). The most common way to create a vectors is by using the `c()` function, which concatenates, or combines, values into a vector.
-
-Here, a vector with the numbers 5, 10, 20 are made into a vector named example.vector
+Here, a vector with the numbers 5, 10, 20 are made into a vector named "example.vector"
 
 ```{r}
-example.vector <- c(5, 10, 20)
-example.vector
+example_vector <- c(5, 10, 20)
+example_vector
 ```
+
+**Note** Do *not* use spaces in your names. If you would like to separate words you can use "_" or "-"
 
 You can also perform mathematical calculations or functions with vectors. The function is performed on each entry in the vector
 
 ```{r}
-example.vector / 5
+example_vector / 5
 ```
 
 Vectors can also store character data. 
@@ -203,7 +204,7 @@ rainbow_colors
 You can also run a function with a vector. For example, the function `sum` takes the sum of all numbers. 
 
 ```{r}
-sum(example.vector)
+sum(example_vector)
 ```
 
 You can also use functions on vectors made with characters. 
@@ -213,27 +214,26 @@ For example, here I will use the function `length` to see how long the character
 length(rainbow_colors)
 ```
 
-#### Subsetting vectors
+### Class Activity: Dice Distributions
 
-One useful tool is using subsets to determine what is in a specific place in a vector. This is done using brackets "[]". 
+In this activity, students will assign data to a vector in R and make a quick graph of the results. <span style="color:blue">**Write all of your code in an R script.**</span>
 
-In the `rainbow_colors` vector, there are 7 elements. If you want to see what is the third element, you would do the following:
+1. In groups of two, roll the dice a total of 10 times. Record the value. 
+1. Create a vector in R with the 10  values. Assign it the name `roll`. 
+1. You will now create a histogram of the results using the function `hist`. `hist` takes the argument for a vector of numbers, just like you have in `roll`. 
 
-```{r}
-rainbow_colors[3]
-```
+What do you think of the distribution that you got? Is this expected? 
 
-If you want to to see what is in the fourth, fifth, and sixth place, you would use the `c()` function again to use more than one number. 
+1. **Repeat** the exercise, but now roll the dice 50 times. How do you think this will change your results?
+1. In your script file, write what you notice about the difference in the two graphs. Make sure you "comment" your answer using \# at the start. 
 
-```{r}
-rainbow_colors[c(4, 5, 6)]
-```
+### Save your script
 
-Alternatively, in R you can also use `4:6` to go from *4* to *6*. The `:` symbol creates a sequence. 
+You will want to save your script periodically to save your work. To save your script, go to File and click **save.** 
 
-```{r}
-rainbow_colors[4:6]
-```
+When you save your script, it will save as a ".R" file in your project. 
+
+**Remember**, it is best *not* to use spaces in your names to help with file management. 
 
 ### Data frames
 
@@ -250,43 +250,19 @@ df
 
 A **matrix** is similar to a data frame except that *all data* in a matrix are the same type (i.e. all characters or all numbers).
 
-## Working with data frames
+Data frames most common data structure that you will be working with. For the most part, you will be importing data into R as a data frame from a .csv file. 
 
-Data frames most common data structure that you will be working with. Here, we will go over some of the basics of data frames. 
 
-### Creating a data table
+#### Reading data files
 
-For the most part, you will be importing data into R as a data frame from a csv file. However, you can make your own using R functions. 
+The main way that you will be adding data to R is using the `read.csv` function. This function takes the file name in quotes as an argument, file. It also has the argument header. This defaults to TRUE. If you have a header you can leave it. If not header should be FALSE. Otherwise the first row of data will be make into the header. Most of the time your data will have a header row.
 
-One way to make a data frame to do this is using the function `data.frame()` The arguments are what goes into the data frame *columns*. This  data frame will have one column of characters and two columns of numbers. You can also use "=" to name the column.
+When you use are reading in data files, R will look for the file in the folder or "directory" you are in. If the file is not in the home folder, you will need to specify where R should look. Folders in names are separated by "/". So, for example the directory "Documents/bio_files/" is a folder "bio_files" inside the folder "Documents." "Documents/bio_files/photosynthesis.pdf" ss a PDF file inside the bio_files folder. 
 
-```{r}
-data.frame(nitrogen = c('low', 'med', 'high'), growth = c(30, 22, 45), height = c(5, 10, 15) )
-```
-
-You should also *save* the data frame assigning (`<-`) to a variable. 
+Here, I have a file, "fly_data.csv" in a directory named "data". I can load it in an assign it fly as follows:
 
 ```{r}
-class_data <- data.frame(nitrogen = c('low', 'med', 'high'), growth = c(30, 22, 45), height = c(5, 10, 15) )
-class_data
-```
-
-You can also add row or column names or change the existing ones using `rownames` or `colnames`. Let's say that this data is based on the amount of nitrogen added to plants and I want the row names to include the exact amount (in g). The key to this function is that you must give the same number of elements as there are rows to `rownames` and columns to `colnames`. You are *assigning* the column or row names with new data. 
-
-```{r}
-rownames(class_data) 
-rownames(class_data) <- c('N5', 'N10', 'N20')
-class_data
-```
-
-### Import data
-
-Often data is much bigger than a 3x3 table and is organized in an excel sheet. The main way that you will be adding data to R is using the `read.csv` function. This function takes the file name in quotes as an argument, file. It also has the argument header. This defaults to TRUE. if you have a header you can leave it. If not header should be FALSE. Otherwise the first row of data will be make into the header. 
-
-For example, if I have a file "fly_data.csv" in my directory I can load it in an assign it fly as follows:
-
-```{r}
-fly<-read.csv(file = 'fly_data.csv', header = TRUE)
+fly<-read.csv(file = 'data/fly_data.csv', header = TRUE)
 ```
 
 To check the data, it doesn't always make sense to show the whole data frame, especially if it is very large. I can use the function `head` to only show the first 10 rows. 
@@ -295,109 +271,110 @@ To check the data, it doesn't always make sense to show the whole data frame, es
 head(fly)
 ```
 
-**Exercise** Import your data from last class [exercise](#importing-data)
+#### Functions and data frames
 
-### Subsetting
+Now that we have a data frame read into R, we can use functions to explore the data. 
 
-Just like you did with vectors, you can also show specific rows and columns or *subset* data frames. This is again done with brackets. However, in data frames you specify the number row and columns. The first number in brackets is the row, the second is the column. So if you want the third row in the first column you would use [3, 1]. For example:
+In data frames, you can also specify the column using "$" and the name of the column. This allows you to look at the values in one column. When specify just a single column in the last section, you essentially created a vector. You can also use functions on this vector. 
 
-```{r}
-class_data[3, 1]
-```
-
-Again, you can specify a range using ":"
+For example, let's just look at the column for the number of flies, n. 
 
 ```{r}
-class_data[1, 2:3]
+fly$n
 ```
 
-If you would like all rows or all columns, you leave the place in brackets empty. 
+In the fly data set, we have a column for the species of fly, the location, and the number of flies collected. One thing that we can do is use mathematic functions, such as sum, max, min, mean, median, sd (standard deviation). 
+
+Let's look at the total number (sum) of all the flies collected. 
 
 ```{r}
-class_data[2, ]
-class_data[ , 1]
+sum(fly$n)
 ```
 
-In data frames, you can also specify the column using "$" and the name of the column. 
+We can also use functions of character data. For example, we can use the function `unique` to get every distict value for the species. 
 
 ```{r}
-class_data$growth
+unique(fly$species)
 ```
 
-### Functions on data frames
+## Class Activity
 
-When specify just a single column in the last section, you essentially created a vector. You can also use functions on this vector. 
+Now, we will look at the data file that you created with your data on paper airplanes. 
 
-For example, you can use `sum` for total growth 
+First, go back to your data. Let's make sure it is in a format that can be analyzed in R. 
 
-```{r}
-sum(class_data$growth)
-```
-
-Other useful functions are `max` and `min` which show you the maximum and minimum values. 
-
-```{r}
-max(class_data$height)
-```
-
-## Exercise
 
 ### Make an R project
 
-We will use an R project for the class work. 
+Most of the time in class, we will use R project that are set up for the class. For this activity, let's practice making a new R project so that you know how. 
 
-#### On your desktop
-1. To make an R project for the class, go to "File --> New Project" in Rstudio.
-2. Click on "New Directory." This is creating a new folder on your computer for the R project. 
-
-![](images/new-project.png){width="50%"}
-
-3. Next, you will name the project (remember your tips for naming). You can also specify where the project will be on your computer. For example, I have named by project "BIO231" and put it in my Documents folder.
-
-![](images/project-name.png){width="50%"}
-
-#### In Rstudio cloud
-
-When working in Rstudio cloud, you have to set up a project to begin working. 
-
-1. In Rstudio cloud, to start an R project, click New Project then Rstudio project. 
+1. In Posit cloud, to start an R project, click New Project then Rstudio project. 
 
 ![](images/cloud-project.png)
 
-2. Click at the top to name the project. I used the name BIO231 in the example. You can use whatever you like. 
+2. Click at the top to name the project. Here, you will work on your paper airplane example, so name it something accordingly. 
 
-![](images/cloud-name.png)
+### What is tidy data
 
-3. In Rstudio cloud, you will have to upload any data file that you want to work with instead of accessing it from your computer directly. You can do this in the lower right hand box with the *upload* button
+How data are organized in a data table is an important part of analyzing data. Keeping your data organized in a consistent and standard way will help you explore the data and use functions in R that expect data to be in a specific format. 
+
+We will be working with "*tidy*" data. Tidy data is set up such that:
+- Every column is a variable
+- Every row is an observation 
+- Every cell is a value. 
+
+![](images/tidy-data.png)
+
+
+For example:
+
+![](images/tidy-example.png)
+
+**Question**: Look back at your data from the first day of class. Is the data tidy? Do you need to reformat it?
+
+### Import data into posit cloud
+
+There is one extra step to reading in data files when using posit cloud. You have to import the data into posit cloud. You can do this in the lower right hand box with the *upload* button. Upload your class file into your R project. **Hint**: when you download from google sheets, it should go to the downloads folder. 
 
 ![](images/cloud-files.png)
-[Back to lesson](#using-r)
 
-### Create a script
+### Analyze your airplane data
 
-1. Open up a new R script and try running some code. 
-2. Save the script. This should go in the folder you just created
-3. run the `list.files()` function. This shows you the files that in the computer folder that you are working in. *You should see the script you made in the previous step.* If not, something has gone wrong with your script. Double check where it is saved and that you have your R project open. 
+Play around with your airplane data! What can you discover about the data?
 
-[Back to lesson](#assigning-variables)
+**Hint** What is the average distance the airplanes flew? (You can use the `mean` function) The max distance?
 
-### Importing data
+## Homework Exercises
 
-1. Add your csv file of the data you collected in the first class to your R project folder. 
-1. Use `read.csv` to import the data. Don't forget to assign it a name!
+**Complete these exercises in the Learning R project**. For the exercises, you should do all of your code in an R script. You will then export the R script and submit in the Moodle assignment. 
 
-[Back to lesson](#subsetting)
+### Exercise 1: Vector Data
 
-### Yahtzee exercise
+In this example, you will simulate rolling dice using the `sample` function. This function generates random numbers from a given set of numbers. Let's imagine we roll the dice 100 times. 
 
-In this exercise you will practice the skills that you just learned: creating variables, working with data frames, mathematical operations, and functions. **Your code should be all run in an R script and submitted to Moodle when your are done.**
+1. You will first generate values for one di using `sample(c(1, 2, 3, 4, 5, 6), 100, replace = TRUE)`. This gives 100 values from 1 to 6. `replace = TRUE` means that you can get a number more than once. Make sure you assign the function to a name!
+2. Repeat for dice two with a new name. 
+3. Add the two vectors togeter to get the total of the two dice. 
+4. Create a histogram of the results. 
+5. Describe what you notice about the results in your script. 
 
-1. Play a game of yahtzee!
-1. Make a file with your scores and save as a csv. Do not do any of the math!
-2. Use `read.csv` to import your data
-2. Add row and column names for player names and the score category in R
-1. Calculate the scores using R for the teammates. There are many ways to do this. Just find one that works for you. You can create new vectors or data frames to do this.
-2. Determine the winner! Use a function here. 
+### Exercise 2: Weather Data
+
+Here, you will use a data set that contains information about climate data in Raleigh. 
+
+1. Use `read.csv` to read the file "raleigh_prism_climate.csv". *It is in the data folder.* 
+2. Determine the average mean temperature (tmean column) from  the Raleigh data. 
+3. Determine the maximum precipitation that was recorded in Raleigh. 
+4. Determine the minimum mean temperature that was recorded in Raleigh. 
+5. Make one other calculation of your choosing :)
+
+### Submitting your homework
+
+When you have completed the homework assignment. Export both the R script you used in class and the one you used for the homework. (It is OK if you only used one script file.)
+
+![](images/export_files.png)
+
+Submit the .R files in Moodle. You will *not* be able to preview the files in Moodle, but submit them anyway! I will be able to view them just fine. 
 
 ## List of functions used today
 
@@ -405,8 +382,7 @@ In this exercise you will practice the skills that you just learned: creating va
 - `c`
 - `sum`
 - `length`
-- `data.frame`
-- `rownames` and `colnames`
+- `unique`
 - `read.csv`
 - `head`
 - `sum`

@@ -45,24 +45,6 @@ Now you can use the functions in `ape.` **Every time you open R, you do have to 
 
 [Exercise](): Install the `dplyr` package
 
-## What is tidy data
-
-How data are organized in a data table is an important part of analyzing data. Keeping your data organized in a consistent and standard way will help you explore the data and use functions in R that expect data to be in a specific format. 
-
-We will be working with "*tidy*" data. Tidy data is set up such that:
-- Every column is a variable
-- Every row is an observation 
-- Every cell is a value. 
-
-![](images/tidy-data.png)
-
-
-For example:
-
-![](images/tidy-example.png)
-
-**Question**: Look back at your data from the first day of class. Is the data tidy?
-
 ## Using dplyr
 
 We are going to use package `dplyr` for managing and manipulating data. To outline how to handle data with `dplyr`, we will use an example of climate data from Raleigh. This data is from the PRISM Climate Group [^1] is a part of Oregon State University and creates datasets using weather stations across the United States. The data sets include total precipitation, maximum temperature, minimum temperature, mean temperature, dew point temperature, vapor pressure deficit, and measurements of global shortwave solar radiation.
