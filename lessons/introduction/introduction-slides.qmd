@@ -136,7 +136,7 @@ For writing assignments, students must complete work in a shared google document
 ## Course Components
 
 | Component                                             | Percentage of grade |
-|:------------------------------------------------------|:--------------------|
+|:--------------------------------------------------|:--------------------|
 | Data analysis exams (15% + 15%)                       | 30%                 |
 | Assignments (coding exercises and scientific writing) | 25%                 |
 | Field data collection                                 | 5%                  |
@@ -272,7 +272,7 @@ Students are expected to attend class and actively participate!
 ## What is data?
 
 ::: incremental
--   Data is a collection of facts
+-   Data are a collection of facts
 -   Data can be *quantitative* or *qualitative*
 :::
 
@@ -318,4 +318,4 @@ The **independent variable** is the variable that is changed or manipulated in t
 
 -   Introduce yourself on the class Google Chat
 -   Make an account on Posit Cloud
--   Read the article on the Scientific Method
+-   Make shared google document for scientific writing and submit on Moodle
