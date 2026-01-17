@@ -98,7 +98,7 @@ Functions are run using the function name followed by the "arguments." A functio
 
 Functions can range from very simple to very complex. Many functions exist in R without doing anything, you can "load" additional functions through "packages", or you can even make your own functions.
 
-For example, `log` is a function that will take the natural log of the value given as an argument, x.
+For example, `log` is a function that will take the natural log of the value given an argument, x.
 
 ```{r}
 log(x = 1.5)
@@ -257,7 +257,7 @@ Data frames most common data structure that you will be working with. For the mo
 
 The main way that you will be adding data to R is using the `read.csv` function. This function takes the file name in quotes as an argument, file. It also has the argument header. This defaults to TRUE. If you have a header you can leave it. If not header should be FALSE. Otherwise the first row of data will be make into the header. Most of the time your data will have a header row.
 
-When you use are reading in data files, R will look for the file in the folder or "directory" you are in. If the file is not in the home folder, you will need to specify where R should look. Folders in names are separated by "/". So, for example the directory "Documents/bio_files/" is a folder "bio_files" inside the folder "Documents." "Documents/bio_files/photosynthesis.pdf" ss a PDF file inside the bio_files folder. 
+When you use are reading in data files, R will look for the file in the folder or "directory" you are in. If the file is not in the home folder, you will need to specify where R should look. Folders in names are separated by "/". So, for example the directory "Documents/bio_files/" is a folder "bio_files" inside the folder "Documents." "Documents/bio_files/photosynthesis.pdf" is a PDF file inside the bio_files folder. 
 
 Here, I have a file, "fly_data.csv" in a directory named "data". I can load it in an assign it fly as follows:
 
@@ -314,29 +314,27 @@ Most of the time in class, we will use R project that are set up for the class. 
 
 2. Click at the top to name the project. Here, you will work on your paper airplane example, so name it something accordingly. 
 
-### What is tidy data
+### Data Table Formating
 
-How data are organized in a data table is an important part of analyzing data. Keeping your data organized in a consistent and standard way will help you explore the data and use functions in R that expect data to be in a specific format. 
+In the last class, you collected data on paper airplanes and input your data table into sheets and saved it as a .csv file. A csv file is a file where each column is separated by commas. It is important to make sure that your table is formatted in a way that R will read it correctly. 
 
-We will be working with "*tidy*" data. Tidy data is set up such that:
-- Every column is a variable
-- Every row is an observation 
-- Every cell is a value. 
+Check your data for these common mistakes:
 
-![](images/tidy-data.png)
+- Make sure there are no commas in your numbers! Commas indicate to start a new column
+- Do not use spaces in your columns. This will make things simpler. You can get rid of spaces or use "_"
+- Make sure your numbers are formated as numbers. So instead of "12 inches", you should just have "12". 
+- But you do still want to keep track of units! Add to the column header (but remember-- no spaces!)
+- Make sure there is not an empty row at the top and that you only have *one* table in the file. 
 
-
-For example:
-
-![](images/tidy-example.png)
-
-**Question**: Look back at your data from the first day of class. Is the data tidy? Do you need to reformat it?
+[**Question**: Look back at your airplane data! Fix any issues and have it checked by Dr. Glover before moving on. ]{style="color:red"}.
 
 ### Import data into posit cloud
 
 There is one extra step to reading in data files when using posit cloud. You have to import the data into posit cloud. You can do this in the lower right hand box with the *upload* button. Upload your class file into your R project. **Hint**: when you download from google sheets, it should go to the downloads folder. 
 
 ![](images/cloud-files.png)
+
+[**Activity**: Download your airplane data from Google Sheets as a .csv file and add to your R project. ]{style="color:red"}.
 
 ### Analyze your airplane data
 
@@ -346,7 +344,7 @@ Play around with your airplane data! What can you discover about the data?
 
 ## Homework Exercises
 
-**Complete these exercises in the Learning R project**. For the exercises, you should do all of your code in an R script. You will then export the R script and submit in the Moodle assignment. 
+**Complete these exercises in the Learning R project**. For the exercises, you should do all of your code in an R script. You can use the one you started in class or create a new one. You will then export the R script and submit in the Moodle assignment. 
 
 ### Exercise 1: Vector Data
 
@@ -370,7 +368,7 @@ Here, you will use a data set that contains information about climate data in Ra
 
 ### Submitting your homework
 
-When you have completed the homework assignment. Export both the R script you used in class and the one you used for the homework. (It is OK if you only used one script file.)
+When you have completed the homework assignment. Export both the R script you used in class for your airplane data and the one you used for the homework. 
 
 ![](images/export_files.png)
 

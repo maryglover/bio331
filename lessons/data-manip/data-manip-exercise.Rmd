@@ -238,7 +238,23 @@ climate |>
 
 So far, you have been working with already "clean" tidy data. There are no mistakes in the data, including typos and the data is already in a tidy format. This is not always the case, either due to mistakes in entering your own data or the format of open source data. There are many functions in `dplyr` to edit data frames, including some that will change to format of rows and columns to make them in tidy format. 
 
-We will not go into functions to edit the structure of the data frame but there are a few usefull functions to edit the cells or columns in your data frame. 
+We will not go into functions to edit the structure of the data frame but there are a few useful functions to edit the cells or columns in your data frame. 
+
+How data are organized in a data table is an important part of analyzing data. Keeping your data organized in a consistent and standard way will help you explore the data and use functions in R that expect data to be in a specific format.
+
+
+
+We will be working with "*tidy*" data. Tidy data is set up such that:
+- Every column is a variable
+- Every row is an observation 
+- Every cell is a value. 
+
+![](images/tidy-data.png)
+
+
+For example:
+
+![](images/tidy-example.png)
 
 ### Rename
 
