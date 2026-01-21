@@ -27,5 +27,5 @@ In this class, we will:
 
 ## Homework for the next class
 
-1. Complete and submit exercise 2 from the [Base R lesson](../baseR/BaseR.html)
+1. Complete and submit exercise 2 from the [Base R lesson](../baseR/BaseR.html#Exercise_2:_Weather_Data)
 1. Complete the *Writing: scientific methods* assignment. Complete the assignment in your shared google doc and submit the link in Moodle. **You will add to the same document where you completed the introduction assignemnt. **
