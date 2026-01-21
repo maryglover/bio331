@@ -13,7 +13,7 @@ The following schedule links to the information you will need for each lesson. *
 |:---- |:-----|:------|:-----|:------|
 |1| Thursday, Jan. 15| [Data collection and experimental design](lessons/introduction/introduction-lesson) | [activity](lessons/introduction/airplane-activity.html) | [slides](lessons/introduction/introduction-slides.html) |
 |2| Tuesday, Jan. 20|   [Using R programming for data analysis](lessons/baseR/baseR-lesson) <br> *Last day to add/drop course* |[activity](lessons/baseR/BaseR.html)  |[slides](lessons/baseR/baseR-slides.html) |
-|| Thursday, Jan. 22 | Stream Ecology | | |
+|| Thursday, Jan. 22 | [Stream Ecology](lessons/stream_ecology/stream_ecology) | | [slides](https://docs.google.com/presentation/d/1OPw5FH8iPgC2TrFBb3_wnzDD-YsYGbQBsmssG2lDlMs/edit?usp=sharing) |
 |3| Tuesday, Jan. 27 |Data manipulation and management |  | |
 || Thursday, January 29 | Graphing | | |
 |4| Tuesday, Feb. 3 |Dealing with data issues and missing data | | |
