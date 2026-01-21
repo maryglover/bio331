@@ -1,0 +1,28 @@
+---
+title: "Data manipulation"
+output:
+  html_document:
+    toc: true 
+    toc_float: true
+    toc_collapsed: true
+    toc_depth: 3  
+layout: default
+---
+
+```{r klippy, echo=FALSE, include=TRUE}
+klippy::klippy()
+```
+
+## City of Raleigh water quality data
+
+Let's explore the water quality data from the city of Raleigh. 
+
+In this exercise, you will explore historic water quality data from the City of Raleigh. The data is collected from 2008 - 20223 and includes 19 different water quality variables, including water temperature, *E. coli* bacteria, and dissolved oxygen for 18 different stream sites. 
+
+```{r}
+water <- read.csv('data/raleigh_wq_2008_20.csv')
+```
+
+## List of new functions
+- `colnames()`
+- `rownames()`
