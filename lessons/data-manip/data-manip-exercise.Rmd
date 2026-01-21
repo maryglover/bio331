@@ -27,31 +27,49 @@ One, you can go to the packages tab in the lower right hand side of Rstudio, whe
 
 This will run the code `install.packages()`. The second way is to simply run the code `install.packages()` in the console, with the name of the package
 
-For example, if I want the `ape` package for phylogenetic analyses , I would run:
+For example, let's say I want the `RColorBrewer` package. This packages adds different colors and palettes that you can use in R. To install the package, I would run:
 
 ```
-install.packages("ape")
+install.packages("RColorBrewer")
 ```
 
 Now, whenever I want to use functions from this package they are installed in by R library. **You only ever have to install a package once.**
 
 Once, you have installed a package, it is there on your computer. But R doesn't "load" packages unless you tell it to. You can do this by using the `library()` function.
 
-```
-library(ape)
+```{r}
+library(RColorBrewer)
 ```
 
-Now you can use the functions in `ape.` **Every time you open R, you do have to load the packages you want to use**
+Now you can use the functions in `RColorBrewer`. 
 
-[Exercise](): Install the `dplyr` package
+RColorBrewer has may different color palettes. Here, I want to look at a combination of 3 colors in the Set2 palette. 
+
+```{r}
+display.brewer.pal(n = 3, name = 'Set2')
+```
+
+**Every time you open R, you do have to load the packages you want to use using the `library()` function.**
+
+```{r, echo=FALSE, warning = FALSE}
+library(dplyr)
+```
 
 ## Using dplyr
 
-We are going to use package `dplyr` for managing and manipulating data. To outline how to handle data with `dplyr`, we will use an example of climate data from Raleigh. This data is from the PRISM Climate Group [^1] is a part of Oregon State University and creates datasets using weather stations across the United States. The data sets include total precipitation, maximum temperature, minimum temperature, mean temperature, dew point temperature, vapor pressure deficit, and measurements of global shortwave solar radiation.
+We are going to use package `dplyr` for managing and manipulating data. This is a widely used package for manipulating and summarizing data. 
 
-The data we are working with is for Raleigh, NC and includes minimum temperature, maximum temperature, mean temperature and precipitation for each month from 
+This package has already been installed for you in the Learning R project. 
 
-First, we will import that data. You data "path" will depend on where you have your data on your computer. 
+<span style="color:blue">**To use `dplyr`, you will need to load in the package. Go ahead and do that now, based on what you just learned!**</span>
+
+### Climate analysis
+
+To highlight the basic features of `dplyr`, we will continue with the climate data from Raleigh. This data is from the PRISM Climate Group [^1] is a part of Oregon State University and creates datasets using weather stations across the United States. The data sets include total precipitation, maximum temperature, minimum temperature, mean temperature, dew point temperature, vapor pressure deficit, and measurements of global shortwave solar radiation.
+
+The data we are working with is for Raleigh, NC and includes minimum temperature, maximum temperature, mean temperature and precipitation for each month from 1981 to 2023.
+
+First, we will import that data. Again, this data is in the data directory in your Learning R project. I will assign the data the name `climate`.
 
 ```{r}
 climate <- read.csv("data/raleigh_prism_climate.csv")
@@ -82,7 +100,6 @@ To explore the data a bit, we can use `dplyr` functions `filter` and `select` to
 The `filter` function takes arguments for data and the criteria for filtering the data based on a specific column. For example, you could "filter" the data to show only rows where the year is 2023 in the climate data with the argument `year == 2023`. Here, because the year is a number you do not need quotations. If you are sorting by a character, you would need quotations marks (ex. city == "Raleigh"). 
 
 ```{r, warning=FALSE}
-library(dplyr)
 filter(climate, year == 2023)
 ```
 
@@ -134,6 +151,8 @@ climate2023 <- climate |>
 climate2023
 ```
 
+<span style="color:blue">**Activity: Filter the data for the year that you were born.**</span>
+
 ### Select
 
 `select()` is very similar to filter except it works on columns. 
@@ -172,15 +191,15 @@ climate |>
   select(year, tmax)
 ```
 
+<span style="color:blue">**Activity: Filter the data for the year AND month that you were born. Select only the mean temperature column to display**</span>
 
 ### Additional functions
 
 Here are some other functions that can be useful when exploring the data in different columns. For each of these functions, you must specify the *column* you want to work with.
 
-
 - `distinct()`: show only the unique value
-- `nrows()`: the number of rows
 - `arrange()` : sort the data by a specific column
+
 
 You can also use other base r functions that we have used before. For example,
 
@@ -189,9 +208,48 @@ You can also use other base r functions that we have used before. For example,
 - `mean()`
 - `median()`
 
-[**Exercise**](#exploring-temperature-data): Play around with the temperature data. 
+### Distinct
 
-## Summarizing data
+Distinct is a helpful function for viewing what unique characters are in your data set. Let's see what different years are in the climate data
+
+```{r}
+climate |>
+  distinct(year)
+```
+
+### Arrange
+
+`arrange()` is very useful for sorting data by a specific column. 
+
+Let's say we want to sort based on the mean temperature. 
+
+```{r}
+climate |>
+  arrange(tmean) |>
+  head()
+```
+
+Here, you can see that it is sorting the mean temperature from least to greatest. We can see that December 1989 had the lowest mean temperature of 0.96 degrees C. 
+
+If we want to sort from greatest to least, we can specify, that we want in descending order using `desc()`
+
+```{r}
+climate |>
+  arrange(desc(tmean)) |>
+  head()
+```
+
+Now, we can see that July 2012 had the highest mean temperature. 
+
+Alternatively, we can use the minus sign "-" to show that we want in descending order. 
+
+```{r}
+climate |>
+  arrange(-tmean) |>
+  head()
+```
+
+<span style="color:blue">**Activity: What month had the highest precipitation?**</span>
 
 ### Mutate
 
@@ -206,33 +264,7 @@ climate |>
   head()
 ```
 
-[**Exercise**](#using-mutate): Calculate tmean using `mutate()`
-
-### Group_by and summarize
-
-So far, we have only been summarizing on specific columns, but often we are interested in summaries based on different groups. We can do this utilizing both the `group_by()` and `summarize()` functions. `group_by()` puts the data frame in "groups" based on a column or columns. This is down "behind the scenes" and doesn't change the data output. But, when your run other functions, like `mutate()` or `summarize()` the groups are honored. 
-
-`summarize()` allows you to make new columns based on a summary functions -- like the mean, median, or count. `summarize()` uses a similar format to `mutate`, new_column = function. 
-
-For example, if I wanted to get the average (`mean()`) of mean temperature (tmean) for the different months, you could do the following:
-
-```{r}
-climate |>
-  group_by(year) |>
-  summarize(average_temp = mean(tmean)) |>
-  head()
-```
-
-You can also make multiple summaries at once by adding into the `summarize()` function. Here, we can add in the standard deviation (`sd()`) and average and standard deviation for precipitation. Let's also add in a filter for only years in the 90's.
-
-```{r}
-climate |>
-  filter(year %in% 1990:1999) |>
-  group_by(year) |>
-  summarize(average_temp = mean(tmean), sd_temp = sd(tmean), average_precip = mean(precip), sd_precip = sd(precip))
-```
-
-[**Exercise**](#summarizing-data): Which year had the highest *total* precipitation in Raleigh?
+<span style="color:blue">**Activity** : In the climate data the mean temperature (tmean) is calculated by the Prism data group as the average of the minimum and maximum temperature. Can you use `mutate()` to calculate this variable and compare to the column calculated by Prism. </span>
 
 ## Editting data frames
 
@@ -241,8 +273,6 @@ So far, you have been working with already "clean" tidy data. There are no mista
 We will not go into functions to edit the structure of the data frame but there are a few useful functions to edit the cells or columns in your data frame. 
 
 How data are organized in a data table is an important part of analyzing data. Keeping your data organized in a consistent and standard way will help you explore the data and use functions in R that expect data to be in a specific format.
-
-
 
 We will be working with "*tidy*" data. Tidy data is set up such that:
 - Every column is a variable
@@ -255,6 +285,8 @@ We will be working with "*tidy*" data. Tidy data is set up such that:
 For example:
 
 ![](images/tidy-example.png)
+
+<span style="color:blue">**Airplane activity**: Is your data tidy? Go back to your google sheets entry and make it tidy!</span>
 
 ### Rename
 
@@ -269,7 +301,7 @@ climate |>
 ```
 
 ### Recode
-A more complicated, but common, edit is to change the contents of a cell. This is helpful for editting typos or making varaiables consistent. 
+A more complicated, but common, edit is to change the contents of a cell. This is helpful for editing typos or making varaiables consistent. 
 
 For example, let's say that I recorded the precipitation and average temperature in Raleigh every month, but in some month's I recorded the city as "Raleigh" and some as "Raleigh, NC". Look what happens when you try to summarize the data. 
 
@@ -312,34 +344,51 @@ recode_raleigh |>
   summarize(Temp = mean(Temperature), Precip = mean(Precipitation))
 ```
 
-## Exercise
+You will *not* be assessed on the `recode()` function, but it may come in handy!
 
-### Install dplyr
+## Water quality activity
 
-1. Install the dplyr package either from the console or using the buttons on the packages sidebar. 
+In this course, we will exploring historic water quality data from the City of Raleigh. The data is collected from 2008 - 2023 and includes 19 different water quality variables, including water temperature, *E. coli* bacteria, and dissolved oxygen for 18 different stream sites. 
 
-### Exploring temperature data
+You can read the data into R. The file "raleigh_wq_2008_2023.csv" is in your data folder. 
+
+<span style="color:blue">**Activity**: Review the data. Is it tidy?</span>
+
+
+## Homework Exercise
+
 **Complete the rest of the exercises in an R script.** Use comments to separate questions and describe what your code is doing. When you complete the exercises, submit the R script (.R file) in Moodle. 
 
-What are you interested to know about the climate in Raleigh?  Use some of the additional functions listed in using dplyr section to explore the Raleigh temperature data. 
+For homework, you will answer questions on a dataset with data from imdb movie data. 
 
-### Using mutate
-In the climate data the mean temperature (tmean) is calculated by the Prism data group as the average of the minimum and maximum temperature. Use `mutate()` to calculate this variable and compare to the column calculated by Prism. 
+### Set up 
+1. Read into R the dataset named "movies.csv" in your data folder. Assign it the name `movies`.
+2. Run the following code so that you can analyze the data. You don't need to do anything else for this questions :)
 
-### Summarizing data
-Create R code to calculate which year had the highest *total* precipitation in Raleigh.
+```
+movies <- movies |>
+mutate(budget = as.numeric(budget), intgross = as.numeric(budget))
+```
 
-### Water quality data analysis
-In this exercise, you will explore historic water quality data from the City of Raleigh. The data is collected from 2008 - 20223 and includes 19 different water quality variables, including water temperature, *E. coli* bacteria, and dissolved oxygen for 18 different stream sites. 
+### Analyzing the data
 
-In this exercise, you will need to:
+3. There are a lot of columns in this data set, review the columns using the code `colnames(movies)`
+4. Use `select` to only show the following columns. Resave the data with only the selected columns by assigning it a new name. Select columns
+- year
+- title
+- budget
+- intgross
+- rated
+- metascore
+- imdb_rating
 
-1. Import the data into your workspace. The data is stored in the class data google drive folder as "raleigh_wq_clean.csv"
-1. Explore the data a bit using functions you learned today to see what is found in the data frame. 
-1. Pick a couple of variables or columns to explore. Describe the factors that you chose and how they impact water quality. Do a little research here. 
-1. Ask questions and create summarizes using functions `group_by`, `summarize`, etc. 
-1. As you are writing code and exploring the data, make sure you are using comments in your script (using "#") to describe what each step of your code is doing. 
-1. Write up a paragraph describing what you learned from the water quality data. You can do this also in the script. 
+5. Filter the data for movies that were released in your birth year. How many movies are there from that year? (Hint: use a comment in your code to give your answer). 
+5. Use the `arrange()` function to determine what 3 movies had the highest budget.  
+5. Use the `arrange()` function to determine the G rated movie with the highest imdb metascore. (Hint: you will have to filter first!)
+5. Determine the profit of the movies by subtracting the budget from the international gross (`intgross`), using the `mutate()` function. (hint, you will have to have a name for your new profit column). 
+7. What movie had the highest profit? 
+8. What movie had the highest profit in 1990?
+6. *Reach*: What year had the highest *average* imdb meta score (1980, 1990, or 2000). Hint: you will have to do each year separately and use the `mean` function to get the average. 
 
 ## List of new functions
 - `filter()`
@@ -348,9 +397,6 @@ In this exercise, you will need to:
 - `nrows()`
 - `arrange()`
 - `mutate()`
-- `group_by()`
-- `summarize()`
-- `sd()`
 - `rename()`
 - `recode()`
 

@@ -116,3 +116,65 @@ recode(raleigh_example$City, Raleigh = "Raleigh, NC")
 recode_raleigh |>
   group_by(City) |>
   summarize(Temp = mean(Temperature), Precip = mean(Precipitation))
+
+
+
+#notes
+
+common_names <- read.csv('lessons/data-manip/data/NC.TXT', header=FALSE)
+head(common_names)
+
+library(dplyr)
+head(common_names)
+colnames(common_names) <- c('State', 'Sex', 'Year', 'Name', 'N')
+common_names |>
+  select(Year) |>
+  min()
+
+common_names |>
+  filter(Year == '1990', Sex == 'F') |>
+  arrange(desc(N))
+
+# Most common name is Brittany, Ashley, Jessica, Amanda, Sarah
+
+common_names |>
+  filter(Year == '2000', Sex == 'F') |>
+  arrange(desc(N))
+
+# Most common are Hannah, Madison, Emily, Sarah, Taylor
+
+common_names |>
+  filter(Year == '2006', Sex == 'M') |>
+  arrange(desc(N))
+
+
+
+movies <- read.csv('lessons/data-manip/data/movies.csv')
+head(movies)
+
+colnames(movies)
+
+movies_short <- movies |> 
+  select(year, title, budget, budget_2013, domgross_2013, intgross_2013, runtime, rated, director, imdb_rating)
+
+movies |>
+  mutate(budget = as.numeric(budget), bu )
+
+movies_short |> 
+  mutate(profit = as.numeric(intgross_2013) - as.numeric(budget_2013)) |>
+  arrange(-profit) |>
+  filter(is.na(profit)==FALSE) |>
+  filter(year==2000)
+
+
+## What is the highest rated G movie
+## filter for the movies that were released in 1990
+## sum the gross of all movies in 2002
+## what had a higher average imdb score 1990 or 2000
+## how many moives in 1980
+
+filter(movies_short, year == 1980)
+
+# what movie had the highest budget
+
+movies_short |> filter(rated == 'G') |> arrange(-imdb_rating) |>tail()

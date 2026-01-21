@@ -7,16 +7,16 @@ layout: default
 
 ## Learning objectives
 
-- Install and load packages
+- Install and load R packages
+- Format data tables in "tidy" format
 - Filter data by row and column
-- Group and summarize data
+- Arrange columns in order
 - Edit data frames
 
 ## Class materials
 - [Lesson](data-manip-exercise.html)
-- [Water quality slides](https://docs.google.com/presentation/d/1OPw5FH8iPgC2TrFBb3_wnzDD-YsYGbQBsmssG2lDlMs/edit?usp=sharing)
-- [Data folder](https://drive.google.com/drive/folders/1ql4Ic3IKKQscsEqh-yXw7lSQ-QAQqwBP?usp=sharing)
+- [Water Quality Data Link](https://drive.google.com/file/d/1X9cgVfnWRxU33-9gIUMPXuIIQAa2XRV1/view?usp=sharing)
 
 ## Homework
-- Data manipulation exercise 
-- Graphing lies reading
+
+1. Complete *Coding: Data Manipulation* exercise and submit in Moodle
