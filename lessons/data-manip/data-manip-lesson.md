@@ -1,8 +1,8 @@
 ---
+layout: single
+classes: wide
+author_profile: true
 title: 'Data manipulation'
-output:
-  html_document
-layout: default
 ---
 
 ## Learning objectives

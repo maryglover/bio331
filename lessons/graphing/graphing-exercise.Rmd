@@ -37,9 +37,9 @@ You only have to install the `ggplot2` package once, but don't forget to load it
 library(ggplot2)
 ```
 
-In this lesson, we will continue working with the climate data from the [data manipulation exercise](../data-manip/data-manip-exercise.html)
+In this lesson, we will continue working with the water quality data from the City of Raleigh. Making graphs is a great way to explore the data. This data set has already by cleaned up for you and put into the tidy data format.
 
-Go ahead and load in the data
+Go ahead and load in the data.
 
 ```{r}
 climate <- read.csv('data/raleigh_prism_climate.csv')
@@ -66,6 +66,7 @@ You will notice that this plots an empty graph. This code sets up the foundation
 ggplot(data = climate, aes(x = precip)) +
   geom_histogram()
 ```
+
 ***What do you notice about the precipitation data?***
 
 To create different types of plots, you would use a different layer. Some examples are:
@@ -261,10 +262,27 @@ temp_boxplot <- ggplot(data = climate, aes(x = month, y = tmean)) +
 ggsave(filename = "raleigh_mean_temp.png", temp_boxplot)
 ```
 
+## Water quality data graphs
+- Homework is the climate graphs
+
 ## Exercises
 
 ### Basic plotting
+
+```{r precip-hist}
+ggplot(data = climate, aes(x = precip)) +
+  geom_histogram()
+```
+
+```{r}
+ggplot(data = climate, aes(x = month, y = tmean)) +
+  geom_point()+
+  geom_line(aes(group = year))
+```
+
 Create a plot for the maximum temperature for each year only for the month of July. Do you see a pattern? 
+
+
 
 *Hint* You will have to filter the data first and decide what type of graph to use and what is on the x and y axes.
 

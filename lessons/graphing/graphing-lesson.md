@@ -1,8 +1,8 @@
 ---
-title: 'Visualizing data with ggplot'
-output:
-  html_document
-layout: default
+layout: single
+classes: wide
+author_profile: true
+title: 'Visualizing Data with ggplot'
 ---
 
 ## Learning objectives
@@ -18,9 +18,10 @@ layout: default
 
 - [Lesson](graphing-exercise)
 - [Graphing slides](https://docs.google.com/presentation/d/1zwOLxR2dEUojzStu23wr9k3j3x3-Je6rwCd9H75FAKU/edit?usp=sharing)
-- Data: We will be using the same data files from the data manipulation [lesson](../data-manip/data-manip-exercise). You should already have these downloaded and in your workspace. 
 
 ## Homework
+
 Submit the following in Moodle:
 
-1. Complete exercises for graphing
+1. Complete *Coding: Graphing* exercise and submit in Moodle
+1. Complete the *Writing: Graphing Lies* assignment. Complete the assignment in your shared google doc and submit the link in Moodle

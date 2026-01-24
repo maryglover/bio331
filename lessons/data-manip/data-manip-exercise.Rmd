@@ -193,7 +193,29 @@ climate |>
 
 <span style="color:blue">**Activity: Filter the data for the year AND month that you were born. Select only the mean temperature column to display**</span>
 
-### Additional functions
+## Tidy Data
+
+So far, you have been working with already "clean" tidy data. There are no mistakes in the data, including typos and the data is already in a tidy format. This is not always the case, either due to mistakes in entering your own data or the format of open source data. There are many functions in `dplyr` to edit data frames, including some that will change to format of rows and columns to make them in tidy format. 
+
+We will not go into functions to edit the structure of the data frame but there are a few useful functions to edit the cells or columns in your data frame. 
+
+How data are organized in a data table is an important part of analyzing data. Keeping your data organized in a consistent and standard way will help you explore the data and use functions in R that expect data to be in a specific format.
+
+We will be working with "*tidy*" data. Tidy data is set up such that:
+- Every column is a variable
+- Every row is an observation 
+- Every cell is a value. 
+
+![](images/tidy-data.png)
+
+
+For example:
+
+![](images/tidy-example.png)
+
+<span style="color:blue">**Airplane activity**: Is your data tidy? Go back to your google sheets entry and make it tidy!</span>
+
+## Additional functions
 
 Here are some other functions that can be useful when exploring the data in different columns. For each of these functions, you must specify the *column* you want to work with.
 
@@ -266,94 +288,53 @@ climate |>
 
 <span style="color:blue">**Activity** : In the climate data the mean temperature (tmean) is calculated by the Prism data group as the average of the minimum and maximum temperature. Can you use `mutate()` to calculate this variable and compare to the column calculated by Prism. </span>
 
-## Editting data frames
-
-So far, you have been working with already "clean" tidy data. There are no mistakes in the data, including typos and the data is already in a tidy format. This is not always the case, either due to mistakes in entering your own data or the format of open source data. There are many functions in `dplyr` to edit data frames, including some that will change to format of rows and columns to make them in tidy format. 
-
-We will not go into functions to edit the structure of the data frame but there are a few useful functions to edit the cells or columns in your data frame. 
-
-How data are organized in a data table is an important part of analyzing data. Keeping your data organized in a consistent and standard way will help you explore the data and use functions in R that expect data to be in a specific format.
-
-We will be working with "*tidy*" data. Tidy data is set up such that:
-- Every column is a variable
-- Every row is an observation 
-- Every cell is a value. 
-
-![](images/tidy-data.png)
-
-
-For example:
-
-![](images/tidy-example.png)
-
-<span style="color:blue">**Airplane activity**: Is your data tidy? Go back to your google sheets entry and make it tidy!</span>
-
-### Rename
-
-You can use the `rename()` function to change the names of the columns. We did this already in `select()` but you can also use rename if you don't want to affect the output of columns. 
-
-For example, in the climate data I could change the mean temperature column name with the same format to `select()`, new_name = old_name.
-
-```{r}
-climate |>
-  rename(avg_temperature = tmean) |>
-  head()
-```
-
-### Recode
-A more complicated, but common, edit is to change the contents of a cell. This is helpful for editing typos or making varaiables consistent. 
-
-For example, let's say that I recorded the precipitation and average temperature in Raleigh every month, but in some month's I recorded the city as "Raleigh" and some as "Raleigh, NC". Look what happens when you try to summarize the data. 
-
-```{r, include = F}
-raleigh_example <- climate |> 
-  filter(year == 2023) |>
-  select(Temperature = tmean, Precipitation = precip)
-
-City <- data.frame(City=c(rep("Raleigh, NC", 6), rep("Raleigh", 6)))
-
-raleigh_example<- bind_cols(City, raleigh_example)
-```
-
-```{r}
-raleigh_example
-
-raleigh_example |>
-  group_by(City) |>
-  summarize(Temp = mean(Temperature), Precip = mean(Precipitation))
-```
-
-I can combine the function `mutate()` which modifies a column and `recode()` which replaces text to make the city in the same format. `recode` expects arguments for a specific column and old_text = "new_text".
-
-```{r}
-recode(raleigh_example$City, Raleigh = "Raleigh, NC")
-```
-
-We can use mutate to modify and resave the column City with the "recoded" data. We will save this change to the data frame.
-
-```{r}
-recode_raleigh <- raleigh_example |>
-  mutate(City = recode(City, Raleigh = "Raleigh, NC"))
-```
-
-Now see how this changes the summary. 
-
-```{r}
-recode_raleigh |>
-  group_by(City) |>
-  summarize(Temp = mean(Temperature), Precip = mean(Precipitation))
-```
-
-You will *not* be assessed on the `recode()` function, but it may come in handy!
-
 ## Water quality activity
 
 In this course, we will exploring historic water quality data from the City of Raleigh. The data is collected from 2008 - 2023 and includes 19 different water quality variables, including water temperature, *E. coli* bacteria, and dissolved oxygen for 18 different stream sites. 
 
 You can read the data into R. The file "raleigh_wq_2008_2023.csv" is in your data folder. 
 
+```{r}
+wq <- read.csv('data/raleigh_wq_2008_2023.csv')
+```
+
 <span style="color:blue">**Activity**: Review the data. Is it tidy?</span>
 
+### Quality control of data
+
+When working data, it is important to check the data to make sure there are no errors or issues in the data. For example, are there typos? numbers that don't make sense? 
+
+Let's take a look at the water quality data to check to see if there are any issues. 
+
+First, take a look at the first few rows, using the function `head()`
+
+```{r}
+head(wq)
+```
+
+What do you notice already?
+
+Now, let's look at a tidy version so that we can use some of the `dplyr` functions we just learned. Here, I am giving you a copy of the water quality data that I have put into a "tidy" format. 
+
+To read in the data, run the following code.
+
+```{r}
+wq_tidy <- read.csv('https://maryglover.github.io/bio331/water_quality_manip/raleigh_wq_tidy.csv')
+```
+
+1. First take a look at what columns are in the dataset using the `colnames()` function
+1. Take a look at the first few rows to see what the data look like using `head()`
+1. Use the `distinct()` function to see what locations or "Sites" were evaluated in Raleigh. 
+
+<span style="color:blue">**What do you notice about the data?**</span>
+
+Now you can take a look at the data that has been cleaned up!
+
+Use the following code to download the csv. 
+
+```{r}
+wq_tidy <- read.csv('https://maryglover.github.io/bio331/water_quality_manip/raleigh_wq_clean.csv')
+```
 
 ## Homework Exercise
 
@@ -397,8 +378,6 @@ mutate(budget = as.numeric(budget), intgross = as.numeric(budget))
 - `nrows()`
 - `arrange()`
 - `mutate()`
-- `rename()`
-- `recode()`
 
 *You can always use the "?" before a function to pull up the help page of a function, which also has examples.* For example `?mutate`
 
