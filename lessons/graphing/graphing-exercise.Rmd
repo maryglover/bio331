@@ -318,31 +318,48 @@ ggsave(filename = "do_temp.png", temp_boxplot)
 Play around some more with the water quality data and make a few more graphs to explore the data. 
 
 ## Exercises
-we will continue working with the Raleigh climate data from the `dplyr` [lesson]()
 
-### Basic plotting
+For homework, continue working with the Raleigh climate data from the `dplyr` [lesson](https://maryglover.github.io/bio331/lessons/data-manip/data-manip-exercise.html). 
 
+1. Read in the climate data set. It is in your data folder as "raleigh_prism_climate.csv"
+```{r, echo = F, warning=F}
+climate <- read.csv('data/raleigh_prism_climate.csv')
 ```
+1. Make a histogram of the precipitation data. 
+```{r, echo = F, message=FALSE, fig.show='hide'}
 ggplot(data = climate, aes(x = precip)) +
   geom_histogram()
 ```
-
+1. What do you notice about the precipitation data? Write your answer as a comment in your R script. 
+1. Filter the data set to only include data from your birth year. Assign the data a new name
+```{r, echo = F, warning=F}
+climate1990 <- climate |>
+  filter(year == 1990)
 ```
-ggplot(data = climate, aes(x = month, y = tmean)) +
+1. Make a scatter plot using the data you just made with your birth year. Again, plot the mean temperature data by the month data. 
+```{r, echo = F, warning=F, fig.show='hide'}
+ggplot(data = climate1990, aes(x = month, y = tmean)) +
+  geom_point()
+```
+1. Connect the dots from the last plot to make a line graph. To do this, you will add a line plot layer to the previously made graph. The line plot layer is `geom_line()`
+```{r, echo = F, warning=F,fig.show='hide'}
+ggplot(data = climate1990, aes(x = month, y = tmean)) +
   geom_point()+
-  geom_line(aes(group = year))
+  geom_line()
 ```
-
-make a line plot for just 2020
-
-Create a plot for the maximum temperature for each year only for the month of July. Do you see a pattern? 
-
-
-
-*Hint* You will have to filter the data first and decide what type of graph to use and what is on the x and y axes.
-
-### Plotting with facets
-Using `facet_wrap` plot the maximum temperature by year, plotting each month. So you will have a plot for each month after the facet wrap.
+1. Create a line graph plot for the maximum temperature (`tmax`) for each year *only* for the month of July. Hint, you will need to filter the data for the month of July first, then make the line graph. 
+2. Do you notice a pattern? Comment your answer in the script. 
+3. Using the same graph of July temperature, change the color of the line. 
+3. Using the same graph, change the *theme* of the graph. 
+4. Using the same graph, add a title to the graph. 
+```{r, echo = F, warning=F,fig.show='hide'}
+climateJuly<- climate |>
+  filter(month == 7)
+ggplot(data = climateJuly, aes(x = year, y = tmax))+
+  geom_line(color = 'slateblue')+
+  labs(title = 'July maximum temperature over time')+
+  theme_bw()
+```
 
 ## New functions
 
