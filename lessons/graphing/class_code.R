@@ -62,3 +62,23 @@ climate_decade <-ggplot(data = climate_decade, aes(x = month, y = tmean, color =
   facet_wrap(~year)
 
 ggsave(climate_decade, file = 'climate_plot.jpeg')
+
+
+### trying new exercise with water quality data
+water 
+water <- read.csv('data/raleigh_wq_clean-units.csv')
+head(water)
+colnames(water)
+
+water |>
+  distinct(Site)
+
+library(ggplot2)
+
+ggplot(data = water) +
+  geom_point(aes(x=Site, y = TSS_mg_L))
+
+# Get rid of dups in dplyr lesson
+
+
+#Homework: Climate data

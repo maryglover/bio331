@@ -1,0 +1,40 @@
+---
+title: "Data manipulation"
+output:
+  html_document:
+    toc: true 
+    toc_float: true
+    toc_collapsed: true
+    toc_depth: 3  
+layout: default
+---
+
+```{r klippy, echo=FALSE, include=TRUE}
+klippy::klippy()
+```
+
+### Group_by and summarize
+
+So far, we have only been summarizing on specific columns, but often we are interested in summaries based on different groups. We can do this utilizing both the `group_by()` and `summarize()` functions. `group_by()` puts the data frame in "groups" based on a column or columns. This is down "behind the scenes" and doesn't change the data output. But, when your run other functions, like `mutate()` or `summarize()` the groups are honored. 
+
+`summarize()` allows you to make new columns based on a summary functions -- like the mean, median, or count. `summarize()` uses a similar format to `mutate`, new_column = function. 
+
+For example, if I wanted to get the average (`mean()`) of mean temperature (tmean) for the different months, you could do the following:
+
+```{r}
+climate |>
+  group_by(year) |>
+  summarize(average_temp = mean(tmean)) |>
+  head()
+```
+
+You can also make multiple summaries at once by adding into the `summarize()` function. Here, we can add in the standard deviation (`sd()`) and average and standard deviation for precipitation. Let's also add in a filter for only years in the 90's.
+
+```{r}
+climate |>
+  filter(year %in% 1990:1999) |>
+  group_by(year) |>
+  summarize(average_temp = mean(tmean), sd_temp = sd(tmean), average_precip = mean(precip), sd_precip = sd(precip))
+```
+
+[**Exercise**](#summarizing-data): Which year had the highest *total* precipitation in Raleigh?
