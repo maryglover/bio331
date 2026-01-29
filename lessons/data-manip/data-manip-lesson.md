@@ -19,4 +19,5 @@ title: 'Data manipulation'
 
 ## Homework
 
-1. Complete *Coding: Data Manipulation* exercise and submit in Moodle
+1. Complete *Coding: Data Manipulation* exercise and submit in Moodle.
+1. Complete the *Writing: Graphing Lies* assignment. Complete the assignment in your shared google doc and submit the link in Moodle

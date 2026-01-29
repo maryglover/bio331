@@ -2299,7 +2299,8 @@ Assign it the name <code>movies</code>.</li>
 <li>Run the following code so that you can analyze the data. You don’t
 need to do anything else for this questions :)</li>
 </ol>
-<pre class="r"><code>movies &lt;- movies |&gt;
+<pre class="r"><code>library(dplyr)
+movies &lt;- movies |&gt;
 mutate(budget = as.numeric(budget), intgross = as.numeric(budget))</code></pre>
 </div>
 <div id="analyzing-the-data" class="section level3">
@@ -2309,6 +2310,7 @@ mutate(budget = as.numeric(budget), intgross = as.numeric(budget))</code></pre>
 using the code <code>colnames(movies)</code></li>
 <li>Use <code>select</code> to only show the following columns. Resave
 the data with only the selected columns by assigning it a new name.
+<em>You can use this new data frame for the rest of the assignment</em>.
 Select columns</li>
 </ol>
 <ul>

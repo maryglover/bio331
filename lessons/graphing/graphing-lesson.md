@@ -17,11 +17,10 @@ title: 'Visualizing Data with ggplot'
 ## Class materials
 
 - [Lesson](graphing-exercise.html)
-- [Graphing slides](graphing-slides.html
+- [Graphing slides](graphing-slides.html)
 
 ## Homework
 
 Submit the following in Moodle:
 
 1. Complete *Coding: Graphing* exercise and submit in Moodle
-1. Complete the *Writing: Graphing Lies* assignment. Complete the assignment in your shared google doc and submit the link in Moodle

@@ -347,6 +347,7 @@ For homework, you will answer questions on a dataset with data from imdb movie d
 2. Run the following code so that you can analyze the data. You don't need to do anything else for this questions :)
 
 ```{r, eval = F}
+library(dplyr)
 movies <- movies |>
 mutate(budget = as.numeric(budget), intgross = as.numeric(budget))
 ```
@@ -354,7 +355,7 @@ mutate(budget = as.numeric(budget), intgross = as.numeric(budget))
 ### Analyzing the data
 
 3. There are a lot of columns in this data set, review the columns using the code `colnames(movies)`
-4. Use `select` to only show the following columns. Resave the data with only the selected columns by assigning it a new name. Select columns
+4. Use `select` to only show the following columns. Resave the data with only the selected columns by assigning it a new name. *You can use this new data frame for the rest of the assignment*. Select columns
 - year
 - title
 - budget
