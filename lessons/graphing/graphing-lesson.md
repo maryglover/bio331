@@ -18,6 +18,7 @@ title: 'Visualizing Data with ggplot'
 
 - [Lesson](graphing-exercise.html)
 - [Graphing slides](graphing-slides.html)
+- [Water parameter slides](https://docs.google.com/presentation/d/1U6P49H209uhxIDdU6fRrbBNzUE4y7J7CuPYTQkGAiRQ/edit?usp=sharing)
 
 ## Homework
 

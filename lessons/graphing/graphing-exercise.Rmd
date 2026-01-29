@@ -347,17 +347,14 @@ ggplot(data = climate1990, aes(x = month, y = tmean)) +
   geom_point()+
   geom_line()
 ```
-1. Create a line graph plot for the maximum temperature (`tmax`) for each year *only* for the month of July. Hint, you will need to filter the data for the month of July first, then make the line graph. 
 2. Do you notice a pattern? Comment your answer in the script. 
-3. Using the same graph of July temperature, change the color of the line. 
+3. Using the same graph of  your birth year and mean temperature, change the color of the line. 
 3. Using the same graph, change the *theme* of the graph. 
 4. Using the same graph, add a title to the graph. 
 ```{r, echo = F, warning=F,fig.show='hide'}
-climateJuly<- climate |>
-  filter(month == 7)
-ggplot(data = climateJuly, aes(x = year, y = tmax))+
+ggplot(data = climate1990, aes(x = month, y = tmean)) +
   geom_line(color = 'slateblue')+
-  labs(title = 'July maximum temperature over time')+
+  labs(title = 'Mean temperature in 1990')+
   theme_bw()
 ```
 
