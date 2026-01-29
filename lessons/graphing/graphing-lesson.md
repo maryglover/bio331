@@ -17,7 +17,7 @@ title: 'Visualizing Data with ggplot'
 ## Class materials
 
 - [Lesson](graphing-exercise.html)
-- [Graphing slides](https://docs.google.com/presentation/d/1zwOLxR2dEUojzStu23wr9k3j3x3-Je6rwCd9H75FAKU/edit?usp=sharing)
+- [Graphing slides](graphing-slides.html
 
 ## Homework
 

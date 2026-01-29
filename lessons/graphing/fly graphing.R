@@ -100,6 +100,7 @@ ggplot(fly, aes(x = ow, y = emerge_mean, color = species)) +
 
 
 # line graph
+library(dplyr)
 fly |>
   group_by(Coll.year) |>
   summarize(n = sum(N))|>

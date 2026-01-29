@@ -1,0 +1,333 @@
+---
+title: "Data visualization"
+author: "Dr. Glover"
+format:
+  revealjs: 
+    theme: simple
+editor: visual
+---
+
+------------------------------------------------------------------------
+
+## Learning objectives
+
+- Choose appropriate graphing types to visual data
+- Use ggplot and ggplot ‘layers’ to produce charts, including histograms, scatter plots, line graphs, and box plots.
+- Change the aesthetics of charts, including size, color, shape theme.
+- Add labels to graph.
+- Create facets to display different factors on different graphs
+- Save plots
+
+-----
+
+## Types of graphs
+
+What are some examples of types of graphs that you know?
+
+---
+
+## Types of graphs
+
+- Histograms
+- Scatterplots
+- Box plots
+- Line graphs
+- Bar graphs
+- Pie charts
+
+----
+
+### Histograms
+
+Histograms show the distribution of data. 
+
+![](images/airbnb.png)
+
+------
+
+```{r, echo = F, message = F}
+library(RColorBrewer)
+Tcol<-brewer.pal(9,'Set1')
+my_colors <- c(Tcol[3], Tcol[4], Tcol[2], Tcol[1])
+
+fly <- read.csv('recent_collections_2012-2019.csv')
+library(ggplot2)
+ggplot(fly, aes(x = emerge_mean)) +
+  geom_histogram(fill = 'darkgray', color = 'black') +
+  xlab('Fly emergence')+
+  labs(title = 'Fly emergence timing') +
+  theme_classic() +theme(text = element_text(size=20))
+```
+
+-----
+
+### Scatterplots or dot plots are used with two numeric variables
+
+Scatterplots are good for viewing relationships or correlations between variables. 
+
+```{r, echo = F}
+ggplot(fly, aes(x = ow, y = emerge_mean)) +
+  geom_point(size = 3) +
+  labs(title = 'Overwintering time decreases emergence timing') +
+  xlab('Length of overwintering') +
+  ylab('Fly emergence')+
+  theme_classic() +
+  theme(text = element_text(size=20))
+```
+
+-----
+
+### Add trend line
+
+```{r, echo = F}
+ggplot(fly, aes(x = ow, y = emerge_mean)) +
+  geom_point(size = 3) +
+  labs(title = 'Overwintering time decreases emergence timing') +
+  xlab('Length of overwintering') +
+  ylab('Fly emergence')+
+  theme_classic() +
+  theme(text = element_text(size=20)) +
+  geom_smooth(method='lm')
+```
+
+-----
+
+```{r, echo = F}
+ggplot(fly, aes(x = ow, y = emerge_mean, color = species)) +
+  geom_point(size = 3) +
+  labs(title = 'Overwintering time decreases emergence timing') +
+  xlab('Length of overwintering') +
+  ylab('Fly emergence')+
+  theme_classic() +
+  theme(text = element_text(size=20))+
+    scale_color_discrete(palette= my_colors)
+```
+
+-----
+
+### Add trend line
+
+```{r, echo = F}
+ggplot(fly, aes(x = ow, y = emerge_mean, color = species)) +
+  geom_point(size = 3) +
+  labs(title = 'Overwintering time decreases emergence timing') +
+  xlab('Length of overwintering') +
+  ylab('Fly emergence')+
+  theme_classic() +
+  theme(text = element_text(size=20)) +
+  geom_smooth(method='lm') +
+  scale_color_discrete(palette= my_colors)
+```
+
+----
+
+### Boxplots show a summary of the data
+
+![](images/boxplot.png)
+
+----
+
+```{r}
+ggplot(fly, aes(x = species, y = emerge_mean)) +
+  geom_boxplot() + 
+  theme_classic() +
+  labs(x = 'Species', y= 'Days to emergence', title = 'Fly emergence') +theme(text = element_text(size=20))
+```
+
+----
+
+```{r}
+ggplot(fly, aes(x = species, y = emerge_mean, fill = species)) +
+  geom_boxplot() + 
+  theme_classic() +
+  labs(x = 'Species', y= 'Days to emergence', title = 'Fly emergence') +theme(text = element_text(size=20))+
+  scale_fill_discrete(palette= my_colors)
+```
+
+----
+
+```{r, echo = F}
+fly$species <- with(fly, reorder(species , emerge_mean, median , na.rm=T))
+ggplot(fly, aes(x = reorder(species, emerge_mean), y = emerge_mean, fill = species)) +
+  geom_boxplot() + 
+  theme_classic() +
+  labs(x = 'Species', y= 'Days to emergence', title = 'Fly emergence') +theme(text = element_text(size=20))+
+  scale_fill_discrete(palette= my_colors)
+
+```
+
+---
+
+```{r}
+ggplot(fly, aes(x = species, y = emerge_mean, fill = species)) +
+    geom_boxplot() + 
+  geom_point(alpha = 0.5) +
+  theme_classic() +
+  labs(x = 'Species', y= 'Days to emergence', title = 'Fly emergence') +theme(text = element_text(size=20))+
+  scale_fill_discrete(palette= my_colors)
+```
+
+----
+
+### Line graphs connect data points with lines. 
+
+- Most commonly used with time or dates.
+- **Do not connect points that should not be connected!** Lines give the appearance of a continuum, which is not always the case.
+
+---
+
+```{r, echo = F}
+library(dplyr)
+fly |>
+  group_by(Coll.year) |>
+  summarize(n = sum(N))|>
+  arrange(Coll.year) |>
+  mutate(n = ifelse(is.na(n), 0, n)) |>
+  mutate(cumm_sum = cumsum(n))|>
+  ggplot(aes(x = Coll.year, y = cumm_sum)) +
+  geom_point(size = 2) +
+  geom_line(linewidth  = 2) +
+  theme_classic() +
+  labs(x = 'Year', y= 'Number flies collected', title = 'Fly collections')+theme(text = element_text(size=20))
+```
+
+----
+  
+```{r, echo = F}
+fly |>
+  group_by(Coll.year, species) |>
+  summarize(n = sum(N))|>
+  group_by(species) |>
+  mutate(cumm_sum = cumsum(n))|>
+  ggplot(aes(x = Coll.year, y = cumm_sum, color = species)) +
+  geom_point(size = 4) +
+  geom_line() +
+  theme_classic() +
+  labs(x = 'Year', y= 'Number flies collected', title = 'Fly collections')+theme(text = element_text(size=20))+
+  scale_color_discrete(palette= my_colors)
+```
+
+----
+
+### Bar graph show data for a numeric and categorical variable.
+
+- Each bar represents one value. 
+- This is a lot of graph and space for little information
+
+```{r, echo = F}
+plant.example <- data.frame(color = c('red', 'blue'), growth = c(8, 10), error = c(1.5, .75))
+
+ggplot(plant.example, aes(color, growth)) +
+  geom_bar(stat = 'identity') +
+  scale_y_continuous(limits=c(0,12)) +
+  theme_classic() +theme(text = element_text(size=20)) 
+```
+
+---
+
+```{r, echo = F}
+fly |>
+  group_by(species) |>
+  summarize(emerge = mean(emerge_mean, na.rm=T), sd = mean(emerge_sd, na.rm= T)) |>
+  ggplot(aes(x = species, y = emerge)) +
+  geom_bar(stat='identity', fill= 'gray')+ 
+  theme_classic() +
+  labs(x = 'Species', y= 'Days to emergence', title = 'Fly emergence')+theme(text = element_text(size=20))
+```
+
+----
+
+```{r}
+fly |>
+  group_by(species) |>
+  summarize(emerge = mean(emerge_mean, na.rm=T), sd = mean(emerge_sd, na.rm= T)) |>
+  ggplot(aes(x = species, y = emerge)) +
+  geom_bar(stat='identity', fill= 'gray')+
+  geom_errorbar(aes(ymin = emerge - sd, ymax = emerge + sd))+ 
+  theme_classic() +
+  labs(x = 'Species', y= 'Days to emergence', title = 'Fly emergence')+theme(text = element_text(size=20))
+```
+
+----
+
+```{r, echo = F}
+fly |>
+  group_by(species) |>
+  summarize(emerge = mean(emerge_mean, na.rm=T), sd = mean(emerge_sd, na.rm= T)) |>
+  ggplot(aes(x = species, y = emerge)) +
+  geom_point(size =3)+
+  geom_errorbar(aes(ymin = emerge - sd, ymax = emerge + sd))+ 
+  theme_classic() +
+  labs(x = 'Species', y= 'Days to emergence', title = 'Fly emergence')+theme(text = element_text(size=20))
+```
+
+---
+
+
+```{r, echo = F}
+coll_summary <- fly |>
+  group_by(Coll.year, species) |>
+  summarize(n = sum(N)) 
+
+ggplot(coll_summary, aes(x = as.factor(Coll.year), y = n, color = species, fill = species)) +
+  geom_bar(stat = 'identity')+
+  theme_classic() +
+  labs(x = 'Year', y= 'Number flies collected', title = 'Fly collections')+theme(text = element_text(size=20))+
+  scale_fill_discrete(palette= my_colors)+
+  scale_color_discrete(palette= my_colors)
+```
+
+---
+
+####
+
+```{r, echo = F}
+coll_summary |>
+   filter(Coll.year %in% c(2012, 2013, 2015, 2018, 2019)) |>
+  group_by(Coll.year) |>
+  mutate(prop = n / sum(n)) |>
+   ggplot(aes(x = as.factor(Coll.year), y = prop, fill = species)) +
+  geom_bar(stat = 'identity') +
+  theme_classic() +
+  labs(x = 'Year', y= 'Proportion flies collected', title = 'Fly collections')+theme(text = element_text(size=20))+
+  scale_color_discrete(palette= my_colors)+
+  scale_fill_discrete(palette= my_colors)
+```
+  
+---
+
+### Pie charts show proportions
+
+- Pie charts in general are discouraged. 
+- It can be hard to infer relationships.
+
+
+```{r, echo = F}
+fly |>
+  group_by(species) |>
+  summarize(n = sum(N, na.rm = T)) |>
+ggplot(aes(x="", y=n, fill=species)) +
+  geom_bar(stat="identity", width=1) +
+  coord_polar("y", start=0) + theme_void() +
+  scale_fill_discrete(palette= my_colors)
+```
+
+---
+
+#### 
+
+![](images/pie1.png)
+
+---
+
+####
+
+![](images/pie2.png)
+
+----
+
+### Resources
+
+- [https://scc.ms.unimelb.edu.au/resources/data-visualisation-and-exploration/data-visualisatio](https://scc.ms.unimelb.edu.au/resources/data-visualisation-and-exploration/data-visualisation)
+- [https://r-graph-gallery.com/index.html](https://r-graph-gallery.com/index.html)
+- [https://www.biostat.wisc.edu/~kbroman/presentations/IowaState2013/graphs_combined.pdf](https://www.biostat.wisc.edu/~kbroman/presentations/IowaState2013/graphs_combined.pdf)

@@ -51,7 +51,7 @@ display.brewer.pal(n = 3, name = 'Set2')
 
 **Every time you open R, you do have to load the packages you want to use using the `library()` function.**
 
-```{r, echo=FALSE, warning = FALSE}
+```{r, echo=FALSE, warning = FALSE, message = F}
 library(dplyr)
 ```
 
@@ -346,7 +346,7 @@ For homework, you will answer questions on a dataset with data from imdb movie d
 1. Read into R the dataset named "movies.csv" in your data folder. Assign it the name `movies`.
 2. Run the following code so that you can analyze the data. You don't need to do anything else for this questions :)
 
-```
+```{r, eval = F}
 movies <- movies |>
 mutate(budget = as.numeric(budget), intgross = as.numeric(budget))
 ```
