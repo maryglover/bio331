@@ -333,8 +333,11 @@ Now you can take a look at the data that has been cleaned up!
 Use the following code to download the csv. 
 
 ```{r}
-wq_tidy <- read.csv('https://maryglover.github.io/bio331/water_quality_manip/raleigh_wq_clean.csv')
+wq_clean <- read.csv('https://maryglover.github.io/bio331/water_quality_manip/raleigh_wq_clean.csv')
 ```
+
+1. Take a look at the first few rows to see what the data look like using `head()`
+1. Use the function `nrow()` on the data to see how many observations are in the dataset
 
 ## Homework Exercise
 
@@ -376,7 +379,7 @@ mutate(budget = as.numeric(budget), intgross = as.numeric(intgross))
 - `filter()`
 - `select()`
 - `distinct()`
-- `nrows()`
+- `nrow()`
 - `arrange()`
 - `mutate()`
 
