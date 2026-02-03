@@ -109,7 +109,7 @@ You could also graph this data with a boxplot, which might make more sense here.
 
 ```{r}
 ggplot(data = movies_select, aes(x = rated, y = budget)) +
-  geom_boxplot(aes(group=rated))
+  geom_boxplot()
 ```
 
 
@@ -124,100 +124,10 @@ Now, let's look at the boxplot.
 
 ```{r}
 ggplot(data = movies_select, aes(x = rated, y = budget)) +
-  geom_boxplot(aes(group = rated))
+  geom_boxplot()
 ```
 
 <span style="color:blue">**Activity**: Make another boxplot, but this time look at the metascore for each movie rating. </span>
-
-### Facets
-
-The last type of plot we will discuss are facets. Facets allow you to compare variables by plotting different plots side by side. The `facet_wrap` layer subsets the data based on a variable. 
-
-Let's say we want to see how the budget impacts the metascore. Maybe we want to know if movies that cost more money get better ratings. 
-
-Try to set up this scatter plot on your own. It should look like this:
-
-```{r, echo = FALSE}
-ggplot(movies_select, aes(x = budget, y = metascore)) +
-  geom_point()
-```
-
-Now, let's say we want to look at each of the different ratings separately. We can use a "facet" to do this. We will "add" on the `facet_wrap` layer
-
-```{r}
-ggplot(movies_select, aes(x = budget, y = metascore)) +
-  geom_point()+
-  facet_wrap(~rated)
-```
-
-**What do you notice about the data?**
-
-## Water quality data
-
-Let's now go back to our City of Raleigh water quality data and use plots to explore the data. 
-
-First, we need to read in the data into R again. 
-
-```{r}
-wq_clean <- read.csv('https://maryglover.github.io/bio331/water_quality_manip/raleigh_wq_clean.csv')
-```
-
-**Activity: **First, pick one of the different parameters and make a histogram. Record the code in your script and make a note about what you see. 
-
-Now, let's use the data to explore the relationship of temperature and dissolved oxygen (in percent saturation). What do you predict?
-
-```{r}
-ggplot(wq_clean, aes(x = Temperature_C, do_percent_sat)) +
-  geom_point()
-```  
-
-Now, let's see what we notice about the different sites. We can start with exploring the amount of phosphorus at each site using a boxplot.
-
-```{r}
-ggplot(data = wq_clean, aes(x = Site, y = Phosphorus_total_mg_L )) +
-  geom_boxplot()
-```
-
-You can see that there are duplicate sites! This is part of the City of Raleigh's quality control. In some cases, they will collect duplicates as a way to make sure they are getting accurate results. 
-
-Run the following code to remove the duplicates. You don't need to understand what this code is doing for assessments, but it will filter out any site with the "DUP" or "Dup" in them. 
-
-```{r}
-wq_clean<- wq_clean |>
-  filter(!grepl("DUP",Site)) |> # gets rid of duplicate sites
-  filter(!grepl("Dup",Site))
-```
-
-Now, rerun the boxplot code. 
-
-```{r}
-ggplot(data = wq_clean, aes(x = Site, y = Phosphorus_total_mg_L )) +
-  geom_boxplot()
-```
-
-Now, look at the amount of E. coli in MPN units. What do you notice?
-
-```{r}
-ggplot(data = wq_clean, aes(x = Site, y = E_coli_MPN_100mL )) +
-  geom_boxplot()
-```
-
-Here, you can see that there is an outlier! Use `dplyr` functions to sort the *E. coli* data to look more closely. 
-
-This is an example of a time where good scientific judgement is needed to figure out what to do with this data point. It is *not* appropriate to remove a data point just because it is very different from another. However, there are times when an outlier is due to an error in data collection or recording. It is important to understand the parameter to determine what is going on. This is more complicated when we did not collect the data. In this instance, I was able to talk to the data collector and they indicated that this value for *E. coli * is not a reasonable value and is likely due to a lab issue. In this case, we can remove this data point. 
-
-Run the following code to do that. 
-
-```{r}
-wq_clean <- wq_clean |>
- mutate(E_coli_MPN_100mL = gsub('155310', NA, E_coli_MPN_100mL))
-```
-
-Because we have made some changes in the water quality data, it is a good idea to save the data set. We can do this with the `write.csv()` function. We *should not* rewrite the orignial data file, but should rename it. Here, we provide the arguments for the data frame we want to save, and the name of the file. 
-
-```{r, eval=FALSE}
-write.csv(wq_clean, 'data/wq_clean2.csv', row_names = FALSE)
-```
 
 ## Customizing plots
 
@@ -225,21 +135,21 @@ So far, the plots have just been using the default display settings. In ggplot, 
 
 ### Labels
 
-First, we will use additional layers to add labels, including axis labels and titles. To change the axis labels, we can use the `labs()` layer. In `labs` you can specifiy changing the x-axis (x), y axis (y), and the title.
+First, we will use additional layers to add labels, including axis labels and titles. To change the axis labels, we can use the `labs()` layer. In `labs` you can specify changing the x-axis (x), y axis (y), and the title.
 
-For example, let's go back to our temperature and dissolved oxygen plot. We will "add" the `labs()` layer to change the x and y axis labels
+We will "add" the `labs()` layer to change the x and y axis labels
 
 ```{r}
-ggplot(wq_clean, aes(x = Temperature_C, do_percent_sat)) +
-  geom_point()+
-  labs(x = "Temperature (C)", y = "Dissolved Oxygen (% sat)") 
+ggplot(movies_select, aes(x = rated, y = metascore))+
+  geom_boxplot()+
+  labs(x= "Movie Rating", y = "IMDB Metascore")
 ```
 
 You can also add a title with "title = ". 
 ```{r}
-ggplot(wq_clean, aes(x = Temperature_C, do_percent_sat)) +
-  geom_point()+
-  labs(x = "Temperature (C)", y = "Dissolved Oxygen (% sat)", title = 'Dissolved oxygen decreases with temperature') 
+ggplot(movies_select, aes(x = rated, y = metascore))+
+  geom_boxplot()+
+  labs(x= "Movie Rating", y = "IMDB Metascore", title = "IMDB scores for different movie ratings")
 ```
 
 ### Theme
@@ -247,9 +157,9 @@ ggplot(wq_clean, aes(x = Temperature_C, do_percent_sat)) +
 The default in ggplot is to use have the background as gray with white gridlines. There are layers to edit the background and gridlines. But the easiest way to change the overall look of the plot is to change the "theme" of the plot. There are several different themes that can be "added" to a plot. We will use one called `theme_minimal`.  To see a full list, see the help file for the themes type `?theme_minimal`
 
 ```{r}
-ggplot(wq_clean, aes(x = Temperature_C, do_percent_sat)) +
-  geom_point()+
-  labs(x = "Temperature (C)", y = "Dissolved Oxygen (% sat)", title = 'Dissolved oxygen decreases with temperature')  +
+ggplot(movies_select, aes(x = rated, y = metascore))+
+  geom_boxplot()+
+  labs(x= "Movie Rating", y = "IMDB Metascore", title = "IMDB scores for different movie ratings")+
   theme_minimal()
 ```
 
@@ -257,18 +167,18 @@ ggplot(wq_clean, aes(x = Temperature_C, do_percent_sat)) +
 
 ### Color
 
-You can also change the color in ggplot using the 'color' or 'fill' argument. Color is used to change the color of the outline, and fill is used to color the inside of a shape. For geom_point(), you would change the color. 
+You can also change the color in ggplot using the 'color' or 'fill' argument. Color is used to change the color of the outline, and fill is used to color the inside of a shape. For geom_boxplot(), you would change the color of the lines with `color = ` and the inner color of the boxes with `fill =` . 
 
 ```{r}
-ggplot(wq_clean, aes(x = Temperature_C, do_percent_sat)) +
-  geom_point(color = 'blue')
+ggplot(movies_select, aes(x = rated, y = metascore))+
+  geom_boxplot(color = 'darkgreen', fill = 'lightgreen')
 ```
 
-Let's say you are plotting a boxplot. You could change the outline and fill of the boxes. Here again, is a boxplot for phosphorus for each site.
+Let's say you are plotting a scatterplot of the budget and the metascore. You can change the color of the points with `color = ` inside the `geom_point()` function. 
 
 ```{r}
-ggplot(data = wq_clean, aes(x = Site, y = Phosphorus_total_mg_L )) +
-  geom_boxplot(color = 'darkblue', fill = 'lightblue')
+ggplot(data = movies_select, aes(x = budget, y = metascore )) +
+  geom_point(color = 'seagreen')
 ```
 
 To see a full list of colors you can use, see [R color chart](RColorChart.pdf). 
@@ -287,35 +197,12 @@ For a list of the aesthetics, see <https://ggplot2.tidyverse.org/articles/ggplot
 
 So far we have changed the color of all the data. However, a very useful way to use color is to base the color on a different variable, or column in the data. 
 
-To color based on a variable, we need to add color in the aesthetic mapping or `aes()`, to say that color should be based on the year column. Here, we will go back to our temperature and DO graph. We can color each of the points based on the stream or "Site". We have to indicate in `aes()` that we want the color to be based on the Site column. 
+To color based on a variable, we need to add color in the aesthetic mapping or `aes()`, to say that color should be based on the year column. Here, we will go back to our budget and metascore scatterplot from the movies data. We can color each of the points based on movie rating. We have to indicate in `aes()` that we want the color to be based on the "rated" column. 
 
 ```{r}
-ggplot(wq_clean, aes(x = Temperature_C, do_percent_sat)) +
-  geom_point(aes(color = Site))
+ggplot(data = movies_select, aes(x = budget, y = metascore )) +
+  geom_point(aes(color = rated))
 ```
-
-## Saving plots
-
-In this lesson, all of the plots are shown in R but not saved anywhere. Plotting data is a great way to understand the data and explore patterns. When you are ready to communicate your results with a figure, you can save the plot with the `ggsave` function. 
-
-Here, we can save the boxplot for temperature and DO and save to our computer. First, we will assign the plot a name and then save with `ggsave`
-
-```{r}
-temp_boxplot<-ggplot(wq_clean, aes(x = Temperature_C, do_percent_sat)) +
-  geom_point()+
-  labs(x = "Temperature (C)", y = "Dissolved Oxygen (% sat)", title = 'Dissolved oxygen decreases with temperature') +
-  theme_bw()
-```
-
-`ggsave` needs arguments for the file name your the file you are saving and the plot to save. For the file name, you must give an extension. This will determine what type of file it is saved as. For example, you can save as png, pdf, jpeg, etc.
-
-```{r, eval=FALSE}
-ggsave(filename = "do_temp.png", temp_boxplot)
-```
-
-### Water quality data graphs
-
-Play around some more with the water quality data and make a few more graphs to explore the data. 
 
 ## Exercises
 
@@ -363,9 +250,7 @@ ggplot(data = climate1990, aes(x = month, y = tmean)) +
 - `ggplot()`
 - `geom_*()`
 - `labs()`
-- `facet_wrap()`
 - `theme_*()`
-- `ggsave()`
 
 ## Resources
 
