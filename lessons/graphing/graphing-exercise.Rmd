@@ -49,7 +49,7 @@ movies <- read.csv('data/movies.csv')
 library(dplyr)
 movies <- movies |>
   mutate(budget = as.numeric(budget), 
-         intgross = as.numeric(budget),
+         intgross = as.numeric(intgross),
          rated = as.factor(rated))
 ```
 
