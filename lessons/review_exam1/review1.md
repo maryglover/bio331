@@ -22,5 +22,5 @@ The exam will cover the coding exercises we have completed in class. You will *n
 If you are looking for some additional practice, 
 
 - Complete the [additional practice activity](Additional_practice.html). Try to do this with as few hints or answers as possible!
-- Go through the [mistake_assignment.R](../mistake_assignment.R) script file. Each of the lines has one mistake. See if you can fix it to make it work!
+- Go through the [mistake_assignment.R](../mistake_assignment.R) script file. Each of the lines has one mistake. See if you can fix it to make it work! This file downloads to your computer when you click the link. You can then upload to your posit cloud workspace. 
 - Visit the [Resources page](https://maryglover.github.io/bio331/resources/) for other tutorials on basic R skills
