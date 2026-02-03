@@ -1,0 +1,95 @@
+---
+title: "Additional practice questions"
+output:
+  html_document:
+    toc: true 
+    toc_float: true
+    toc_collapsed: true
+    toc_depth: 3  
+layout: default
+---
+
+```{r klippy, echo=FALSE, include=TRUE}
+klippy::klippy()
+```
+
+## Set up 
+
+In this practice, we will work with a dataset that comes with `ggplot2` package. 
+
+To load this data, run the following code. 
+
+```{r}
+library(ggplot2)
+data(mpg)
+```
+
+You can now see the top few lines using the `head()` function
+
+```{r}
+head(mpg)
+```
+
+This dataset include fuel economy data for 38 different car models in 1999 and 2008. We will work with this dataset in the following this practice set. 
+
+## Evaluate the data frame.
+
+In this activity, I will provide hints throughout. Only use the hints if you need them! Try to see what you can do without them first. 
+
+1. What are the column names in the dataset? 
+<details>
+  <summary>Hint</summary>
+    Use the function `colnames()`
+</details>
+1. How many rows are in the dataset? 
+<details>
+  <summary>Hint</summary>
+    Use the function `nrow()`
+</details>
+1. What is the average highway mpg for the entire dataset?
+<details>
+  <summary>Hint</summary>
+   You will have to select just the highway `hwy` column using the $ sign. The function for average is `mean()`
+</details>
+2. What is the minimum city mpg for the entire dataset?
+<details>
+  <summary>Hint</summary>
+   You will have to select just the city mpg `cty` column using the $ sign. The function for average is `min()`</details>
+
+## `dplyr` functions
+
+1. How many different car classes are there?
+2. select just the manufacturer, model, year, and hwy mpg.
+1. How many are suvs?
+1. how many hondas are there in 2008
+1. how many hondas or toyotas were there in 1999
+1. what car has the lowest highway mpg
+1. what car has the highest city mpg. 
+1. what car in 1990 had the highest highway mpg. 
+1. mutate to get difference in hwy and city mpg
+
+## `ggplot` graphing
+
+1. make a histogram of city mpg
+1. make a histogram of hwy mpg
+1. make a boxplot of cty mpg and class
+1. make a boxplot of hwy mpg and manufacturer
+1. geom point of hwy mpg and class, color by manufacturer
+
+```{r}
+ggplot(data = mpg, aes(x = class, y = hwy, color = manufacturer, shape = manufacturer))+
+  geom_point()
+```
+
+1. pick one of the plots and make it pretty
+1. change the color
+1. add a them
+1. chnage the y axis label
+1. Add a title
+
+<details>
+  <summary>Hint</summary>
+  
+Hint: put _ on x axis and __ on the y axis
+
+</details>
