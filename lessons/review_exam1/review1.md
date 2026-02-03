@@ -19,3 +19,8 @@ The exam will cover the coding exercises we have completed in class. You will *n
 - Data manipulation and management
 - Graphing
 
+If you are looking for some additional practice, 
+
+- Complete the [additional practice activity](Additional_practice.html). Try to do this with as few hints or answers as possible!
+- Go through the [mistakes_assignment.R](mistakes_assignment.R) script file. Each of the lines has one mistake. See if you can fix it to make it work!
+- Visit the [Resources page](/resources/) for other tutorials on basic R skills

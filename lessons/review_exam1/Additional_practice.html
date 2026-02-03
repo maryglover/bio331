@@ -1669,48 +1669,396 @@ function</p>
 1999 and 2008. We will work with this dataset in the following this
 practice set.</p>
 </div>
-<div id="manipulate-the-date" class="section level2">
-<h2>manipulate the date</h2>
+<div id="evaluate-the-data-frame." class="section level2">
+<h2>Evaluate the data frame.</h2>
 <p>In this activity, I will provide hints throughout. Only use the hints
 if you need them! Try to see what you can do without them first.</p>
 <ol style="list-style-type: decimal">
+<li>What are the column names in the dataset?
+<details>
+<summary>
+Hint
+</summary>
+Use the function <code>colnames()</code>
+</details>
+<details>
+<summary>
+Answer
+</summary>
+<pre class="r"><code> colnames(mpg)</code></pre>
+</details></li>
 <li>How many rows are in the dataset?
 <details>
 <summary>
 Hint
 </summary>
 Use the function <code>nrow()</code>
+</details>
+<details>
+<summary>
+Answer
+</summary>
+<pre class="r"><code> nrow(mpg)</code></pre>
 </details></li>
 <li>What is the average highway mpg for the entire dataset?
 <details>
 <summary>
 Hint
 </summary>
-Use the function <code>nrow()</code>
+You will have to look at just the highway <code>hwy</code> column using
+the $ sign. The function for average is <code>mean()</code>
+</details>
+<details>
+<summary>
+Answer
+</summary>
+<pre class="r"><code> mean(mpg$hwy)</code></pre>
 </details></li>
-<li>What is the minimum city mpg for the entire dataset?</li>
-</ol>
-</div>
-<div id="filter-for-1990" class="section level1">
-<h1>filter for 1990</h1>
-</div>
-<div id="how-many-cars-are-there-from-1990" class="section level1">
-<h1>how many cars are there from 1990</h1>
-</div>
-<div id="sort-what-car-had-the-best-city-mpg" class="section level1">
-<h1>sort what car had the best city mpg</h1>
-</div>
-<div id="what-car-had-the-worst-highway-driving" class="section level1">
-<h1>what car had the worst highway driving</h1>
-</div>
-<div id="what-to-do-to-mutate-highway---city" class="section level1">
-<h1>what to do to mutate highway - city</h1>
+<li>What is the minimum city mpg for the entire dataset?
 <details>
 <summary>
 Hint
 </summary>
-<p>Hint: put _ on x axis and __ on the y axis</p>
+You will have to select just the city mpg <code>cty</code> column using
+the $ sign. The function for average is <code>min()</code>
 </details>
+<details>
+<summary>
+Answer
+</summary>
+<pre class="r"><code> min(mpg$cty)</code></pre>
+</details></li>
+</ol>
+</div>
+<div id="dplyr-functions" class="section level2">
+<h2><code>dplyr</code> functions</h2>
+<ol style="list-style-type: decimal">
+<li><p>What are the different car classes that are in the dataset?</p>
+<details>
+<summary>
+<p>Hint1</p>
+</summary>
+<p>You will need to load in the <code>dplyr</code> package before you
+can use any of the functions. <code>library(dplyr)</code></p>
+</details>
+<details>
+<summary>
+<p>Hint2</p>
+</summary>
+<p>You can use the <code>distinct</code> function on the column
+<code>class</code>.</p>
+</details>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<pre class="r"><code> mpg |&gt;
+   distinct(class)</code></pre>
+</details></li>
+<li><p>Select the columns for just the manufacturer, model, year, and
+highway mpg.</p>
+<details>
+<summary>
+<p>Hint</p>
+</summary>
+<p>Use the <code>select()</code> function and type the column names
+exactly as they appear in <code>colnames()</code></p>
+</details>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<pre class="r"><code> mpg |&gt;
+   select(manufacturer, model, year, hwy)</code></pre>
+</details></li>
+<li><p>How many of the cars in the dataset are suvs?</p>
+<details>
+<summary>
+<p>Hint</p>
+</summary>
+<p>You need use the <code>filter()</code> function to show only suvs
+from the <code>class</code> column. You can also add the
+<code>nrow()</code> function to get the number of rows.</p>
+</details>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<pre class="r"><code> mpg |&gt;
+   filter(class == &#39;suv&#39;)
+
+ mpg |&gt;
+   filter(class == &#39;suv&#39;)|&gt;
+   nrow()</code></pre>
+</details></li>
+<li><p>How many Hondas were there in 2008?</p>
+<details>
+<summary>
+<p>Hint</p>
+</summary>
+<p>You will have to filter for <em>both</em> honda and 2008.</p>
+</details>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<pre class="r"><code> mpg|&gt;
+   filter(manufacturer== &#39;honda&#39;, year == &#39;2008&#39;)</code></pre>
+</details></li>
+<li><p>How many Hondas <em>or</em> Toyotas were there in 1999?</p>
+<details>
+<summary>
+<p>Hint</p>
+</summary>
+<p>You will have to filter for honda or toyota using the “|” symbol
+between your filtering for manufacturer <strong>and</strong> filter the
+year for 1999.</p>
+</details>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<pre class="r"><code> mpg |&gt;
+   filter(manufacturer == &#39;honda&#39; | manufacturer == &#39;toyota&#39;, year == 1999)</code></pre>
+</details></li>
+<li><p>What car has the lowest highway mpg?</p>
+<details>
+<summary>
+<p>Hint</p>
+</summary>
+<p>Use the <code>arrange()</code> function on the <code>hwy</code>
+column.</p>
+</details>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<pre class="r"><code> mpg |&gt;
+   arrange(hwy)</code></pre>
+</details></li>
+<li><p>What car has the highest city mpg?</p>
+<details>
+<summary>
+<p>Hint</p>
+</summary>
+<p>You will <code>arrange()</code> based on the cty column. To go from
+greatest to least you can put a - sign in front of the column.</p>
+<p>You can also add <code>head()</code> to just show the first few
+rows</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<pre class="r"><code> mpg |&gt;
+   arrange(-cty)
+
+ mpg |&gt;
+   arrange(-cty) |&gt;
+   head()</code></pre>
+</details></li>
+<li><p>What car had the highest highway mpg in 1999?</p>
+<details>
+<summary>
+<p>Hint</p>
+</summary>
+<p>You will <code>arrange()</code> based on the hwy column. To go from
+greatest to least you can put a - sign in front of the column. You also
+need to <code>filter()</code> for 1999. </detais></p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<pre class="r"><code>   mpg |&gt;
+   arrange(-hwy) |&gt;
+   filter(year == 1999)</code></pre>
+</details></li>
+<li><p>Mutate the table to make a new column with the difference of
+highway mpg and city mpg.</p>
+<details>
+<summary>
+<p>Hint</p>
+</summary>
+<p>You will use the <code>mutate()</code> function which expects a new
+column name = the calculation from the columns in the data frame.
+i.e. mutate(NEWCOL = COL1 + COL2).</p>
+</details>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<pre class="r"><code> mpg |&gt;
+   mutate(diff = hwy - cty)</code></pre>
+</details></li>
+</ol>
+</div>
+<div id="ggplot-graphing" class="section level2">
+<h2><code>ggplot</code> graphing</h2>
+<ol style="list-style-type: decimal">
+<li>Make a histogram of city mpg.
+<details>
+<summary>
+Hint
+</summary>
+Set up the plot with the following format
+<code>ggplot(data, aes (x = )</code>. Then add the
+<code>geom_histogram()</code> layer.
+</details>
+<details>
+<summary>
+Answer
+</summary>
+<pre class="r"><code> ggplot(mpg, aes(x = cty)) +
+   geom_histogram()</code></pre>
+</details></li>
+<li>Make a histogram of highway mpg.
+<details>
+<summary>
+Hint
+</summary>
+Change your previous code to have the highway <code>hwy</code> column
+instead of <code>cty</code>
+</details>
+<details>
+<summary>
+Answer
+</summary>
+<pre class="r"><code> ggplot(mpg, aes(x = hwy)) +
+   geom_histogram()</code></pre>
+</details></li>
+<li>Make a boxplot of city mpg (y axis) for each class (x axis)
+<details>
+<summary>
+Hint
+</summary>
+Set up the plot with the following format
+<code>ggplot(data, aes (x = , y =  )</code>. Then add the
+<code>geom_boxplot()</code> layer.
+</details>
+<details>
+<summary>
+Answer
+</summary>
+<pre class="r"><code> ggplot(mpg, aes(x = class, y = cty)) +
+   geom_boxplot()</code></pre>
+</details></li>
+<li>Make a boxplot of highway mpg for each manufacturer.
+<details>
+<summary>
+Hint
+</summary>
+Change the y axis to <code>hwy</code> instead of <code>cty</code>.
+</details>
+<details>
+<summary>
+Answer
+</summary>
+<pre class="r"><code> ggplot(mpg, aes(x = class, y = hwy)) +
+   geom_boxplot()</code></pre>
+</details></li>
+<li>Make a scatterplot for the highway mpg (y axis) and class (x axis).
+Change the color of the points so that each manufacturer is a different
+color.
+<details>
+<details>
+<summary>
+Hint2
+</summary>
+To change the color, you must specify color = <em>inside</em> and aes()
+function in geom_point. The color should = the <em>column</em> you want
+to color by.
+</details>
+<details>
+<summary>
+Answer
+</summary>
+<pre class="r"><code> ggplot(mpg, aes(x = class, y = hwy)) +
+   geom_point(aes(color = manufacturer))</code></pre>
+</details></li>
+<li>Make a scatterplot of the relationship between the size of the
+engine (the <code>displ</code> column) on the x axis and the city gas
+mileage on the y axis.
+<details>
+<summary>
+Hint
+</summary>
+Set up the plot in the same was as the last plot, changing the columns
+for the x and y axis to <code>displ</code> and <code>cty</code>,
+respectively
+</details>
+<details>
+<summary>
+Answer
+</summary>
+<pre class="r"><code> ggplot(mpg, aes(x = displ, y = cty)) +
+   geom_point()</code></pre>
+</details></li>
+<li>Using the previous scatterplot, change the color of the points to
+whatever color you prefer.
+<details>
+<summary>
+Hint
+</summary>
+Using the last plot, add a <code>color =</code> into the
+<code>geom_point</code> function. Change it to any color you would like.
+</details>
+<details>
+<summary>
+Answer
+</summary>
+<pre class="r"><code> ggplot(mpg, aes(x = displ, y = cty)) +
+   geom_point(color = &#39;slateblue&#39;)</code></pre>
+</details></li>
+<li>Using the previous scatterplot, add a theme.
+<details>
+<summary>
+Hint
+</summary>
+Using the last plot, add any theme_* that you prefer. For example,
+<code>theme_minimal()</code>.
+</details>
+<details>
+<summary>
+Answer
+</summary>
+<pre class="r"><code> ggplot(mpg, aes(x = displ, y = cty)) +
+   geom_point(color = &#39;slateblue&#39;) +
+   theme_bw()</code></pre>
+</details></li>
+<li>Using the previous scatterplot, change the x and y axis labels
+<details>
+<summary>
+Hint
+</summary>
+Using the last plot, use the function <code>labs()</code> to add an x
+and y label. Label names should be in quotations.
+</details>
+<details>
+<summary>
+Answer
+</summary>
+<pre class="r"><code> ggplot(mpg, aes(x = displ, y = cty)) +
+   geom_point(color = &#39;slateblue&#39;)+
+   theme_bw()+
+   labs(x = &#39;Engine Size&#39;, y = &#39;City Gas Mileage&#39;)</code></pre>
+</details></li>
+<li>Using the previous scatterplot, add a title.
+<details>
+<summary>
+Hint
+</summary>
+Using the last plot, use the function <code>labs()</code> to add a
+title.
+</details>
+<details>
+<summary>
+Answer
+</summary>
+<pre class="r"><code> ggplot(mpg, aes(x = displ, y = cty)) +
+   geom_point(color = &#39;slateblue&#39;)+
+   theme_bw()+
+   labs(x = &#39;Engine Size&#39;, y = &#39;City Gas Mileage&#39;, title = &quot;Gas mileage decreases with engine size&quot;)</code></pre>
+</details></li>
+</ol>
 </div>
 
 
