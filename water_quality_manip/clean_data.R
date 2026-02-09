@@ -4,7 +4,7 @@ library(dplyr)
 library(stringr)
 library(tidyr)
 
-wq <- read.csv("../data/raleigh_wq_2008_2023.csv")
+wq <- read.csv("data/raleigh_wq_2008_2023.csv")
 summary(wq)
 colnames(wq)
 head(wq)
@@ -61,4 +61,9 @@ wq_clean <- wq.det |>
   rename_with(~ gsub("/", '_', .x))
 
 write.csv(wq_tidy, 'raleigh_wq_tidy.csv', row.names = F)
-write.csv(wq_clean, 'raleigh_wq_clean.csv', row.names = F)
+
+wq_clean<- wq_clean |>
+  filter(!grepl("DUP",Site)) |> # gets rid of duplicate sites
+  filter(!grepl("Dup",Site))
+
+write.csv(wq_clean, 'water_quality_manip/raleigh_wq_clean.csv', row.names = F)
