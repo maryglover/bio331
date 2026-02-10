@@ -1,0 +1,15 @@
+Group,Taxa,N,Pollution
+1,Caddisfly larvae,10,Sensitive
+1,Gilled Snails,5,Sensitive
+1,Damselfly,5,Somewhat sensitive
+1,Sowbugs,2,Somewhat sensitive
+1,Aquatic worms,5,Tolerant
+1,Midge larvae,8,Tolerant
+1,Blackfly larvae,11,Tolerant
+2,Riffle beetles,8,Sensitive
+2,Crayfish,8,Somewhat sensitive
+2,Damselfly,2,Somewhat sensitive
+2,Sowbugs,1,Somewhat sensitive
+2,Aquatic worms,13,Tolerant
+2,Midge larvae,2,Tolerant
+2,Snails,3,Tolerant
