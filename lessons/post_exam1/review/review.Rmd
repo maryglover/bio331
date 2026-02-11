@@ -1,0 +1,123 @@
+---
+title: "Exam 1 Review"
+output: learnr::tutorial
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Working with data frames
+
+In this activity, we will review the basics of working with data frames. 
+
+### Import files into R
+
+The first thing to do is read the data frame file into R.
+
+In this tutorial, we will work with data for every top song on the Billboard Hot 100 between August 4, 1958 and January 11, 2025. This data was compiled by Chris Dalla Riva for his book, *Uncharted Territory: What Numbers Tell Us about the Biggest Hit Songs and Ourselves.* The file is a condensed version of the original data and is named `billboard_short.csv` and can be accessed using a link to our class website. 
+
+Here, we will *assign* the file the name `music`. Fill in the blank with the correct code for importing data into R.
+
+```{r import, exercise=TRUE}
+music <- ___(file = "https://maryglover.github.io/bio331/lessons/post_exam1/review/billboard_short.csv")
+```
+
+Next, we want to just look at the file a bit. Run the following functions on the data frame, now named `music` to learn a bit about the data. 
+
+- `nrow`
+- `head`
+- `colnames`
+
+```{r viewdata, exercise=TRUE, exercise.lines = 5}
+
+```
+
+### Summarizing data columns
+
+We use functions in R to make calculations on single columns in a dataframe. The format for looking at just one column is:
+data name $ column name
+
+Fill in the blanks to look just at the column for `Artist`
+
+```{r column, exercise=TRUE, exercise.lines = 5}
+music_Artist
+```
+
+Now, let's saw you want to look just at the column that includes the number of weeks a song was at number 1. You have to have the column name **exactly** as it appears in the data frame. You can use the function `colnames` again to view the precise names of the columns. 
+
+```{r column, exercise=TRUE, exercise.lines = 5}
+colnames(music)
+music$___
+```
+
+Now that we know who to view just one column, we can do calculations on the columns. 
+
+Let's saw we want to see the median number of weeks as the top song. We will use the function `median`. 
+
+```{r median, exercise=TRUE, exercise.lines = 5}
+median(music$Number_one_weeks)
+```
+
+Now you try to use the function `min` and `max` to see the oldest and youngest artist. 
+
+```{r age, exercise=TRUE, exercise.lines = 5}
+____(music$__, na.rm = T)
+____(music$__, na.rm = T)
+```
+
+Lastly, get the average song length, using the column `Length`. 
+
+```{r length, exercise=TRUE, exercise.lines = 5}
+
+```
+
+## Using `dplyr` functions
+
+
+- reassigning something
+a <- 1
+a <- "a"
+
+
+### Exercise with Hint
+
+*Here's an exercise where the chunk is pre-evaluated via the `exercise.eval` option (so the user can see the default output we'd like them to customize). We also add a "hint" to the correct solution via the chunk immediate below labeled `print-limit-hint`.*
+
+Modify the following code to limit the number of rows printed to 5:
+
+```{r print-limit, exercise=TRUE, exercise.eval=TRUE}
+mtcars
+```
+
+```{r print-limit-hint}
+head(mtcars)
+```
+
+### Quiz
+
+*You can include any number of single or multiple choice questions as a quiz. Use the `question` function to define a question and the `quiz` function for grouping multiple questions together.*
+
+Some questions to verify that you understand the purposes of various base and recommended R packages:
+
+```{r quiz}
+quiz(
+  question("Which package contains functions for installing other R packages?",
+    answer("base"),
+    answer("tools"),
+    answer("utils", correct = TRUE),
+    answer("codetools")
+  ),
+  question("Which of the R packages listed below are used to create plots?",
+    answer("lattice", correct = TRUE),
+    answer("tools"),
+    answer("stats"),
+    answer("grid", correct = TRUE)
+  )
+)
+```
+
+## Data visualization with `ggplot2`
+

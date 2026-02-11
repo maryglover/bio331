@@ -1,0 +1,1178 @@
+"Song","Artist","Date","Number_one_weeks","Overall.Rating","Genre","Length","Artist.Male","Artist.White","Artist.Black","Age","BPM","Energy","Danceability","Happiness","Loudness","Key","Explicit"
+"Poor Little Fool","Ricky Nelson","4-Aug-58",2,4,"Pop;Rock",154,1,1,0,18,155,33,54,80,-12,"C",0
+"Nel Blu Dipinto Di Blu","Domenico Modugno","18-Aug-58",5,6.33,"Pop",219,1,1,0,30,130,6,55,48,-17,"Bb",0
+"Little Star","The Elegants","25-Aug-58",1,5.67,"Rock",163,1,1,0,17,73,40,41,70,-13,"A",0
+"It's All in the Game","Tommy Edwards","29-Sep-58",6,4.33,"Pop",156,1,0,1,35,71,15,33,61,-18,"Eb",0
+"It's Only Make Believe","Conway Twitty","10-Nov-58",2,8,"Pop",134,1,1,0,25,127,43,44,36,-10,"B",0
+"Tom Dooley","The Kingston Trio","17-Nov-58",1,4,"Folk/Country",185,1,1,0,24,126,14,63,52,-15,"E",0
+"To Know Him is to Love Him","The Teddy Bears","1-Dec-58",3,8,"Pop",142,2,1,0,18,175,20,32,35,-16,"Multiple Keys",0
+"The Chipmunk Song","The Chipmunks","22-Dec-58",4,2.67,"Pop",141,1,0,0,39,153,37,61,78,-12,"Ab",0
+"Smoke Gets in Your Eyes","The Platters","19-Jan-59",3,8.67,"Pop",158,2,0,1,30,113,27,32,26,-11,"Multiple Keys",0
+"Stagger Lee","Lloyd Price","2-Feb-59",4,7,"Rock",145,1,0,1,25,71,62,36,79,-8,"Eb",0
+"Venus","Frankie Avalon","9-Mar-59",5,2.33,"Pop",142,1,1,0,18,115,48,56,75,-10,"Bb",0
+"Come Softly to Me","The Fleetwoods","13-Apr-59",4,8,"Pop",145,2,1,0,19,123,9,60,67,-18,"Db",0
+"The Happy Organ","Dave ""Baby"" Cortez","11-May-59",1,4.67,"Rock",122,1,0,1,20,91,87,65,97,-9,"Db",0
+"Kansas City","Wilbert Harrison","18-May-59",2,6.67,"Rock",145,1,0,1,30,115,67,73,91,-6,"Db",0
+"The Battle of New Orleans","Johnny Horton","1-Jun-59",6,1.33,"Folk/Country;March",151,1,1,0,34,89,75,70,92,-12,"A",0
+"Lonely Boy","Paul Anka","13-Jul-59",4,4,"Pop",151,1,1,0,17,106,61,62,80,-10,"C",0
+"Big Hunk o' Love","Elvis Presley","10-Aug-59",2,6,"Rock",141,1,1,0,24,87,93,55,96,-8,"C",0
+"The Three Bells (Les Trois Cloches)","The Browns","24-Aug-59",4,5.33,"Pop;Folk/Country",174,2,1,0,25,106,33,46,32,-10,"G",0
+"Sleep Walk","Santo & Johnny","21-Sep-59",2,7.67,"Rock",151,1,1,0,20,92,41,44,35,-12,"C",0
+"Mack the Knife","Bobby Darin","5-Oct-59",9,8.33,"Jazz",184,1,1,0,23,83,53,55,46,-12,"Multiple Keys",0
+"Mr. Blue","The Fleetwoods","16-Nov-59",1,4.67,"Pop",145,2,1,0,19,97,9,37,21,-17,"E",0
+"Heartaches by the Number","Guy Mitchell","14-Dec-59",2,3.67,"Pop",155,1,1,0,32,172,59,58,84,-11,"F",0
+"Why","Frankie Avalon","28-Dec-59",1,3,"Pop",158,1,1,0,19,94,35,51,59,-9,"C",0
+"El Paso","Marty Robbins","4-Jan-60",2,7,"Folk/Country",259,1,1,0,34,107,45,65,69,-10,"D",0
+"Running Bear","Johnny Preston","18-Jan-60",3,5.33,"Rock",158,1,1,0,20,120,30,77,82,-15,"Bb",0
+"Teen Angel","Mark Dinning","8-Feb-60",2,4.67,"Pop",157,1,1,0,26,102,6,57,28,-19,"C",0
+"Theme from A Summer Place","Percy Faith & His Orchestra","22-Feb-60",9,5.33,"Pop",144,1,1,0,51,93,39,47,75,-13,"Multiple Keys",0
+"Stuck on You","Elvis Presley","25-Apr-60",4,5.33,"Rock",140,1,1,0,25,132,51,65,95,-12,"G",0
+"Cathy's Clown","The Everly Brothers","23-May-60",5,8.67,"Rock",144,1,1,0,22,120,58,50,87,-9,"G",0
+"Everybody's Somebody's Fool","Connie Francis","27-Jun-60",2,4.33,"Pop",160,0,1,0,22,84,59,58,85,-10,"Gb",0
+"Alley Oop","The Hollywood Argyles","11-Jul-60",1,6.33,"Rock",165,1,1,0,21,65,56,66,89,-4,"G",0
+"I'm Sorry","Brenda Lee","18-Jul-60",3,6.67,"Pop;Folk/Country",144,0,1,0,15,102,22,56,30,-12,"Bb",0
+"Itsy Bitsy Teenie Weenie Yellow Polka Dot Bikini","Brian Hyland","8-Aug-60",1,1,"Pop",144,1,1,0,17,122,40,80,97,-13,"D",0
+"It's Now or Never","Elvis Presley","15-Aug-60",5,8.33,"Pop",196,1,1,0,25,126,49,64,75,-9,"E",0
+"The Twist","Chubby Checker","19-Sep-60",3,6.67,"Rock",154,1,0,1,18,157,64,53,94,-7,"E",0
+"My Heart Has A Mind Of Its Own","Connie Francis","26-Sep-60",2,5.33,"Folk/Country",152,0,1,0,22,109,48,32,66,-10,"Gb",0
+"Mr. Custer","Larry Verne","10-Oct-60",1,2.33,"Folk/Country",185,1,1,0,24,108,23,83,6,-14,"Bm",1
+"Save the Last Dance for Me","The Drifters","17-Oct-60",3,9.33,"Pop",155,1,0,1,22,143,53,54,90,-11,"E",0
+"I Want to Be Wanted (Per Tutta La Vita)","Brenda Lee","24-Oct-60",1,6.33,"Pop",185,0,1,0,15,108,21,49,46,-15,"Ab",0
+"Georgia on My Mind","Ray Charles","14-Nov-60",1,9.67,"Pop",215,1,0,1,30,90,40,14,30,-9,"G",0
+"Stay","Maurice Williams & the Zodiacs","21-Nov-60",1,8.33,"Rock",96,1,0,1,22,124,71,49,69,-10,"Bb",0
+"Are You Lonesome Tonight?","Elvis Presley","28-Nov-60",6,7.67,"Pop;Folk/Country",187,1,1,0,25,66,9,35,19,-18,"C",0
+"Wonderland by Night","Bert Kaempfert","9-Jan-61",3,7.33,"Pop",194,1,1,0,37,74,31,16,20,-8,"Eb",0
+"Will You Love Me Tomorrow","The Shirelles","30-Jan-61",2,9,"Pop",162,0,0,1,19,137,38,49,47,-11,"C",0
+"Calcutta","Lawrence Welk","13-Feb-61",2,3.33,"Pop",136,1,1,0,57,82,68,48,96,-9,"G",0
+"Pony Time","Chubby Checker","27-Feb-61",3,5.33,"Rock",147,1,0,1,19,77,61,45,96,-7,"Eb",0
+"Surrender","Elvis Presley","20-Mar-61",2,7,"Pop",112,1,1,0,26,83,67,45,89,-8,"Multiple Keys",0
+"Blue Moon","The Marcels","3-Apr-61",3,7.33,"Rock",135,1,2,2,NA,128,43,62,94,-11,"G",0
+"Runaway","Del Shannon","24-Apr-61",4,9.67,"Rock",137,1,1,0,24,79,53,59,73,-8,"Multiple Keys",0
+"Mother-in-Law","Ernie K-Doe","22-May-61",1,6,"Rock",154,1,0,1,28,127,63,75,75,-8,"Eb",0
+"Travelin' Man","Ricky Nelson","29-May-61",2,5.33,"Rock",143,1,1,0,21,123,36,74,86,-12,"D",0
+"Running Scared","Roy Orbison","5-Jun-61",1,9,"Pop",132,1,1,0,25,128,39,57,38,-11,"A",0
+"Moody River","Pat Boone","19-Jun-61",1,1.67,"Pop",154,1,1,0,27,139,73,62,69,-7,"Fm",0
+"Quarter to Three","Gary U.S. Bonds","26-Jun-61",2,8,"Funk/Soul;Rock",150,1,0,1,22,165,83,46,90,-9,"Eb",0
+"Tossin' and Turnin'","Bobby Lewis","10-Jul-61",7,7,"Rock",159,1,0,1,36,143,72,57,96,-9,"C",0
+"Wooden Heart","Joe Dowell","28-Aug-61",1,1.33,"Polka",118,1,1,0,21,85,46,84,95,-10,"Db",0
+"Michael","The Highwaymen","4-Sep-61",2,4.67,"Folk/Country",165,1,1,0,21,108,10,52,65,-21,"C",0
+"Take Good Care of My Baby","Bobby Vee","18-Sep-61",3,5.67,"Rock",150,1,1,0,18,82,43,49,66,-12,"F",0
+"Hit the Road Jack","Ray Charles","9-Oct-61",2,7.33,"Funk/Soul",120,1,0,1,31,173,63,56,93,-11,"Abm",0
+"Runaround Sue","Dion","23-Oct-61",2,8,"Funk/Soul;Rock",161,1,1,0,22,80,61,36,60,-10,"D",0
+"Big Bad John","Jimmy Dean","6-Nov-61",5,6.67,"Folk/Country",182,1,1,0,33,174,46,52,46,-13,"Em",1
+"Please Mr. Postman","The Marvelettes","11-Dec-61",1,7.67,"Pop",148,0,0,1,16,121,78,79,97,-5,"D",0
+"The Lion Sleeps Tonight","The Tokens","18-Dec-61",3,9,"Pop",162,1,1,0,NA,121,47,32,80,-9,"F",0
+"Peppermint Twist","Joey Dee & the Starliters","27-Jan-62",3,4.67,"Rock",119,1,2,2,21,99,77,42,69,-12,"C",0
+"Duke of Earl","Gene Chandler","17-Feb-62",3,6,"Funk/Soul",148,1,0,1,22,105,28,58,47,-11,"F",0
+"Hey! Baby","Bruce Channel","10-Mar-62",3,5.67,"Rock",142,1,1,0,21,130,55,63,56,-9,"A",0
+"Don't Break the Heart that Loves You","Connie Francis","31-Mar-62",1,7,"Pop",185,0,1,0,24,76,40,24,17,-7,"Ab",0
+"Johnny Angel","Shelley Fabares","7-Apr-62",2,5.33,"Pop",139,0,1,0,18,108,38,37,74,-9,"C",0
+"Good Luck Charm","Elvis Presley","21-Apr-62",2,4.67,"Rock",144,1,1,0,27,121,35,63,87,-17,"G",0
+"Soldier Boy","The Shirelles","5-May-62",3,6.33,"Pop",162,0,0,1,20,98,20,57,62,-15,"Bb",0
+"Stranger on the Shore","Mr. Acker Bilk","26-May-62",1,4.33,"Pop",172,1,1,0,33,71,33,31,23,-12,"Eb",0
+"I Can't Stop Loving You","Ray Charles","2-Jun-62",5,7.67,"Pop",157,1,0,1,31,79,28,31,38,-14,"F",0
+"The Stripper","David Rose & His Orchestra","7-Jul-62",1,5.33,"Jazz",116,1,1,0,52,94,46,48,56,-10,"F",0
+"Roses are Red (My Love)","Bobby Vinton","14-Jul-62",4,3.67,"Pop",158,1,1,0,27,103,22,51,53,-10,"F",0
+"Breaking Up is Hard to Do","Neil Sedaka","11-Aug-62",2,6.33,"Pop",139,1,1,0,23,116,80,74,96,-5,"B",0
+"The Loco-motion","Little Eva","25-Aug-62",1,8,"Pop",139,0,0,1,19,129,78,63,74,-10,"Eb",0
+"Sheila","Tommy Roe","8-Sep-62",2,6.33,"Rock",127,1,1,0,20,136,57,42,47,-9,"A",0
+"Sherry","Frankie Valli & the Four Seasons","15-Sep-62",5,5.33,"Rock",152,1,1,0,28,118,47,70,69,-8,"C",0
+"Monster Mash","Bobby ""Boris"" Pickett & the Crypt-Kickers","20-Oct-62",2,5.33,"Rock",192,1,1,0,24,70,49,69,71,-14,"G",0
+"He's a Rebel","The Crystals","3-Nov-62",2,9.67,"Pop",151,0,0,1,21,117,76,71,87,-6,"F",0
+"Big Girls Don't Cry","Frankie Valli & the Four Seasons","17-Nov-62",5,3,"Rock",146,1,1,0,28,130,84,76,84,-5,"G",0
+"Telstar","The Tornados","22-Dec-62",3,8,"Rock",195,1,1,0,NA,146,75,20,63,-7,"Multiple Keys",0
+"Go Away Little Girl","Steve Lawrence","12-Jan-63",2,2.67,"Pop",132,1,1,0,27,109,29,42,56,-14,"F",0
+"Walk Right In","The Rooftop Singers","26-Jan-63",2,6,"Folk/Country",137,2,1,0,29,130,66,68,96,-10,"Ab",0
+"Hey Paula","Paul & Paula","9-Feb-63",3,3.67,"Pop",132,2,1,0,21,110,26,51,54,-12,"G",0
+"Walk Like a Man","Frankie Valli & the Four Seasons","2-Mar-63",3,7.67,"Rock",117,1,1,0,28,118,64,68,97,-10,"Bb",0
+"Our Day Will Come","Ruby & the Romantics","23-Mar-63",1,5,"Pop",154,2,0,1,28,93,62,53,73,-8,"Eb",0
+"He's So Fine","The Chiffons","30-Mar-63",4,6.67,"Pop",113,0,0,1,16,72,63,56,87,-3,"G",0
+"I Will Follow Him","Little Peggy March","27-Apr-63",3,6.33,"Pop",148,0,1,0,15,125,44,64,90,-11,"C",0
+"If You Wanna Be Happy","Jimmy Soul","18-May-63",2,4.33,"Rock",134,1,0,1,20,93,87,67,84,-8,"Bb",0
+"It's My Party","Lesley Gore","1-Jun-63",2,6.67,"Pop",140,0,1,0,17,128,49,69,96,-12,"A",0
+"Sukiyaki","Kyu Sakamoto","15-Jun-63",3,7.33,"Pop",182,1,0,0,21,146,36,41,40,-11,"G",0
+"Easier Said Than Done","The Essex","6-Jul-63",2,5.33,"Rock",129,2,0,1,23,136,47,80,88,-11,"E",0
+"Surf City","Jan & Dean","20-Jul-63",2,6.33,"Rock",147,1,1,0,22,148,81,53,96,-13,"Ab",0
+"So Much in Love","The Tymes","3-Aug-63",1,6.67,"Funk/Soul",140,1,0,1,NA,76,48,54,42,-10,"E",0
+"Fingertips Pt. 2","Stevie Wonder","10-Aug-63",3,8.33,"Funk/Soul;Jazz",190,1,0,1,13,138,88,32,31,-7,"Cm",0
+"My Boyfriend's Back","The Angels","31-Aug-63",3,7.67,"Pop",134,0,1,0,19,135,87,68,96,-6,"Eb",0
+"Blue Velvet","Bobby Vinton","21-Sep-63",3,6,"Pop",168,1,1,0,28,80,25,38,28,-10,"Bb",0
+"Sugar Shack","Jimmy Gilmer & the Fireballs","12-Oct-63",5,3,"Rock",123,1,1,0,23,133,80,79,88,-7,"G",0
+"Deep Purple","Nino Tempo & April Stevens","16-Nov-63",1,4.67,"Pop",160,2,1,0,31,131,32,51,57,-12,"F",0
+"I'm Leaving it Up to You","Dale & Grace","23-Nov-63",2,6.33,"Folk/Country;Rock",131,2,1,0,24,105,36,23,71,-12,"B",0
+"Dominique","The Singing Nun","7-Dec-63",4,4.67,"Folk/Country",176,0,1,0,30,136,34,74,51,-8,"D",0
+"There! I've Said It Again","Bobby Vinton","4-Jan-64",4,3.33,"Pop",145,1,1,0,28,80,30,25,31,-10,"A",0
+"I Want To Hold Your Hand","The Beatles","1-Feb-64",7,9.67,"Rock",145,1,1,0,22,131,71,49,87,-6,"G",0
+"She Loves You","The Beatles","21-Mar-64",2,9.33,"Rock",140,1,1,0,22,76,92,38,91,-3,"G",0
+"Can't Buy Me Love","The Beatles","4-Apr-64",4,9,"Rock",131,1,1,0,22,172,76,43,95,-4,"C",0
+"Hello, Dolly!","Louis Armstrong","9-May-64",1,7,"Jazz",147,1,0,1,62,155,41,58,62,-10,"C",0
+"My Guy","Mary Wells","16-May-64",2,7.67,"Funk/Soul",174,0,0,1,21,127,58,69,91,-8,"Bb",0
+"Love Me Do","The Beatles","30-May-64",1,6.67,"Rock",141,1,1,0,22,148,83,52,74,-6,"G",0
+"Chapel of Love","The Dixie Cups","6-Jun-64",3,8.33,"Pop",170,0,0,1,20,125,35,59,79,-10,"D",0
+"A World Without Love","Peter & Gordon","27-Jun-64",1,5.33,"Rock",160,1,1,0,20,130,66,51,75,-10,"E",0
+"I Get Around","The Beach Boys","4-Jul-64",2,8,"Rock",134,1,1,0,23,144,62,39,51,-8,"Multiple Keys",0
+"Rag Doll","Frankie Valli & the Four Seasons","18-Jul-64",2,8.67,"Pop",174,1,1,0,30,121,53,50,61,-8,"Bb",0
+"A Hard Day's Night","The Beatles","1-Aug-64",2,10,"Rock",154,1,1,0,23,139,81,59,80,-6,"G",0
+"Everybody Loves Somebody","Dean Martin","15-Aug-64",1,4.67,"Pop",165,1,1,0,47,119,41,50,46,-12,"Eb",0
+"Where Did Our Love Go","The Supremes","22-Aug-64",2,8.33,"Pop",153,0,0,1,20,135,48,55,83,-11,"C",0
+"House of the Rising Sun","The Animals","5-Sep-64",3,8.67,"Rock",179,1,1,0,23,117,58,29,23,-7,"Am",0
+"Oh, Pretty Woman","Roy Orbison","26-Sep-64",3,9.33,"Rock",178,1,1,0,28,127,58,61,96,-10,"Multiple Keys",0
+"Do Wah Diddy Diddy","Manfred Mann","17-Oct-64",2,7.33,"Rock",143,1,1,0,23,125,56,66,96,-8,"E",0
+"Baby Love","The Supremes","31-Oct-64",4,8,"Pop",158,0,0,1,20,136,64,58,71,-9,"C",0
+"Leader of the Pack","The Shangri-Las","28-Nov-64",1,9.33,"Pop",171,0,1,0,15,129,57,42,32,-9,"C",0
+"Ringo","Lorne Greene","5-Dec-64",1,5,"Folk/Country",214,1,1,0,49,111,52,56,65,-13,"Multiple Keys",0
+"Mr. Lonely","Bobby Vinton","12-Dec-64",1,5.33,"Pop",161,1,1,0,29,169,29,25,34,-10,"E",0
+"Come See About Me","The Supremes","19-Dec-64",1,8.67,"Pop",163,0,0,1,20,126,50,73,88,-12,"D",0
+"I Feel Fine","The Beatles","26-Dec-64",3,9.33,"Rock",139,1,1,0,23,90,83,56,91,-7,"G",0
+"Downtown","Petula Clark","23-Jan-65",2,7.67,"Pop",183,0,1,0,32,117,69,48,60,-8,"E",0
+"You've Lost That Lovin' Feelin'","The Righteous Brothers","6-Feb-65",2,8.33,"Funk/Soul",225,1,1,0,24,95,31,37,38,-14,"Db",0
+"This Diamond Ring","Gary Lewis & the Playboys","20-Feb-65",2,3.67,"Rock",137,1,1,0,19,133,61,63,77,-11,"Multiple Keys",0
+"My Girl","The Temptations","6-Mar-65",1,10,"Pop",165,1,0,1,24,105,42,58,67,-11,"C",0
+"Eight Days a Week","The Beatles","13-Mar-65",2,7,"Rock",163,1,1,0,23,138,58,65,74,-8,"D",0
+"Stop! In the Name of Love","The Supremes","27-Mar-65",2,8.33,"Pop",172,0,0,1,21,115,58,70,53,-6,"C",0
+"I'm Telling You Now","Freddie & the Dreamers","10-Apr-65",2,4,"Rock",128,1,1,0,28,71,70,61,89,-7,"Ab",0
+"The Game of Love","Wayne Fontana & the Mindbenders","24-Apr-65",1,7,"Rock",127,1,1,0,19,109,84,57,95,-4,"A",0
+"Mrs. Brown, You've Got a Lovely Daughter","Herman's Hermits","1-May-65",3,3,"Pop",167,1,1,0,17,149,47,66,89,-10,"Multiple Keys",0
+"Ticket to Ride","The Beatles","22-May-65",1,10,"Rock",189,1,1,0,23,123,85,52,75,-7,"A",0
+"Help Me, Rhonda","The Beach Boys","29-May-65",2,7,"Rock",167,1,1,0,22,140,75,54,82,-6,"Db",0
+"Back in My Arms Again","The Supremes","12-Jun-65",1,7.33,"Pop",174,0,0,1,21,123,53,71,48,-9,"C",0
+"I Can't Help Myself (Sugar Pie Honey Bunch)","Four Tops","19-Jun-65",2,8.67,"Pop",163,1,0,1,29,127,71,69,96,-5,"C",0
+"Mr. Tambourine Man","The Byrds","26-Jun-65",1,8.33,"Rock",149,1,1,0,22,120,47,46,64,-10,"D",0
+"(I Can't Get No) Satisfaction","The Rolling Stones","10-Jul-65",4,9.33,"Rock",222,1,1,0,21,136,85,73,90,-8,"D",1
+"I'm Henry VIII, I Am","Herman's Hermits","7-Aug-65",1,4.67,"Rock",110,1,1,0,17,93,64,67,84,-10,"A",0
+"I Got You Babe","Sonny & Cher","14-Aug-65",3,8,"Rock",193,2,1,0,25,111,71,62,62,-9,"F",0
+"Help!","The Beatles","4-Sep-65",3,9,"Pop;Rock",140,1,1,0,24,95,73,53,76,-8,"A",0
+"Eve of Destruction","Barry McGuire","25-Sep-65",1,5.67,"Folk/Country",217,1,1,0,30,118,47,59,77,-12,"D",0
+"Hang On Sloopy","The McCoys","2-Oct-65",1,6.67,"Rock",182,1,1,0,18,115,52,76,94,-12,"G",0
+"Yesterday","The Beatles","9-Oct-65",4,8.67,"Pop",123,1,1,0,24,97,18,33,31,-12,"F",0
+"Get Off Of My Cloud","The Rolling Stones","6-Nov-65",2,8.67,"Rock",175,1,1,0,22,126,90,59,91,-7,"E",0
+"I Hear a Symphony","The Supremes","20-Nov-65",2,8,"Pop",166,0,0,1,21,140,62,56,38,-8,"Multiple Keys",0
+"Turn! Turn! Turn! (To Everything There is a Season)","The Byrds","4-Dec-65",3,7,"Rock",229,1,1,0,22,124,82,45,75,-8,"D",0
+"Over and Over","The Dave Clark Five","25-Dec-65",1,4.67,"Rock",121,1,1,0,23,150,86,54,90,-8,"Bb",0
+"The Sound of Silence","Simon & Garfunkel","1-Jan-66",2,8.67,"Folk/Country",185,1,1,0,24,108,47,44,54,-10,"Gb",0
+"We Can Work it Out","The Beatles","8-Jan-66",3,9,"Pop",136,1,1,0,24,106,68,38,65,-9,"D",0
+"My Love","Petula Clark","5-Feb-66",2,4.67,"Pop",164,0,1,0,33,174,86,51,95,-6,"A",0
+"Lightnin' Strikes","Lou Christie","19-Feb-66",1,5,"Rock",181,1,1,0,23,134,65,62,69,-8,"Multiple Keys",0
+"These Boots are Made for Walkin'","Nancy Sinatra","26-Feb-66",1,9,"Rock",162,0,1,0,25,83,39,74,39,-12,"E",0
+"The Ballad of the Green Berets","SSgt. Barry Sadler","5-Mar-66",5,1.67,"March",166,1,1,0,25,84,33,71,71,-12,"C",0
+"(You're My) Soul and Inspiration","The Righteous Brothers","9-Apr-66",3,6.67,"Funk/Soul",180,1,1,0,25,94,43,17,28,-12,"B",0
+"Good Lovin'","The Young Rascals","30-Apr-66",1,8,"Rock",168,1,1,0,22,98,51,25,82,-13,"D",0
+"Monday, Monday","The Mamas & the Papas","7-May-66",3,7,"Pop",208,2,1,0,30,110,48,49,67,-9,"Multiple Keys",0
+"When a Man Loves a Woman","Percy Sledge","28-May-66",2,8.67,"Funk/Soul",174,1,0,1,24,97,15,52,21,-20,"Db",0
+"Paint it, Black","The Rolling Stones","11-Jun-66",2,9.67,"Rock",199,1,1,0,22,159,80,47,59,-9,"Em",0
+"Paperback Writer","The Beatles","25-Jun-66",2,10,"Rock",146,1,1,0,24,157,86,47,84,-6,"G",0
+"Strangers in the Night","Frank Sinatra","2-Jul-66",1,5.33,"Pop",155,1,1,0,50,80,49,23,53,-8,"F",0
+"Hanky Panky","Tommy James & the Shondells","16-Jul-66",2,5.33,"Rock",172,1,1,0,19,126,91,65,89,-6,"G",0
+"Wild Thing","The Troggs","30-Jul-66",2,8,"Rock",159,1,1,0,25,101,65,41,56,-11,"A",0
+"Summer in the City","The Lovin' Spoonful","13-Aug-66",3,7.67,"Rock",161,1,1,0,22,110,68,42,56,-10,"Multiple Keys",0
+"Sunshine Superman","Donovan","3-Sep-66",1,5.67,"Rock",195,1,1,0,20,133,68,63,63,-7,"Db",0
+"You Can't Hurry Love","The Supremes","10-Sep-66",2,9.33,"Pop",167,0,0,1,22,97,73,49,69,-9,"Bb",0
+"Cherish","The Association","24-Sep-66",3,3.67,"Pop",193,1,2,0,26,110,41,49,56,-14,"F",0
+"Reach Out I'll Be There","Four Tops","15-Oct-66",2,8.67,"Funk/Soul",180,1,0,1,30,120,63,62,70,-8,"Ebm",0
+"96 Tears","? & the Mysterians","29-Oct-66",1,7.33,"Rock",186,1,0,0,22,124,56,65,88,-6,"G",0
+"Last Train to Clarksville","The Monkees","5-Nov-66",1,8.67,"Rock",166,1,1,0,22,98,68,48,72,-7,"G",0
+"Poor Side of Town","Johnny Rivers","12-Nov-66",1,4,"Rock",183,1,1,0,24,103,49,42,44,-12,"Multiple Keys",0
+"You Keep Me Hangin' On","The Supremes","19-Nov-66",2,9.33,"Pop",167,0,0,1,22,128,61,68,85,-7,"Multiple Keys",0
+"Winchester Cathedral","The New Vaudeville Band","3-Dec-66",3,2.67,"Pop",140,1,1,0,24,123,37,85,91,-14,"C",0
+"Good Vibrations","The Beach Boys","10-Dec-66",1,10,"Rock",219,1,1,0,23,133,47,40,38,-8,"Multiple Keys",0
+"I'm a Believer","The Monkees","31-Dec-66",7,8,"Rock",167,1,1,0,22,79,77,50,94,-6,"G",0
+"Kind of a Drag","The Buckinghams","18-Feb-67",2,4.67,"Pop",125,1,1,0,19,139,78,27,53,-8,"G",0
+"Ruby Tuesday","The Rolling Stones","4-Mar-67",1,7.67,"Rock",192,1,1,0,23,105,54,52,58,-11,"C",0
+"Love is Here and Now You're Gone","The Supremes","11-Mar-67",1,5.67,"Pop",167,0,0,1,22,114,64,57,85,-8,"Eb",0
+"Penny Lane","The Beatles","18-Mar-67",1,8,"Pop",183,1,1,0,24,113,49,65,49,-8,"Multiple Keys",0
+"Happy Together","The Turtles","25-Mar-67",3,8.33,"Rock",170,1,1,0,19,120,37,58,59,-10,"Multiple Keys",0
+"Somethin' Stupid","Frank Sinatra & Nancy Sinatra","15-Apr-67",4,5.33,"Pop",162,2,1,0,39,104,32,27,54,-13,"E",0
+"The Happening","The Supremes","13-May-67",1,4.33,"Pop",169,0,0,1,23,172,75,34,83,-7,"Multiple Keys",0
+"Groovin'","The Young Rascals","20-May-67",4,7,"Funk/Soul",150,1,1,0,23,107,46,61,68,-9,"Eb",0
+"Respect","Aretha Franklin","3-Jun-67",2,9.67,"Funk/Soul",149,0,0,1,25,115,56,81,96,-5,"Multiple Keys",0
+"Windy","The Association","1-Jul-67",4,5.33,"Pop",173,1,2,0,26,133,72,68,90,-8,"F",0
+"Light My Fire","The Doors","29-Jul-67",3,6,"Rock",174,1,1,0,23,130,63,48,73,-10,"Multiple Keys",1
+"All You Need is Love","The Beatles","19-Aug-67",1,4.67,"Pop",237,1,1,0,26,105,62,40,68,-6,"G",0
+"Ode to Billie Joe","Bobbie Gentry","26-Aug-67",4,9,"Folk/Country",255,0,1,0,25,120,19,64,69,-11,"D",0
+"The Letter","Box Tops","23-Sep-67",4,7.33,"Rock",112,1,1,0,16,139,43,64,90,-12,"C",0
+"To Sir With Love","Lulu","21-Oct-67",5,6.67,"Pop",166,0,1,0,18,97,40,55,30,-9,"E",0
+"Incense and Peppermints","Strawberry Alarm Clock","25-Nov-67",1,4,"Rock",167,1,1,0,NA,133,65,49,67,-11,"G",0
+"Daydream Believer","The Monkees","2-Dec-67",4,7.33,"Pop",172,1,1,0,21,126,49,51,65,-10,"G",0
+"Hello, Goodbye","The Beatles","30-Dec-67",3,7,"Pop",207,1,1,0,25,99,73,48,81,-9,"C",0
+"Judy in Disguise (With Glasses)","John Fred & His Playboy Band","20-Jan-68",2,4.67,"Rock",175,1,1,0,25,82,74,63,95,-8,"Eb",0
+"Green Tambourine","The Lemon Pipers","3-Feb-68",2,4.33,"Rock",147,1,1,0,19,111,61,50,31,-8,"G",0
+"Love is Blue","Paul Mauriat","10-Feb-68",5,6,"Pop",151,1,1,0,42,104,50,48,28,-11,"Multiple Keys",0
+"(Sittin' On) The Dock of the Bay","Otis Redding","16-Mar-68",4,10,"Funk/Soul",164,1,0,1,26,104,37,77,54,-11,"D",0
+"Honey","Bobby Goldsboro","13-Apr-68",5,1.33,"Pop",239,1,1,0,26,93,28,40,60,-13,"C",0
+"Tighten Up","Archie Bell & the Drells","18-May-68",2,7,"Funk/Soul",195,1,0,1,23,125,44,71,72,-13,"Gb",0
+"Mrs. Robinson","Simon & Garfunkel","1-Jun-68",3,7.33,"Rock",244,1,1,0,26,92,46,61,81,-14,"A",0
+"This Guy's in Love with You","Herb Alpert","22-Jun-68",4,4.33,"Pop",235,1,1,0,33,84,17,63,25,-13,"Db",0
+"Grazing in the Grass","Hugh Masekela","20-Jul-68",2,6.33,"Jazz",175,1,0,1,29,107,57,67,92,-12,"F",0
+"Hello, I Love You","The Doors","3-Aug-68",2,5.67,"Rock",133,1,1,0,24,118,55,60,96,-14,"A",0
+"People Got to Be Free","The Rascals","17-Aug-68",5,4.67,"Rock;Funk/Soul",182,1,1,0,24,126,70,69,96,-8,"C",0
+"Harper Valley PTA","Jeannie C. Riley","21-Sep-68",1,8.33,"Folk/Country",195,0,1,0,22,123,67,76,87,-7,"A",0
+"Hey Jude","The Beatles","28-Sep-68",9,8.33,"Pop",426,1,1,0,26,147,61,39,53,-8,"F",0
+"Love Child","Diana Ross & The Supremes","30-Nov-68",2,9.33,"Funk/Soul",183,0,0,1,24,105,96,57,65,-1,"Am",0
+"I Heard it Through the Grapevine","Marvin Gaye","14-Dec-68",7,10,"Funk/Soul",196,1,0,1,29,117,35,72,64,-11,"Ebm",0
+"Crimson and Clover","Tommy James & the Shondells","1-Feb-69",2,9,"Rock",203,1,1,0,21,86,59,41,65,-12,"B",0
+"Everyday People","Sly & the Family Stone","15-Feb-69",4,8.33,"Rock;Funk/Soul",142,2,2,2,25,115,62,81,77,-8,"G",0
+"Dizzy","Tommy Roe","15-Mar-69",4,5.67,"Pop",172,1,1,0,26,104,41,79,82,-11,"Multiple Keys",0
+"Aquarius/Let the Sunshine In (The Flesh Failures)","The 5th Dimension","12-Apr-69",6,5,"Pop",289,2,0,1,28,118,74,29,52,-6,"Multiple Keys",0
+"Get Back","The Beatles","24-May-69",5,7,"Rock",194,1,1,0,26,123,59,76,33,-10,"A",0
+"Love Theme from Romeo and Juliet","Henri Mancini & His Orchestra","28-Jun-69",2,5,"Pop",149,1,1,0,45,75,19,35,16,-12,"Am",0
+"In the Year 2525 (Exordium & Terminus)","Zager & Evans","12-Jul-69",6,2.33,"Rock",190,1,1,0,26,123,62,45,50,-6,"Abm",0
+"Honky Tonk Women","The Rolling Stones","23-Aug-69",4,8.67,"Rock",183,1,1,0,26,114,97,37,40,-5,"G",1
+"Sugar, Sugar","The Archies","20-Sep-69",4,6.67,"Pop",168,2,1,0,NA,122,87,74,97,-3,"D",0
+"I Can't Get Next to You","The Temptations","18-Oct-69",2,8,"Funk/Soul",175,1,0,1,26,109,69,68,71,-13,"Cm",0
+"Suspicious Minds","Elvis Presley","1-Nov-69",1,8.33,"Pop",261,1,1,0,34,117,38,49,71,-11,"G",0
+"Wedding Bell Blues","The 5th Dimension","8-Nov-69",3,5,"Pop",165,2,0,1,29,118,67,48,62,-5,"C",0
+"Come Together","The Beatles","29-Nov-69",1,8.67,"Rock",259,1,1,0,29,165,38,53,19,-12,"Dm",0
+"Na Na Hey Hey Kiss Him Goodbye","Steam","6-Dec-69",2,4.33,"Pop",225,1,1,0,26,115,92,64,51,-7,"Multiple Keys",0
+"Leaving on a Jet Plane","Peter, Paul & Mary","20-Dec-69",1,8,"Folk/Country",207,2,1,0,32,133,17,41,38,-17,"A",0
+"Someday We'll Be Together","Diana Ross & The Supremes","27-Dec-69",1,7,"Funk/Soul",194,0,0,1,25,107,54,68,83,-12,"Db",0
+"Raindrops Keep Falling on My Head","B.J. Thomas","3-Jan-70",4,6.33,"Pop",177,1,1,0,27,106,49,51,70,-8,"F",0
+"I Want You Back","The Jackson 5","31-Jan-70",1,10,"Pop",180,1,0,1,11,98,54,64,94,-13,"Ab",0
+"Venus","Shocking Blue","7-Feb-70",1,5.67,"Rock",187,2,1,0,24,128,76,69,96,-6,"Bm",0
+"Thank You (Falettinme Be Mice Elf Agin)","Sly & the Family Stone","14-Feb-70",2,7.33,"Funk/Soul",288,2,2,2,28,106,71,90,90,-13,"E",0
+"Bridge Over Troubled Water","Simon & Garfunkel","28-Feb-70",6,10,"Pop",293,1,1,0,28,80,21,15,26,-14,"Eb",0
+"Let it Be","The Beatles","11-Apr-70",2,8.67,"Funk/Soul;Rock",230,1,1,0,27,143,40,44,41,-8,"C",0
+"ABC","The Jackson 5","25-Apr-70",2,9,"Pop",175,1,0,1,11,94,81,71,95,-8,"Ab",0
+"American Woman","The Guess Who","9-May-70",3,6.67,"Rock",231,1,1,0,22,93,84,54,88,-8,"Em",0
+"Everything is Beautiful","Ray Stevens","30-May-70",2,2.67,"Funk/Soul",209,1,1,0,31,112,38,37,72,-15,"F",0
+"The Long and Winding Road","The Beatles","13-Jun-70",2,6,"Pop",220,1,1,0,28,133,37,33,31,-9,"Eb",0
+"The Love You Save","The Jackson 5","27-Jun-70",2,6.67,"Pop",180,1,0,1,11,114,70,75,95,-11,"G",0
+"Mama Told Me (Not to Come)","Three Dog Night","11-Jul-70",2,7,"Rock",199,1,2,2,29,120,67,67,82,-14,"Ab",0
+"(They Long to Be) Close to You","The Carpenters","25-Jul-70",4,5.67,"Pop",220,2,1,0,21,89,25,53,24,-15,"G",0
+"Make it With You","Bread","22-Aug-70",1,4,"Rock",192,1,1,0,28,84,36,63,47,-11,"E",0
+"War","Edwin Starr","29-Aug-70",3,9,"Funk/Soul",200,1,0,1,28,109,67,59,74,-12,"Ebm",0
+"Ain't No Mountain High Enough","Diana Ross","19-Sep-70",3,6,"Funk/Soul",205,0,0,1,26,99,79,39,38,-5,"Multiple Keys",0
+"Cracklin' Rosie","Neil Diamond","10-Oct-70",1,6.67,"Pop",180,1,1,0,29,128,49,56,86,-15,"Db",0
+"I'll Be There","The Jackson 5","17-Oct-70",5,8,"Funk/Soul",238,1,0,1,12,93,51,51,33,-7,"F",0
+"I Think I Love You","The Partridge Family","21-Nov-70",3,5.33,"Pop",173,2,1,0,20,102,47,43,78,-12,"Multiple Keys",0
+"The Tears of a Clown","Smokey Robinson & the Miracles","12-Dec-70",2,7.33,"Pop",182,2,0,1,30,128,61,59,95,-10,"Db",0
+"My Sweet Lord","George Harrison","26-Dec-70",4,8.33,"Rock",281,1,1,0,27,121,70,54,58,-9,"E",0
+"Knock Three Times","Tony Orlando & Dawn","23-Jan-71",3,3.67,"Pop",180,2,2,2,26,123,58,78,93,-10,"Db",0
+"One Bad Apple","The Osmonds","13-Feb-71",5,5.33,"Pop",165,1,1,0,15,101,57,60,92,-7,"C",0
+"Me and Bobby McGee","Janis Joplin","20-Mar-71",2,10,"Rock",271,0,1,0,27,93,46,45,66,-11,"G",0
+"Just My Imagination (Running Away with Me)","The Temptations","3-Apr-71",2,10,"Funk/Soul",228,1,0,1,31,92,24,43,46,-15,"C",0
+"Joy to the World","Three Dog Night","17-Apr-71",6,5.67,"Rock",197,1,2,2,29,127,67,65,97,-12,"D",0
+"Brown Sugar","The Rolling Stones","29-May-71",2,7.67,"Rock",230,1,1,0,27,129,93,64,97,-4,"C",1
+"Want Ads","Honey Cone","12-Jun-71",1,6.67,"Funk/Soul",166,0,0,1,NA,95,81,65,93,-7,"Ab",0
+"It's Too Late","Carole King","19-Jun-71",5,7,"Rock",231,0,1,0,29,104,44,45,81,-13,"Multiple Keys",0
+"Indian Reservation (The Lament of the Cherokee Reservation Indian)","The Raiders","24-Jul-71",1,4.67,"Rock",172,1,1,0,29,132,38,64,21,-13,"Dbm",0
+"You've Got a Friend","James Taylor","31-Jul-71",1,4.67,"Rock",268,1,1,0,23,92,28,69,44,-15,"A",0
+"How Can You Mend a Broken Heart","Bee Gees","7-Aug-71",4,4,"Rock",239,1,1,0,22,69,26,44,25,-14,"E",0
+"Uncle Albert/Admiral Halsey","Paul McCartney & Linda McCartney","4-Sep-71",1,7,"Rock",295,2,1,0,29,92,51,37,54,-10,"Multiple Keys",0
+"Go Away Little Girl","Donny Osmond","11-Sep-71",3,1.67,"Pop",149,1,1,0,13,108,41,39,38,-11,"G",0
+"Maggie May","Rod Stewart","2-Oct-71",5,9.33,"Rock",222,1,1,0,26,130,66,58,78,-9,"D",0
+"Gypsys, Tramps and Thieves","Cher","6-Nov-71",2,4.67,"Pop",158,0,1,0,25,171,67,48,70,-11,"Am",0
+"Theme from Shaft","Isaac Hayes","20-Nov-71",2,8.33,"Funk/Soul",197,1,0,1,29,120,69,50,69,-12,"Am",1
+"Family Affair","Sly & the Family Stone","4-Dec-71",3,8.67,"Funk/Soul",185,2,2,2,28,109,61,82,80,-14,"F",0
+"Brand New Key","Melanie","25-Dec-71",3,5.67,"Folk/Country",144,0,1,0,24,84,41,67,82,-8,"Db",0
+"American Pie","Don McLean","15-Jan-72",4,7.33,"Rock",515,1,1,0,26,138,48,53,49,-12,"G",1
+"Let's Stay Together","Al Green","12-Feb-72",1,9.33,"Funk/Soul",199,1,0,1,25,102,40,76,51,-11,"F",0
+"Without You","Harry Nilsson","19-Feb-72",4,7,"Pop",201,1,1,0,30,65,19,39,14,-15,"E",0
+"Heart of Gold","Neil Young","18-Mar-72",1,8.67,"Rock",187,1,1,0,26,171,46,54,80,-10,"Em",0
+"A Horse with No Name","America","25-Mar-72",3,6.33,"Rock",272,1,1,0,20,123,51,65,83,-17,"Em",0
+"The First Time Ever I Saw Your Face","Roberta Flack","15-Apr-72",6,8.33,"Pop",255,0,0,1,35,121,3,31,14,-22,"C",0
+"Oh Girl","The Chi-Lites","27-May-72",1,8.33,"Funk/Soul",216,1,0,1,31,134,40,42,60,-13,"Bb",0
+"I'll Take You There","The Staple Singers","3-Jun-72",1,8,"Funk/Soul",196,2,0,1,32,102,60,84,80,-9,"C",0
+"The Candy Man","Sammy Davis Jr.","10-Jun-72",3,2.33,"Pop",192,1,0,1,46,131,55,64,84,-11,"C",0
+"Song Sung Blue","Neil Diamond","1-Jul-72",1,5,"Pop",194,1,1,0,31,109,41,51,36,-13,"C",0
+"Lean on Me","Bill Withers","8-Jul-72",3,8,"Funk/Soul",258,1,0,1,34,75,22,62,42,-14,"C",0
+"Alone Again (Naturally)","Gilbert O'Sullivan","29-Jul-72",6,3,"Rock",217,1,1,0,25,172,46,56,56,-8,"Multiple Keys",0
+"Brandy (You're a Fine Girl)","Looking Glass","26-Aug-72",1,7,"Rock",186,1,1,0,24,125,77,72,77,-8,"E",0
+"Black and White","Three Dog Night","16-Sep-72",1,3.33,"Rock",206,1,1,0,30,109,58,69,94,-12,"B",0
+"Baby, Don't Get Hooked on Me","Mac Davis","23-Sep-72",3,3,"Rock",183,1,1,0,30,81,31,50,80,-18,"A",0
+"Ben","Michael Jackson","14-Oct-72",1,5,"Pop",167,1,0,1,14,136,17,44,30,-11,"F",0
+"My Ding-a-Ling","Chuck Berry","21-Oct-72",2,2,"Pop",256,1,0,1,46,122,55,69,49,-8,"Eb",1
+"I Can See Clearly Now","Johnny Nash","4-Nov-72",4,7.67,"Funk/Soul",164,1,0,1,32,123,37,68,62,-13,"Multiple Keys",0
+"Papa Was a Rollin' Stone","The Temptations","2-Dec-72",1,9.67,"Funk/Soul",419,1,0,1,28,121,41,82,90,-14,"Bbm",0
+"I Am Woman","Helen Reddy","9-Dec-72",1,5.33,"Pop",205,0,1,0,31,171,68,39,71,-9,"Multiple Keys",0
+"Me and Mrs. Jones","Billy Paul","16-Dec-72",3,7.33,"Funk/Soul",284,1,0,1,38,100,53,30,45,-10,"Ab",0
+"You're So Vain","Carly Simon","6-Jan-73",3,8.67,"Rock",258,0,1,0,27,106,68,66,65,-8,"C",0
+"Superstition","Stevie Wonder","27-Jan-73",1,10,"Funk/Soul",245,1,0,1,22,100,63,63,87,-12,"Ebm",0
+"Crocodile Rock","Elton John","3-Feb-73",3,5.33,"Rock",235,1,1,0,25,150,80,63,97,-7,"G",0
+"Killing Me Softly with His Song","Roberta Flack","24-Feb-73",5,8,"Pop",286,0,0,1,36,122,38,48,33,-10,"Ab",0
+"Love Train","The O'Jays","24-Mar-73",1,6.33,"Funk/Soul",178,1,0,1,30,123,57,74,69,-10,"C",0
+"The Night the Lights Went Out in Georgia","Vicki Lawrence","7-Apr-73",2,4.67,"Pop",220,0,1,0,24,173,41,46,61,-14,"Multiple Keys",0
+"Tie a Yellow Ribbon 'Round the Ole Oak Tree","Tony Orlando & Dawn","21-Apr-73",4,2,"Pop",206,2,2,2,29,88,62,56,68,-12,"F",1
+"You are the Sunshine of My Life","Stevie Wonder","19-May-73",1,7.67,"Funk/Soul",172,1,0,1,23,132,46,52,68,-15,"B",0
+"Frankenstein","The Edgar Winter Group","26-May-73",1,5.67,"Rock",206,1,1,0,26,96,89,51,29,-10,"Gm",0
+"My Love","Paul McCartney & Wings","2-Jun-73",4,5.33,"Rock",247,2,1,0,30,120,36,41,13,-14,"F",0
+"Give Me Love (Give Me Peace on Earth)","George Harrison","30-Jun-73",1,7.67,"Rock",215,1,1,0,30,79,56,39,60,-12,"F",0
+"Will it Go Round in Circles","Billy Preston","7-Jul-73",2,6.33,"Funk/Soul",224,1,0,1,26,98,71,69,96,-13,"Abm",0
+"Bad, Bad Leroy Brown","Jim Croce","21-Jul-73",2,4.67,"Rock",181,1,1,0,30,148,80,67,88,-7,"G",1
+"The Morning After","Maureen McGovern","4-Aug-73",2,2.67,"Pop",141,0,1,0,24,80,51,41,35,-7,"Multiple Keys",0
+"Touch Me in the Morning","Diana Ross","18-Aug-73",1,5.67,"Pop",207,0,0,1,29,137,62,35,60,-7,"Db",0
+"Brother Louie","Stories","25-Aug-73",2,5.33,"Funk/Soul",235,1,1,0,25,104,50,70,85,-9,"Am",0
+"Let's Get it On","Marvin Gaye","8-Sep-73",2,9.33,"Funk/Soul",240,1,0,1,34,167,65,48,65,-10,"Eb",1
+"Delta Dawn","Helen Reddy","15-Sep-73",1,5.67,"Pop",190,0,1,0,31,157,82,48,79,-8,"C",0
+"We're an American Band","Grand Funk","29-Sep-73",1,6.33,"Rock",307,1,1,0,24,128,89,64,92,-5,"D",0
+"Half-Breed","Cher","6-Oct-73",2,4.33,"Pop",167,0,1,0,27,103,46,65,90,-13,"Am",0
+"Angie","The Rolling Stones","20-Oct-73",1,7,"Rock",272,1,1,0,30,136,54,44,40,-6,"C",0
+"Midnight Train to Georgia","Gladys Knight & the Pips","27-Oct-73",2,9.33,"Funk/Soul",237,2,0,1,29,91,44,59,43,-10,"Db",0
+"Keep on Truckin'","Eddie Kendricks","10-Nov-73",2,7,"Funk/Soul",212,1,0,1,33,101,68,47,72,-12,"Fm",0
+"Photograph","Ringo Starr","24-Nov-73",1,6.33,"Pop",239,1,1,0,33,111,70,62,90,-13,"E",0
+"Top of the World","The Carpenters","1-Dec-73",2,4.67,"Pop",179,2,1,0,23,92,34,38,69,-13,"Bb",0
+"The Most Beautiful Girl","Charlie Rich","15-Dec-73",2,5.67,"Folk/Country",162,1,1,0,41,103,41,57,46,-10,"G",0
+"Time in a Bottle","Jim Croce","29-Dec-73",2,9.67,"Pop",147,1,1,0,30,134,26,54,63,-12,"Multiple Keys",0
+"The Joker","Steve Miller Band","12-Jan-74",1,7.67,"Rock",217,1,1,0,30,165,34,42,72,-13,"F",0
+"Show and Tell","Al Wilson","19-Jan-74",1,5.33,"Funk/Soul",207,1,0,1,34,89,42,37,93,-11,"D",0
+"You're Sixteen","Ringo Starr","26-Jan-74",1,3.33,"Rock",169,1,1,0,33,124,63,67,86,-13,"Ab",0
+"The Way We Were","Barbra Streisand","2-Feb-74",3,5.67,"Pop",211,0,1,0,31,138,32,26,17,-12,"A",0
+"Love's Theme","Love Unlimited Orchestra","9-Feb-74",1,6,"Funk/Soul",219,1,0,1,29,97,71,52,84,-10,"D",0
+"Seasons in the Sun","Terry Jacks","2-Mar-74",3,3,"Pop",186,1,1,0,29,99,61,68,82,-8,"Multiple Keys",0
+"Dark Lady","Cher","23-Mar-74",1,4.33,"Pop",209,0,1,0,27,147,41,53,44,-15,"Cm",0
+"Sunshine on My Shoulders","John Denver","30-Mar-74",1,6.33,"Folk/Country",208,1,1,0,30,147,17,32,26,-14,"Bb",0
+"Hooked on a Feeling","Blue Swede","6-Apr-74",1,6,"Rock",173,1,1,0,26,118,67,55,90,-11,"Ab",0
+"Bennie and the Jets","Elton John","13-Apr-74",1,7.33,"Funk/Soul;Rock",323,1,1,0,27,132,72,66,75,-7,"C",0
+"TSOP (The Sound of Philadelphia)","MFSB","20-Apr-74",2,7,"Funk/Soul",212,1,2,2,NA,114,85,72,96,-8,"C",0
+"The Loco-motion","Grand Funk","4-May-74",2,5.33,"Rock",167,1,1,0,24,125,95,48,28,-4,"D",0
+"The Streak","Ray Stevens","18-May-74",3,1,"Folk/Country",198,1,1,0,35,120,52,69,79,-14,"C",0
+"Band on the Run","Paul McCartney & Wings","8-Jun-74",1,8.33,"Rock",309,2,1,0,31,125,60,48,67,-9,"G",0
+"Billy Don't Be a Hero","Bo Donaldson & the Heywoods","15-Jun-74",2,2.33,"Rock",207,1,1,0,NA,122,69,70,96,-10,"Bb",0
+"Sundown","Gordon Lightfoot","29-Jun-74",1,8.33,"Rock",213,1,1,0,35,106,43,79,75,-15,"Gb",0
+"Rock the Boat","Hues Corporation","6-Jul-74",1,7,"Funk/Soul",203,2,0,1,30,107,58,60,88,-10,"Eb",0
+"Rock Your Baby","George McCrae","13-Jul-74",2,8,"Funk/Soul",199,1,0,1,29,104,66,61,94,-13,"Eb",0
+"Annie's Song","John Denver","27-Jul-74",2,6.67,"Folk/Country",181,1,1,0,30,146,31,30,46,-11,"D",0
+"Feel Like Makin' Love","Roberta Flack","10-Aug-74",1,6.33,"Funk/Soul",175,0,0,1,37,94,26,68,69,-22,"Eb",1
+"The Night Chicago Died","Paper Lace","17-Aug-74",1,4.33,"Rock",203,1,1,0,26,107,45,77,81,-12,"C",0
+"(You're) Having My Baby","Paul Anka & Odia Coates","24-Aug-74",3,2,"Pop",156,2,2,2,33,75,59,60,69,-9,"C",0
+"I Shot the Sheriff","Eric Clapton","14-Sep-74",1,4.33,"Reggae",210,1,1,0,29,94,57,73,69,-14,"Gm",0
+"Can't Get Enough of Your Love, Babe","Barry White","21-Sep-74",1,8,"Funk/Soul",229,1,0,1,30,111,83,80,75,-7,"F",1
+"Rock Me Gently","Andy Kim","28-Sep-74",1,8,"Pop",208,1,1,0,27,123,70,72,78,-8,"C",0
+"I Honestly Love You","Olivia Newton-John","5-Oct-74",2,4.67,"Pop",221,0,1,0,26,135,11,36,15,-15,"Bb",0
+"Nothing from Nothing","Billy Preston","19-Oct-74",1,6,"Funk/Soul",158,1,0,1,28,103,71,81,92,-8,"C",0
+"Then Came You","Dionne Warwick & The Spinners","26-Oct-74",1,6.67,"Funk/Soul",239,2,0,1,33,116,59,84,80,-12,"F",0
+"You Haven't Done Nothin'","Stevie Wonder","2-Nov-74",1,7.67,"Funk/Soul",203,1,0,1,24,101,63,75,82,-10,"Ebm",0
+"You Ain't Seen Nothing Yet","Bachman-Turner Overdrive","9-Nov-74",1,7.33,"Rock",218,1,1,0,31,120,53,51,79,-12,"A",0
+"Whatever Gets You Thru the Night","John Lennon","16-Nov-74",1,6.67,"Rock",206,1,1,0,34,126,79,57,77,-11,"D",0
+"I Can Help","Billy Swam","23-Nov-74",2,5,"Pop",178,1,1,0,32,125,68,47,53,-9,"C",0
+"Kung Fu Fighting","Carl Douglas","7-Dec-74",2,4,"Funk/Soul",195,1,0,1,32,102,67,60,59,-10,"D",0
+"Cat's in the Cradle","Harry Chapin","21-Dec-74",1,8.33,"Rock",212,1,1,0,32,78,48,46,51,-13,"F",0
+"Angie Baby","Helen Reddy","28-Dec-74",1,6.33,"Pop",211,0,1,0,33,80,34,56,60,-16,"Gm",0
+"Lucy in the Sky with Diamonds","Elton John","4-Jan-75",2,4,"Rock",354,1,1,0,27,164,57,39,54,-8,"Multiple Keys",0
+"Mandy","Barry Manilow","18-Jan-75",1,4.33,"Pop",195,1,1,0,31,104,46,31,32,-9,"Bb",0
+"Please Mr. Postman","The Carpenters","25-Jan-75",1,1.67,"Pop",172,2,1,0,24,133,55,66,96,-12,"A",0
+"Laughter in the Rain","Neil Sedaka","1-Feb-75",1,2.67,"Pop",170,1,1,0,35,101,63,51,95,-9,"F",0
+"Fire","Ohio Players","8-Feb-75",1,7.33,"Funk/Soul",192,1,0,1,NA,107,68,62,84,-16,"Cm",0
+"You're No Good","Linda Ronstadt","15-Feb-75",1,7,"Rock",224,0,1,0,28,105,52,67,63,-10,"Bbm",0
+"Pick Up the Pieces","Average White Band","22-Feb-75",1,6.67,"Funk/Soul",185,1,1,0,27,107,80,76,93,-8,"Fm",0
+"Best of My Love","Eagles","1-Mar-75",1,5.33,"Rock",330,1,1,0,27,90,38,40,74,-12,"C",0
+"Have You Never Been Mellow","Olivia Newton-John","8-Mar-75",1,3,"Pop",210,0,1,0,26,122,32,54,42,-14,"C",0
+"Black Water","The Doobie Brothers","15-Mar-75",1,7.67,"Rock;Folk/Country",255,1,2,2,26,168,31,54,65,-18,"D",0
+"My Eyes Adored You","Frankie Valli","22-Mar-75",1,5.67,"Pop",212,1,1,0,41,138,50,46,39,-10,"D",0
+"Lady Marmalade","LaBelle","29-Mar-75",1,7,"Funk/Soul",236,0,0,1,30,118,65,57,95,-11,"Dm",0
+"Lovin' You","Minnie Riperton","29-Mar-75",1,4.67,"Pop",204,0,0,1,27,101,21,39,31,-12,"A",0
+"Philadelphia Freedom","Elton John","12-Apr-75",2,6.67,"Rock",325,1,1,0,28,125,68,71,81,-6,"A",0
+"(Hey Won't You Play) Another Somebody Done Somebody Wrong Song","B.J. Thomas","26-Apr-75",1,5.33,"Folk/Country",206,1,1,0,32,125,53,64,70,-11,"E",0
+"He Don't Love You (Like I Love You)","Tony Orlando & Dawn","3-May-75",3,3.33,"Pop",219,2,2,2,31,119,55,64,81,-12,"A",0
+"Shining Star","Earth, Wind & Fire","24-May-75",1,9,"Funk/Soul",170,1,0,1,34,103,69,68,80,-13,"Em",0
+"Before the Next Teardrop Falls","Freddy Fender","31-May-75",1,7.33,"Folk/Country",153,1,0,0,37,92,29,77,69,-9,"Bb",0
+"Thank God I'm a Country Boy","John Denver","7-Jun-75",1,5,"Folk/Country",167,1,1,0,31,101,88,62,78,-9,"A",0
+"Sister Golden Hair","America","14-Jun-75",1,7,"Rock",200,1,1,0,23,135,55,44,72,-12,"E",1
+"Love Will Keep Us Together","Captain & Tennille","21-Jun-75",4,4.67,"Pop",205,2,1,0,34,130,78,63,93,-4,"B",0
+"Listen to What the Man Said","Paul McCartney & Wings","19-Jul-75",1,5,"Pop",235,2,1,0,33,113,67,49,59,-7,"G",0
+"The Hustle","Van McCoy & the Soul City Symphony","26-Jul-75",1,4.33,"Funk/Soul",254,1,0,1,35,110,62,64,75,-18,"F",0
+"One of these Nights","Eagles","2-Aug-75",1,7.67,"Rock",214,1,1,0,28,110,58,70,82,-12,"G",0
+"Jive Talkin'","Bee Gees","9-Aug-75",2,7.67,"Funk/Soul",213,1,1,0,27,106,57,81,70,-13,"C",0
+"Fallin' in Love","Hamilton, Joe Frank & Reynolds","23-Aug-75",1,4.33,"Pop",194,1,1,0,29,87,41,58,71,-15,"Gbm",0
+"Get Down Tonight","KC & the Sunshine Band","30-Aug-75",1,8,"Funk/Soul",192,1,2,2,24,113,86,67,90,-10,"Bb",0
+"Rhinestone Cowboy","Glen Campbell","6-Sep-75",2,7,"Rock",194,1,1,0,39,115,63,64,65,-8,"C",0
+"Fame","David Bowie","20-Sep-75",2,9.67,"Funk/Soul",214,1,1,0,28,95,42,77,74,-15,"Bbm",0
+"I'm Sorry","John Denver","27-Sep-75",1,3.67,"Pop",212,1,1,0,31,128,24,45,53,-15,"G",0
+"Bad Blood","Neil Sedaka","11-Oct-75",3,5.67,"Rock",189,1,1,0,36,149,75,74,84,-8,"A",1
+"Island Girl","Elton John","1-Nov-75",3,3.33,"Rock",225,1,1,0,28,140,94,72,38,-6,"Bb",0
+"That's the Way (I Like It)","KC & the Sunshine Band","22-Nov-75",2,7,"Funk/Soul",185,1,2,2,24,109,88,68,92,-10,"Fm",0
+"Fly, Robin, Fly","Silver Connection","9-Nov-75",3,5.33,"Funk/Soul",335,0,2,2,NA,100,48,86,93,-12,"Cm",0
+"Let's Do It Again","The Staple Singers","27-Dec-75",1,7.67,"Funk/Soul",294,2,0,1,36,80,52,64,82,-11,"E",1
+"Saturday Night","Bay City Rollers","2-Jan-76",1,6.33,"Rock",174,1,1,0,20,137,68,51,91,-10,"G",0
+"Convoy","C.W. McCall","10-Jan-76",1,3.33,"Pop",231,1,1,0,47,112,54,68,80,-15,"F",0
+"I Write the Songs","Barry Manilow","17-Jan-76",1,4,"Pop",235,1,1,0,32,143,44,27,32,-7,"F",0
+"Theme from Mahogany (Do You Know Where You're Going To)","Diana Ross","24-Jan-76",1,6,"Pop",204,0,0,1,31,140,42,35,28,-11,"Multiple Keys",0
+"Love Rollercoaster","Ohio Players","31-Jan-76",1,5.33,"Funk/Soul",172,1,0,1,NA,115,82,61,47,-10,"C",0
+"50 Ways to Leave Your Lover","Paul Simon","7-Feb-76",3,8.33,"Pop",217,1,1,0,34,102,37,81,29,-13,"G",0
+"Theme from S.W.A.T.","Rhythm Heritage","28-Feb-76",1,6.33,"Funk/Soul",201,1,2,2,33,109,90,63,96,-6,"Am",0
+"Love Machine (Part 1)","The Miracles","6-Mar-76",1,5,"Funk/Soul",181,1,0,1,25,144,83,74,82,-12,"Multiple Keys",0
+"December, 1963 (Oh What a Night!)","Frankie Valli & the Four Seasons","13-Mar-76",3,8.33,"Funk/Soul",197,1,1,0,41,104,50,74,97,-13,"Db",0
+"Disco Lady","Johnnie Taylor","3-Apr-76",4,6.33,"Funk/Soul",267,1,0,1,41,104,79,72,85,-8,"D",0
+"Let Your Love Flow","The Bellamy Brothers","1-May-76",1,7,"Rock",199,1,1,0,28,109,55,68,95,-15,"Eb",0
+"Welcome Back","John Sebastian","8-May-76",1,5,"Pop",171,1,1,0,32,111,37,75,90,-13,"D",0
+"Boogie Fever","The Sylvers","15-May-76",1,6.67,"Funk/Soul",201,2,0,1,19,133,82,92,97,-8,"Multiple Keys",0
+"Silly Love Songs","Paul McCartney & Wings","22-May-76",5,6.67,"Pop",352,2,1,0,33,125,34,74,82,-16,"C",0
+"Love Hangover","Diana Ross","29-May-76",2,7.67,"Funk/Soul",229,0,0,1,32,112,76,50,86,-10,"Ebm",0
+"Afternoon Delight","Starland Vocal Band","10-Jul-76",2,5.33,"Rock",191,2,2,0,31,147,44,49,79,-12,"F",1
+"Kiss and Say Goodbye","The Manhattans","24-Jul-76",2,8.33,"Funk/Soul",209,1,0,1,24,129,42,64,58,-10,"Bb",0
+"Don't Go Breaking My Heart","Elton John & Kiki Dee","7-Aug-76",4,6.67,"Pop",271,2,1,0,29,131,86,74,78,-8,"F",0
+"You Should Be Dancing","Bee Gees","4-Sep-76",1,8.33,"Funk/Soul",256,1,1,0,30,123,72,68,96,-11,"Gm",0
+"(Shake, Shake, Shake) Shake Your Booty","KC & the Sunshine Band","11-Sep-76",1,5.33,"Funk/Soul",187,1,2,2,25,112,82,65,96,-12,"Cm",0
+"Play That Funky Music","Wild Cherry","18-Sep-76",3,8,"Funk/Soul",191,1,1,0,25,109,73,79,90,-10,"Em",0
+"A Fifth of Beethoven","Walter Murphy & the Big Apple Band","9-Oct-76",1,6.33,"Funk/Soul",182,1,1,0,23,109,51,69,78,-13,"Cm",0
+"Disco Duck","Rick Dees & His Cast of Idiots","16-Oct-76",1,1.67,"Funk/Soul",199,1,1,0,26,117,45,81,97,-15,"A",0
+"If You Leave Me Now","Chicago","23-Oct-76",2,4.67,"Rock",235,1,1,0,32,104,56,43,28,-7,"B",0
+"Rock 'n Me","Steve Miller Band","6-Nov-76",1,7,"Rock",187,1,1,0,33,122,58,69,89,-11,"E",0
+"Tonight's the Night (Gonna Be Alright)","Rod Stewart","13-Nov-76",8,6,"Rock",213,1,1,0,31,135,61,57,64,-11,"Multiple Keys",0
+"You Don't Have to Be a Star (To Be in My Show)","Marilyn McCoo & Billy Davis, Jr.","8-Jan-77",1,6,"Funk/Soul;Pop",209,2,1,0,36,100,56,47,92,-8,"E",0
+"You Make Me Feel Like Dancing","Leo Sayer","15-Jan-77",1,4,"Funk/Soul",173,1,1,0,28,96,55,76,83,-12,"Multiple Keys",0
+"I Wish","Stevie Wonder","22-Jan-77",1,9,"Funk/Soul",271,1,0,1,26,106,71,85,95,-9,"Ebm",0
+"Car Wash","Rose Royce","29-Jan-77",1,6.67,"Funk/Soul",200,2,0,1,23,115,66,73,79,-7,"D",0
+"Torn Between Two Lovers","Mary MacGregor","5-Feb-77",2,2,"Rock",229,0,1,0,28,132,38,55,50,-11,"Bb",0
+"Blinded by the Light","Manfred Mann's Earth Band","19-Feb-77",1,7,"Rock",229,1,1,0,36,141,56,59,58,-12,"F",0
+"New Kid in Town","Eagles","26-Feb-77",1,7,"Rock",305,1,1,0,28,107,43,65,65,-10,"E",0
+"Evergreen (Love Theme From A Star is Born)","Barbra Streisand","5-Mar-77",3,5,"Pop",185,0,1,0,34,114,30,34,19,-11,"A",0
+"Rich Girl","Daryl Hall & John Oates","26-Mar-77",2,7,"Pop",142,1,1,0,29,170,68,57,82,-7,"F",1
+"Dancing Queen","ABBA","9-Apr-77",1,10,"Pop",230,2,1,0,30,101,88,54,75,-7,"A",0
+"Don't Give Up on Us","David Soul","16-Apr-77",1,4,"Pop",219,1,1,0,33,99,34,26,41,-14,"A",0
+"Don't Leave Me This Way","Thelma Houston","23-Apr-77",1,9.33,"Funk/Soul",218,0,0,1,30,122,84,55,67,-6,"Multiple Keys",0
+"Southern Nights","Glen Campbell","30-Apr-77",1,5.33,"Pop",180,1,1,0,41,95,81,70,85,-9,"E",0
+"Hotel California","Eagles","7-May-77",1,8,"Rock",391,1,1,0,29,147,51,58,61,-9,"Bm",1
+"When I Need You","Leo Sayer","14-May-77",1,6.33,"Pop",253,1,1,0,28,110,34,60,11,-8,"Db",0
+"Sir Duke","Stevie Wonder","21-May-77",3,9.67,"Pop",232,1,0,1,27,107,57,59,95,-10,"Gb",0
+"I'm Your Boogie Man","KC & the Sunshine Band","11-Jun-77",1,7.33,"Funk/Soul",244,1,2,2,26,113,75,75,91,-13,"Fm",0
+"Dreams","Fleetwood Mac","18-Jun-77",1,10,"Rock",245,2,1,0,29,120,49,83,79,-10,"C",0
+"Got to Give it Up","Marvin Gaye","25-Jun-77",1,9.33,"Funk/Soul",255,1,0,1,38,123,85,86,89,-8,"D",0
+"Gonna Fly Now (Theme from Rocky)","Bill Conti","2-Jul-77",1,7,"Rock",170,1,1,0,35,95,54,41,45,-13,"Am",0
+"Undercover Angel","Alan O'Day","9-Jul-77",1,3.67,"Pop",200,1,1,0,36,103,53,67,80,-10,"Bb",0
+"Da Doo Ron Ron","Shaun Cassidy","16-Jul-77",1,2.33,"Pop",170,1,1,0,18,144,58,57,88,-12,"C",0
+"Looks Like We Made It","Barry Manilow","23-Jul-77",1,5.67,"Pop",213,1,1,0,34,140,48,30,46,-8,"C",0
+"I Just Want to Be Your Everything","Andy Gibb","30-Jul-77",4,6.33,"Funk/Soul",212,1,1,0,19,97,65,65,87,-7,"A",0
+"Best of My Love","The Emotions","20-Aug-77",5,9,"Funk/Soul",219,0,0,1,NA,115,71,78,97,-7,"C",0
+"Star Wars Theme/Cantina Band","Meco","1-Oct-77",1,4.67,"Funk/Soul",212,1,1,0,37,125,92,68,55,-4,"Multiple Keys",0
+"You Light Up My Life","Debby Boone","15-Oct-77",10,4.33,"Pop",216,0,1,0,21,78,37,33,7,-10,"D",0
+"How Deep is Your Love","Bee Gees","24-Dec-77",3,8,"Pop",245,1,1,0,31,105,36,63,67,-9,"Eb",0
+"Baby Come Back","Player","14-Jan-78",3,5,"Rock",214,1,1,0,29,156,60,64,55,-10,"Multiple Keys",0
+"Stayin' Alive","Bee Gees","4-Feb-78",4,10,"Funk/Soul",283,1,1,0,31,104,83,70,94,-7,"Fm",0
+"(Love Is) Thicker Than Water","Andy Gibb","4-Mar-78",2,5.33,"Pop",198,1,1,0,19,97,53,58,58,-8,"Gbm",0
+"Night Fever","Bee Gees","18-Mar-78",8,9,"Funk/Soul",212,1,1,0,31,109,80,73,89,-7,"Dbm",0
+"If I Can't Have You","Yvonne Elliman","13-May-78",1,5.67,"Funk/Soul",180,0,0,0,26,109,68,62,81,-11,"B",0
+"With a Little Luck","Paul McCartney & Wings","20-May-78",2,4.67,"Pop",194,1,1,0,35,112,40,61,36,-14,"E",1
+"Too Much, Too Little, Too Late","Johnny Mathis & Deniece Williams","3-Jun-78",1,4.33,"Funk/Soul",180,2,0,1,35,78,52,50,71,-11,"Fm",0
+"You're the One That I Want","John Travolta & Olivia Newton-John","10-Jun-78",1,7,"Rock",169,2,1,0,27,107,61,76,82,-11,"C",0
+"Shadow Dancing","Andy Gibb","17-Jun-78",7,7.67,"Funk/Soul",276,1,1,0,20,102,60,74,95,-10,"Gm",0
+"Miss You","The Rolling Stones","5-Aug-78",1,9.67,"Funk/Soul",225,1,1,0,35,110,71,80,85,-5,"Am",0
+"Three Times a Lady","Commodores","12-Aug-78",2,6,"Pop",217,1,0,1,29,151,8,39,18,-21,"Ab",0
+"Grease","Frankie Valli","26-Aug-78",2,6.33,"Funk/Soul",206,1,1,0,44,110,37,82,85,-12,"Bb",0
+"Boogie Oogie Oogie","A Taste of Honey","9-Sep-78",3,6.67,"Funk/Soul",338,2,0,1,NA,124,52,83,91,-11,"Dm",0
+"Kiss You All Over","Exile","30-Sep-78",4,5.67,"Rock",296,1,1,0,34,103,30,67,57,-17,"C",0
+"Hot Child in the City","Nick Gilder","28-Oct-78",1,6.33,"Rock",215,1,1,0,26,111,66,73,82,-7,"E",0
+"You Needed Me","Anne Murray","4-Nov-78",1,4,"Pop",220,0,1,0,33,62,30,50,17,-11,"A",0
+"MacArthur Park","Donna Summer","11-Nov-78",3,7,"Funk/Soul",235,0,0,1,29,131,67,58,45,-12,"Multiple Keys",0
+"You Don't Bring Me Flowers","Barbra Streisand & Neil Diamond","2-Dec-78",2,4.33,"Pop",195,2,1,0,37,67,12,16,24,-18,"C",0
+"Le Freak","Chic","9-Dec-78",6,8.33,"Funk/Soul",216,2,0,1,26,120,55,83,89,-14,"C",0
+"Too Much Heaven","Bee Gees","6-Jan-79",3,6,"Funk/Soul",296,1,1,0,32,166,44,50,35,-13,"Db",0
+"Do Ya Think I'm Sexy?","Rod Stewart","10-Feb-79",4,7.67,"Funk/Soul",326,1,1,0,34,112,47,72,88,-15,"Dm",1
+"I Will Survive","Gloria Gaynor","10-Mar-79",3,10,"Funk/Soul",198,0,0,1,29,117,73,78,53,-9,"C",0
+"Tragedy","Bee Gees","24-Mar-79",2,8,"Rock",303,1,1,0,32,118,53,67,81,-11,"Bm",0
+"What a Fool Believes","The Doobie Brothers","14-Apr-79",1,4,"Pop",224,1,2,2,27,121,38,76,99,-15,"Db",0
+"Knock On Wood","Amii Stewart","21-Apr-79",1,3.67,"Electronic/Dance",227,0,0,1,23,139,87,69,67,-6,"Ab",0
+"Heart of Glass","Blondie","28-Apr-79",1,9.33,"Funk/Soul",229,2,1,0,33,115,65,77,69,-6,"E",1
+"Reunited","Peaches & Herb","5-May-79",4,4.67,"Funk/Soul",345,2,0,1,36,76,50,56,34,-10,"Db",0
+"Hot Stuff","Donna Summer","2-Jun-79",3,9,"Funk/Soul",226,0,0,1,30,121,70,82,97,-12,"Gm",0
+"Love You Inside Out","Bee Gees","9-Jun-79",1,7,"Funk/Soul",228,1,1,0,32,95,52,71,83,-11,"Bm",0
+"Ring My Bell","Anita Ward","30-Jun-79",2,7,"Funk/Soul",212,0,0,1,22,126,54,78,97,-13,"Fm",0
+"Bad Girls","Donna Summer","14-Jul-79",5,9,"Funk/Soul",295,0,0,1,30,121,70,86,97,-15,"Dm",0
+"Good Times","Chic","18-Aug-79",1,9.33,"Funk/Soul",224,2,0,1,26,111,71,86,82,-11,"Bm",0
+"My Sharona","The Knack","25-Aug-79",6,8,"Rock",239,1,1,0,27,148,75,62,86,-7,"Multiple Keys",0
+"Sad Eyes","Robert John","6-Oct-79",1,5.33,"Rock",213,1,1,0,33,72,38,55,71,-11,"C",0
+"Don't Stop 'Til You Get Enough","Michael Jackson","13-Oct-79",1,10,"Funk/Soul",365,1,0,1,21,119,82,88,95,-10,"B",0
+"Rise","Herb Alpert","20-Oct-79",2,5,"Jazz",230,1,1,0,44,99,45,81,90,-11,"Multiple Keys",0
+"Pop Muzik","M","3-Nov-79",1,7,"Electronic/Dance",201,1,1,0,32,111,73,94,97,-10,"Db",0
+"Heartache Tonight","Eagles","10-Nov-79",1,5.67,"Rock",265,1,1,0,31,113,51,81,86,-6,"G",0
+"Still","Commodores","17-Nov-79",1,3.67,"Pop",224,1,0,1,29,125,17,35,34,-14,"Db",0
+"No More Tears (Enough is Enough)","Barbra Streisand & Donna Summer","24-Nov-79",2,7.33,"Funk/Soul",288,0,2,2,34,135,67,57,19,-8,"Dm",0
+"Babe","Styx","8-Dec-79",2,4.33,"Rock",242,1,1,0,32,169,20,27,9,-14,"D",0
+"Escape (The Piña Colada Song)","Rupert Holmes","22-Dec-79",3,5.33,"Rock",231,1,1,0,32,141,66,78,88,-10,"C",0
+"Please Don't Go","KC & the Sunshine Band","5-Jan-80",1,6.33,"Funk/Soul",230,1,2,2,28,96,62,48,44,-11,"Db",0
+"Rock With You","Michael Jackson","19-Jan-80",4,9.33,"Funk/Soul",203,1,0,1,21,115,70,80,85,-7,"Db",0
+"Do That to Me One More Time","Captain & Tennille","16-Feb-80",1,3.33,"Rock",251,2,1,0,38,90,45,69,46,-11,"C",0
+"Crazy Little Thing Called Love","Queen","23-Feb-80",4,6.33,"Rock",263,1,2,0,33,77,76,60,71,-7,"D",0
+"Another Brick in the Wall, Pt. 2","Pink Floyd","22-Mar-80",4,6,"Rock;Funk/Soul",198,1,1,0,36,104,39,69,72,-16,"Dm",0
+"Call Me","Blondie","19-Apr-80",6,8,"Rock",212,2,1,0,34,143,83,55,77,-7,"Dm",0
+"Funkytown","Lipps Inc.","31-May-80",4,7,"Funk/Soul",239,2,2,2,24,122,45,89,26,-14,"C",0
+"Coming Up","Paul McCartney","28-Jun-80",3,6.33,"Rock",248,1,1,0,38,137,75,58,68,-8,"E",0
+"It's Still Rock and Roll to Me","Billy Joel","19-Jul-80",2,7,"Rock",176,1,1,0,31,141,68,75,54,-8,"C",0
+"Magic","Olivia Newton-John","2-Aug-80",4,4.33,"Rock",269,0,1,0,31,104,50,70,59,-9,"D",0
+"Sailing","Christopher Cross","30-Aug-80",1,6.67,"Rock",256,1,1,0,29,150,38,47,18,-13,"A",0
+"Upside Down","Diana Ross","6-Sep-80",4,6.67,"Funk/Soul",245,0,0,1,36,108,86,87,88,-9,"Multiple Keys",0
+"Another One Bites the Dust","Queen","4-Oct-80",3,8.67,"Funk/Soul",215,1,2,0,34,110,53,93,76,-6,"Fm",0
+"Woman in Love","Barbra Streisand","25-Oct-80",3,5,"Pop",231,0,1,0,38,170,28,47,33,-16,"Ebm",0
+"Lady","Kenny Rogers","15-Nov-80",6,5,"Pop",231,1,1,0,42,137,18,36,20,-16,"Ebm",0
+"(Just Like) Starting Over","John Lennon","27-Dec-80",5,7.67,"Rock",234,1,1,0,40,99,79,70,42,-6,"A",0
+"The Tide is High","Blondie","31-Jan-81",1,6.67,"Reggae",233,2,1,0,35,97,67,78,96,-7,"B",0
+"Celebration","Kool & the Gang","7-Feb-81",2,7,"Funk/Soul",221,1,0,1,30,122,84,83,96,-5,"Ab",0
+"9 to 5","Dolly Parton","21-Feb-81",2,7.33,"Pop",162,0,1,0,35,105,78,55,81,-6,"Gb",0
+"I Love a Rainy Night","Eddie Rabbit","28-Feb-81",2,6.33,"Pop",191,1,1,0,39,131,72,69,96,-8,"C",0
+"Keep on Loving You","REO Speedwagon","21-Mar-81",1,6.67,"Rock",200,1,1,0,29,175,72,31,41,-6,"C",0
+"Rapture","Blondie","28-Mar-81",2,6,"Funk/Soul;Electronic/Dance",391,2,1,0,35,108,85,70,81,-6,"Em",0
+"Kiss On My List","Daryl Hall & John Oates","11-Apr-81",3,5.33,"Pop",232,1,1,0,34,121,74,81,96,-9,"C",0
+"Morning Train (Nine to Five)","Sheena Easton","2-May-81",2,6.33,"Pop",300,0,1,0,22,122,51,80,80,-11,"Ab",0
+"Bette Davis Eyes","Kim Carnes","16-May-81",9,7.33,"Rock",328,0,1,0,35,117,65,68,60,-10,"F",0
+"Stars on 45","Stars on 45","20-Jun-81",1,3.33,"Funk/Soul",288,2,1,0,34,123,65,78,97,-11,"G",0
+"The One That You Love","Air Supply","25-Jul-81",1,4,"Pop",259,1,1,0,32,110,48,40,18,-8,"F",0
+"Jessie's Girl","Rick Springfield","1-Aug-81",2,8,"Rock",194,1,1,0,31,132,83,73,82,-6,"D",0
+"Endless Love","Diana Ross & Lionel Richie","15-Aug-81",9,6,"Pop",266,2,0,1,35,94,33,46,24,-10,"Bb",0
+"Arthur's Theme (The Best That You Can Do)","Christopher Cross","17-Oct-81",3,8.67,"Pop",236,1,1,0,30,137,51,53,52,-11,"A",0
+"Private Eyes","Daryl Hall & John Oates","7-Nov-81",2,5,"Rock",217,1,1,0,34,121,94,85,84,-7,"Am",0
+"Physical","Olivia Newton-John","21-Nov-81",10,4.33,"Pop",225,0,1,0,33,124,63,83,90,-11,"Em",1
+"I Can't Go For That (No Can Do)","Daryl Hall & John Oates","30-Jan-82",1,5,"Pop",225,1,1,0,34,111,49,85,97,-8,"Multiple Keys",0
+"Centerfold","The J. Geils Band","6-Feb-82",6,7.33,"Rock",216,1,1,0,35,114,68,65,89,-12,"C",0
+"I Love Rock 'n' Roll","Joan Jett & the Blackhearts","20-Mar-82",7,5,"Rock",175,2,1,0,23,94,72,54,90,-5,"Em",0
+"Chariots of Fire","Vangelis","8-May-82",1,4.67,"Electronic/Dance;Classical",202,1,1,0,39,136,44,44,4,-10,"Db",0
+"Ebony & Ivory","Paul McCartney & Stevie Wonder","15-May-82",7,4.33,"Pop",220,1,2,2,36,81,46,64,81,-15,"E",0
+"Don't You Want Me","The Human League","3-Jul-82",3,6.33,"Electronic/Dance",236,2,1,0,26,118,74,73,96,-8,"C",0
+"Eye of the Tiger","Survivor","24-Jul-82",6,6,"Rock",227,1,1,0,29,109,48,82,56,-13,"Cm",0
+"Abracadabra","Steve Miller Band","4-Sep-82",2,3.33,"Rock",219,1,2,2,38,127,54,79,96,-13,"Am",0
+"Hard to Say I'm Sorry","Chicago","11-Sep-82",2,4.33,"Pop",221,1,1,0,37,145,42,54,26,-7,"Multiple Keys",0
+"Jack and Diane","John Cougar","2-Oct-82",4,9.67,"Rock",254,1,1,0,30,104,41,82,62,-8,"A",0
+"Who Can It Be Now?","Men at Work","30-Oct-82",1,5,"Rock",201,1,1,0,29,128,48,81,96,-15,"E",0
+"Up Where We Belong","Joe Cocker & Jennifer Warnes","6-Nov-82",3,5,"Pop",233,2,1,0,37,139,43,57,36,-9,"Multiple Keys",0
+"Truly","Lionel Richie","27-Nov-82",2,4.67,"Pop",200,1,0,1,33,68,24,37,13,-14,"Db",0
+"Mickey","Toni Basil","11-Dec-82",1,3.33,"Rock",216,0,1,0,39,93,60,60,98,-4,"E",0
+"Maneater","Daryl Hall & John Oates","18-Dec-82",4,5,"Pop",273,1,1,0,35,89,50,72,83,-13,"D",0
+"Down Under","Men at Work","15-Jan-83",4,5.67,"Rock",220,1,1,0,29,107,79,75,89,-5,"Bm",0
+"Africa","Toto","5-Feb-83",1,5.33,"Pop",261,1,1,0,35,92,57,63,70,-8,"E",0
+"Baby, Come to Me","Patti Austin & James Ingram","19-Feb-83",2,5,"Funk/Soul",215,2,0,1,32,90,50,63,70,-12,"Multiple Keys",0
+"Billie Jean","Michael Jackson","5-Mar-83",7,8.33,"Rock;Funk/Soul",294,1,0,1,24,117,65,92,85,-3,"Gbm",0
+"Come on Eileen","Dexys Midnight Runners","23-Apr-83",1,5,"Rock",243,2,1,0,29,108,70,42,91,-7,"Multiple Keys",0
+"Beat It","Michael Jackson","30-Apr-83",3,8.67,"Rock",258,1,0,1,24,139,87,78,92,-4,"Ebm",0
+"Let's Dance","David Bowie","21-May-83",1,8.33,"Rock;Funk/Soul",248,1,1,0,36,114,63,64,73,-11,"Multiple Keys",0
+"Flashdance … What a Feeling","Irene Cara","28-May-83",6,6,"Pop",233,0,0,1,24,124,55,65,49,-10,"Gm",0
+"Every Breath You Take","The Police","9-Jul-83",8,7.33,"Pop",234,1,1,0,31,117,45,82,74,-10,"Multiple Keys",0
+"Sweet Dreams (Are Made of This)","Eurythmics","3-Sep-83",1,6.33,"Electronic/Dance",216,2,1,0,32,125,71,69,88,-7,"Cm",0
+"Maniac","Michael Sembello","10-Sep-83",2,5,"Rock;Electronic/Dance",244,1,1,0,29,159,53,62,83,-12,"Ebm",0
+"Tell Her About It","Billy Joel","24-Sep-83",1,5,"Pop;Funk/Soul",229,1,1,0,34,91,89,56,74,-5,"Bb",0
+"Total Eclipse of the Heart","Bonnie Tyler","1-Oct-83",4,7.67,"Rock",267,0,1,0,32,131,72,43,19,-6,"Ab",0
+"Islands in the Stream","Kenny Rogers & Dolly Parton","29-Oct-83",2,6.33,"Pop",251,2,1,0,41,102,41,62,74,-12,"Multiple Keys",0
+"All Night Long (All Night)","Lionel Richie","12-Nov-83",4,8.33,"Pop;Calypso",260,1,0,1,34,109,58,74,78,-12,"Ab",0
+"Say Say Say","Paul McCartney & Michael Jackson","10-Dec-83",6,5,"Pop;Funk/Soul",234,1,2,2,33,118,53,81,84,-16,"Bbm",0
+"Owner of a Lonely Heart","Yes","21-Jan-84",2,5,"Rock",230,1,1,0,39,125,80,74,89,-6,"Am",0
+"Karma Chameleon","Culture Club","4-Feb-84",3,5.67,"Pop",238,1,2,2,22,92,67,67,94,-9,"Bb",0
+"Jump","Van Halen","25-Feb-84",5,6.67,"Rock",240,1,1,0,29,130,83,57,80,-6,"Multiple Keys",0
+"Footloose","Kenny Loggins","31-Mar-84",3,7,"Rock",226,1,1,0,36,174,90,58,65,-6,"Bb",0
+"Against All Odds (Take a Look at Me Now)","Phil Collins","21-Apr-84",3,6,"Pop",206,1,1,0,33,16,50,58,11,-7,"Db",0
+"Hello","Lionel Richie","12-May-84",2,4.67,"Pop",254,1,0,1,34,61,25,49,6,-14,"Am",0
+"Let's Hear it For the Boy","Deniece Williams","26-May-84",2,6,"Pop",262,0,0,1,32,123,49,81,71,-9,"C",0
+"Time After Time","Cyndi Lauper","9-Jun-84",2,7,"Pop",241,0,1,0,30,130,45,73,29,-9,"C",0
+"The Reflex","Duran Duran","23-Jun-84",2,3.67,"Rock",266,1,1,0,25,127,89,55,82,-7,"C",0
+"When Doves Cry","Prince","7-Jul-84",5,7.67,"Funk/Soul",228,1,0,1,26,127,89,88,89,-10,"Am",0
+"Ghostbusters","Ray Parker, Jr.","11-Aug-84",3,2.67,"Rock",241,1,0,1,30,115,72,78,79,-10,"Multiple Keys",0
+"What's Love Got to Do With It","Tina Turner","1-Sep-84",3,6,"Rock",226,0,1,0,44,98,41,85,79,-12,"B",0
+"Missing You","John Waite","22-Sep-84",1,7.33,"Pop",270,1,1,0,32,104,55,55,59,-10,"Gb",0
+"Let's Go Crazy","Prince","29-Sep-84",2,7.67,"Rock",227,1,0,1,26,98,92,52,49,-8,"Gb",1
+"I Just Called to Say I Love You","Stevie Wonder","13-Oct-84",3,6.67,"Pop",260,1,0,1,34,114,56,75,67,-9,"Db",0
+"Caribbean Queen (No More Love on the Run)","Billy Ocean","3-Nov-84",2,5,"Rock;Funk/Soul",221,1,0,1,34,114,59,81,96,-9,"Dm",0
+"Wake Me Up Before You Go-Go","Wham!","17-Nov-84",3,7.33,"Pop",231,1,1,0,21,82,57,62,90,-12,"C",0
+"Out of Touch","Daryl Hall & John Oates","8-Dec-84",2,6,"Pop",247,1,1,0,37,115,72,80,93,-6,"Am",0
+"Like a Virgin","Madonna","22-Dec-84",6,6.67,"Pop",218,0,1,0,26,120,66,77,97,-11,"Gb",1
+"I Want to Know What Love Is","Foreigner","2-Feb-85",2,5.33,"Pop",304,1,1,0,34,81,47,48,42,-10,"Gb",0
+"Careless Whisper","Wham!","16-Feb-85",3,4,"Funk/Soul",300,1,1,0,21,153,63,57,79,-9,"Dm",0
+"Can't Fight This Feeling","REO Speedwagon","9-Mar-85",3,6.33,"Rock",295,1,1,0,33,156,48,41,19,-11,"A",0
+"One More Night","Phil Collins","30-Mar-85",2,3.33,"Pop",262,1,1,0,34,136,44,53,34,-9,"Multiple Keys",0
+"We Are the World","USA for Africa","13-Apr-85",4,7.67,"Pop",382,2,2,2,31,73,45,53,29,-15,"E",0
+"Crazy for You","Madonna","11-May-85",1,7,"Pop",224,0,1,0,26,95,72,66,51,-7,"E",0
+"Don't You (Forget About Me)","Simple Minds","18-May-85",1,6.33,"Rock",263,1,2,2,25,111,82,66,68,-7,"D",0
+"Everything She Wants","Wham!","25-May-85",2,3.67,"Pop",302,1,1,0,21,115,46,90,96,-16,"Gbm",1
+"Everybody Wants to Rule the World","Tears for Fears","8-Jun-85",2,7.33,"Electronic/Dance",251,1,1,0,23,112,80,64,54,-12,"D",0
+"Heaven","Bryan Adams","22-Jun-85",2,6.67,"Rock",243,1,1,0,25,140,59,38,34,-7,"Am",0
+"Sussudio","Phil Collins","6-Jul-85",1,4.67,"Electronic/Dance",263,1,1,0,34,121,94,71,73,-5,"F",0
+"A View to a Kill","Duran Duran","13-Jul-85",2,4.33,"Rock",207,1,1,0,33,125,81,71,78,-5,"Multiple Keys",0
+"Everytime You Go Away","Paul Young","27-Jul-85",1,6,"Pop",260,1,1,0,29,164,64,61,71,-11,"F",0
+"Shout","Tears for Fears","3-Aug-85",3,6.67,"Electronic/Dance",246,1,1,0,23,97,93,54,43,-10,"Gm",1
+"The Power of Love","Huey Lewis & the News","24-Aug-85",2,6.67,"Rock",234,1,1,0,35,119,83,77,96,-5,"F",0
+"St. Elmo's Fire (Man in Motion)","John Parr","7-Sep-85",2,3.33,"Rock",251,1,1,0,32,111,60,61,47,-11,"Multiple Keys",0
+"Money for Nothing","Dire Straits","21-Sep-85",3,8,"Rock",249,1,1,0,36,134,68,68,83,-10,"Gm",1
+"Oh Sheila","Ready for the World","12-Oct-85",1,4.67,"Electronic/Dance",216,1,0,1,NA,130,94,76,74,-4,"G",0
+"Take on Me","a-ha","19-Oct-85",1,7.33,"Electronic/Dance",225,1,1,0,26,84,90,57,88,-8,"Gbm",0
+"Saving All My Love for You","Whitney Houston","26-Oct-85",1,9,"Pop",218,0,0,1,22,99,26,64,26,-15,"Gbm",0
+"Part-Time Lover","Stevie Wonder","2-Nov-85",1,6.33,"Pop",222,1,0,1,35,174,82,69,95,-7,"Bbm",0
+"Miami Vice Theme","Jan Hammer","9-Nov-85",1,3.33,"Electronic/Dance",147,1,1,0,35,116,93,55,75,-6,"C",0
+"We Built This City","Starship","16-Nov-85",2,2.67,"Rock",277,2,1,0,41,144,81,66,73,-9,"F",0
+"Separate Lives","Phil Collins & Marilyn Martin","30-Nov-85",1,4,"Pop",269,2,1,0,33,93,31,32,19,-9,"E",0
+"Broken Wings","Mr. Mister","7-Dec-85",2,5.33,"Rock",275,1,1,0,32,99,54,54,49,-12,"Dbm",0
+"Say You, Say Me","Lionel Richie","21-Dec-85",4,6.67,"Pop",241,1,0,1,36,128,41,64,26,-11,"Ab",0
+"That's What Friends are For","Dionne & Friends","18-Jan-86",4,5.67,"Pop",256,2,2,2,45,120,29,67,20,-15,"Eb",0
+"How Will I Know","Whitney Houston","15-Feb-86",2,7.67,"Electronic/Dance",275,0,0,1,22,119,54,83,93,-13,"Multiple Keys",0
+"Kyrie","Mr. Mister","1-Mar-86",2,4,"Rock",257,1,1,0,32,90,68,49,62,-9,"C",0
+"Sara","Starship","15-Mar-86",1,3.67,"Rock",292,2,1,0,41,100,81,64,37,-6,"Bb",0
+"These Dreams","Heart","22-Mar-86",1,5.67,"Rock",228,2,1,0,34,79,53,54,30,-10,"B",0
+"Rock Me Amadeus","Falco","29-Mar-86",3,3.33,"Electronic/Dance",202,1,1,0,29,88,82,61,89,-9,"Am",0
+"Kiss","Prince","19-Apr-86",2,6.67,"Funk/Soul",226,1,0,1,27,111,27,90,74,-12,"A",0
+"Addicted to Love","Robert Palmer","3-May-86",1,6,"Rock",235,1,1,0,37,111,81,62,97,-6,"A",0
+"West End Girls","Pet Shop Boys","10-May-86",1,7.67,"Electronic/Dance",240,1,1,0,29,113,95,62,60,-7,"Em",0
+"Greatest Love of All","Whitney Houston","17-May-86",3,8,"Pop",291,0,0,1,22,131,31,50,25,-16,"A",0
+"Live to Tell","Madonna","7-Jun-86",1,4.67,"Pop",353,0,1,0,27,110,31,67,27,-14,"Dm",0
+"On My Own","Patti LaBelle & Michael McDonald","14-Jun-86",3,6.33,"Funk/Soul",290,2,2,2,38,92,40,62,48,-13,"F",0
+"There'll Be Sad Songs (To Make You Cry)","Billy Ocean","5-Jul-86",1,3.67,"Funk/Soul",292,1,0,1,36,80,46,56,26,-8,"Multiple Keys",0
+"Holding Back the Years","Simply Red","12-Jul-86",1,6.33,"Funk/Soul",266,2,1,0,26,86,51,67,57,-10,"Am",0
+"Invisible Touch","Genesis","19-Jul-86",1,7,"Pop",209,1,1,0,35,131,88,66,84,-6,"Multiple Keys",0
+"Sledgehammer","Peter Gabriel","26-Jul-86",1,7.67,"Rock",291,1,1,0,36,96,61,65,64,-8,"Eb",0
+"Glory of Love","Peter Cetera","2-Aug-86",2,4.33,"Pop",288,1,1,0,41,145,58,52,31,-8,"F",0
+"Papa Don't Preach","Madonna","16-Aug-86",2,6.33,"Electronic/Dance",269,0,1,0,28,122,91,81,97,-9,"Fm",0
+"Higher Love","Steve Winwood","30-Aug-86",1,7.67,"Funk/Soul;Pop",252,1,1,0,38,99,89,70,91,-7,"F",0
+"Venus","Bananarama","6-Sep-86",1,5.33,"Electronic/Dance",229,0,1,0,26,126,96,72,91,-5,"G",0
+"Take My Breath Away","Berlin","13-Sep-86",1,4,"Pop",242,2,1,0,25,96,61,48,58,-13,"Ab",0
+"Stuck with You","Huey Lewis & the News","20-Sep-86",3,6.33,"Rock",269,1,1,0,36,121,54,70,63,-11,"C",0
+"When I Think of You","Janet Jackson","11-Oct-86",2,6.33,"Pop",235,0,0,1,20,116,64,76,71,-11,"A",0
+"True Colors","Cyndi Lauper","25-Oct-86",2,6.67,"Pop",226,0,1,0,33,172,14,39,26,-17,"C",0
+"Amanda","Boston","8-Nov-86",2,5,"Rock",256,1,1,0,39,125,42,45,26,-14,"G",0
+"Human","The Human League","22-Nov-86",1,5.67,"Pop",229,2,1,0,31,101,53,64,52,-11,"Ab",0
+"You Give Love a Bad Name","Bon Jovi","29-Nov-86",1,5.67,"Rock",222,1,1,0,24,123,96,54,81,-3,"Cm",1
+"The Next Time I Fall","Peter Cetera & Amy Grant","6-Dec-86",1,5,"Pop",225,2,1,0,34,118,35,66,37,-13,"Ab",0
+"The Way It Is","Bruce Hornsby & the Range","13-Dec-86",1,7.67,"Pop",298,1,1,0,32,111,69,58,53,-12,"G",0
+"Walk Like an Egyptian","The Bangles","20-Dec-86",4,7.33,"Rock",204,0,1,0,28,103,89,72,82,-8,"B",0
+"Shake You Down","Gregory Abbott","17-Jan-87",1,3.67,"Funk/Soul",245,1,0,1,32,95,47,79,83,-10,"D",0
+"At This Moment","Billy Vera & the Beaters","24-Jan-87",2,6,"Funk/Soul",261,1,1,0,42,85,26,32,15,-11,"Gb",0
+"Open Your Heart","Madonna","7-Feb-87",1,5.67,"Electronic/Dance",253,0,1,0,28,114,88,62,89,-9,"F",0
+"Livin' on a Prayer","Bon Jovi","24-Feb-87",4,5.33,"Rock",249,1,1,0,24,123,89,53,80,-4,"Multiple Keys",0
+"Jacob's Ladder","Huey Lewis & the News","14-Mar-87",1,6,"Rock",213,1,1,0,36,118,58,67,66,-13,"F",0
+"Lean on Me","Club Nouveau","21-Mar-87",2,4.33,"Electronic/Dance",250,2,0,1,NA,89,67,74,69,-9,"C",0
+"Nothing's Gonna Stop Us Now","Starship","4-Apr-87",2,6,"Pop",270,2,1,0,42,96,80,64,53,-5,"Gb",0
+"I Knew You Were Waiting (For Me)","Aretha Franklin & George Michael","18-Apr-87",2,5.33,"Rock",238,2,2,2,34,108,84,72,68,-5,"E",0
+"(I Just) Died in Your Arms","Cutting Crew","2-May-87",2,4,"Rock",280,1,1,0,28,125,73,62,51,-11,"Bm",0
+"With or Without You","U2","16-May-87",3,9.33,"Rock",354,1,1,0,27,110,54,55,12,-7,"D",0
+"You Keep Me Hangin' On","Kim Wilde","6-Jun-87",1,5,"Electronic/Dance",255,0,1,0,26,123,68,69,71,-12,"Multiple Keys",0
+"Always","Atlantic Starr","13-Jun-87",1,3.67,"Pop",239,2,0,1,23,132,47,59,36,-10,"G",0
+"Head to Toe","Lisa Lisa & Cult Jam","20-Jun-87",1,3.33,"Pop",241,2,0,2,20,114,51,88,84,-11,"Bm",0
+"I Wanna Dance with Somebody (Who Loves Me)","Whitney Houston","27-Jul-87",2,8.67,"Electronic/Dance",291,0,0,1,23,119,82,71,87,-9,"Gb",0
+"Alone","Heart","11-Jul-87",3,5.67,"Rock",219,2,1,0,35,175,45,42,17,-13,"Db",0
+"Shakedown","Bob Seger","1-Aug-87",1,4,"Rock",241,1,1,0,42,171,94,57,50,-5,"E",0
+"I Still Haven't Found What I'm Looking For","U2","8-Aug-87",2,10,"Rock",277,1,1,0,27,101,77,56,66,-9,"Db",0
+"Who's That Girl","Madonna","22-Aug-87",1,2.67,"Electronic/Dance",239,0,1,0,29,104,65,62,83,-14,"Am",0
+"La Bamba","Los Lobos","29-Aug-87",3,6.33,"Rock",174,1,0,0,32,156,76,51,87,-12,"C",0
+"I Just Can't Stop Loving You","Michael Jackson & Siedah Garrett","19-Sep-87",1,4.67,"Pop",251,2,0,1,28,100,47,66,28,-9,"C",0
+"Didn't We Almost Have It All","Whitney Houston","26-Sep-87",2,5,"Pop",278,0,0,1,24,131,62,55,27,-5,"Multiple Keys",0
+"Here I Go Again","Whitesnake","10-Oct-87",1,6.33,"Rock",275,1,1,0,36,90,85,38,27,-6,"G",0
+"Lost in Emotion","Lisa Lisa & Cult Jam","17-Oct-87",1,3.67,"Pop",289,2,0,2,20,120,78,81,96,-10,"C",0
+"Bad","Michael Jackson","24-Oct-87",2,6.33,"Electronic/Dance",247,1,0,1,29,114,89,79,39,-4,"Multiple Keys",0
+"I Think We're Alone Now","Tiffany","7-Nov-87",2,5.33,"Pop;Electronic/Dance",228,0,1,0,16,131,72,75,94,-12,"D",0
+"Mony Mony","Billy Idol","21-Nov-87",1,6.33,"Rock",246,1,1,0,31,142,82,54,51,-12,"F",0
+"(I've Had) The Time of My Life","Bill Medley & Jennifer Warnes","28-Nov-87",1,6.33,"Pop",290,2,1,0,44,109,67,70,49,-13,"E",0
+"Heaven Is a Place on Earth","Belinda Carlisle","5-Dec-87",1,6,"Rock",247,0,1,0,29,123,81,64,80,-10,"E",0
+"Faith","George Michael","12-Dec-87",4,8,"Pop",194,1,1,0,24,96,48,89,61,-12,"B",0
+"So Emotional","Whitney Houston","9-Jan-88",1,5.33,"Electronic/Dance",276,0,0,1,24,119,79,70,80,-10,"Bm",0
+"Got My Mind Set On You","George Harrison","16-Jan-88",1,5.67,"Rock",234,1,1,0,47,149,85,77,96,-7,"E",0
+"The Way You Make Me Feel","Michael Jackson","23-Jan-88",1,6.67,"Electronic/Dance;Funk/Soul",266,1,0,1,29,172,81,74,50,-6,"E",0
+"Need You Tonight","INXS","30-Jan-88",1,5.33,"Rock",181,1,1,0,28,109,72,80,88,-5,"Cm",0
+"Could've Been","Tiffany","6-Feb-88",2,6,"Rock",213,0,1,0,16,99,24,47,14,-16,"Db",0
+"Seasons Change","Exposé","20-Feb-88",1,3,"Pop",256,0,1,0,23,174,62,60,74,-11,"Am",0
+"Father Figure","George Michael","27-Feb-88",2,5,"Funk/Soul",340,1,1,0,24,102,33,69,28,-13,"Abm",0
+"Never Gonna Give You Up","Rick Astley","12-Mar-88",2,4.33,"Electronic/Dance",213,1,1,0,22,113,94,73,92,-12,"Db",0
+"Man in the Mirror","Michael Jackson","26-Mar-88",2,7.33,"Funk/Soul",318,1,0,1,29,100,81,81,27,-5,"G",0
+"Get Outta My Dreams, Get Into My Car","Billy Ocean","9-Apr-88",2,4,"Pop",284,1,0,1,38,117,91,67,92,-6,"Multiple Keys",0
+"Where Do Broken Hearts Go","Whitney Houston","23-Apr-88",2,5.67,"Pop",277,0,0,1,24,62,39,46,25,-12,"D",0
+"Wishing Well","Terence Trent D'Arby","7-May-88",1,5.33,"Rock;Funk/Soul",210,1,0,1,26,105,46,86,83,-13,"Bb",0
+"Anything for You","Gloria Estefan & Miami Sound Machine","14-May-88",2,7,"Pop",243,2,0,0,30,144,43,57,21,-14,"Gb",0
+"One More Try","George Michael","28-May-88",3,6.67,"Funk/Soul",353,1,1,0,24,71,31,23,12,-11,"F",0
+"Together Forever","Rick Astley","18-Jun-88",1,3,"Electronic/Dance",201,1,1,0,22,115,95,67,89,-5,"D",0
+"Foolish Beat","Debbie Gibson","25-Jun-88",1,3.67,"Rock",202,0,1,0,17,78,44,54,34,-11,"Bbm",0
+"Dirty Diana","Michael Jackson","2-Jul-88",1,6,"Rock",280,1,0,1,29,131,80,75,37,-5,"Gm",0
+"The Flame","Cheap Trick","9-Jul-88",2,6.67,"Rock",281,1,1,0,35,97,62,63,30,-9,"E",0
+"Hold On to the Nights","Richard Marx","23-Jul-88",1,4.67,"Pop",316,1,1,0,24,145,21,35,18,-15,"Eb",0
+"Roll With It","Steve Winwood","30-Jul-88",4,7,"Funk/Soul;Rock",279,1,1,0,40,117,87,75,96,-7,"G",0
+"Monkey","George Michael","27-Aug-88",2,4.33,"Electronic/Dance",289,1,1,0,25,98,96,54,82,-7,"Gbm",0
+"Sweet Child O' Mine","Guns N' Roses","10-Sep-88",2,9.33,"Rock",356,1,2,2,26,125,95,45,62,-5,"Gb",0
+"Don't Worry, Be Happy","Bobby McFerrin","24-Sep-88",2,6,"Reggae",294,1,0,1,38,69,17,68,75,-23,"B",0
+"Love Bites","Def Leppard","8-Oct-88",1,4.67,"Rock",346,1,1,0,39,130,74,59,41,-7,"Dm",1
+"Red Red Wine","UB40","15-Oct-88",1,4.67,"Reggae",183,1,2,2,31,89,47,86,84,-9,"Db",0
+"A Groovy Kind of Love","Phil Collins","22-Oct-88",2,5.33,"Pop",210,1,1,0,37,144,31,45,18,-10,"G",0
+"Kokomo","The Beach Boys","5-Nov-88",1,6.67,"Pop",217,1,1,0,47,116,57,68,94,-12,"C",0
+"Wild Wild West","The Escape Club","12-Nov-88",1,4.67,"Rock",244,1,1,0,30,139,91,72,96,-6,"E",0
+"Bad Medicine","Bon Jovi","19-Nov-88",2,4,"Rock",238,1,1,0,26,119,97,56,81,-4,"Em",0
+"Baby, I Love Your Way / Freebird Medley","Will to Power","3-Dec-88",1,2.67,"Pop",247,2,2,2,28,151,44,62,48,-12,"G",0
+"Look Away","Chicago","10-Dec-88",2,5,"Rock",240,1,1,0,41,173,56,39,19,-7,"A",0
+"Every Rose Has Its Thorn","Poison","24-Dec-88",3,6.67,"Rock",260,1,1,0,25,140,64,53,29,-6,"Gb",0
+"My Prerogative","Bobby Brown","14-Jan-89",1,7,"Electronic/Dance",271,1,0,1,19,110,75,72,63,-6,"Am",1
+"Two Hearts","Phil Collins","21-Jan-89",2,6.33,"Pop",204,1,1,0,37,156,91,58,71,-2,"Multiple Keys",0
+"When I'm With You","Sheriff","4-Feb-89",1,6.67,"Rock",233,1,1,0,26,136,32,25,12,-11,"A",0
+"Straight Up","Paula Abdul","11-Feb-89",3,4,"Electronic/Dance",231,0,1,0,26,96,97,75,72,-3,"Dm",0
+"Lost in Your Eyes","Debbie Gibson","4-Mar-89",3,5,"Pop",213,0,1,0,18,144,61,48,24,-7,"C",0
+"The Living Years","Mike & the Mechanics","25-Mar-89",1,7.67,"Rock",330,1,1,0,38,98,42,52,31,-13,"Ab",0
+"Eternal Flame","The Bangles","1-Apr-89",1,6.67,"Pop",238,0,1,0,30,79,36,53,40,-7,"G",0
+"The Look","Roxette","8-Apr-89",1,5.33,"Rock",237,2,1,0,30,95,84,63,54,-5,"A",0
+"She Drives Me Crazy","Fine Young Cannibals","15-Apr-89",1,7,"Rock",215,1,2,2,27,109,69,80,96,-6,"D",0
+"Like a Prayer","Madonna","22-Apr-89",3,9.67,"Funk/Soul;Pop",340,0,1,0,30,111,84,62,26,-5,"F",0
+"I'll Be There for You","Bon Jovi","13-May-89",1,5,"Rock",346,1,1,0,29,73,73,44,23,-5,"D",0
+"Forever Your Girl","Paula Abdul","20-May-89",2,4.67,"Electronic/Dance",300,0,1,0,26,120,89,70,75,-8,"D",0
+"Rock On","Michael Damian","3-Jun-89",1,2.33,"Rock",202,1,1,0,27,NA,NA,NA,NA,NA,"Dbm",0
+"Wind Beneath My Wings","Bette Midler","10-Jun-89",1,7,"Pop",293,0,1,0,43,124,46,51,18,-8,"Bb",0
+"I'll Be Loving You (Forever)","New Kids on the Block","17-Jun-89",1,4.67,"Pop",263,1,1,0,19,135,28,60,30,-17,"Multiple Keys",0
+"Satisfied","Richard Marx","24-Jun-89",1,6,"Rock",254,1,1,0,25,109,91,57,84,-8,"Eb",0
+"Baby Don't Forget My Number","Milli Vanilli","1-Jul-89",1,4.33,"Electronic/Dance",249,1,0,1,24,100,65,85,85,-13,"E",0
+"Good Thing","Fine Young Cannibals","8-Jul-89",1,5,"Pop",202,1,2,2,28,165,59,75,89,-10,"D",0
+"If You Don't Know Me By Now","Simply Red","15-Jul-89",1,7,"Funk/Soul",204,1,1,0,29,94,35,64,20,-9,"Multiple Keys",0
+"Toy Soldiers","Martika","22-Jul-89",2,5.67,"Rock",260,0,1,0,20,130,44,54,19,-14,"Dbm",0
+"Batdance","Prince","5-Aug-89",1,5.33,"Funk/Soul;Rock",247,1,0,1,31,110,68,68,47,-9,"Multiple Keys",1
+"Right Here Waiting","Richard Marx","12-Aug-89",3,6,"Pop",264,1,1,0,25,89,25,40,13,-14,"C",0
+"Cold Hearted","Paula Abdul","2-Sep-89",1,4,"Electronic/Dance",231,0,1,0,27,122,68,88,72,-9,"Gm",0
+"Hangin' Tough","New Kids on the Block","9-Sep-89",1,3.33,"Rock",231,1,1,0,20,92,70,75,62,-6,"Dbm",0
+"Don't Wanna Lose You","Gloria Estefan","16-Sep-89",1,6.33,"Pop",250,0,0,0,32,82,36,55,47,-14,"F",0
+"Girl I'm Gonna Miss You","Milli Vanilli","23-Sep-89",2,4.67,"Funk/Soul",238,1,0,1,24,76,27,71,76,-19,"A",0
+"Miss You Much","Janet Jackson","7-Oct-89",4,6,"Funk/Soul",252,0,0,1,23,115,98,70,65,-8,"Abm",0
+"Listen to Your Heart","Roxette","4-Nov-89",1,6,"Rock",315,2,1,0,31,172,60,40,33,-6,"Multiple Keys",0
+"When I See You Smile","Bad English","11-Nov-89",2,5.33,"Rock",257,1,1,0,37,136,61,50,33,-10,"G",0
+"Blame it On the Rain","Milli Vanilli","25-Nov-89",2,4.33,"Electronic/Dance",248,1,0,0,24,98,83,76,51,-6,"Bb",0
+"We Didn't Start the Fire","Billy Joel","9-Dec-89",2,5.67,"Rock",245,1,1,0,40,145,97,71,89,-5,"G",0
+"Another Day in Paradise","Phil Collins","23-Dec-89",4,5.67,"Rock",289,1,1,0,39,102,56,78,37,-7,"Gbm",0
+"How Am I Supposed to Live Without You","Michael Bolton","20-Jan-90",3,4.67,"Pop",245,1,1,0,36,140,60,53,21,-6,"Bb",0
+"Opposites Attract","Paula Abdul & Wild Pair","10-Feb-90",3,3.33,"Funk/Soul",230,2,2,2,27,117,88,95,87,-9,"Bb",0
+"Escapade","Janet Jackson","3-Mar-90",3,4.33,"Funk/Soul",283,0,0,1,23,115,95,81,70,-7,"Ab",0
+"Black Velvet","Alannah Myles","24-Mar-90",2,5,"Blues",287,0,1,0,31,91,37,75,47,-10,"Ebm",0
+"Love Will Lead You Back","Taylor Dayne","7-Apr-90",1,4.33,"Pop",277,0,1,0,28,73,51,55,20,-7,"Ab",0
+"I'll Be Your Everything","Tommy Page","14-Apr-90",1,2.67,"Pop",244,1,1,0,20,144,52,50,28,-9,"F",0
+"Nothing Compares 2 U","Sinead O'Connor","21-Apr-90",4,6,"Pop",280,0,1,0,23,120,57,51,16,-7,"F",0
+"Vogue","Madonna","19-May-90",3,7.33,"Electronic/Dance",289,0,1,0,31,116,82,69,28,-10,"Ab",0
+"Hold On","Wilson Phillips","9-Jun-90",1,5.33,"Pop",221,0,1,0,21,98,67,69,57,-9,"F",0
+"It Must Have Been Love","Roxette","16-Jun-90",2,6,"Pop",258,2,1,0,32,81,65,52,72,-7,"F",0
+"Step by Step","New Kids on the Block","30-Jun-90",3,2,"Funk/Soul",267,1,1,0,20,125,63,79,88,-12,"Em",0
+"She Ain't Worth It","Glenn Medeiros ft. Bobby Brown","21-Jul-90",2,3,"Funk/Soul",218,1,2,2,20,102,88,78,91,-8,"Gm",0
+"Vision of Love","Mariah Carey","4-Aug-90",4,5.67,"Funk/Soul",209,0,0,1,21,103,46,26,35,-11,"F",0
+"If Wishes Came True","Sweet Sensation","1-Sep-90",1,3,"Rock",315,0,0,0,NA,144,45,49,19,-11,"Bb",0
+"Blaze of Glory","Jon Bon Jovi","8-Sep-90",1,4,"Rock;Folk/Country",340,1,1,0,28,79,62,55,43,-10,"Dm",0
+"Release Me","Wilson Phillips","15-Sep-90",2,6,"Pop",231,0,1,0,21,97,48,73,46,-11,"C",0
+"(Can't Live Without Your) Love and Affection","Nelson","29-Sep-90",1,6,"Rock",244,1,1,0,33,121,90,54,83,-6,"Db",0
+"Close to You","Maxi Priest","6-Oct-90",1,4.67,"Funk/Soul",243,1,0,1,29,96,44,76,84,-15,"Ebm",0
+"Praying For Time","George Michael","13-Oct-90",1,4,"Pop",281,1,1,0,27,128,80,57,21,-8,"Bb",0
+"I Don't Have the Heart","James Ingram","20-Oct-90",1,4.33,"Pop",253,1,0,1,38,89,42,49,33,-8,"D",0
+"Black Cat","Janet Jackson","27-Oct-90",1,5.33,"Rock",290,0,0,1,24,115,91,70,67,-7,"Em",1
+"Ice Ice Baby","Vanilla Ice","3-Nov-90",1,3.33,"Hip Hop",270,1,1,0,23,116,76,98,70,-9,"Dm",1
+"Love Takes Time","Mariah Carey","10-Nov-90",3,5.33,"Pop",229,0,0,1,20,126,34,40,23,-12,"B",0
+"I'm Your Baby Tonight","Whitney Houston","1-Dec-90",1,5.33,"Funk/Soul",299,0,0,1,27,165,90,67,87,-8,"Abm",0
+"Because I Love You (The Postman Song)","Stevie B","8-Dec-90",4,2.33,"Pop",246,1,0,1,32,115,42,33,7,-8,"Db",0
+"Justify My Love","Madonna","5-Jan-91",2,3.67,"Electronic/Dance",296,0,1,0,32,100,82,70,46,-7,"Gbm",1
+"Love Will Never Do (Without You)","Janet Jackson","19-Jan-91",1,5.67,"Funk/Soul",273,0,0,1,24,103,92,74,63,-10,"Ab",0
+"The First Time","Surface","26-Jan-91",2,3.33,"Pop",255,1,0,1,27,126,38,64,12,-11,"Multiple Keys",0
+"Gonna Make You Sweat (Everybody Dance Now)","C+C Music Factory ft. Freedom Williams","9-Feb-91",2,4.67,"Electronic/Dance",244,2,0,1,37,112,80,56,79,-7,"Bb",0
+"All the Man that I Need","Whitney Houston","23-Feb-91",2,5.33,"Funk/Soul",251,0,0,1,27,151,57,50,25,-10,"Fm",0
+"Someday","Mariah Carey","9-Mar-91",2,6,"Funk/Soul",246,0,0,1,20,110,82,68,94,-9,"Dbm",0
+"One More Try","Timmy T","23-Mar-91",1,2.33,"Funk/Soul",209,1,0,0,23,150,57,64,50,-9,"A",0
+"Coming Out of the Dark","Gloria Estefan","30-Mar-91",2,6.33,"Pop;Funk/Soul",242,0,0,0,33,132,43,64,47,-12,"E",0
+"I've Been Thinking About You","Londonbeat","13-Apr-91",1,4.33,"Electronic/Dance",230,1,2,2,49,114,91,62,92,-5,"Bm",0
+"You're in Love","Wilson Phillips","20-Apr-91",1,5.33,"Pop",247,0,1,0,22,102,58,72,48,-11,"Multiple Keys",0
+"Baby Baby","Amy Grant","27-Apr-91",2,5.67,"Pop",244,0,1,0,30,98,90,70,92,-4,"Gb",0
+"Joyride","Roxette","11-May-91",1,6,"Rock",241,2,1,0,32,102,74,65,62,-6,"A",0
+"I Like The Way (Kissing Game)","Hi-Five","18-May-91",1,5.67,"Funk/Soul",270,1,0,1,15,104,69,72,73,-5,"Db",0
+"I Don't Wanna Cry","Mariah Carey","25-May-91",2,5.67,"Funk/Soul",288,0,0,1,21,131,50,64,28,-12,"A",0
+"More Than Words","Extreme","8-Jun-91",1,8.33,"Pop;Rock",238,1,1,0,29,92,22,63,39,-11,"Gb",0
+"Rush Rush","Paula Abdul","15-Jun-91",5,4.67,"Funk/Soul",298,0,1,0,28,90,64,52,26,-5,"E",0
+"Unbelievable","EMF","20-Jul-91",1,6.67,"Rock",209,1,1,0,NA,104,85,64,94,-7,"Ab",1
+"(Everything I Do) I Do It For You","Bryan Adams","27-Jul-91",7,4.33,"Rock",250,1,1,0,31,131,44,53,29,-7,"Db",0
+"The Promise of a New Day","Paula Abdul","14-Sep-91",1,5,"Pop",272,0,1,0,29,120,82,75,90,-9,"Db",0
+"I Adore Mi Amor","Color Me Badd","21-Sep-91",2,4.67,"Funk/Soul",289,1,2,2,21,92,48,68,73,-10,"Ebm",0
+"Good Vibrations","Marky Mark & the Funky Bunch ft. Loleatta Holloway","5-Oct-91",1,7.33,"Electronic/Dance;Hip Hop",269,1,2,2,20,122,95,71,90,-8,"Db",1
+"Emotions","Mariah Carey","12-Oct-91",3,7,"Funk/Soul",248,0,0,1,22,115,75,74,94,-7,"Am",0
+"Romantic","Karyn White","2-Nov-91",1,4.33,"Funk/Soul",247,0,0,1,26,110,94,68,82,-8,"Dbm",0
+"Cream","Prince & the New Power Generation","9-Nov-91",2,7.33,"Rock",253,1,0,1,33,116,60,86,85,-8,"Bbm",0
+"When a Man Loves a Woman","Michael Bolton","23-Nov-91",1,5,"Funk/Soul",231,1,1,0,38,165,36,48,24,-11,"Db",0
+"Set Adrift on Memory Bliss","P.M. Dawn","30-Nov-91",1,6.33,"Hip Hop",235,1,0,1,21,100,70,80,48,-9,"G",1
+"Black or White","Michael Jackson","7-Dec-91",7,8,"Rock",202,1,0,1,33,115,89,74,96,-4,"E",0
+"All 4 Love","Color Me Badd","25-Jan-92",1,6.67,"Pop",211,1,2,2,21,106,75,81,80,-8,"D",0
+"Don't Let the Sun Go Down on Me","George Michael & Elton John","1-Feb-92",1,8,"Rock",346,1,1,0,36,136,55,43,25,-8,"C",0
+"I'm Too Sexy","Right Said Fred","8-Feb-92",3,3.67,"Electronic/Dance",170,1,1,0,33,122,74,68,84,-13,"E",0
+"To Be With You","Mr. Big","29-Feb-92",3,6.33,"Rock",207,1,1,0,31,84,38,69,45,-10,"Multiple Keys",0
+"Save the Best for Last","Vanessa Williams","21-Mar-92",5,4.33,"Pop",218,0,0,1,29,96,23,53,19,-16,"Eb",0
+"Jump","Kris Kross","25-Apr-92",8,7,"Hip Hop",193,1,0,1,13,102,86,73,47,-7,"Bm",0
+"I'll Be There","Mariah Carey","20-Jun-92",2,6,"Funk/Soul",264,0,0,1,23,82,51,40,28,-9,"F",0
+"Baby Got Back","Sir Mix-a-Lot","4-Jul-92",5,4,"Hip Hop",262,1,0,1,28,128,67,93,64,-11,"Cm",1
+"This Used to Be My Playground","Madonna","8-Aug-92",1,3,"Pop",310,0,1,0,33,76,31,50,7,-12,"Gm",0
+"End of the Road","Boyz II Men","15-Aug-92",13,8.33,"Funk/Soul",254,1,0,1,20,150,43,64,53,-9,"Eb",0
+"How Do You Talk to an Angel","The Heights","14-Nov-92",2,4.67,"Rock",227,2,2,2,23,81,51,40,53,-11,"A",0
+"I Will Always Love You","Whitney Houston","28-Nov-92",14,10,"Pop",271,0,0,1,29,67,21,31,11,-13,"A",0
+"A Whole New World","Peabo Bryson & Regina Belle","6-Mar-93",1,7,"Pop",243,2,0,1,35,108,40,52,13,-7,"Multiple Keys",0
+"Informer","Snow","13-Mar-93",7,1.33,"Hip Hop",268,1,1,0,23,98,74,76,48,-11,"Gbm",0
+"Freak Me","Silk","1-May-93",2,5.33,"Funk/Soul",274,1,0,1,NA,134,61,70,73,-11,"Em",1
+"That's the Way Love Goes","Janet Jackson","15-May-93",8,7.67,"Funk/Soul",265,0,0,1,26,98,70,70,58,-7,"Bb",1
+"Weak","SWV","10-Jul-93",2,6.33,"Funk/Soul",291,0,0,1,NA,128,53,69,57,-11,"Dm",0
+"(I Can't Help) Falling in Love With You","UB40","24-Jul-93",7,4.33,"Pop;Reggae",207,1,2,2,34,172,72,64,84,-13,"D",0
+"Dreamlover","Mariah Carey","11-Sep-93",8,6.33,"Funk/Soul",232,0,0,1,24,101,70,70,71,-6,"F",0
+"I'd Do Anything For Love (But I Won't Do That)","Meat Loaf","6-Nov-93",5,7.67,"Rock",316,1,1,0,46,105,67,42,30,-6,"D",1
+"Again","Janet Jackson","11-Dec-93",2,5.33,"Pop",227,0,0,1,27,130,29,36,19,-10,"C",0
+"Hero","Mariah Carey","25-Dec-93",4,6.67,"Pop",257,0,0,1,24,120,38,50,18,-9,"Multiple Keys",0
+"All For Love","Bryan Adams, Rod Stewart, & Sting","22-Jan-94",3,4.67,"Rock",283,1,1,0,42,75,44,51,14,-11,"D",0
+"The Power of Love","Céline Dion","12-Feb-94",4,6.33,"Pop",286,0,1,0,25,140,52,54,24,-9,"Ab",0
+"The Sign","Ace of Base","12-Mar-94",6,5.67,"Pop;Reggae",191,2,1,0,23,97,79,81,90,-7,"Multiple Keys",0
+"Bump n' Grind","R. Kelly","9-Apr-94",4,6.67,"Funk/Soul",256,1,0,1,27,65,48,62,68,-8,"E",1
+"I Swear","All-4-One","21-May-94",11,4.33,"Pop",259,1,2,2,21,83,41,53,23,-10,"D",0
+"Stay (I Missed You)","Lisa Loeb & Nine Stories","6-Aug-94",3,7.33,"Rock",184,0,1,0,26,80,61,67,38,-7,"Db",0
+"I'll Make Love to You","Boyz II Men","27-Aug-94",14,6,"Funk/Soul",236,1,0,1,22,143,50,57,20,-8,"D",1
+"On Bended Knee","Boyz II Men","3-Dec-94",6,8,"Funk/Soul",329,1,0,1,22,117,52,63,18,-8,"Eb",0
+"Here Comes the Hotstepper","Ini Kamoze","17-Dec-94",2,5.33,"Hip Hop",253,1,0,1,37,100,46,88,45,-9,"Bm",1
+"Creep","TLC","28-Jan-95",4,7.67,"Hip Hop",266,0,0,1,24,93,50,81,78,-8,"Cm",0
+"Take a Bow","Madonna","25-Feb-95",7,5,"Pop",320,0,1,0,36,80,41,55,32,-8,"Ab",0
+"This Is How We Do It","Montell Jordan","15-Apr-95",7,6.33,"Hip Hop",237,1,0,1,26,104,70,79,79,-7,"Fm",0
+"Have You Ever Really Loved a Woman?","Bryan Adams","3-Jun-95",5,4,"Rock",291,1,1,0,35,146,48,57,36,-10,"G",0
+"Waterfalls","TLC","8-Jul-95",7,8.67,"Hip Hop",279,0,0,1,25,172,50,77,76,-7,"Eb",0
+"Kiss From a Rose","Seal","26-Aug-95",1,5.67,"Pop",214,1,0,1,32,132,53,58,22,-7,"Multiple Keys",0
+"You Are Not Alone","Michael Jackson","2-Sep-95",1,4,"Funk/Soul",346,1,0,1,37,120,40,65,26,-9,"Multiple Keys",0
+"Gangsta's Paradise","Coolio ft. LV","9-Sep-95",3,6.67,"Hip Hop",240,1,0,1,32,80,51,65,39,-10,"Cm",0
+"Fantasy","Mariah Carey","30-Sep-95",8,8.33,"Funk/Soul",243,0,0,1,26,102,73,67,81,-8,"G",0
+"Exhale (Shoop Shoop)","Whitney Houston","25-Nov-95",1,4,"Funk/Soul",204,0,0,1,32,138,39,66,11,-9,"Db",0
+"One Sweet Day","Mariah Carey & Boyz II Men","2-Dec-95",16,7,"Pop",281,2,0,1,32,128,50,57,30,-9,"Multiple Keys",0
+"Because You Loved Me","Céline Dion","23-Mar-96",6,6,"Pop",274,1,1,0,27,120,47,62,18,-10,"Db",0
+"Always Be My Baby","Mariah Carey","4-May-96",2,8.67,"Funk/Soul",258,0,0,1,27,79,53,65,49,-8,"E",0
+"Tha Crossroads","Bone Thugs-N-Harmony","18-May-96",8,5.33,"Hip Hop",223,1,0,1,21,144,51,68,53,-7,"E",1
+"How Do U Want It","2Pac ft. K-Ci & Jojo","13-Jul-96",2,5.67,"Hip Hop",239,1,0,1,24,92,79,87,56,-4,"Bbm",1
+"You're Makin' Me High","Toni Braxton","27-Jul-96",1,5.33,"Funk/Soul",246,0,0,1,28,92,63,85,86,-7,"Bbm",1
+"Macarena (Bayside Boys Mix)","Los del Río","3-Aug-96",14,5,"Electronic/Dance;Latin",251,1,0,0,48,103,93,74,96,-6,"Ab",0
+"No Diggity","BLACKstreet ft. Dr. Dre","9-Nov-96",4,7.33,"Hip Hop",306,2,0,1,29,89,64,85,69,-5,"Gbm",1
+"Un-Break My Heart","Toni Braxton","7-Dec-96",11,6.33,"Funk/Soul",270,0,0,1,29,110,43,62,11,-8,"Multiple Keys",0
+"Wannabe","Spice Girls","22-Feb-97",4,7.67,"Pop",173,0,2,2,22,110,86,77,89,-6,"B",0
+"Can't Nobody Hold Me Down","Puff Daddy ft. Mase","22-Mar-97",6,5.67,"Hip Hop",231,1,0,1,27,94,77,93,68,-6,"Gm",1
+"Hypnotize","The Notorious B.I.G.","3-May-97",3,9,"Hip Hop",230,1,0,1,24,94,69,89,63,-4,"Em",1
+"MMMBop","Hanson","24-May-97",3,5.67,"Pop",238,1,1,0,14,105,94,69,67,-7,"A",0
+"I'll Be Missing You","Puff Daddy, Faith Evans, & 112","14-Jun-97",11,6.67,"Hip Hop",300,2,0,1,26,110,48,86,93,-9,"G",1
+"Mo Money Mo Problems","The Notorious B.I.G. ft. Puff Daddy & Mase","30-Aug-97",2,9.33,"Hip Hop",257,1,0,1,25,105,88,85,90,-5,"Dbm",1
+"Honey","Mariah Carey","13-Sep-97",3,7,"Hip Hop",299,0,0,1,28,96,82,69,68,-7,"Cm",0
+"4 Seasons of Loneliness","Boyz II Men","4-Oct-97",1,5.33,"Funk/Soul",292,1,0,1,25,98,49,58,19,-10,"Db",0
+"Candle in the Wind 1997","Elton John","11-Oct-97",14,6.33,"Pop",250,1,1,0,50,126,31,45,37,-8,"E",0
+"Truly Madly Deeply","Savage Garden","17-Jan-98",2,4.33,"Funk/Soul",277,1,1,0,25,168,70,56,82,-9,"C",0
+"Together Again","Janet Jackson","31-Jan-98",2,7.33,"Electronic/Dance",301,0,0,1,31,123,59,87,50,-9,"C",0
+"Nice & Slow","Usher","14-Feb-98",2,6,"Funk/Soul",227,1,0,1,19,122,30,82,51,-12,"Fm",1
+"My Heart Will Go On","Céline Dion","28-Feb-98",2,6,"Pop",280,0,1,0,29,99,28,43,4,-12,"Multiple Keys",0
+"Gettin' Jiggy wit It","Will Smith","14-Mar-98",3,5.33,"Hip Hop",227,1,0,1,29,108,87,88,86,-5,"Gb",0
+"All My Life","K-Ci & JoJo","4-Apr-98",3,6.33,"Funk/Soul",221,1,0,1,27,128,63,64,40,-6,"Db",0
+"Too Close","Next","25-Apr-98",5,7,"Funk/Soul",259,1,0,1,21,100,40,85,75,-10,"D",1
+"My All","Mariah Carey","23-May-98",1,6,"Pop",230,0,0,1,28,108,32,61,11,-10,"Gm",0
+"The Boy is Mine","Brandy & Monica","6-Jun-98",13,7.33,"Funk/Soul",240,0,0,1,18,93,67,69,69,-7,"Dbm",0
+"I Don't Want to Miss a Thing","Aerosmith","5-Sep-98",4,5.33,"Rock",298,1,1,0,50,121,66,38,14,-5,"D",0
+"The First Night","Monica","3-Oct-98",5,6.33,"Funk/Soul",235,0,0,1,17,152,77,67,91,-9,"Ebm",0
+"One Week","Barenaked Ladies","17-Oct-98",1,4.67,"Rock",229,1,1,0,27,113,90,70,73,-6,"A",0
+"Doo Wop (That Thing)","Lauryn Hill","14-Nov-98",2,9,"Funk/Soul",240,0,0,1,23,100,56,80,63,-9,"Am",0
+"Lately","Divine","28-Nov-98",1,5.33,"Funk/Soul",268,0,0,1,NA,NA,NA,NA,NA,NA,"A",0
+"I'm Your Angel","R. Kelly & Céline Dion","5-Dec-98",6,3.67,"Pop",332,2,2,2,31,113,50,62,27,-7,"C",0
+"Have You Ever?","Brandy","16-Jan-99",2,5.67,"Pop",273,0,0,1,19,134,53,70,28,-6,"A",0
+"…Baby One More Time","Britney Spears","30-Jan-99",2,9.67,"Pop",211,0,1,0,17,93,70,76,91,-6,"Cm",1
+"Angel of Mine","Monica","13-Feb-99",4,7.33,"Funk/Soul",250,0,0,1,18,90,56,51,21,-7,"Bbm",0
+"Believe","Cher","13-Mar-99",4,7.33,"Electronic/Dance",239,0,1,0,52,133,92,65,46,-7,"Gb",0
+"No Scrubs","TLC","10-Apr-99",4,9.33,"Funk/Soul",214,0,0,1,27,93,68,74,59,-4,"Abm",0
+"Livin' la Vida Loca","Ricky Martin","8-May-99",5,7.33,"Pop",243,1,0,0,27,89,95,43,93,-4,"Dbm",0
+"If You Had My Love","Jennifer Lopez","12-Jun-99",5,5.67,"Pop",266,0,0,0,29,94,62,68,81,-7,"Bm",0
+"Bills, Bills, Bills","Destiny's Child","17-Jul-99",1,8,"Funk/Soul",256,0,0,1,17,128,58,85,46,-5,"Bm",0
+"Wild Wild West","Will Smith ft. Dru Hill & Kool Moe Dee","24-Jul-99",1,5,"Hip Hop",245,1,0,1,30,107,67,85,62,-7,"Ebm",1
+"Genie in a Bottle","Christina Aguilera","31-Jul-99",5,7.33,"Pop",217,0,1,0,18,176,80,63,91,-7,"Fm",1
+"Bailamos","Enrique Iglesias","4-Sep-99",2,5,"Pop",214,1,1,0,24,100,89,63,59,-5,"Am",0
+"Unpretty","TLC","18-Sep-99",3,6.67,"Pop",240,0,0,1,29,89,62,66,57,-6,"C",1
+"Heartbreaker","Mariah Carey ft. Jay-Z","9-Oct-99",2,7,"Funk/Soul",285,0,0,1,30,100,82,52,79,-6,"C",1
+"Smooth","Santana ft. Rob Thomas","23-Oct-99",12,7.67,"Rock",241,1,2,0,52,116,78,64,96,-9,"Am",0
+"What a Girl Wants","Christina Aguilera","15-Jan-00",2,7.67,"Pop",215,0,1,0,19,142,82,75,82,-7,"C",0
+"I Knew I Loved You","Savage Garden","29-Jan-00",4,5,"Pop",250,1,1,0,27,85,50,61,74,-10,"A",0
+"Thank God I Found You","Mariah Carey ft. Joe & 98 Degrees","19-Feb-00",1,5,"Pop",257,2,2,2,28,129,53,35,15,-6,"Multiple Keys",0
+"Amazed","Lonestar","4-Mar-00",2,4.67,"Folk/Country",239,1,1,0,38,140,55,56,25,-8,"Multiple Keys",0
+"Say My Name","Destiny's Child","18-Mar-00",3,8.67,"Funk/Soul",240,0,0,1,18,69,68,59,74,-3,"Fm",0
+"Maria Maria","Santana ft. The Product G&B","8-Apr-00",10,8,"Funk/Soul",261,1,0,2,52,98,60,78,68,-6,"Am",0
+"Try Again","Aaliyah","17-Jun-00",1,8.33,"Hip Hop",287,0,0,1,21,93,65,79,74,-6,"Abm",0
+"Be with You","Enrique Iglesias","24-Jun-00",3,4.67,"Electronic/Dance",220,1,1,0,25,122,87,69,56,-5,"Dbm",0
+"Everything You Want","Vertical Horizon","15-Jul-00",1,3.67,"Rock",257,1,1,0,30,94,76,64,74,-6,"Ebm",0
+"Bent","Matchbox Twenty","22-Jul-00",1,4.33,"Rock",256,1,1,0,28,95,83,52,53,-7,"Gbm",0
+"It's Gonna Be Me","NSYNC","29-Jul-00",2,5.33,"Pop",192,1,1,0,19,165,87,64,91,-5,"Cm",0
+"Incomplete","Sisqó","12-Aug-00",2,4.33,"Funk/Soul",274,1,0,1,21,119,44,75,27,-8,"B",0
+"Doesn't Really Matter","Janet Jackson","26-Aug-00",3,6.33,"Funk/Soul",297,0,0,1,34,99,80,77,80,-3,"Fm",0
+"Music","Madonna","16-Sep-00",4,5,"Electronic/Dance",225,0,1,0,42,120,80,74,87,-9,"Gm",0
+"Come On Over Baby (All I Want Is You)","Christina Aguilera","14-Oct-00",4,6.67,"Pop",203,0,1,0,19,119,92,83,78,-3,"Eb",1
+"With Arms Wide Open","Christina Aguilera","11-Nov-00",1,5.67,"Rock",273,1,1,0,27,139,54,51,14,-8,"C",0
+"Independent Women, Part 1","Destiny's Child","18-Nov-00",11,7.67,"Funk/Soul",216,0,0,1,19,98,59,67,93,-4,"Gbm",0
+"It Wasn't Me","Shaggy ft. Ricardo ""RikRok"" Ducent","3-Feb-01",2,6.33,"Hip Hop",227,1,0,1,33,95,61,85,65,-5,"C",1
+"Ms. Jackson","Outkast","17-Feb-01",1,8.67,"Hip Hop",238,1,0,1,26,95,83,83,68,-4,"Am",1
+"Stutter","Joe ft. Mystikal","24-Feb-01",4,4.33,"Hip Hop",213,1,0,1,27,90,76,77,68,-7,"Bbm",1
+"Butterfly","Crazy Town","24-Mar-01",2,6,"Hip Hop",215,1,1,0,28,104,73,73,68,-8,"Am",1
+"Angel","Shaggy ft. Rayvon","31-Mar-01",1,6.67,"Reggae",235,1,0,1,33,85,68,80,82,-6,"Gb",1
+"All for You","Janet Jackson","14-Apr-01",7,7,"Funk/Soul",272,0,0,1,34,114,88,77,78,-5,"G",1
+"Lady Marmalade","Christina Aguilera, Lil' Kim, Mýa, & Pink","2-Jun-01",5,6.33,"Funk/Soul",264,0,2,2,22,110,80,76,65,-4,"Dm",1
+"U Remind Me","Usher","7-Jul-01",4,5.67,"Funk/Soul",266,1,0,1,22,94,63,66,73,-5,"Gb",1
+"Bootylicious","Destiny's Child","4-Aug-01",2,5.67,"Funk/Soul",207,0,0,1,19,103,84,84,64,-4,"Ebm",1
+"Fallin'","Alicia Keys","18-Aug-01",6,7.67,"Funk/Soul",195,0,0,1,20,96,61,65,48,-8,"Em",0
+"I'm Real (Murder Remix)","Jennifer Lopez ft. Ja Rule","8-Sep-01",5,5.33,"Funk/Soul",266,2,0,2,29,83,59,71,55,-8,"Bm",1
+"Family Affair","Mary J. Blige","3-Nov-01",6,7.67,"Hip Hop",244,0,0,1,30,93,56,93,98,-2,"Abm",1
+"U Got It Bad","Usher","15-Dec-01",6,6.33,"Funk/Soul",247,1,0,1,23,124,50,82,65,-5,"Db",1
+"How You Remind Me","Nickelback","22-Dec-01",4,6.33,"Rock",223,1,1,0,27,172,76,45,54,-5,"Gm",1
+"Always on Time","Ja Rule ft. Ashanti","23-Feb-02",2,6.33,"Hip Hop",245,2,0,1,23,97,71,84,84,-6,"Cm",1
+"Ain't it Funny (Murder Remix)","Jennifer Lopez ft. Ja Rule & Caddillac Tah","9-Mar-02",6,4.67,"Hip Hop",231,2,0,2,29,89,74,78,79,-3,"Gm",1
+"Foolish","Ashanti","20-Apr-02",10,6.33,"Funk/Soul",227,0,0,1,21,90,70,67,71,-6,"C",1
+"Hot in Herre","Nelly","29-Jun-02",7,8.33,"Hip Hop",228,1,0,1,27,107,75,96,91,-5,"Em",1
+"Dilemma","Nelly ft. Kelly Rowland","17-Aug-02",10,6.67,"Funk/Soul",289,2,0,1,24,168,55,73,61,-8,"F",1
+"A Moment Like This","Kelly Clarkson","5-Oct-02",2,6,"Pop",228,0,1,0,20,145,57,41,16,-4,"Multiple Keys",0
+"Lose Yourself","Eminem","9-Nov-02",12,10,"Hip Hop",321,1,1,0,30,171,74,69,6,-5,"Dm",1
+"Bump, Bump, Bump","B2K ft. P. Diddy","1-Feb-03",1,4,"Hip Hop",282,1,0,1,26,95,68,83,89,-6,"Dbm",1
+"All I Have","Jennifer Lopez ft. LL Cool J","8-Feb-03",4,5,"Funk/Soul",254,2,0,2,34,83,67,70,47,-5,"C",1
+"In da Club","50 Cent","8-Mar-03",9,9.33,"Hip Hop",193,1,0,1,27,90,72,90,81,-3,"Gbm",1
+"Get Busy","Sean Paul","10-May-03",3,6.67,"Reggae",211,1,0,1,30,100,82,74,73,-4,"Fm",1
+"21 Questions","50 Cent ft. Nate Dogg","31-May-03",4,8,"Hip Hop",224,1,0,1,30,90,81,58,91,-4,"Gbm",1
+"This is the Night","Clay Aiken","28-Jun-03",2,2.67,"Pop",212,1,1,0,24,99,56,53,37,-8,"E",0
+"Crazy in Love","Beyoncé ft. Jay-Z","12-Jul-03",8,8.67,"Funk/Soul",236,2,0,1,27,99,77,65,68,-7,"Dm",0
+"Shake Ya Tailfeather","Nelly, P. Diddy, & Murphy Lee","6-Sep-03",4,5,"Hip Hop",295,1,0,1,31,88,71,78,90,-7,"Fm",1
+"Baby Boy","Beyoncé ft. Sean Paul","4-Oct-03",9,5.67,"Hip Hop;Reggae",244,2,0,1,26,91,49,66,79,-9,"Cm",0
+"Stand Up","Ludacris ft. Shawnna","6-Dec-03",1,5.67,"Hip Hop",213,2,0,1,26,99,84,75,80,-5,"Ebm",1
+"Hey Ya!","Outkast","13-Dec-03",9,9.33,"Funk/Soul",235,1,0,1,28,80,97,73,97,-2,"Em",1
+"The Way You Move","Outkast ft. Sleepy Brown","14-Feb-04",1,8,"Funk/Soul",234,1,0,1,29,126,60,87,64,-5,"Fm",1
+"Slow Jamz","Twista ft. Kanye West & Jamie Foxx","21-Feb-04",1,7.33,"Funk/Soul",212,1,0,1,31,145,76,56,60,-7,"Dm",1
+"Yeah!","Usher ft. Lil Jon & Ludacris","28-Feb-04",12,9.33,"Hip Hop",250,1,0,1,46,105,79,89,58,-5,"Gm",1
+"Burn","Usher","22-May-04",8,7.33,"Funk/Soul",256,1,0,1,25,120,48,80,69,-7,"Db",0
+"I Believe","Fantasia","10-Jul-04",1,5.33,"Pop",300,0,0,1,20,134,45,53,13,-9,"Ab",0
+"Confession Part II","Usher","24-Jul-04",2,7,"Funk/Soul",211,1,0,1,25,138,47,85,70,-8,"Ab",0
+"Slow Motion","Juvenile ft. Soulja Slim","7-Aug-04",2,5.33,"Hip Hop",248,1,0,1,28,173,73,71,89,-5,"Cm",1
+"Lean Back","Terror Squad","21-Aug-04",3,6.33,"Hip Hop",247,2,0,1,34,95,92,78,70,-3,"Dbm",1
+"Goodies","Ciara ft. Petey Pablo","11-Sep-04",7,5.67,"Hip Hop",223,2,0,1,25,102,65,83,87,-6,"Fm",1
+"My Boo","Usher & Alicia Keys","30-Oct-04",6,6.33,"Funk/Soul",223,2,0,1,25,86,51,66,68,-8,"F",0
+"Drop It Like It's Hot","Snoop Dogg ft. Pharrell Williams","11-Dec-04",3,8.67,"Hip Hop",269,1,0,1,32,92,55,91,63,-5,"Dbm",1
+"Let Me Love You","Mario","1-Jan-05",9,6,"Funk/Soul",256,1,0,1,18,95,58,66,56,-9,"Gm",0
+"Candy Shop","50 Cent ft. Olivia","5-Mar-05",9,8,"Hip Hop",219,2,0,1,28,125,57,61,76,-8,"Bm",1
+"Hollaback Girl","Gwen Stefani","7-May-05",4,8,"Hip Hop",199,0,1,0,35,110,92,93,90,-2,"B",1
+"We Belong Together","Mariah Carey","4-Jun-05",14,7.33,"Funk/Soul",201,0,0,1,36,140,46,84,76,-8,"C",1
+"Inside Your Heaven","Carrie Underwood","2-Jul-05",1,5,"Pop",225,0,1,0,22,135,56,38,14,-5,"G",0
+"Gold Digger","Kanye West ft. Jamie Foxx","17-Sep-05",10,9.67,"Hip Hop",197,1,0,1,33,93,70,63,62,-6,"Abm",1
+"Run It!","Chris Brown ft. Juelz Santana","26-Nov-05",5,6.33,"Hip Hop",229,1,0,1,20,101,48,85,21,-7,"Dbm",1
+"Don't Forget About Us","Mariah Carey","31-Dec-05",2,5.67,"Funk/Soul",233,0,0,1,36,144,54,70,43,-7,"Gm",0
+"Laffy Taffy","D4L","14-Jan-06",1,5,"Hip Hop",224,1,0,1,29,77,44,89,62,-8,"Gm",1
+"Grillz","Nelly ft. Paul Wall, Ali & Gipp","21-Jan-06",2,5.67,"Hip Hop",271,1,2,2,30,83,50,87,84,-8,"Gbm",1
+"Check on It","Beyoncé ft. Bun B & Slim Thug","4-Feb-06",5,7.33,"Hip Hop",210,2,0,1,27,166,80,71,86,-7,"D",0
+"You're Beautiful","James Blunt","11-Mar-06",1,5.33,"Rock",209,1,1,0,32,82,48,68,45,-10,"Eb",1
+"So Sick","Ne-Yo","18-Mar-06",2,6.67,"Funk/Soul",197,1,0,1,26,93,57,45,58,-8,"Gb",0
+"Temperature","Sean Paul","1-Apr-06",1,6.67,"Reggae",218,1,0,1,33,125,60,95,82,-5,"Bbm",0
+"Bad Day","Daniel Powter","8-Apr-06",5,4.33,"Pop",233,1,1,0,35,140,79,60,52,-4,"Eb",0
+"SOS","Rihanna","13-May-06",3,7,"Electronic/Dance",238,0,0,1,18,137,67,68,53,-5,"Gb",0
+"Ridin'","Chamillionaire ft. Krayzie Bone","3-Jun-06",2,6.67,"Hip Hop",303,1,0,1,29,143,80,79,84,-5,"Abm",1
+"Hips Don't Lie","Shakira ft. Wyclef Jean","17-Jun-06",2,7.67,"Latin",218,2,0,2,33,100,82,78,76,-6,"Bbm",0
+"Do I Make You Proud","Taylor Hicks","1-Jul-06",1,2.67,"Pop",248,1,1,0,29,144,52,46,31,-8,"Db",0
+"Promiscuous","Nelly Furtado ft. Timbaland","8-Jul-06",6,8.67,"Hip Hop",242,2,2,2,31,114,97,81,87,-6,"Bbm",0
+"London Bridge","Fergie","19-Aug-06",3,5.33,"Hip Hop",202,0,0,0,31,91,61,77,63,-6,"Bbm",1
+"SexyBack","Justin Timberlake","9-Sep-06",7,7.33,"Electronic/Dance",242,1,1,0,25,117,58,97,96,-6,"Gm",1
+"Money Maker","Ludacris ft. Pharrell Williams","28-Oct-06",2,5.33,"Hip Hop",230,1,0,1,31,79,60,55,61,-7,"Cm",1
+"My Love","Justin Timberlake ft. T.I.","11-Nov-06",3,7,"Electronic/Dance",281,1,2,2,26,120,67,77,80,-6,"Em",0
+"I Wanna Love You","Akon ft. Snoop Dogg","2-Dec-06",2,5.67,"Hip Hop",247,1,0,1,34,100,45,87,37,-9,"Am",1
+"Irreplaceable","Beyoncé","16-Dec-06",10,8,"Funk/Soul",227,0,0,1,25,176,69,45,51,-5,"Gm",0
+"Say It Right","Nelly Furtado","24-Feb-07",1,6,"Pop",223,0,1,0,28,117,87,87,81,-6,"Ab",0
+"What Goes Around … Comes Around","Justin Timberlake","3-Mar-07",1,4.67,"Funk/Soul",313,1,1,0,26,76,70,72,50,-5,"G",0
+"This Is Why I'm Hot","MiMS","10-Mar-07",2,4.33,"Hip Hop",259,1,0,1,25,80,60,62,49,-6,"Cm",1
+"Glamorous","Fergie ft. Ludacris","24-Mar-07",2,6,"Pop",246,2,0,2,30,131,76,81,62,-6,"C",1
+"Don't Matter","Akon","7-Apr-07",2,5.67,"Funk/Soul",249,1,0,1,33,125,43,81,37,-6,"A",1
+"Give It To Me","Timbaland ft. Nelly Furtado & Justin Timberlake","21-Apr-07",2,4,"Hip Hop",236,2,2,2,30,111,71,98,82,-4,"Abm",1
+"Girlfriend","Avril Lavigne","5-May-07",1,6,"Rock",216,0,1,0,22,164,96,58,52,-2,"D",1
+"Makes Me Wonder","Maroon 5","12-May-07",3,4.67,"Rock",211,1,1,0,28,114,85,80,88,-2,"D",1
+"Buy U a Drank (Shawty Snappin')","T-Pain ft. Yung Joc","26-May-07",1,6,"Hip Hop",227,1,0,1,24,80,55,69,61,-8,"Db",1
+"Umbrella","Rihanna ft. Jay-Z","9-Jun-07",7,7.33,"Funk/Soul",275,2,0,1,28,174,83,58,57,-5,"Db",0
+"Hey There Delilah","Plain White-T's","28-Jul-07",2,7,"Pop",232,1,2,2,28,104,37,51,32,-11,"D",0
+"Beautiful Girls","Sean Kingston","11-Aug-07",4,7.33,"Pop",225,1,0,1,17,130,65,76,77,-6,"A",1
+"Big Girls Don't Cry","Fergie","8-Sep-07",1,6.67,"Pop",268,0,0,0,32,113,64,71,25,-4,"G",0
+"Crank That (Soulja Boy)","Soulja Boy Tell 'Em","15-Sep-07",7,4,"Hip Hop",221,1,0,1,17,140,74,74,80,-2,"Cm",1
+"Stronger","Kanye West","29-Sep-07",1,7.33,"Hip Hop",311,1,0,1,30,104,72,62,49,-8,"Ebm",1
+"Kiss Kiss","Chris Brown ft. T-Pain","10-Nov-07",3,4.33,"Hip Hop",250,1,0,1,21,140,66,73,55,-3,"Ebm",1
+"No One","Alicia Keys","1-Dec-07",5,4.33,"Funk/Soul",253,0,0,1,26,90,55,64,17,-5,"E",0
+"Low","Flo Rida ft. T-Pain","5-Jan-08",10,6.67,"Pop",231,1,0,1,26,128,61,92,30,-6,"Ebm",0
+"Love in This Club","Usher ft. Young Jeezy","15-Mar-08",3,5.67,"Electronic/Dance",259,1,0,1,30,140,71,57,35,-6,"C",1
+"Bleeding Love","Leona Lewis","5-Apr-08",4,6.33,"Pop",261,0,0,1,23,104,66,64,23,-6,"F",0
+"Touch My Body","Mariah Carey","12-Apr-08",2,4.33,"Pop",204,0,0,1,39,79,67,71,84,-8,"D",1
+"Lollipop","Lil Wayne ft. Static Major","3-May-08",5,4.67,"Hip Hop",299,1,1,0,29,148,43,83,45,-9,"Dm",1
+"Take a Bow","Rihanna","24-May-08",1,5,"Funk/Soul",229,0,0,1,20,82,47,70,57,-8,"E",0
+"Viva La Vida","Coldplay","28-Jun-08",1,6.67,"Pop",242,1,1,0,31,138,62,49,42,-7,"Ab",0
+"I Kissed a Girl","Katy Perry","5-Jul-08",7,6,"Rock",179,0,1,0,23,130,76,70,70,-3,"Am",1
+"Disturbia","Rihanna","23-Aug-08",2,5.33,"Electronic/Dance",238,0,0,1,20,125,81,71,72,-5,"Bm",1
+"Whatever You Like","T.I.","6-Sep-08",7,5,"Hip Hop",249,1,0,1,27,150,69,68,47,-6,"F",1
+"So What","P!nk","27-Sep-08",1,5,"Rock",215,0,1,0,29,126,87,53,46,-3,"Gbm",1
+"Live Your Life","T.I. ft. Rihanna","18-Oct-08",6,5,"Pop",338,2,0,1,24,160,86,38,48,-3,"Bm",1
+"Womanizer","Britney Spears","25-Oct-08",1,5.33,"Electronic/Dance",224,0,1,0,26,139,70,72,24,-5,"Dbm",0
+"Single Ladies (Put a Ring on It)","Beyoncé","13-Dec-08",4,6.67,"Funk/Soul",193,0,0,1,27,97,58,43,27,-5,"E",0
+"Just Dance","Lady Gaga ft. Colby O'Donis","17-Jan-09",3,6,"Electronic/Dance",241,2,2,2,20,119,74,82,75,-5,"Dbm",0
+"My Life Would Suck Without You","Kelly Clarkson","17-Feb-09",2,6,"Rock",211,0,1,0,26,145,88,53,42,-4,"A",0
+"Crack a Bottle","Eminem, Dr. Dre, & 50 Cent","21-Feb-09",1,2.33,"Hip Hop",297,1,2,2,36,170,87,52,39,-3,"Dbm",1
+"Right Round","Flo Rida","28-Feb-09",6,4,"Pop",204,1,0,1,29,125,67,72,71,-7,"Am",1
+"Poker Face","Lady Gaga","11-Apr-09",1,7,"Electronic/Dance",237,0,1,0,23,119,81,85,79,-5,"Abm",1
+"Boom Boom Pow","The Black Eyed Peas","18-Apr-09",12,4.33,"Electronic/Dance",252,2,0,1,34,130,84,62,38,-6,"Am",1
+"I Gotta Feeling","The Black Eyed Peas","11-Jul-09",14,4.67,"Electronic/Dance",289,2,0,1,34,128,77,74,61,-6,"G",0
+"Down","Jay Sean ft. Lil Wayne","17-Oct-09",2,4.33,"Electronic/Dance",212,1,0,1,28,132,68,73,73,-4,"D",0
+"3","Britney Spears","24-Oct-09",1,3,"Electronic/Dance",205,0,1,0,27,135,71,70,79,-2,"Fm",1
+"Fireflies","Owl City","7-Nov-09",2,2,"Electronic/Dance",228,1,1,0,23,90,66,51,47,-7,"Eb",0
+"Whatcha Say","Jason Derulo","14-Nov-09",1,4.33,"Electronic/Dance",221,1,0,1,20,144,71,62,71,-6,"B",0
+"Empire State of Mind","Jay-Z & Alicia Keys","28-Nov-09",5,7.67,"Hip Hop",276,2,0,1,34,174,96,49,81,-2,"Gb",1
+"Tik Tok","Kesha","2-Jan-10",9,5.33,"Electronic/Dance",299,0,1,0,22,120,84,76,71,-3,"F",0
+"Imma Be","The Black Eyed Peas","6-Mar-10",2,3.67,"Electronic/Dance",257,2,0,1,34,92,52,60,41,-7,"Fm",1
+"Break Your Heart","Taio Cruz ft. Ludacris","20-Mar-10",1,3.67,"Electronic/Dance",186,1,0,1,30,122,90,67,63,-5,"Eb",0
+"Rude Boy","Rihanna","27-Mar-10",5,6.67,"Electronic/Dance",222,0,0,1,22,174,75,56,77,-4,"Ebm",1
+"Nothin' On You","B.o.B. ft. Bruno Mars","1-May-10",2,6.33,"Funk/Soul",268,1,0,1,23,104,85,69,74,-6,"Bb",0
+"OMG","Usher ft. will.i.am","15-May-10",4,4.33,"Electronic/Dance",269,1,0,1,33,130,75,78,33,-6,"Em",0
+"Not Afraid","Eminem","22-May-10",1,4.67,"Hip Hop",248,1,1,0,37,115,95,86,67,-1,"Cm",1
+"California Gurls","Katy Perry ft. Snoop Dogg","19-Jun-10",6,7.67,"Funk/Soul",236,2,2,2,32,125,75,79,43,-4,"F",1
+"Love the Way You Lie","Eminem ft. Rihanna","31-Jul-10",7,7,"Hip Hop",263,2,2,2,30,87,93,75,64,-5,"Bb",1
+"Teenage Dream","Katy Perry","18-Sep-10",2,9,"Pop",227,0,1,0,25,120,80,72,59,-5,"Bb",0
+"Just the Way You Are","Bruno Mars","2-Oct-10",4,7.67,"Pop",220,1,0,1,24,109,84,64,43,-5,"F",0
+"Like a G6","Far East Movement ft. The Cataracs & Dev","30-Oct-10",3,4.33,"Electronic/Dance",206,2,2,2,NA,125,84,44,78,-8,"Eb",0
+"We R Who We R","Kesha","13-Nov-10",1,4.67,"Electronic/Dance",204,0,1,0,23,120,82,74,65,-5,"Ab",1
+"What's My Name?","Rihanna ft. Drake","20-Nov-10",1,6,"Electronic/Dance",263,2,0,1,23,100,78,69,56,-3,"A",1
+"Only Girl (In the World)","Rihanna","4-Dec-10",1,6.67,"Electronic/Dance",235,0,0,1,22,126,71,79,64,-4,"Gbm",0
+"Raise Your Glass","P!nk","11-Dec-10",1,6.33,"Pop",202,0,1,0,31,122,71,70,62,-5,"G",1
+"Firework","Katy Perry","18-Dec-10",4,6.67,"Electronic/Dance",227,0,1,0,26,124,83,64,65,-5,"Ab",0
+"Grenade","Bruno Mars","8-Jan-11",4,7.33,"Pop",223,1,0,1,25,110,56,71,23,-7,"Dm",0
+"Hold It Against Me","Britney Spears","29-Jan-11",1,5,"Electronic/Dance",228,0,1,0,29,133,72,65,39,-5,"Cm",0
+"Black and Yellow","Wiz Khalifa","19-Feb-11",1,5.33,"Hip Hop",207,1,0,1,23,164,83,68,54,-5,"Dm",1
+"Born This Way","Lady Gaga","26-Feb-11",6,7.67,"Electronic/Dance",260,0,1,0,24,124,83,59,49,-5,"B",0
+"E.T.","Katy Perry ft. Kanye West","9-Apr-11",5,7,"Electronic/Dance",229,2,2,2,30,152,87,62,76,-5,"Fm",1
+"S&M","Rihanna ft. Britney Spears","30-Apr-11",1,6.67,"Electronic/Dance",257,0,2,2,26,128,81,82,89,-3,"Ebm",1
+"Rolling in the Deep","Adele","21-May-11",7,9.33,"Funk/Soul",228,0,1,0,23,105,77,73,51,-5,"Cm",1
+"Give Me Everything","Pitbull ft. Ne-Yo, Afrojack, & Nayer","8-Jul-11",1,6.33,"Electronic/Dance",252,2,2,2,30,129,94,67,53,-3,"Eb",0
+"Party Rock Anthem","LMFAO ft. Lauren Bennett & GoonRock","16-Jul-11",6,6,"Electronic/Dance",266,2,2,2,30,130,73,75,36,-4,"Fm",0
+"Last Friday Night (T.G.I.F.)","Katy Perry","27-Aug-11",2,7,"Pop",230,0,1,0,26,126,81,65,72,-4,"Gb",1
+"Moves Like Jagger","Maroon 5 ft. Christina Aguilera","10-Sep-11",4,5.67,"Funk/Soul",201,2,1,0,31,128,76,72,62,-4,"Bm",1
+"Someone Like You","Adele","17-Sep-11",5,10,"Pop",285,0,1,0,23,135,32,56,29,-8,"A",0
+"We Found Love","Rihanna ft. Calvin Harris","12-Nov-11",10,8.67,"Electronic/Dance",215,2,2,2,25,128,77,73,60,-4,"Dbm",0
+"Sexy and I Know It","LMFAO","7-Jan-12",2,5.67,"Electronic/Dance",199,1,0,1,31,130,86,71,80,-4,"Gm",0
+"Set Fire to the Rain","Adele","4-Feb-12",2,7.33,"Pop",242,0,1,0,23,108,67,60,45,-4,"Dm",0
+"Stronger (What Doesn't Kill You)","Kelly Clarkson","18-Feb-12",3,6.33,"Electronic/Dance",221,0,1,0,29,116,94,56,68,-4,"Am",0
+"Part of Me","Katy Perry","3-Mar-12",1,7,"Pop",216,0,1,0,27,130,92,68,77,-5,"F",0
+"We Are Young","fun. ft. Janelle Monáe","17-Mar-12",6,6.33,"Pop",250,3,1,0,30,92,64,38,74,-6,"F",0
+"Somebody That I Used to Know","Gotye ft. Kimbra","28-Apr-12",8,8,"Pop",244,2,1,0,31,129,50,86,72,-7,"Dm",0
+"Call Me Maybe","Carly Rae Jepsen","23-Jun-12",9,7.33,"Pop",193,0,1,0,31,120,58,78,66,-7,"G",0
+"Whistle","Flo Rida","25-Aug-12",2,2.67,"Pop",224,1,0,1,32,104,94,75,74,-6,"C",1
+"We Are Never Ever Getting Back Together","Taylor Swift","1-Sep-12",3,7,"Pop",191,0,1,0,22,86,68,63,75,-6,"G",0
+"One More Night","Maroon 5","29-Sep-12",9,2,"Pop",209,1,2,2,33,93,82,72,61,-3,"Fm",1
+"Diamonds","Rihanna","1-Dec-12",3,6.33,"Electronic/Dance",225,0,0,1,24,92,71,56,39,-5,"Bm",0
+"Locked Out of Heaven","Bruno Mars","22-Dec-12",6,7,"Rock",233,1,0,1,27,144,70,73,87,-4,"F",1
+"Thrift Shop","Macklemore & Ryan Lewis ft. Wanz","2-Feb-13",6,4.33,"Hip Hop",235,1,2,2,29,95,53,78,67,-7,"Abm",1
+"Harlem Shake","Baauer","2-Mar-13",5,3,"Electronic/Dance",196,1,1,0,23,138,79,45,28,-5,"Bbm",0
+"When I Was Your Man","Bruno Mars","20-Apr-13",1,8.33,"Pop",213,1,0,1,27,73,28,61,39,-9,"C",0
+"Just Give Me a Reason","P!nk ft. Nate Ruess","27-Apr-13",3,5.67,"Pop",242,2,1,0,32,95,55,78,44,-7,"G",0
+"Can't Hold Us","Macklemore & Ryan Lewis ft. Ray Dalton","18-May-13",5,6.33,"Hip Hop",258,1,2,2,29,146,92,64,85,-4,"G",1
+"Blurred Lines","Robin Thicke ft. T.I. & Pharrell Williiams","22-Jun-13",12,7.67,"Funk/Soul",263,1,2,2,36,120,50,86,88,-8,"G",1
+"Roar","Katy Perry","14-Sep-13",2,6.67,"Pop",223,0,1,0,28,90,77,55,46,-5,"Bb",0
+"Wrecking Ball","Miley Cyrus","28-Sep-13",3,7.67,"Pop",221,3,1,0,20,120,42,53,35,-6,"Dm",0
+"Royals","Lorde","12-Oct-13",9,9.33,"Pop",190,0,1,0,16,85,43,67,34,-10,"D",0
+"The Monster","Eminem ft. Rihanna","21-Dec-13",4,4,"Hip Hop",250,2,2,2,33,110,85,78,62,-4,"Dbm",1
+"Timber","Pitbull ft. Kesha","18-Jan-14",3,5,"Pop",204,2,2,0,29,130,96,58,79,-4,"B",1
+"Dark Horse","Katy Perry ft. Juicy J","8-Feb-14",4,3,"Electronic/Dance",215,2,2,2,34,132,59,65,35,-6,"Bbm",1
+"Happy","Pharrell Williams","8-Mar-14",10,6.67,"Funk/Soul",232,1,0,1,40,160,82,65,96,-5,"Fm",0
+"All of Me","John Legend","17-May-14",3,5.67,"Pop",269,1,0,1,35,120,26,42,33,-7,"Ab",0
+"Fancy","Iggy Azalea ft. Charli XCX","7-Jun-14",7,5.33,"Hip Hop",199,0,1,0,23,95,72,91,38,-4,"Ebm",1
+"Rude","MAGIC!","26-Jul-14",6,5,"Reggae",224,1,1,0,33,144,76,77,93,-5,"Db",0
+"Shake It Off","Taylor Swift","6-Sep-14",4,7.33,"Pop",209,0,1,0,24,160,79,65,94,-5,"G",0
+"All About that Bass","Meghan Trainor","20-Sep-14",8,3.67,"Pop",187,0,1,0,20,134,89,81,96,-4,"A",0
+"Blank Space","Taylor Swift","29-Nov-14",7,9.33,"Pop",231,0,1,0,24,96,68,75,58,-5,"F",0
+"Uptown Funk","Mark Ronson ft. Bruno Mars","17-Jan-15",14,9,"Funk/Soul",269,1,2,2,34,115,61,86,93,-7,"F",1
+"See You Again","Wiz Khalifa ft. Charlie Puth","25-Apr-15",12,3,"Hip Hop",229,1,2,2,25,80,48,69,28,-8,"Bb",0
+"Bad Blood","Taylor Swift ft. Kendrick Lamar","6-Jun-15",1,4.67,"Hip Hop",200,2,2,2,26,170,66,65,22,-7,"Em",0
+"Cheerleader","OMI","25-Jul-15",6,4.33,"Electronic/Dance",180,1,0,1,28,118,68,78,59,-6,"E",0
+"Can't Feel My Face","The Weeknd","22-Aug-15",3,8.67,"Electronic/Dance",213,1,0,1,25,108,77,71,58,-6,"Am",0
+"What Do You Mean?","Justin Bieber","19-Sep-15",1,6,"Electronic/Dance",205,1,1,0,21,125,57,85,79,-8,"Ab",0
+"The Hills","The Weeknd","3-Oct-15",6,7,"Electronic/Dance",242,1,0,1,25,113,56,59,14,-7,"Cm",1
+"Hello","Adele","14-Nov-15",10,8,"Pop",295,0,1,0,27,79,43,58,29,-6,"Fm",0
+"Sorry","Justin Bieber","23-Jan-16",3,5.67,"Electronic/Dance",200,1,1,0,21,100,76,65,41,-4,"Cm",0
+"Love Yourself","Justin Bieber","13-Feb-16",2,6.67,"Pop",233,1,1,0,21,100,38,61,52,-10,"E",0
+"PILLOWTALK","Zayn","20-Feb-16",1,5,"Electronic/Dance",202,1,0,0,23,125,70,58,44,-4,"B",1
+"Work","Rihanna ft. Drake","5-Mar-16",9,6.67,"Reggae",219,2,0,1,29,92,53,73,56,-6,"B",1
+"Panda","Desiigner","7-May-16",2,4.67,"Hip Hop",247,1,0,1,19,145,73,69,27,-6,"Bbm",1
+"One Dance","Drake ft. Wizkid & Kyla","21-May-16",10,7.33,"Reggae",173,2,0,1,43,104,63,79,37,-6,"Bbm",0
+"CAN'T STOP THE FEELING!","Justin Timberlake","28-May-16",1,5.67,"Funk/Soul",237,1,1,0,35,113,83,67,70,-6,"C",0
+"Cheap Thrills","Sia ft. Sean Paul","6-Aug-16",4,5,"Electronic/Dance",224,2,2,2,42,90,80,59,73,-5,"Gbm",0
+"Closer","The Chainsmokers ft. Halsey","3-Sep-16",12,6.67,"Electronic/Dance",244,3,1,0,24,95,52,75,66,-6,"Ab",0
+"Black Beatles","Rae Sremmurd ft. Gucci Mane","26-Nov-16",7,6.67,"Hip Hop",291,1,0,1,28,146,63,80,30,-6,"Em",1
+"Starboy","The Weeknd ft. Daft Punk","7-Jan-17",1,6.33,"Electronic/Dance",230,1,2,2,26,93,59,68,49,-7,"Em",1
+"Bad and Boujee","Migos ft. Lil Uzi Vert","21-Jan-17",3,6,"Hip Hop",343,1,0,1,23,127,67,93,17,-5,"Bbm",1
+"Shape of You","Ed Sheeran","28-Jan-17",12,5.67,"Electronic/Dance",233,1,1,0,25,96,65,83,93,-3,"Dbm",0
+"HUMBLE.","Kendrick Lamar","6-May-17",1,8.33,"Hip Hop",177,1,1,0,29,150,62,91,42,-7,"Abm",1
+"That's What I Like","Bruno Mars","13-May-17",1,7.33,"Funk/Soul",206,1,0,1,31,134,56,85,86,-5,"Db",1
+"I'm the One","DJ Khaled ft. Justin Bieber, Quavo, Chance the Rapper, & Lil Wayne","20-May-17",1,5,"Pop",288,1,2,2,32,81,67,60,82,-4,"G",1
+"Despacito","Luis Fonsi & Daddy Yankee ft. Justin Bieber","27-May-17",16,8.33,"Latin",228,1,2,2,34,89,82,65,82,-4,"D",0
+"Look What You Made Me Do","Taylor Swift","16-Sep-17",3,3,"Electronic/Dance",211,0,1,0,27,128,71,77,51,-6,"Am",0
+"Bodak Yellow","Cardi B","7-Oct-17",3,7.33,"Hip Hop",223,0,0,1,24,125,70,93,49,-6,"Bm",1
+"rockstar","Post Malone ft. 21 Savage","28-Oct-17",8,4.33,"Hip Hop",218,1,2,2,24,160,52,59,13,-6,"Gm",1
+"Perfect","Ed Sheeran & Beyoncé","23-Dec-17",6,8,"Pop",269,2,2,2,31,95,30,59,36,-7,"Ab",0
+"Havana","Camila Cabello ft. Young Thug","27-Jan-18",1,6.33,"Latin",217,2,0,2,23,105,52,77,39,-4,"Gm",0
+"God's Plan","Drake","3-Feb-18",11,7.33,"Hip Hop",198,1,0,1,31,77,45,75,36,-9,"G",1
+"Nice For What","Drake","21-Apr-18",8,9,"Hip Hop",210,1,0,1,31,93,91,59,76,-6,"Ab",1
+"This is America","Childish Gambino","19-May-18",2,8,"Hip Hop",225,1,0,1,34,120,46,85,55,-6,"F",0
+"Psycho","Post Malone ft. Ty Dolla $ign","16-Jun-18",1,6.33,"Hip Hop",221,1,2,2,29,140,56,75,46,-8,"Eb",1
+"SAD!","XXXTENTACION","30-Jun-18",1,5,"Hip Hop",166,1,0,1,20,75,61,74,47,-5,"Eb",1
+"I Like It","Cardi B, Bad Bunny, & J Balvin","7-Jul-18",1,6.67,"Hip Hop",253,2,0,2,27,136,73,82,65,-4,"Fm",1
+"In My Feelings","Drake","21-Jul-18",10,7,"Hip Hop",217,1,0,1,31,91,63,84,35,-6,"Fm",1
+"Girls Like You","Maroon 5 ft. Cardi B","29-Sep-18",7,5.67,"Pop",235,2,2,2,39,125,54,85,45,-7,"C",1
+"thank u, next","Ariana Grande","17-Nov-18",7,8,"Pop",207,0,1,0,25,107,65,72,41,-6,"Db",1
+"SICKO MODE","Travis Scott","8-Dec-18",1,8.67,"Hip Hop",312,1,0,1,27,155,73,83,45,-4,"Multiple Keys",1
+"Without Me","Halsey","12-Jan-19",2,5.67,"Pop",201,3,0,1,24,136,49,75,53,-7,"Gb",1
+"Sunflower","Post Malone & Swae Lee","19-Jan-19",1,7.33,"Pop",158,1,2,2,24,90,48,76,91,-6,"D",1
+"7 rings","Ariana Grande","2-Feb-19",8,2.33,"Hip Hop",178,0,1,0,25,140,32,78,33,-11,"Dbm",1
+"Shallow","Lady Gaga & Bradley Cooper","9-Mar-19",1,7,"Rock",217,2,1,0,38,96,33,57,28,-7,"G",0
+"Sucker","Jonas Brothers","16-Mar-19",1,4.67,"Pop",181,1,1,0,29,138,73,84,95,-5,"Dbm",0
+"Old Town Road","Lil Nas X ft. Billy Ray Cyrus","13-Apr-19",19,6.67,"Hip Hop",157,1,2,2,38,136,62,88,64,-6,"Abm",0
+"bad guy","Billie Eilish","24-Aug-19",1,7.67,"Pop",194,0,1,0,17,135,43,70,56,-11,"Gm",1
+"Señorita","Shawn Mendes & Camila Cabello","31-Aug-19",1,3.67,"Pop",190,2,2,0,22,117,54,76,75,-6,"Am",0
+"Truth Hurts","Lizzo","7-Sep-19",7,7,"Funk/Soul",173,0,0,1,31,158,62,72,41,-3,"Am",1
+"HIGHEST IN THE ROOM","Travis Scott","19-Oct-19",1,5.67,"",175,1,0,1,28,76,43,60,6,-9,"Dm",1
+"Someone You Loved","Lewis Capaldi","2-Nov-19",3,5.67,"",182,1,1,0,23,110,41,50,45,-6,"Db",0
+"Lose You to Love Me","Selena Gomez","9-Nov-19",1,6,"",206,0,0,0,27,103,34,49,10,-9,"E",0
+"Circles","Post Malone","30-Nov-19",3,6,"",215,1,1,0,24,120,76,70,55,-3,"C",1
+"Heartless","The Weeknd","14-Dec-19",1,5.33,"",198,1,0,1,29,170,75,54,25,-6,"Bbm",1
+"All I Want for Christmas is You","Mariah Carey","21-Dec-19",8,7.67,"",241,0,0,1,50,150,63,34,35,-7,"G",0
+"The Box","Roddy Ricch","18-Jan-20",11,7.67,"",196,1,0,1,21,117,59,90,64,-7,"Bbm",1
+"Blinding Lights","The Weeknd","4-Apr-20",4,7.33,"",200,1,0,1,30,171,73,51,33,-6,"Cm",0
+"Toosie Slide","Drake","18-Apr-20",1,4.33,"",247,1,0,1,33,82,45,83,84,-10,"Abm",1
+"THE SCOTTS","Travis Scott & Kid Cudi","9-May-20",1,4.33,"",165,1,0,1,33,130,54,72,23,-8,"Cm",1
+"Say So","Doja Cat ft. Nicki Minaj","16-May-20",1,8,"",206,0,0,1,28,111,64,86,75,-5,"D",1
+"Stuck With U","Ariana Grande & Justin Bieber","23-May-20",1,5,"",228,2,1,0,26,89,45,60,54,-7,"Ab",0
+"Savage","Megan Thee Stallion ft. Beyoncé","30-May-20",1,5.67,"",242,0,0,1,32,84,74,82,64,-5,"Bbm",1
+"Rain on Me","Lady Gaga & Ariana Grande","6-Jun-20",1,6.67,"",182,0,1,0,30,123,86,67,65,-4,"E",0
+"ROCKSTAR","DaBaby ft. Roddy Ricch","13-Jun-20",7,7,"",181,1,0,1,25,90,69,75,50,-8,"Abm",1
+"TROLLZ","6ix9ine & Nicki Minaj","27-Jun-20",1,2,"",202,2,0,2,31,90,42,74,49,-9,"Dbm",1
+"cardigan","Taylor Swift","8-Aug-20",1,6.33,"",239,0,1,0,30,130,58,61,55,-9,"Eb",0
+"Watermelon Sugar","Harry Styles","15-Aug-20",1,6,"",176,1,1,0,26,95,82,55,56,-4,"C",0
+"WAP","Cardi B ft. Megan Thee Stallion","22-Aug-20",4,5,"",187,0,0,1,26,133,45,94,36,-8,"Bm",1
+"Dynamite","BTS","5-Sep-20",3,4.67,"",199,1,0,0,25,114,77,75,74,-4,"E",0
+"FRANCHISE","Travis Scott ft. Young Thug & M.I.A.","10-Oct-20",1,2.67,"",202,2,0,2,34,155,70,84,55,-5,"Bbm",1
+"Savage Love (Laxed - Siren Beat)","Jawsh 685, Jason Derulo, & BTS","17-Oct-20",1,4.33,"",185,1,0,2,27,150,60,76,66,-6,"Eb",1
+"Mood","24kGoldn ft. iann dior","24-Oct-20",8,6.33,"",140,1,0,1,20,91,72,70,73,-4,"Gm",1
+"positions","Ariana Grande","7-Nov-20",1,6.67,"",172,0,1,0,27,144,80,74,68,-5,"Dm",1
+"Life Goes On","BTS","5-Dec-20",1,5,"",207,1,0,0,26,81,72,57,45,-6,"Ab",0
+"willow","Taylor Swift","26-Dec-20",1,6.33,"",214,0,1,0,31,81,57,39,53,-9,"G",0
+"drivers license","Olivia Rodrigo","23-Jan-21",8,8.67,"",242,0,0,0,17,144,43,56,14,-9,"Bb",1
+"What's Next","Drake","20-Mar-21",1,6.67,"",178,1,0,1,34,130,58,78,6,-7,"Em",1
+"Up","Cardi B","27-Mar-21",1,5.33,"",156,0,0,1,28,166,80,87,82,-6,"Em",1
+"Peaches","Justin Bieber ft. Daniel Caeser & Giveon","3-Apr-21",1,6,"",198,1,2,2,27,90,70,68,46,-6,"C",1
+"MONTERO (Call Me By Your Name)","Lil Nas X","10-Apr-21",1,5.67,"",137,1,0,1,22,89,51,61,76,-7,"Abm",1
+"Leave the Door Open","Silk Sonic","17-Apr-21",2,9.33,"",242,1,0,1,35,148,62,59,72,-8,"Multiple Keys",0
+"RAPSTAR","Polo G","24-Apr-21",2,5.67,"",165,1,0,1,21,81,54,79,44,-7,"Bbm",1
+"Save Your Tears","The Weeknd & Ariana Grande","8-May-21",2,7,"",191,2,2,2,29,118,83,65,59,-5,"C",0
+"good 4 u","Olivia Rodrigo","29-May-21",1,7.33,"",178,0,0,0,18,167,66,56,69,-5,"A",1
+"Butter","BTS","5-Jun-21",10,3,"",164,1,0,0,26,110,46,76,70,-5,"Ab",0
+"Permission to Dance","BTS","24-Jul-21",1,4,"",187,1,0,0,26,125,74,70,65,-5,"E",0
+"STAY","The Kid Laroi & Justin Bieber","14-Aug-21",7,6,"",141,1,1,0,22,170,76,59,48,-5,"Bbm",1
+"Way 2 Sexy","Drake ft. Future & Young Thug","18-Sep-21",1,5,"",257,1,0,1,34,136,60,80,33,-6,"Em",1
+"My Universe","Coldplay & BTS","9-Oct-21",1,3.67,"",228,1,2,0,29,105,70,59,44,-6,"E",0
+"INDUSTRY BABY","Lil Nas X & Jack Harlow","23-Oct-21",1,3.67,"",212,1,2,2,26,150,70,74,89,-7,"Ebm",1
+"Easy on Me","Adele","30-Oct-21",10,8.67,"",224,0,1,0,33,142,37,60,13,-8,"F",0
+"All Too Well (10 Minute Version)","Taylor Swift","27-Nov-21",1,10,"",613,0,1,0,31,93,52,63,21,-9,"C",1
+"We Don't Talk About Bruno","Carolina Gaitán, Mauro Castillo, Adassa, Rhenzy Feliz, Diane Guerrero, Stephanie Beatriz, and the Encanto cast","5-Feb-22",5,6.33,"",216,2,0,0,39,206,45,58,83,-9,"Cm",0
+"Heat Waves","Glass Animals","12-Mar-22",5,5.67,"",238,1,1,0,32,81,53,76,53,-7,"B",0
+"As It Was","Harry Styles","16-Apr-22",15,7.67,"",167,1,1,0,28,174,73,52,66,-5,"Gbm",0
+"First Class","Jack Harlow","23-Apr-22",3,4,"",173,1,1,0,24,107,56,91,32,-6,"Gm",1
+"WAIT 4 U","Future ft. Drake & Tems","14-May-22",1,5.33,"",189,2,0,1,33,83,64,46,34,-4,"Db",1
+"Jimmy Cooks","Drake ft. 21 Savage","2-Jul-22",1,4,"",218,1,0,1,32,166,67,53,37,-5,"Multiple Keys",1
+"About Damn Time","Lizzo","30-Jul-22",2,7,"",191,0,0,1,34,109,75,84,71,-6,"Bbm",1
+"BREAK MY SOUL","Beyoncé","13-Aug-22",2,6.67,"",278,0,0,1,40,115,89,69,85,-5,"Abm",0
+"Super Freaky Girl","Nicki Minaj","27-Aug-22",1,4.67,"",170,0,0,1,39,133,89,95,91,-3,"Am",1
+"Bad Habit","Steve Lacy","8-Oct-22",3,6.67,"",232,1,0,1,24,169,51,69,69,-7,"Fm",1
+"Unholy","Sam Smith & Kim Petras","29-Oct-22",1,3.67,"",156,3,1,0,30,131,45,72,22,-7,"Dbm",0
+"Anti-Hero","Taylor Swift","5-Nov-22",8,6.33,"",200,0,1,0,32,97,65,63,49,-7,"E",0
+"Flowers","Miley Cyrus","28-Jan-23",8,7,"",200,0,1,0,30,118,69,71,63,-5,"Am",0
+"Die for You","The Weeknd & Ariana Grande","11-Mar-23",1,5,"",232,2,2,2,31,67,52,56,49,-7,"Dbm",0
+"Last Night","Morgan Wallen","18-Mar-23",16,4.67,"",163,1,1,0,29,204,67,49,49,-5,"Gb",1
+"Like Crazy","Jimin","8-Apr-23",1,3.67,"",212,1,2,0,27,120,73,63,36,-5,"Dm",0
+"Kill Bill","SZA","29-Apr-23",1,7.67,"",153,0,0,1,33,89,73,64,43,-6,"Ab",1
+"vampire","Olivia Rodrigo","15-Jul-23",2,8.33,"",291,0,0,0,20,137,53,48,32,-6,"F",1
+"Seven","Jungkook ft. Latto","29-Jul-23",1,4,"",184,2,2,2,25,125,84,79,90,-4,"B",1
+"Try That in a Small Town","Jason Aldean","5-Aug-23",1,2.67,"",180,1,1,0,46,146,86,47,33,-4,"Cm",1
+"Rich Men North of Richmond","Oliver Anthony Music","26-Aug-23",2,6.67,"",187,1,1,0,31,122,26,68,53,-12,"Bb",1
+"I Remember Everything","Zach Bryan ft. Kacey Musgraves","9-Sep-23",1,5.67,"",227,2,2,0,31,78,45,43,16,-8,"C",0
+"Paint the Town Red","Doja Cat","16-Sep-23",3,4.67,"",231,0,0,1,27,100,54,87,73,-9,"Gm",1
+"Slime You Out","Drake ft. SZA","30-Sep-23",1,2.67,"",310,2,0,1,35,89,41,48,11,-9,"Fm",1
+"First Person Shooter","Drake ft. J Cole","21-Oct-23",1,5,"",247,1,0,1,37,164,66,48,25,-7,"Bm",1
+"Cruel Summer","Taylor Swift","28-Oct-23",4,7,"",178,0,1,0,33,170,70,55,56,-6,"A",0
+"Is It Over Now?","Taylor Swift","11-Nov-23",1,5.67,"",229,0,1,0,33,100,65,60,15,-7,"C",0
+"Lovin On Me","Jack Harlow","2-Dec-23",6,5,"",138,1,1,0,25,105,56,94,61,-5,"Bbm",1
+"Rockin' Around the Christmas Tree","Brenda Lee","9-Dec-23",3,8.33,"",126,1,1,0,78,67,47,60,88,-9,"Ab",0
+"yes, and?","Ariana Grande","27-Jan-24",1,6,"",214,0,1,0,30,119,78,79,79,-7,"Db",1
+"HISS","Megan Thee Stallion","10-Feb-24",1,6,"",192,0,0,1,29,167,66,75,69,-5,"Dbm",1
+"TEXAS HOLD 'EM","Beyoncé","2-Mar-24",2,7,"",233,0,0,1,42,110,72,73,39,-7,"D",1
+"CARNIVAL","Kanye West & Ty Dolla $ign ft. Rich the Kid & Playboi Cardi","16-Mar-24",1,3.33,"",264,1,0,1,37,148,81,59,31,-6,"Fm",1
+"we can't be friends (wait for your love)","Ariana Grande","23-Mar-24",1,5.33,"",228,0,1,0,30,116,65,65,30,-8,"F",0
+"Lose Control","Teddy Swims","30-Mar-24",1,6.33,"",210,1,1,0,31,160,60,56,24,-4,"Gbm",0
+"Like That","Future, Metro Boomin, & Kendrick Lamar","6-Apr-24",3,6,"",267,1,0,1,35,162,68,81,31,-5,"Dbm",1
+"Too Sweet","Hozier","27-Apr-24",1,6.67,"",251,1,1,0,34,117,62,74,93,-6,"Bb",0
+"Fortnight","Taylor Swift ft. Post Malone","4-May-24",2,6,"",228,2,1,0,31,192,39,50,28,-11,"B",0
+"Not Like Us","Kendrick Lamar","18-May-24",2,9.33,"",234,1,0,1,36,101,47,90,21,-7,"Bm",1
+"I Had Some Help","Post Malone ft. Morgan Wallen","25-May-24",6,4.67,"",178,1,1,0,30,128,86,64,73,-5,"C",1
+"Please Please Please","Sabrina Carpenter","29-Jun-24",1,7.67,"",186,0,1,0,25,107,59,67,58,-6,"Multiple Keys",1
+"A Bar Song (Tipsy)","Shaboozey","13-Jul-24",19,6.33,"",171,1,0,1,29,81,71,72,60,-5,"A",1
+"Love Somebody","Morgan Wallen","2-Nov-24",1,4.33,"",204,1,1,0,31,122,84,62,75,-5,"Fm",0
+"squabble up","Kendrick Lamar","7-Dec-24",1,9.33,"",157,1,0,1,37,104,67,87,71,-6,"Fm",1
+"Die with a Smile","Bruno Mars & Lady Gaga","11-Jan-25",2,6.33,"",251,2,2,2,39,158,59,52,54,-8,"A",0
