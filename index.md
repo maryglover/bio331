@@ -19,10 +19,10 @@ The following schedule links to the information you will need for each lesson. *
 |4| Tuesday, Feb. 3 | [Graphing](lessons/graphing/graphing-lesson) | [activity](lessons/graphing/graphing-exercise.html) | [graphing slides](lessons/graphing/graphing-slides.html) <br> [water quality slides](https://docs.google.com/presentation/d/1U6P49H209uhxIDdU6fRrbBNzUE4y7J7CuPYTQkGAiRQ/edit?usp=sharing)|
 || Thursday, Feb. 5 | [Review](lessons/review_exam1/review1) | | |
 |5| Tuesday, Feb. 10 | **Exam 1** | | |
-|| Thursday, Feb. 12 |Summarizing data| | |
-|6| Tuesday, Feb. 17 |Joining multiple data sets| | |
-|| Thursday, Feb. 19 |Statistics | | |
-|7| Tuesday, Feb. 24 | Water quality analysis | | |
+|| Thursday, Feb. 12 |Exam 1 Review| [Figure caption activity](lessons/post_exam1/figcaption.html) |[Scientific results slides](https://docs.google.com/presentation/d/1UfkRYjAHavHaBA8vKhQi2Mvxf0uta-T-c8tXCxXVXWc/edit?usp=sharing) |
+|6| Tuesday, Feb. 17 |Summarizing data| | |
+|| Thursday, Feb. 19 |Joining multiple data sets | | |
+|7| Tuesday, Feb. 24 |Statistics | | |
 || Thursday, Feb. 26 |Review | | |
 |8| Tuesday, Mar. 3 |**Exam 2**| | |
 || Thursday, Mar. 5 | Data Ethics guest speaker| | |
