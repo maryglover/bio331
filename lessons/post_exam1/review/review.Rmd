@@ -7,6 +7,7 @@ runtime: shiny_prerendered
 ```{r setup, include=FALSE}
 library(learnr)
 knitr::opts_chunk$set(echo = FALSE)
+gradethis::gradethis_setup()
 ```
 
 ## Working with data frames
@@ -19,10 +20,16 @@ The first thing to do is read the data frame file into R.
 
 In this tutorial, we will work with data for every top song on the Billboard Hot 100 between August 4, 1958 and January 11, 2025. This data was compiled by Chris Dalla Riva for his book, *Uncharted Territory: What Numbers Tell Us about the Biggest Hit Songs and Ourselves.* The file is a condensed version of the original data and is named `billboard_short.csv` and can be accessed using a link to our class website. 
 
-Here, we will *assign* the file the name `music`. Fill in the blank with the correct code for importing data into R.
+Here, we will *assign* the file the name `music`. **Fill in the blank with the correct code for importing data into R.**
 
 ```{r import, exercise=TRUE}
 music <- ___(file = "https://maryglover.github.io/bio331/lessons/post_exam1/review/billboard_short.csv")
+```
+
+```{r prepare-data}
+music <- read.csv(file ="https://maryglover.github.io/bio331/lessons/post_exam1/review/billboard_short.csv")
+library(dplyr)
+library(ggplot2)
 ```
 
 Next, we want to just look at the file a bit. Run the following functions on the data frame, now named `music` to learn a bit about the data. 
@@ -31,7 +38,7 @@ Next, we want to just look at the file a bit. Run the following functions on the
 - `head`
 - `colnames`
 
-```{r viewdata, exercise=TRUE, exercise.lines = 5}
+```{r viewdata, exercise=TRUE, exercise.lines = 5, exercise.setup = "prepare-data"}
 
 ```
 
@@ -42,13 +49,13 @@ data name $ column name
 
 Fill in the blanks to look just at the column for `Artist`
 
-```{r column, exercise=TRUE, exercise.lines = 5}
+```{r column, exercise=TRUE, exercise.lines = 5, exercise.setup = "prepare-data"}
 music_Artist
 ```
 
 Now, let's saw you want to look just at the column that includes the number of weeks a song was at number 1. You have to have the column name **exactly** as it appears in the data frame. You can use the function `colnames` again to view the precise names of the columns. 
 
-```{r column, exercise=TRUE, exercise.lines = 5}
+```{r column_names, exercise=TRUE, exercise.lines = 5, exercise.setup = "prepare-data"}
 colnames(music)
 music$___
 ```
@@ -57,67 +64,601 @@ Now that we know who to view just one column, we can do calculations on the colu
 
 Let's saw we want to see the median number of weeks as the top song. We will use the function `median`. 
 
-```{r median, exercise=TRUE, exercise.lines = 5}
+```{r median, exercise = T, exercise.lines = 5, exercise.setup = "prepare-data"}
 median(music$Number_one_weeks)
 ```
 
 Now you try to use the function `min` and `max` to see the oldest and youngest artist. 
 
-```{r age, exercise=TRUE, exercise.lines = 5}
+```{r age, exercise=TRUE, exercise.lines = 5, exercise.setup = "prepare-data"}
 ____(music$__, na.rm = T)
 ____(music$__, na.rm = T)
 ```
 
 Lastly, get the average song length, using the column `Length`. 
 
-```{r length, exercise=TRUE, exercise.lines = 5}
+```{r length, exercise=TRUE, exercise.lines = 5, exercise.setup = "prepare-data"}
 
+```
+
+```{r length-hint}
+mean()
+```
+
+```{r length-solution}
+mean(music$Length)
+```
+ 
+```{r length-code-check}
+grade_code()
 ```
 
 ## Using `dplyr` functions
 
+Now, we will practice our `dplyr` data manipulation functions. 
 
-- reassigning something
-a <- 1
-a <- "a"
+When we use `dplyr` functions, we can utilize the "pipe" symbol, `|>` which allows us to chain functions. 
 
+ As example, we can pipe our data frame music into the head function. **Fill in the symbol for the pipe.** The first time we use a dplyr functon include a pipe, we have to load the package in with the function `library`.
 
-### Exercise with Hint
-
-*Here's an exercise where the chunk is pre-evaluated via the `exercise.eval` option (so the user can see the default output we'd like them to customize). We also add a "hint" to the correct solution via the chunk immediate below labeled `print-limit-hint`.*
-
-Modify the following code to limit the number of rows printed to 5:
-
-```{r print-limit, exercise=TRUE, exercise.eval=TRUE}
-mtcars
+```{r pipe, exercise = T,  exercise.setup = "prepare-data"}
+library(dplyr)
+music ___
+  head()
 ```
 
-```{r print-limit-hint}
-head(mtcars)
+### Select
+
+We can use the `select` function to just look at *specific* columns. Let's use the select function to just look at the column for `Song` and `Length`. **Fill in the blanks for the data and function**
+
+```{r select, exercise = T, exercise.setup = "prepare-data"}
+___ |>
+  ___(Song, Length)
+
 ```
 
-### Quiz
+You can also use the minus sign "-" to remove a column. 
+Add a minus sign to remove the column for `Genre`. 
 
-*You can include any number of single or multiple choice questions as a quiz. Use the `question` function to define a question and the `quiz` function for grouping multiple questions together.*
 
-Some questions to verify that you understand the purposes of various base and recommended R packages:
+```{r remove, exercise = T, exercise.setup = "prepare-data"}
+music |>
+  select(Genre)
+```
 
-```{r quiz}
-quiz(
-  question("Which package contains functions for installing other R packages?",
-    answer("base"),
-    answer("tools"),
-    answer("utils", correct = TRUE),
-    answer("codetools")
-  ),
-  question("Which of the R packages listed below are used to create plots?",
-    answer("lattice", correct = TRUE),
-    answer("tools"),
-    answer("stats"),
-    answer("grid", correct = TRUE)
-  )
-)
+Let's do one last select exercise. Use `select` to only include the artist and the danceability score. Remember, if you don't know the specfic column name, you can use `colnames(music)` to view again.
+
+```{r select-exercise, exercise=TRUE, exercise.setup = "prepare-data"}
+
+```
+
+```{r select-exercise-solution}
+music |>
+  select(Artist, Danceability)
+```
+ 
+```{r select-exercise-code-check}
+grade_code()
+```
+
+### Filter
+
+We can use the `filter` function to only view rows that meet a certain criteria using:
+
+- == : equals
+- \> : greater than
+- < : less than
+- != : not equal to 
+- \>= : greater than or equal to 
+- <= : less than or equal to 
+- | : or
+- %in% : matches contents of a vector
+
+The `filter` function takes arguments for data and the criteria for filtering the data based on a specific column.
+
+For example, the following code, will first filter the data to only include songs where the Happiness score is under 50 and the Artist is Taylor Swift.
+
+```{r filter, exercise=TRUE, exercise.setup = "prepare-data"}
+music |>
+  filter(Happiness < 50, Artist == 'Taylor Swift')
+```
+
+Change the code so that the Happiness is more than 50 and the Artist is The Beatles
+
+```{r filter-change, exercise=TRUE, exercise.setup = "prepare-data"}
+music |>
+  filter(Happiness < 50, Artist == 'Taylor Swift')
+```
+
+With numbers, you do not need to use quotation marks. If you want the row to match text, you must put the text in quotes. 
+
+Now, fill in the blanks only filter where the artist is Taylor Swift. 
+
+```{r filter-swift, exercise=TRUE, exercise.setup = "prepare-data"}
+music __
+  filter(___ == '___')
+```
+
+You can also chain additional commands onto the filter. For example, while we can count the number of times Taylor Swift appears, we can also add the function nrow() to get the number of rows in the filtered data. **Fill in the blanks** to get this information. 
+
+```{r filter-swift-number, exercise=TRUE, exercise.setup = "prepare-data"}
+___ |>
+  ___(Artist == 'Taylor Swift') |>
+  ___()
+```
+
+Let's continue to practice our filtering. Complete the following exercises.
+
+Filter the data to only include data that is *not* explicit. This is true when `Explicit` is 0. 
+
+```{r filter1, exercise=TRUE, exercise.setup = "prepare-data"}
+music |>
+  filter(___ == ___)
+```
+
+```{r filter1-solution}
+music |>
+  filter(Explicit == 0)
+```
+
+```{r filter1-code-check}
+grade_code()
+```
+
+Filter for songs that are longer than or equal to 240 seconds. 
+
+```{r filter2, exercise=TRUE, exercise.setup = "prepare-data"}
+music |>
+  filter(Length ___  240)
+```
+
+```{r filter2-solution}
+music |>
+  filter(Length >= 240)
+```
+
+```{r filter2-code-check}
+grade_code()
+```
+
+Filter for songs that were on at number 1 for more than 10 weeks and were in the Genre Pop. 
+
+```{r filter3, exercise=TRUE, exercise.setup = "prepare-data"}
+music |>
+  filter(___ , ____)
+```
+
+```{r filter3-solution}
+music |>
+  filter(Number_one_weeks > 10, Genre == 'Pop')
+```
+
+```{r filter3-code-check}
+grade_code()
+```
+
+Filter for songs that were at number 1 for more than 10 weeks and the Genre is Pop or Rock
+
+```{r filter4, exercise=TRUE, exercise.setup = "prepare-data"}
+music |>
+  filter(___)
+```
+
+```{r filter4-solution}
+music |>
+  filter(Number_one_weeks > 10, Genre == 'Pop' | Genre == 'Rock')
+```
+
+```{r filter4-code-check}
+grade_code()
+```
+
+Filter for songs Energy is greater than 90.
+
+```{r filter5, exercise=TRUE, exercise.setup = "prepare-data"}
+
+```
+
+```{r filter5-solution}
+music |>
+  filter(Energy > 90)
+```
+
+```{r filter5-code-check}
+grade_code()
+```
+
+Filter for songs where Happiness is less than 50 and the artist is younger than 20. 
+
+```{r filter6, exercise=TRUE, exercise.setup = "prepare-data"}
+
+```
+
+```{r filter6-solution}
+music |>
+  filter(Happiness < 50, Age < 20)
+```
+
+```{r filter6-code-check}
+grade_code()
+```
+
+### Arrange
+
+Next, we will practice our `arrange` function which we can use to sort the data. The `arrange` function requires the column you want to sort. 
+
+Let's see what songs have the lowest Danceability. 
+
+```{r arrange, exercise=TRUE, exercise.setup = "prepare-data"}
+music |>
+  arrange(Danceability) |>
+  head()
+```
+
+To shorten the amount text output on the screen we can add the head function, which only shows us the first few rows. 
+
+For the book that the data is used for, 3 judges rated the songs. See what they rated as the lowest rated number one song, by changing the sorted column to Overall.Rating
+
+```{r arrange-change, exercise=TRUE, exercise.setup = "prepare-data"}
+music |>
+  arrange(Danceability) |>
+  head()
+```
+
+To sort from greatest to least, you can simply put a minus sign "-" in front of the column you are changing. Change the data again to now sort danceability from greatest to least. 
+
+```{r arrange-change2, exercise=TRUE, exercise.setup = "prepare-data"}
+music |>
+  arrange(Danceability) |>
+  head()
+```
+
+Another helpful skill in `dplyr` is chaining together commands. For example, we can first filter the data to get rid of explicit songs and then sort the data in order of danceability. **Fill in the blanks to do this.**
+
+```{r chain, exercise=TRUE, exercise.setup = "prepare-data"}
+music |>
+  __(Explicit ___ 0 ) __
+  __(-Danceability) |>
+  head()
+```
+
+Let's practice some more sorting!
+
+Sort the data to determine the number one song with the youngest artist, using the column Age
+
+```{r sort1, exercise=TRUE, exercise.setup = "prepare-data"}
+music ___
+  ___(Age)
+
+```
+
+```{r sort1-solution}
+music |>
+  arrange(Age)
+```
+
+```{r sort1-code-check}
+grade_code()
+```
+
+Sort the data to determine what songs were at number one for the most number of weeks. Hint: Sort from greatest to least
+
+```{r sort2, exercise=TRUE, exercise.setup = "prepare-data"}
+
+```
+
+```{r sort2-solution}
+music |>
+  arrange(-Number_one_weeks)
+```
+
+```{r sort2-code-check}
+grade_code()
+```
+
+Filter the data to only include music in the pop genre and then sort by the number of weeks at number one. 
+
+```{r sort3, exercise=TRUE, exercise.setup = "prepare-data"}
+music |>
+  filter()|>
+  arrange()|>
+  head()
+
+```
+
+```{r sort3-solution}
+music |>
+  filter(Genre == 'Pop')|>
+  arrange(-Number_one_weeks)|>
+  head()
+```
+
+```{r sort3-code-check}
+grade_code()
+```
+
+What song was given the highest Overall.Rating by the judges? View only the first few rows of the data. 
+
+```{r sort4, exercise=TRUE, exercise.setup = "prepare-data"}
+
+```
+
+```{r sort4-solution}
+music |>
+  arrange(-Overall.Rating)|>
+  head()
+```
+
+```{r sort4-code-check}
+grade_code()
+```
+
+Last one, filter the data to only include songs with a Danceability score that is over 80, is not explicit, and then sort by the number of weeks at number one.
+
+```{r sort5, exercise=TRUE, exercise.setup = "prepare-data"}
+
+```
+
+```{r sort5-solution}
+music |>
+  filter(Danceability >80, Explicit == 0)|>
+  arrange(-Number_one_weeks)|>
+  head()
+```
+
+```{r sort5-code-check}
+grade_code()
+```
+
+### Mutate
+
+The last `dplyr` function we will review is `mutate`. `mutate` is used to make calculations based on the columns and make a new column with the results. 
+
+`mutate` expects the format: mutate(New_column_name = *column calculation*). For example, if we wanted to get the difference of the Happiness and Danceability, we could use mutate and make a new column we will call diff. The column calculation is therefore Happiness - Danceability
+So it looks like this:
+
+mutate(diff = Happiness - Danceability).
+
+Fill in the blank to complete this code. 
+
+```{r mutate, exercise=TRUE, exercise.setup = "prepare-data"}
+music |>
+  __(diff = Happiness - Danceability)
+```
+
+
+Now your turn-- make a column title Length_min to get a new column where the length of the song is in minutes instead of seconds. To do this, you must divide the Length column by 60
+
+```{r mutate_change, exercise=TRUE, exercise.setup = "prepare-data"}
+music |>
+  ___(Length_min =  )
+```
+
+When we `mutate`, just like with `filter`, `select`, and `arrange`, the data remains unchanged. So if we want to sort the data based on our new `diff` column, we have to `mutate` again and then `arrange.` 
+
+```{r mutate2, exercise=TRUE, exercise.setup = "prepare-data"}
+music |>
+  mutate(Length_min = Length / 60)|>
+  __(Length_min)|>
+  head()
+```
+
+Another way to handle this is to resave the output from mutate to a new R object. Think back to when we assigned variables when we started R. 
+
+How would you assign the value 50 to the variable test?
+
+```{r assign, exercise=TRUE, exercise.setup = "prepare-data"}
+
+```
+
+```{r assign-solution}
+test <- 50
+```
+
+```{r assign-code-check}
+grade_code()
+```
+
+**You must get rid of the `head()` function**. Otherwise you will only save the first few lines of the output. Updated the code below to save the mutated data frame and then sort it by the new column. 
+
+```{r assign-change, exercise=TRUE, exercise.setup = "prepare-data"}
+music_upd<- music |>
+  ___(Length_min = Length / 60)
+
+___ |>
+  arrange()
+```
+
+
+```{r assign-change-solution}
+music_upd<- music |>
+  mutate(Length_min = Length / 60)
+
+music_upd |>
+  arrange()
+```
+
+```{r assign-change-code-check}
+grade_code()
 ```
 
 ## Data visualization with `ggplot2`
+
+Now, we will work on our graphing with `ggplot`. 
+
+`ggplot2` uses what are called "layers" to plot data. These layers are added on one another to produce the visualization. 
+
+The first layer sets the *foundation* and uses the function `ggplot()`. The `ggplot()` function expects:
+
+1. the data you are plotting
+2. the aesthetic mapping `aes()`. This provides the columns that will be displayed on the graph. For example, the what column is the x axis and which is the y axis.
+
+*Then*, we will add one of the geom layers to plot data. 
+
+- `geom_point`: plots points for a scatterplot
+- `geom_bar`: barplot
+- `geom_boxplot`: boxplot
+- `geom_line`: line graph. 
+- `geom_histogram`: a histogram. 
+
+Let's start with a scatterplot, where we look at the relationship between Danceability and Happiness. Also, The first time we run a ggplot2 function, we must load in the package. **Fill in the blank to *add* the geom_point()l layer**
+
+```{r plot, exercise=TRUE, exercise.setup = "prepare-data"}
+library(ggplot2)
+ggplot(music, aes(x=Happiness, y = Danceability)) __
+  geom_point()
+```
+
+Change the plot to instead look at the relationship between Energy and Danceability. 
+
+```{r plot-change, exercise=TRUE, exercise.setup = "prepare-data"}
+ggplot(music, aes(x=Happiness, y = Danceability)) + 
+  geom_point()
+```
+
+Now let's say that we want to see the distribution of the weeks at number one data on a histogram. Here, we are only plotting the data for one column, so we only need to specify what column we are plotting on the x axis. 
+
+**Fill in the blanks to fill in the column we are plotting and the geom_ layer we will use for a histogram. **
+
+```{r hist, exercise=TRUE, exercise.setup = "prepare-data"}
+ggplot(music, aes(x=__)) + 
+  ___()
+```
+
+Now, plot a histogram for the *age* of the artists. 
+
+```{r hist2, exercise=TRUE, exercise.setup = "prepare-data"}
+ggplot(music, aes(x=__)) + 
+  ___()
+```
+
+```{r hist2-solution}
+ggplot(music, aes(x=Age)) + 
+  geom_histogram()
+```
+
+```{r hist2-code-check}
+grade_code()
+```
+
+Now, let's try to plot a boxplot using Danceability score on the y axis and the Genre on the x axis. 
+
+```{r box, exercise=TRUE, exercise.setup = "prepare-data"}
+ggplot(music, aes(x=___, y = ___)) + 
+  ___()
+```
+
+Here's a hard one. Let's plot the Length on the y axis and the Danceability on the x axis. But before you plot the data, filter the data for only songs that are *not* explicit. 
+
+```{r clean, exercise=TRUE, exercise.setup = "prepare-data"}
+
+```
+
+
+### Customizing plots. 
+
+Let's know practice customizing the plots. First, we will change the color of the graphs. We will change the color in the geom_* layer function. For lines and points, we will use the argument `color`. For the inside of bars and boxes, we will use the arguement `fill`. 
+
+For our last plot, we can change the color of the points. Fill in the blank to change to whatever color you prefer. 
+
+```{r color, exercise=TRUE, exercise.setup = "prepare-data"}
+clean <- music |>
+  filter(Explicit == 0 )
+
+ggplot(clean, aes(x = Danceability, y = Length))+
+  geom_point(color = "___")
+```
+
+As you can see, the color will go into quotations. 
+
+Let's go back the Age histogram. This time, change to fill to any color. 
+
+```{r fill, exercise=TRUE, exercise.setup = "prepare-data"}
+ggplot(music, aes(x=Age)) + 
+  geom_histogram()
+```
+
+You can also change the color based on a column. To do this, you must specify what column you want to color by in the `aes` portion of the plot foundation. This specifies that you are using a column, not a defined column. 
+
+Let's go back to your plot of Happiness and Danceability. Change the color to the Genre column. 
+
+```{r plot-change2, exercise=TRUE, exercise.setup = "prepare-data"}
+ggplot(music, aes(x=Happiness, y = Danceability, color = ___)) + 
+  geom_point()
+```
+
+
+#### Themes 
+
+Next, we will add a theme to the plot. This will change the overall look of the plot. There are many preset themes in `ggplot2`. Here are some:
+
+- theme_minimal()
+- theme_dark()
+- theme_light()
+- theme_bw()
+- theme_classic()
+- theme_gray()
+
+Let's go back to your plot of Happiness and Danceability. We will change the theme to theme_classic() by simply *adding* the theme to the plot 
+
+```{r theme, exercise=TRUE, exercise.setup = "prepare-data"}
+ggplot(music, aes(x=Happiness, y = Danceability)) + 
+  geom_point() +
+  theme_classic()
+```
+
+Now, change the theme to something different. 
+
+```{r theme-change, exercise=TRUE, exercise.setup = "prepare-data"}
+ggplot(music, aes(x=Happiness, y = Danceability)) + 
+  geom_point() +
+  theme_classic()
+```
+
+Let's combine our customations. Change the color of all the points to a color of your choosing. 
+
+```{r theme-color, exercise=TRUE, exercise.setup = "prepare-data"}
+ggplot(music, aes(x=Happiness, y = Danceability)) + 
+  geom_point() +
+  theme_classic()
+```
+
+### Labels
+
+Our last customization will use the function `labs()`. In labs, you can specify 
+
+- `x = `: to change the x axis title
+- `y = `: to change the y axis title
+- `title =` : to add a title to the graph. 
+
+Like theme_*, we add the labs function to the existing plot. 
+
+Let's say we want to add units to the Length y axis label in our last plot. We can do that in `labs` as:
+
+```{r labs, exercise=TRUE, exercise.setup = "prepare-data"}
+ggplot(music, aes(x=Happiness, y = Danceability)) + 
+  geom_point() +
+  theme_classic()+
+  labs(y = "Length in minutes")
+```
+
+`labs` expects the titles to be in quotations. Edit the code to add a title to the plot as well. 
+
+```{r title, exercise=TRUE, exercise.setup = "prepare-data"}
+ggplot(music, aes(x=Happiness, y = Danceability)) + 
+  geom_point() +
+  theme_classic()+
+  labs(y = "Length in minutes")
+```
+
+Let's do one last plot. Plot a *scatterplot* with Overall.Rating on the x axis, Number_one_weeks on the y axis. Add a title, change the theme, and change the color of the points. 
+
+```{r plot-final, exercise=TRUE, exercise.setup = "prepare-data"}
+
+ggplot(___, aes(___)) + 
+  geom_() +
+  theme_()+
+  labs()
+```
+
 
