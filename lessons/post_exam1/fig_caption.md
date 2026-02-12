@@ -14,7 +14,7 @@ Today, we will:
 ## Class materials
 
 - [Scientific results slides](https://docs.google.com/presentation/d/1UfkRYjAHavHaBA8vKhQi2Mvxf0uta-T-c8tXCxXVXWc/edit?usp=sharing) 
-- [Figure caption activity](lessons/post_exam1/figcaption.html)
+- [Figure caption activity](figcaption.html)
 
 ## Homework
 

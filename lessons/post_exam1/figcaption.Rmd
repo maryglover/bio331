@@ -88,7 +88,7 @@ knitr::kable(stream_codes)
 Because we have made some changes in the water quality data, it is a good idea to save the data set. We can do this with the `write.csv()` function. We *should not* rewrite the original data file, but should rename it. Here, we provide the arguments for the data frame we want to save, and the name of the file. 
 
 ```{r, eval=FALSE}
-write.csv(wq_clean, 'data/raleigh_water_analysis.csv', row_names = FALSE)
+write.csv(wq_clean, 'data/raleigh_water_analysis.csv', row.names = FALSE)
 ```
 
 
