@@ -151,7 +151,7 @@ We can use the `filter` function to only view rows that meet a certain criteria 
 - != : not equal to 
 - \>= : greater than or equal to 
 - <= : less than or equal to 
-- | : or
+- \| : or
 - %in% : matches contents of a vector
 
 The `filter` function takes arguments for data and the criteria for filtering the data based on a specific column.

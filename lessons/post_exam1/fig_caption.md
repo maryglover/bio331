@@ -15,6 +15,7 @@ Today, we will:
 
 - [Scientific results slides](https://docs.google.com/presentation/d/1UfkRYjAHavHaBA8vKhQi2Mvxf0uta-T-c8tXCxXVXWc/edit?usp=sharing) 
 - [Figure caption activity](figcaption.html)
+- [Instructions to access tutorial](Tutorial_instructions.pdf)
 
 ## Homework
 
