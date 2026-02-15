@@ -1,5 +1,5 @@
 ---
-title: "Summary Tabples"
+title: "Summary Tables"
 output:
   html_document:
     toc: true 
@@ -17,16 +17,20 @@ klippy::klippy()
 
 We have begun in class summarizing different variables in data frames. But often we are interested in summaries based on different groups. For example, in our climate data analysis, we looked to see what the average precipitation value was in Raleigh, but maybe we want to see the average for every year. We can do this utilizing both the `group_by()` and `summarize()` functions. 
 
-- `group_by()` puts the data frame in "groups" based on a column or columns. This is down "behind the scenes" and doesn't change the data output. But, when your run other functions, like `mutate()` or `summarize()` the groups are honored. 
+- `group_by()` puts the data frame in "groups" based on a column or columns. This is done "behind the scenes" and doesn't change the data output. But, when your run other functions, like `mutate()` or `summarize()` the groups are honored. 
 
 - `summarize()` allows you to make new columns based on a summary functions -- like the mean, median, or count. `summarize()` uses a similar format to `mutate`, new_column = function. 
 
-For example, if I wanted to get the average (`mean()`) of precipitation  (`precip`) for the different years, you could do the following:
+First, let's load in our climate data and our dplyr package. 
 
 ```{r, message = F}
 climate <- read.csv('data/raleigh_prism_climate.csv')
 library(dplyr)
+```
 
+Now, I will **summarize** to get the *mean* of precipitation  (`precip`), **grouping** for the different years:
+
+```{r, message = F}
 climate |>
   group_by(year) |>
   summarize(average_precip = mean(precip)) 
@@ -34,117 +38,241 @@ climate |>
 
 This first code `group_by` groups the data by the year, so that when you do the `summarize` the average will be taken for each year group. 
 
-You can also make multiple summaries at once by adding into the `summarize()` function. Here, we can add in the standard deviation (`sd()`) and average and standard deviation for the mean temperature Let's also add in a filter for only years in the 90's.
+You can also make multiple summaries at once by adding more calculations into the `summarize()` function. Here, we can add in the standard deviation (`sd()`). You can add as many summary calculations as you would like. Let's also add in a filter for only years in the 90's to simply the table.
 
 ```{r}
 climate |>
   filter(year %in% 1990:1999) |>
   group_by(year) |>
-  summarize(average_temp = mean(tmean), sd_temp = sd(tmean), average_precip = mean(precip), sd_precip = sd(precip))
+  summarize(average_precip = mean(precip), sd_precip = sd(precip))
 ```
 
-[**Exercise**]ggplot(wake, aes(x=Year, y = Carbon_monoxide_tons)) +
-  geom_line(color = 'cornflowerblue') +
-  theme_bw()(#summarizing-data): Which year had the highest *total* precipitation in Raleigh?
+<span style="color:blue">**Activity:**</span>
 
-### Another summary table example
+- What year had the highest average temperature `tmean`?
+- Which year had the highest *total* precipitation in Raleigh?
+
+## More examples
+
+### Raleigh cycling crashes
+
+The City of Raleigh keeps track of incidents that involve bicycles and vehicles in Raleigh. We will use this data set to practice making summaries. 
+
+First, let's load in the data, which I have stored in our class website. Here, I am assigning it the name `cycling`.
+
+```{r}
+cycling <- read.csv('https://maryglover.github.io/bio331/open_data/cycling_crashes.csv')
+```
+
+Let's look at the data, by viewing the first few rows and the column names. 
+
+```{r}
+head(cycling)
+colnames(cycling)
+```
+
+We can see that this data set includes the date of the incident (day_of_week, day, month, and year), where it occurred (road), and different characteristics (road_feature, weather, traffic control). 
+
+Let's say we want to see how many crashes occurred each year. To get the number of crashes, we can want to know the number of rows in each group. This data is in the "tidy" format, so each crash is one row. In `dplyr` we can simplify this  by using the function `n()`, which gives the number of items in the specified group. 
+
+```{r}
+cycling |>
+  group_by(year)|>
+  summarise(number = n())
+```
+
+Now, let's say we wanted to look at the number of crashes based on the weather, to see if the weather causes more crashes. Instead of grouping by the year, we simply change the group to weather.
+
+```{r}
+cycling |>
+  group_by(weather)|>
+  summarise(number = n())
+```
+
+<span style="color:blue">**Activity:**</span>
+
+- Summarize the data to determine the number of crashes for each road and *then* sort to see what road had the most crashes. 
+
+```{r, include = F, echo = F}
+cycling |>
+  group_by(road) |>
+  summarize(n = n())|>
+  arrange(-n) |>
+  head()
+```
+
+### Names data from birth records
+
+In our next example, we are using a dataset with names of babies born from years 1910 to 2024. Use the following code to read in the dataset and assigning it the name `birth`
+
+```{r}
+birth <- read.csv('https://maryglover.github.io/bio331/open_data/nc_birth.csv')
+```
+
+Look just at the first few rows 
+```{r}
+head(birth)
+```
+
+You can see that it has the number of babies born in a year with different names. It also includes a column indicating the decade. 
+
+Let's first summarize to what is the most common name for boys and girls for the entire data set. In this instance, we will group by **both**  the name and the sex. You can do this by adding both of the columns in to the `group_by` function. Because there are so many names, let's also arrange the data to sort by the most common. 
+
+```{r, warning = F, message = F}
+birth |>
+  group_by(sex, name) |>
+  summarize(total = sum(number)) |>
+  arrange(-total)
+```
+
+We can also use the decade column to summarize data. Let's say we want to know the most common name for girls for each decade. First, we will filter to just get data for girls. Then, we can group for both decade *and* name. Lastly, we will summarize for the total babies born with each name. 
+
+```{r, message=F}
+birth |>
+  filter(sex == 'F')|>
+  group_by(decade, name) |>
+  summarize(total = sum(number))
+```
+
+We now have the number of times a name was given in every decade. We can use the useful function `slice_max` which we give us just the row that has the highest value in a specific column. We only want the top max value, so can set `n=1` in `slice_max()`. We want where the `total` value is the highest. 
+
+```{r}
+birth |>
+  filter(sex == 'F')|>
+  group_by(sex, decade, name) |>
+  summarize(total = sum(number)) |> 
+  slice_max(total, n = 1)
+```  
+
+<span style="color:blue">**Activity:**</span>
+
+- Filter the data for the 2000's decade and determine the top 5 names for boys and girls. 
+
+```{r, include = F, echo = F}
+birth |>
+  filter(decade == '2000') |>
+  group_by(sex, name) |>
+  summarize(total = sum(number))|>
+  slice_max(total, n = 5)
+```
+
+### Invertebrate data
+
+For our last example, we will use data collected by this class in 2024 for the macroinvertebrate insects they found during a class period in a nearby stream. 
+First, we will read in the data from our class website. I will call it `invert`
+
+```{r}
+invert <- read.csv('https://maryglover.github.io/bio331/open_data/macroinvertebrate_sampling.csv')
+```
+
+Let's again start by just looking at the data
+
+```{r}
+head(invert)
+```
+
+In this data, we have the different taxa that two different student groups collected and how many of each they collected. 
+
+Let's say we want to know how many total insects *each* group collected to see if one group collected more than the other. Go ahead and try this summary on your own. You should get the following answer. 
+
+```{r, echo = F}
+invert |>
+  group_by(Group) |>
+  summarize(total = sum(N))
+```
+
+Now, let's see how many total insects we collected from each taxa. This gives us the *abundance* of each differnt invertebrate. 
+
+```{r}
+invert |>
+  group_by(Taxa)|>
+  summarize(total = sum(N))
+```
+
+One thing you can do with this data is make a bar graph to show the different insects that were collected in the stream. 
+
+First, we want to save the data table we made. Remember, as with other `dplyr` functions, the functions do *not* change the underlying data. 
+
+```{r}
+invert_summary <- invert |>
+  group_by(Taxa)|>
+  summarize(total = sum(N))
+```
+
+Then, we can use `ggplot` to plot the data with the layer `geom_bar`.
+
+```{r, message = F}
+library(ggplot2)
+```
+
+```{r, eval =F}
+ggplot(invert_summary, aes(x = Taxa, y = total))+
+  geom_bar()
+```
+
+You will notice that this code does *not* work. `geom_bar` requires an additional argument that indicates how to determine the bar height. We just want the bar height to be the value in the total column. To do this we must set `stat = "identity"`
+
+```{r}
+ggplot(invert_summary, aes(x = Taxa, y = total))+
+  geom_bar(stat = 'identity')
+```
+You will notice that this is hard to read with the axis labels. We can fix this in two ways:
+
+- rotate the axis labels
+- plot horizontally 
+
+To rotate the axis labels, you must adjust the angle of the `axis.text.x` in a `theme()` layer like so:
+
+```{r}
+ggplot(invert_summary, aes(x = Taxa, y = total))+
+  geom_bar(stat = 'identity')+
+  theme(axis.text.x = element_text(angle = 90))
+```
+
+Alternatively, we can just switch the x and the y to plot in the other direction. 
+
+```{r}
+ggplot(invert_summary, aes(y = Taxa, x = total))+
+  geom_bar(stat = 'identity')
+```
+Lastly, let's look at the *species richness* or how many *different* taxa were collected. Here, we want to *tally* the individual taxa in each group. We can do this again with the `n()`
+function. 
+
+```{r}
+invert |>
+  group_by(Group)|>
+  summarize(richness = n())
+```
 
 ## Water quality data
 
-In this course, we will exploring historic water quality data from the City of Raleigh. The data is collected from 2008 - 2023 and includes 19 different water quality variables, including water temperature, *E. coli* bacteria, and dissolved oxygen for 18 different stream sites. 
-
 Let's now go back to our City of Raleigh water quality data and use plots to explore the data a bit before we do some summaries. 
 
-First, we need to read in the data into R. This data is stored on our class website, not in your workspace. You can run this code to "read" the data into R. 
+First, we need to read in the data into R. Last class, you saved the water quality data, removing the *E. coli* outlier. You will need to read in this data from where you saved it. 
 
 ```{r}
-wq_clean <- read.csv('https://maryglover.github.io/bio331/water_quality_manip/raleigh_wq_clean.csv')
+wq <- read.csv('data/raleigh_water_analysis.csv')
 ```
 
-Look at the columns to see the different variables that were measured in the streams. 
+In the water quality data, let's look at how the streams differ in Turbidity. We will calculate the turbidity average for each of the different streams, using the column `Site`.
 
-```{r}
-colnames(wq_clean)
+```{r, eval = F}
+wq |>
+  group_by(Site) |>
+  summarize(mean_turb = mean(Turbidity_NTU))
 ```
 
-**Activity: **First, pick one of the different parameters and make a histogram. Record the code in your script and make a note about what you see. 
-
-Now, let's use the data to explore the relationship of temperature and dissolved oxygen (in percent saturation). What do you predict?
-
-Make a scatterplot with Temperature_C on the x asis and do_percent_sat on the y axis. 
-
-```{r}
-library(ggplot2)
-ggplot(wq_clean, aes(x = Temperature_C, do_percent_sat)) +
-  geom_point()
-```  
-
-Now, let's see what we notice about the different sites. We can start with exploring the amount of phosphorus at each site using a boxplot.
-
-```{r}
-ggplot(data = wq_clean, aes(x = Site, y = Phosphorus_total_mg_L )) +
-  geom_boxplot()
-```
-
-Now, look at the amount of E. coli in MPN units. What do you notice?
-
-```{r}
-ggplot(data = wq_clean, aes(x = Site, y = E_coli_MPN_100mL )) +
-  geom_boxplot()
-```
-
-Here, you can see that there is an outlier! Use `dplyr` functions to sort the *E. coli* data to look more closely. 
-
-This is an example of a time where good scientific judgement is needed to figure out what to do with this data point. It is *not* appropriate to remove a data point just because it is very different from another. However, there are times when an outlier is due to an error in data collection or recording. It is important to understand the parameter to determine what is going on. This is more complicated when we did not collect the data. In this instance, I was able to talk to the data collector and they indicated that this value for *E. coli * is not a reasonable value and is likely due to a lab issue. In this case, we can remove this data point. 
-
-Run the following code to do that. 
-
-```{r}
-wq_clean <- wq_clean |>
- mutate(E_coli_MPN_100mL = gsub('155310', NA, E_coli_MPN_100mL)) |>
-  mutate(E_coli_MPN_100mL = as.numeric(E_coli_MPN_100mL))
-```
-
-Now, let's look at the boxplot again. 
-
-```{r}
-ggplot(data = wq_clean, aes(x = Site, y = E_coli_MPN_100mL)) +
-  geom_boxplot()
-```
-
-Because we have made some changes in the water quality data, it is a good idea to save the data set. We can do this with the `write.csv()` function. We *should not* rewrite the original data file, but should rename it. Here, we provide the arguments for the data frame we want to save, and the name of the file. 
-
-```{r, eval=FALSE}
-write.csv(wq_clean, 'data/raleigh_water_analysis.csv', row_names = FALSE)
-```
-
-## Summarizing the water quality data
-
-Now, that we have learned a little about the water quality data, let's used what we learned about grouping and summarizing to learn a little more. 
-
-Let's look first at the Turbidity_NTU data to see how the different streams. First, let's just see what the min and max values are for all the streams.
-
-```{r, eval=FALSE}
-max(wq_clean$Turbidity_NTU)
-```
-
-What do you notice? Does that work?
+What do you notice?
 
 In this data, and in many other data sets, there are NA values, meaning not applicable or not available. This is used when we do not have information about a value. We can't put zero when we don't know, because we cannot say that the value is zero. Because there are NAs in our data set, we can't say for sure that the maximum turbidity in the streams is not in a stream that wasn't measured. So the answer for the maximum value is NA. To ignore the NAs to get the maximum turbidity based on the values that we measured, we must add `na.rm = TRUE` to the function. 
 
-```{r, eval=FALSE}
-max(wq_clean$Turbidity_NTU, na.rm=TRUE)
-```
-
-Now, let's look at the turbidity average for each of the different streams, using the column `Site`.
-
 ```{r}
-wq_clean |>
+wq |>
   group_by(Site) |>
   summarize(mean_turb = mean(Turbidity_NTU, na.rm = T))
 ```
 
-What do you notice about the data?
+Now, what do you notice about the data?
 
 You can use this table to match the Site codes with the stream name. 
 
@@ -155,26 +283,31 @@ knitr::kable(stream_codes)
 
 ## Homework exercises
 
-- climate data. 
-- make a table of the average precip for each month
-- average temperature. 
+Complete the homework exercises in the same R script that you used for class. Submit the R script with both class exercises and homework answers in the Moodle assignment.
 
-- load in the data for the stream invertebrates. 
-- which group collected the most insects total.
-- which group collected the most distinct insects
-- What insect was the most abundant. 
+### Part 1: Climate data
 
-- do a few more summaries from the water quality data and ask some questions. 
-- What do you notice
-- what would you like to do but dont know how
-- what else might be interesing to look at with the water quality data. 
-Ask questions and create summarizes using functions group_by, summarize, etc.
-As you are writing code and exploring the data, make sure you are using comments in your script (using “#”) to describe what each step of your code is doing.
-Write up a paragraph describing what you learned from the water quality data. You can do this also in the script.
+1. Go back to the climate data. Summarize the data to get the average precipitation for each month. You will group by the month, and summarize to get the mean of the `precip` column. 
+2. Repeat to determine the mean and standard deviation (`sd`) of the maximum temperatue (`tmax`) for each month.
+
+### Part 2: Water quality data
+
+1. Go back to the City of Raleigh water quality data. Complete a few more summaries to look at the differences between the sites. *You* choose what summaries you are interested in. Determine what parameters (i.e. do_percent_sat, pH, etc,) and what calculations (i.e. mean, median, max) you want to explore. 
+2. Write up a couple of paragraphs of what you notice about the water quality from your summaries. 
+3. Write a couple of sentences describing something you would be interested in exploring in the water quality data that you *don't* know who to do.
 
 ## List of new functions
 
 - `group_by`
 - `summarize`
+- `slice_*`
 - `sd`
+- `geom_bar`
 - `na.rm = T`
+- `n()`
+
+## Resources:
+
+- [R for Data Science](https://r4ds.hadley.nz/data-transform.html#groups): This provides a great summary of group_by, summarize, and slice_
+- [Data School Video on Dplyr](https://www.dataschool.io/dplyr-tutorial-for-faster-data-manipulation-in-r/)
+- [A Gentle Introduction](https://bookdown.org/jgscott/DSGI/summaries.html) This just includes summaries, not grouping. 
