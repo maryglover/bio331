@@ -13,6 +13,8 @@ layout: default
 klippy::klippy()
 ```
 
+You can use this [template script](https://maryglover.github.io/bio331/lessons/summaries/summary_script.R) file to work through the lesson. 
+
 ## Creating summary tables
 
 We have begun in class summarizing different variables in data frames. But often we are interested in summaries based on different groups. For example, in our climate data analysis, we looked to see what the average precipitation value was in Raleigh, but maybe we want to see the average for every year. We can do this utilizing both the `group_by()` and `summarize()` functions. 
@@ -139,7 +141,7 @@ We now have the number of times a name was given in every decade. We can use the
 ```{r}
 birth |>
   filter(sex == 'F')|>
-  group_by(sex, decade, name) |>
+  group_by(decade, name) |>
   summarize(total = sum(number)) |> 
   slice_max(total, n = 1)
 ```  

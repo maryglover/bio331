@@ -1646,6 +1646,8 @@ border-radius: 0px;
   addClassKlippyTo("pre.r, pre.markdown");
   addKlippy('left', 'top', 'auto', '1', 'Copy code', 'Copied!');
 </script>
+<p>You can use this <a href="https://maryglover.github.io/bio331/lessons/summaries/summary_script.R">template
+script</a> file to work through the lesson.</p>
 <div id="creating-summary-tables" class="section level2">
 <h2>Creating summary tables</h2>
 <p>We have begun in class summarizing different variables in data
@@ -1869,27 +1871,27 @@ the top max value, so can set <code>n=1</code> in
 the highest.</p>
 <pre class="r"><code>birth |&gt;
   filter(sex == &#39;F&#39;)|&gt;
-  group_by(sex, decade, name) |&gt;
+  group_by(decade, name) |&gt;
   summarize(total = sum(number)) |&gt; 
   slice_max(total, n = 1)</code></pre>
-<pre><code>## `summarise()` has grouped output by &#39;sex&#39;, &#39;decade&#39;. You can override using the
+<pre><code>## `summarise()` has grouped output by &#39;decade&#39;. You can override using the
 ## `.groups` argument.</code></pre>
-<pre><code>## # A tibble: 12 × 4
-## # Groups:   sex, decade [12]
-##    sex   decade name     total
-##    &lt;chr&gt;  &lt;int&gt; &lt;chr&gt;    &lt;int&gt;
-##  1 F       1910 Mary     16575
-##  2 F       1920 Mary     28711
-##  3 F       1930 Mary     24040
-##  4 F       1940 Mary     23554
-##  5 F       1950 Mary     16906
-##  6 F       1960 Lisa     13392
-##  7 F       1970 Jennifer 12523
-##  8 F       1980 Jessica  12615
-##  9 F       1990 Ashley    9128
-## 10 F       2000 Madison   6899
-## 11 F       2010 Emma      5990
-## 12 F       2020 Olivia    2533</code></pre>
+<pre><code>## # A tibble: 12 × 3
+## # Groups:   decade [12]
+##    decade name     total
+##     &lt;int&gt; &lt;chr&gt;    &lt;int&gt;
+##  1   1910 Mary     16575
+##  2   1920 Mary     28711
+##  3   1930 Mary     24040
+##  4   1940 Mary     23554
+##  5   1950 Mary     16906
+##  6   1960 Lisa     13392
+##  7   1970 Jennifer 12523
+##  8   1980 Jessica  12615
+##  9   1990 Ashley    9128
+## 10   2000 Madison   6899
+## 11   2010 Emma      5990
+## 12   2020 Olivia    2533</code></pre>
 <p><span style="color:blue"><strong>Activity:</strong></span></p>
 <ul>
 <li>Filter the data for the 2000’s decade and determine the top 5 names
