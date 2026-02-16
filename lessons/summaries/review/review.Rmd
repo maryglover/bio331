@@ -1,0 +1,57 @@
+---
+title: "Exam 1 Review"
+output: learnr::tutorial
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+knitr::opts_chunk$set(echo = FALSE)
+gradethis::gradethis_setup()
+```
+
+## Working with data frames
+
+Tutorial
+billobard data, filter for artists on at least 5 times.
+Summarize, how happy the songs are, or how danceable
+
+In this tutorial, we will work with data for every top song on the Billboard Hot 100 between August 4, 1958 and January 11, 2025. This data was compiled by Chris Dalla Riva for his book, *Uncharted Territory: What Numbers Tell Us about the Biggest Hit Songs and Ourselves.* The file is a condensed version of the original data and is named `billboard_short.csv` and can be accessed using a link to our class website. 
+
+Here, we will *assign* the file the name `music`. **Fill in the blank with the correct code for importing data into R.**
+
+```{r import, exercise=TRUE}
+music <- ___(file = "https://maryglover.github.io/bio331/lessons/post_exam1/review/billboard_short.csv")
+```
+
+```{r prepare-data}
+music <- read.csv(file ="https://maryglover.github.io/bio331/lessons/post_exam1/review/billboard_short.csv")
+library(dplyr)
+library(ggplot2)
+```
+
+Next, we want to just look at the file a bit. Run the following functions on the data frame, now named `music` to learn a bit about the data. 
+
+- `nrow`
+- `head`
+- `colnames`
+
+```{r viewdata, exercise=TRUE, exercise.lines = 5, exercise.setup = "prepare-data"}
+
+```
+
+### Summarizing data columns
+
+```{r select-exercise, exercise=TRUE, exercise.setup = "prepare-data"}
+
+```
+
+```{r select-exercise-solution}
+music |>
+  select(Artist, Danceability)
+```
+ 
+```{r select-exercise-code-check}
+grade_code()
+```
+
