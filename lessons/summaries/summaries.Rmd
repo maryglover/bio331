@@ -161,6 +161,7 @@ birth |>
 ### Invertebrate data
 
 For our last example, we will use data collected by this class in 2024 for the macroinvertebrate insects they found during a class period in a nearby stream. 
+
 First, we will read in the data from our class website. I will call it `invert`
 
 ```{r}
