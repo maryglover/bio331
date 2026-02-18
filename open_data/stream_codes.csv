@@ -1,19 +1,19 @@
-"","Site","Stream","lat","long"
-"1","BDB1","Beaverdam Branch","35.824303"," -78.650559"
-"2","BB2","Big Branch","35.822637"," -78.629735"
-"3","BBS3","Big Branch South","35.743394"," -78.568786"
-"4","CC4","Crabtree Creek","35.843795"," -78.726600"
-"5","CC5","Crabtree Creek","35.791234"," -78.588230"
-"6","HSC6","Hare Snipe Creek","35.845044"," -78.688466"
-"7","HC7","House Creek","35.834072"," -78.677525"
-"8","LBC8","Little Brier Creek","35.889018"," -78.796077"
-"9","MC9","Marsh Creek","35.799051"," -78.590593"
-"10","MC10","Mine Creek","35.841903"," -78.662271"
-"11","PC11","Perry Creek","35.879771"," -78.547979"
-"12","PHB12","Pigeon House Branch","35.805995"," -78.615268"
-"13","RC13","Richland Creek","35.834244"," -78.720481"
-"14","RC14","Richland Creek-WF","35.945004"," -78.552641"
-"15","RB15","Rocky Branch","35.759904"," -78.641103"
-"16","SC16","Sycamore Creek","35.847404"," -78.726468"
-"17","TC17","Turkey Creek","35.848474"," -78.722960"
-"18","WC18","Walnut Creek","35.749248"," -78.535679"
+"Site","Stream","lat","long"
+"BDB1","Beaverdam Branch",35.824303,-78.650559
+"BB2","Big Branch",35.822637,-78.629735
+"BBS3","Big Branch South",35.743394,-78.568786
+"CC4","Crabtree Creek",35.843795,-78.7266
+"CC5","Crabtree Creek",35.791234,-78.58823
+"HSC6","Hare Snipe Creek",35.845044,-78.688466
+"HC7","House Creek",35.834072,-78.677525
+"LBC8","Little Brier Creek",35.889018,-78.796077
+"MC9","Marsh Creek",35.799051,-78.590593
+"MC10","Mine Creek",35.841903,-78.662271
+"PC11","Perry Creek",35.879771,-78.547979
+"PHB12","Pigeon House Branch",35.805995,-78.615268
+"RC13","Richland Creek",35.834244,-78.720481
+"RC14","Richland Creek-WF",35.945004,-78.552641
+"RB15","Rocky Branch",35.759904,-78.641103
+"SC16","Sycamore Creek",35.847404,-78.726468
+"TC17","Turkey Creek",35.848474,-78.72296
+"WC18","Walnut Creek",35.749248,-78.535679
