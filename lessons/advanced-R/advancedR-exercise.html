@@ -2337,19 +2337,6 @@ sample was created. See the section on Extracting date variables in the
 <code>Temperature_C</code> columns for each month.</li>
 <li>Is the result what you expected?</li>
 </ol>
-<pre class="r"><code>joined |&gt;
-  mutate(month = month(Date))|&gt;
-  group_by(month) |&gt;
-  summarize(do = mean(do_percent_sat, na.rm = T), temp = mean(Temperature_C, na.rm = T))</code></pre>
-<pre><code>## # A tibble: 6 × 3
-##   month    do  temp
-##   &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
-## 1     1 101.   7.85
-## 2     3  95.5 11.6 
-## 3     6  78.5 22.1 
-## 4     9  78.1 21.3 
-## 5    10  86.1 16.1 
-## 6    12  92.1  9.11</code></pre>
 </div>
 </div>
 <div id="list-of-new-functions" class="section level2">

@@ -404,7 +404,7 @@ ggplot(joined, aes(x= precip, y = Turbidity_NTU)) +
 1. Add a column to the data that includes only the month that the sample was created. See the section on Extracting date variables in the [lesson](### Extracting date variables)
 1. Make a summary table that calculates the mean of the `do_percent_sat` and the mean of the `Temperature_C` columns for each month.
 1. Is the result what you expected?
-```{r}
+```{r, include = F, echo =F}
 joined |>
   mutate(month = month(Date))|>
   group_by(month) |>

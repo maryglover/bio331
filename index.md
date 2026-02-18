@@ -21,7 +21,7 @@ The following schedule links to the information you will need for each lesson. *
 |5| Tuesday, Feb. 10 | **Exam 1** | | |
 || Thursday, Feb. 12 |[Exam 1 Review](lessons/post_exam1/fig_caption)| [Figure caption activity](lessons/post_exam1/figcaption.html) <br> [Review activity](lessons/post_exam1/Tutorial_instructions.pdf) |[Scientific results slides](https://docs.google.com/presentation/d/1UfkRYjAHavHaBA8vKhQi2Mvxf0uta-T-c8tXCxXVXWc/edit?usp=sharing) |
 |6| Tuesday, Feb. 17 |[Summarizing data](lessons/summaries/summaries-lesson)|[activity](lessons/summaries/summaries.html) | |
-|| Thursday, Feb. 19 |Joining multiple data sets | | |
+|| Thursday, Feb. 19 |[Advanced R skills](lessons/advanced-R/advancedR-lesson|[activity](lessons/advanced-R/advancedR-exercise.html) | |
 |7| Tuesday, Feb. 24 |Statistics | | |
 || Thursday, Feb. 26 |Review | | |
 |8| Tuesday, Mar. 3 |**Exam 2**| | |
