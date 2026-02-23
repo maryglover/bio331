@@ -1,0 +1,77 @@
+---
+title: "BIO 331: Exam 2 Review"
+output: html_document
+---
+
+<style type="text/css">
+  body{
+  font-size: 14pt;
+}
+</style>
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F, message = F, results = 'hide', fig.show = 'hide' )
+```
+
+In this review, we will use the environmental justice data set that we used for exam 1 review. 
+
+### Summaries 	 	
+
+1. Import the data environmental_justice.csv into your R environment. This data is in your workspace.  <br><br>
+2. This dataset contains information for each “census tract” in all counties of North Carolina. Create a summary table with the total population size (`population`) for every county. You will have to group by `county`. <br><br>
+3. Arrange the summary table to determine which county has the lowest population size. <br> ***Answer***:<br><br><br>
+4. Arrange the summary table to determine which county has the highest population size. <br> ***Answer***:<br><br><br>
+5. Make a summary table to determine *how many* census tracts (`census_tract`) there are in each county.  <br><br>
+6. Make a summary table to determine the mean of the environmental justice rank (`env_justice_rank`) for each county. <br><br>
+1. Filter the summary table you just made for Wake County (`Wake`). What is the average environmental justice rank for Wake County?<br> ***Answer***:<br><br><br>
+
+## Statistics and graphing: Part 1
+
+Imagine that you are interested in looking at the relationship bewteen the percent of population experiencing poverty (`poverty`) below the 200% line and the percent of the area near a waste disposal site (`disposal_area`). Here is the output of the model:
+
+```{r, include = T, echo = F, results='markup'}
+env <- read.csv('environmental_justice.csv')
+summary(lm(data = env, disposal_area ~ poverty))
+```
+		
+1. Explain the results of the statistical test? Is there a signifant relationship? How can you tell? 		 <br> ***Answer***:<br><br><br><br><br>	
+2. Make a scatterplot to show the relationship between poverty and disposal_area. Add a trend line to the plot showing the relationship.<br><br>
+3. Color the points so that the color is based on the percent of people in a minority group, using the category column, `minority_category.`<br><br>
+ 
+## Statistics and graphing:Part 2
+
+In this section you will analyze the data to see if there is an effect of the percent of the population with no high school diploma (`no_high_school`) on the unemployment rate (`unemployed`)
+					
+1. Make a scatterplot with the no_high_school column on the x axis and unemployed on the y axis. <br><br>
+2. Do you notice a relationship between the two variables looking at the figure?<br> ***Answer***:<br><br><br><br>
+3. Create a linear model to analyze the data. <br><br>
+4. What is the null hypothesis?<br> ***Answer***:<br><br><br>
+5. What is the p-value?<br> ***Answer***:<br><br><br>
+6. Is there a significant relationship? Explain the result.<br> ***Answer***:<br><br><br><br>
+7. Edit your scatterplot originial plot in the following ways:
+    - If there is a significant relationship, add a trend line showing the relationship.
+    - Change the color of the points to a color of your choosing.
+    - Change the x and y axis labels to be easier to understand.
+    - Change the theme to your favorite one. <br><br>
+		
+## Joins and dates
+
+In this section, you will work with data on air quality and temperature in New York in 1973. 
+
+1. Import the *two* data files named NY_air.csv and NY_temp.csv into your R environment. These are both in your workspace. <br><br>
+2. Join the two data frames together to include all rows in NY_air.csv <br><br>
+3. Reformat the date column to a date format using the `lubridate` package. <br><br>
+4. Make a line plot showing Ozone levels over time. <br><br>
+5. Extract the month from the date and create a new month column using `mutate`.<br><br>
+6. Create a summary table to determine the average `Solar.R` and average `Temp` for each month. <br><br>
+
+## Advanced problems 
+
+1. Using a summary table, determine which county has the highest and lowest average walkability. <br> ***Answer***:<br><br><br>
+1. What county has the highest median value for impaired water? <br> ***Answer***:<br><br><br>
+1. What is the median value of impaired water for Wake County?<br> ***Answer***:<br><br><br>v
+1. How many counties have a *median* score for impaired water that is over 40. <br> ***Answer***:<br><br><br>
+1. How many counties have a maximum `park_area` of below 30?<br> ***Answer***:<br><br><br>
+1. Is there a significant relationship between `health_vuln_rank` and `env_burden_rank`. <br> ***Answer***:<br><br><br>
+1. Make a graph and figure caption to explain your result to the previous question.<br> ***Answer***:<br><br><br><br><br>
