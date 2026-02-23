@@ -22,7 +22,7 @@ The following schedule links to the information you will need for each lesson. *
 || Thursday, Feb. 12 |[Exam 1 Review](lessons/post_exam1/fig_caption)| [Figure caption activity](lessons/post_exam1/figcaption.html) <br> [Review activity](lessons/post_exam1/Tutorial_instructions.pdf) |[Scientific results slides](https://docs.google.com/presentation/d/1UfkRYjAHavHaBA8vKhQi2Mvxf0uta-T-c8tXCxXVXWc/edit?usp=sharing) |
 |6| Tuesday, Feb. 17 |[Summarizing data](lessons/summaries/summaries-lesson)|[activity](lessons/summaries/summaries.html) | |
 || Thursday, Feb. 19 |[Advanced R skills](lessons/advanced-R/advanceR-lesson)|[activity](lessons/advanced-R/advancedR-exercise.html) | |
-|7| Tuesday, Feb. 24 |Statistics | | |
+|7| Tuesday, Feb. 24 |[Statistics](lessons/statistics/statistics-lesson) |[Activity](lessons/statistics/statistics-exercise.html) | [slides](https://docs.google.com/presentation/d/1pD-paoiji7WLnaLgA4UklJUxSG3b3UbJirJSNGQVjTQ/edit?usp=sharing) |
 || Thursday, Feb. 26 |Review | | |
 |8| Tuesday, Mar. 3 |**Exam 2**| | |
 || Thursday, Mar. 5 | Data Ethics guest speaker| | |

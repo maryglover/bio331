@@ -390,6 +390,10 @@ stream_precip <- read.csv('https://maryglover.github.io/bio331/open_data/precip_
 1. Make a scatterplot that shows the relationship between `Turbidity_NTU` and `precip` using your joined data set. 
 1. Do you notice anything about the relationship?
 ```{r, include=F, echo =F}
+stream_precip <- stream_precip |>
+  mutate(year =(Date))
+stream_codes
+
 joined <- stream_precip |>
   mutate(Date = ymd(Date))|>
   right_join(wq) 

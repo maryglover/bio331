@@ -1,8 +1,8 @@
 ---
+layout: single
+classes: wide
+author_profile: true
 title: 'Basic Statistics in R'
-output:
-  html_document
-layout: default
 ---
 
 ## Learning objectives
@@ -21,4 +21,4 @@ layout: default
 
 ## Homework
 
-1. Submit figure caption and results assignment in Moodle
+1. Submit **Coding: statistics exercise** in Moodle
