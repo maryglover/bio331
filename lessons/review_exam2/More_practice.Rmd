@@ -1,0 +1,232 @@
+---
+title: "Additional practice questions exam 2"
+output:
+  html_document:
+    toc: true 
+    toc_float: true
+    toc_collapsed: true
+    toc_depth: 3  
+layout: default
+---
+
+```{r klippy, echo=FALSE, include=TRUE}
+klippy::klippy()
+```
+
+## Set up 
+
+In this practice, we will work with a dataset that comes with `ggplot2` package. 
+
+To load this data, run the following code. 
+
+```{r}
+library(ggplot2)
+data(mpg)
+```
+
+You can now see the top few lines using the `head()` function
+
+```{r}
+head(mpg)
+```
+
+This dataset include fuel economy data for 38 different car models in 1999 and 2008. We will work with this dataset in the following this practice set. 
+
+In this activity, I will provide hints throughout. Only use the hints if you need them! Try to see what you can do without them first. 
+
+## Summary tables
+
+1. Before you begin the summaries, make sure you load the package to do summaries!
+<details>
+  <summary>Hint</summary>
+   Load in the `dplyr` package
+</details>
+<details>
+  <summary>Answer</summary>
+    ```{r, eval = F}
+    library(dplyr)
+    ```
+</details>
+1. Make a summary table to include show the *average* city gas mileage, `cty`, for each vehicle class, `class`.
+<details>
+  <summary>Hint</summary>
+    Group by class and summarise based on cty
+</details>
+<details>
+  <summary>Answer</summary>
+    ```{r, eval = F}
+    mpg |>
+      group_by(class)|>
+      summarize(city_mean = mean(cty))
+    ```
+</details>
+1. Make a summary table to show the *maximum* highway gas mileage (`hwy`) for each manufacturer (`manufacturer`).
+<details>
+  <summary>Hint</summary>
+    Group by the manufacturer and summarize to calculate the `max()` for the highway mileage. 
+</details>
+<details>
+  <summary>Answer</summary>
+    ```{r, eval = F}
+    mpg |> 
+      group_by(manufacturer) |>
+      summarize(hwy_max = max(hwy))
+    ```
+</details>
+1. Make a summary table to show the city gas mileage *and* the highway gas mileage for each year.
+<details>
+  <summary>Hint</summary>
+   Group by the year. Then add two different summaries in `summarize()`
+</details>
+<details>
+  <summary>Answer</summary>
+    ```{r, eval = F}
+   mpg|>
+      group_by(year) |>
+      summarize(city_mean = mean(cty), hwy_mean = mean(hwy))
+    ```
+</details>
+1. Make a summary table to show the mean city gas mileage for each class type *and* year.
+<details>
+  <summary>Hint</summary>
+   Group by the year *and* class
+</details>
+<details>
+  <summary>Answer</summary>
+    ```{r, eval = F}
+   mpg|>
+      group_by(class, year) |>
+      summarize(city_mean = mean(cty))
+    ```
+1. Filter the summary table you just make to only include the year 2008. 
+<details>
+  <summary>Hint</summary>
+  Add a filter to the code you just used to make the table after a pipe. 
+</details>
+<details>
+  <summary>Answer</summary>
+    ```{r, eval = F}
+   mpg|>
+      group_by(class, year) |>
+      summarize(city_mean = mean(cty)) |>
+      filter(year == 2008)
+    ```
+1. Make a summary table to display the median city mileage for every manufacturer. Then, sort to find which manufacturer has the highest gas mileage. 
+<details>
+  <summary>Hint</summary>
+    Make the summary table and then `arrange()` by the column you made in the `summarize` function
+</details>
+<details>
+  <summary>Answer</summary>
+    ```{r, eval = F}
+    mpg |>
+      group_by(manufacturer) |>
+      summarize(city_median = median(cty))|>
+      arrange(-city_median)
+    ```
+</details>
+
+## Statistics
+
+1. Do a statistical test to determine if the year the car was manufactured affected the city gas mileage. 
+<details>
+  <summary>Hint</summary>
+   Use the function `lm()` with `cty` as the response and `year` as the predictor
+</details>
+<details>
+  <summary>Answer</summary>
+    ```{r, eval = F}
+    year_lm <- lm(data = mpg, cty ~ year )
+    ```
+</details>
+2. View the statistical test. Is there a significant difference in the gas mileage for the different years?
+<details>
+  <summary>Hint</summary>
+  Use the function `summary()` to view the statistical model
+</details>
+<details>
+  <summary>Answer</summary>
+    ```{r, eval = F}
+  summary(year_lm)
+    ```
+    There is no difference between the different years. 
+  </details>
+  
+1. Do a statistical test to see if the highway gas mileage is predicted by the vehicle class 
+<details>
+  <summary>Hint</summary>
+   Use the function `lm()` with `hwy` as the response and `class` as the predictor
+</details>
+<details>
+  <summary>Answer</summary>
+    ```{r, eval = F}
+    class_lm <- lm(data = mpg, hwy ~ class )
+    ```
+</details>
+2. View the statistical test. Is there a significant difference in the gas mileage based on vehicle class?
+<details>
+  <summary>Hint</summary>
+  Use the function `summary()` to view the statistical model
+</details>
+<details>
+  <summary>Answer</summary>
+    ```{r, eval = F}
+  summary(class_lm)
+    ```
+    There is a significant effect of vehicle class on highway gas mileage.
+  </details>
+1. Make a boxplot to show the highway gas mileage for each vehicle class. 
+<details>
+  <summary>Hint</summary>
+  Use your ggplot functions to make a boxplot with the mpg data, with `class` on x axis and `hwy` on y axis. 
+</details>
+<details>
+  <summary>Answer</summary>
+    ```{r, eval = F}
+  ggplot(mpg, aes(x=class, y = hwy)) +
+      geom_boxplot() +
+      theme_classic()
+    ```
+    There is a significant effect of vehicle class on highway gas mileage.
+  </details>
+1. Based on the plot, what class had the lowest highway mileage. 
+1. Perform a statistical test to see if city gas mileage predicts highway gas mileage. 
+  <details>
+  <summary>Hint</summary>
+Use the `lm()` function with cty as the predictor and hwy as the response
+</details>
+<details>
+  <summary>Answer</summary>
+    ```{r, eval = F}
+mpg_lm <- lm(data = mpg, hwy ~ cty)
+    ```
+  </details>
+1. Is the result significant?
+<details>
+  <summary>Hint</summary>
+Use the function `summary` to view the results. 
+</details>
+<details>
+  <summary>Answer</summary>
+    ```{r, eval = F}
+summary(mpg_lm)
+    ```
+    There is a significant effect of city mileage on highway milegae. 
+  </details>
+1. Plot a scatterplot of the city and highway gas mileage and add the best fit line. 
+<details>
+  <summary>Hint</summary>
+  Use your ggplot functions to make a boxplot with the mpg data, with `cty` on x axis and `hwy` on y axis. Add a `geom_smooth()` layer
+</details>
+<details>
+  <summary>Answer</summary>
+    ```{r, eval = F}
+  ggplot(mpg, aes(x=cty, y = hwy)) +
+      geom_point() +
+      geom_smooth(method = 'lm') +
+      theme_classic()
+    ```
+  </details>
+
+## Dates
+
