@@ -22,4 +22,8 @@ The exam will cover the coding exercises we have completed in class. You will *n
 - Advanced R (joins and dates)
 - Statistics
 
-Visit the [Resources page](https://maryglover.github.io/bio331/resources/) for other tutorials on basic R skills
+Need extra practiceL
+
+- Visit the [Resources page](https://maryglover.github.io/bio331/resources/) for other tutorials on basic R skills
+- Go back through the activities in the lessons
+- Go through the [additional practice questions exam 2 activity](More_practice.html)

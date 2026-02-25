@@ -228,5 +228,57 @@ summary(mpg_lm)
     ```
   </details>
 
-## Dates
+## Joins
 
+Here, we will look at the two `dplyr` datasets `band_instruments` and `band_members`. 
+
+Use the function `head()` to look at these two datasets
+
+```{r, message = F}
+library(dplyr)
+head(band_instruments)
+head(band_members)
+```
+
+1. Join the two data sets to include all names in *both* data frames. 
+<details>
+  <summary>Answer</summary>
+    ```{r, eval = F}
+band_instruments |>
+      full_join(band_members)
+    ```
+  </details>
+1. Join the two data sets to include *only* names that are found in *both* data frames. 
+<details>
+  <summary>Answer</summary>
+    ```{r, eval = F}
+band_instruments |>
+      inner_join(band_members)
+    ```
+  </details>
+1. Join the two data sets to include *only* names that are found in the `band_instruments` data frames. 
+<details>
+  <summary>Answer</summary>
+    ```{r, eval = F}
+band_instruments |>
+      left_join(band_members)
+    ```
+       or 
+    ```{r, eval = F}
+band_members |>
+      right_join(band_instruments)
+    ```  
+  </details>
+1. Join the two data sets to include *only* names that are found in the `band_members` data frames. 
+<details>
+  <summary>Answer</summary>
+    ```{r, eval = F}
+band_instruments |>
+      right_join(band_members)
+    ```
+    or 
+    ```{r, eval = F}
+band_members |>
+      left_join(band_instruments)
+    ```  
+</details>

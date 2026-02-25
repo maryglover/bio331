@@ -1923,6 +1923,72 @@ Answer
 </details></li>
 </ol>
 </div>
+<div id="joins" class="section level2">
+<h2>Joins</h2>
+<p>Here, we will look at the two <code>dplyr</code> datasets
+<code>band_instruments</code> and <code>band_members</code>.</p>
+<p>Use the function <code>head()</code> to look at these two
+datasets</p>
+<pre class="r"><code>library(dplyr)
+head(band_instruments)</code></pre>
+<pre><code>## # A tibble: 3 × 2
+##   name  plays 
+##   &lt;chr&gt; &lt;chr&gt; 
+## 1 John  guitar
+## 2 Paul  bass  
+## 3 Keith guitar</code></pre>
+<pre class="r"><code>head(band_members)</code></pre>
+<pre><code>## # A tibble: 3 × 2
+##   name  band   
+##   &lt;chr&gt; &lt;chr&gt;  
+## 1 Mick  Stones 
+## 2 John  Beatles
+## 3 Paul  Beatles</code></pre>
+<ol style="list-style-type: decimal">
+<li><p>Join the two data sets to include all names in <em>both</em> data
+frames.</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<pre class="r"><code> band_instruments |&gt;
+   full_join(band_members)</code></pre>
+</details></li>
+<li><p>Join the two data sets to include <em>only</em> names that are
+found in <em>both</em> data frames.</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<pre class="r"><code> band_instruments |&gt;
+   inner_join(band_members)</code></pre>
+</details></li>
+<li><p>Join the two data sets to include <em>only</em> names that are
+found in the <code>band_instruments</code> data frames.</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<pre class="r"><code> band_instruments |&gt;
+   left_join(band_members)</code></pre>
+<p>or</p>
+<pre class="r"><code> band_members |&gt;
+   right_join(band_instruments)</code></pre>
+</details></li>
+<li><p>Join the two data sets to include <em>only</em> names that are
+found in the <code>band_members</code> data frames.</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<pre class="r"><code> band_instruments |&gt;
+   right_join(band_members)</code></pre>
+<p>or</p>
+<pre class="r"><code> band_members |&gt;
+   left_join(band_instruments)</code></pre>
+</details></li>
+</ol>
+</div>
 
 
 
