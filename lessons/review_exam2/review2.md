@@ -27,3 +27,4 @@ Need extra practiceL
 - Visit the [Resources page](https://maryglover.github.io/bio331/resources/) for other tutorials on basic R skills
 - Go back through the activities in the lessons
 - Go through the [additional practice questions exam 2 activity](More_practice.html)
+- Download the [mistake_assignment_2.R](mistake_assignment_2.R) file. Go through the script in your learning R workspace and fix the mistakes to make the code work. 
