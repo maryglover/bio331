@@ -34,12 +34,13 @@ In this data, there are points that will be connected into polygons to plot each
 ggplot(data = nc, aes(x = long, y = lat, group = group)) +
   geom_polygon() 
 ```
+
 You can edit the plot in the same way that you did other plots in `ggplot`. For example, I'll color each of the the counties, which are in the "subregion" column, a different color and change the theme. 
 
 ```{r}
 ggplot(data = nc, aes(x = long, y = lat, group = group)) +
   geom_polygon(aes( fill = subregion))+
-  theme_minimal()+
+  theme_void()+
   theme(legend.position = 'none') 
 ```
 
@@ -52,6 +53,14 @@ See what happens when you change the coordinate systems by adding some of the fo
 1. `coord_map('gilbert')`
 1.`coord_map('orthographic')`
 
+
+```{r, include = F, fig.show=F}
+ggplot(data = nc, aes(x = long, y = lat, group = group)) +
+  geom_polygon(aes( fill = subregion))+
+  theme_void()+
+  theme(legend.position = 'none') +
+  coord_map()
+```
 
 ## Plotting polygons in sf
 
@@ -66,6 +75,7 @@ rivers <- st_read('../../data/Major_Rivers/')
 library(sf)
 rivers <- st_read('data/Major_Rivers/')
 ```
+
 You can already see that this is different than a regular csv file, with information about the geographic data shown as you import the data. Specifically, you can see that the coordinates are XY, a "bounding box" or dimensions, and a coordinate system (Projected CRS). 
 
 You can also see in the data a column for the geometry. This determines the shape of each stream. 
