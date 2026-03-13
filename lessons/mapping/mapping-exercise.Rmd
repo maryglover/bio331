@@ -135,7 +135,7 @@ Plot the Wake County line with the stream data. This file is called "Wake_County
 
 You will be able to get something that looks like this: 
 
-```{r, echo = F, message = F}
+```{r, echo = F, message = F, warning=FALSE, results= 'hide'}
 wake <- st_read('data/Wake_County_Line-shp/')
 ggplot() +
   geom_sf(data = rivers, color ='cornflowerblue') +
