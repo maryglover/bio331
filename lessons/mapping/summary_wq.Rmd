@@ -1,0 +1,87 @@
+---
+title: "Summarizing Water Quality"
+output:
+  html_document:
+    toc: true 
+    toc_float: true
+    toc_collapsed: true
+    toc_depth: 3  
+layout: default
+---
+
+```{r klippy, echo=FALSE, include=TRUE}
+klippy::klippy()
+```
+
+In this activity, we will review creating summary tables and explore the water quality data more in depth. We did create some summaries in the previous [summary table lesson](https://maryglover.github.io/bio331/lessons/summaries/summaries.html#Water_quality_data).
+
+First, go ahead and read in your water quality data file from where ever you have it saved. 
+
+```{r}
+wq <- read.csv('data/raleigh_water_analysis.csv')
+```
+## Understanding the data
+
+First, we will work a little to understand what data we have. **You will use this information to complete the methods section of your poster**
+
+1. How many streams are in the data set?
+1. How many characteristics did the City of Raleigh measure?
+1. How many years are included in the dataset?
+1. What months did the City of Raleigh collect in?
+
+## Summary Activity
+
+First, let's do a practice review by looking to see if there is a relationship between the amount of Nitrogen and Phosphorus in streams. To do this:
+
+1. Write down your hypothesis. Do you think there will be a relationship?
+1. Make a scatterplot with `Phosphorous_total_mg_L` and `Nitrogen_total_mg_L`. 
+2. Create a linear model to analyze the relationship. 
+1. Make a summary table with the average nitrogen and phosphorus for each site. 
+
+```{r, echo = F, fig.show = 'hide', message = F, results = 'hide', warning=F}
+library(ggplot2)
+library(dplyr)
+ggplot(wq, aes(x = Phosphorus_total_mg_L, y = Nitrogen_total_mg_L)) +
+  geom_point()
+np_lm <- lm(data = wq,Nitrogen_total_mg_L~ Phosphorus_total_mg_L )
+summary(np_lm)
+wq |>
+  group_by(Site) |>
+  summarize(nitrogen = mean(Nitrogen_total_mg_L, na.rm = T), 
+            phosphorus = mean(Phosphorus_total_mg_L, na.rm = T)) |>
+  arrange(nitrogen)
+```
+
+Now, let's look at a few more challenging summaries to investigate. 
+
+1. What site had the highest average `Copper_mg_L`?
+1. What *three* sites had the highest average `E_coli_MPN_100mL`?
+1. How many *sites* had a average `Nitrogen_total_mg_L` greater than 1.0?
+1. How many *years* had a average `Nitrogen_total_mg_L` greater than 1.0?
+
+```{r, echo = F, message = F, results = 'hide'}
+wq |>
+  group_by(Site) |>
+  summarise(copper = mean(Copper_mg_L, na.rm = T)) |>
+  arrange(-copper) |>
+  head()
+
+wq |>
+  group_by(Site) |>
+  summarise(ecoli = mean(E_coli_MPN_100mL, na.rm = T)) |>
+  arrange(-ecoli) |>
+  head()
+
+wq |>
+  group_by(Site) |>
+  summarise(nitrogen = mean(Nitrogen_total_mg_L, na.rm = T)) |>
+  filter(nitrogen >1)  
+
+library(lubridate)
+wq |>
+  mutate(Date = ymd(Date))|>
+  mutate(Year = year(Date))|>
+  group_by(Year) |>
+  summarise(nitrogen = mean(Nitrogen_total_mg_L, na.rm = T)) |>
+  filter(nitrogen >1) 
+```
