@@ -1,8 +1,8 @@
 ---
 title: 'Mapping in R'
-output:
-  html_document
-layout: default
+layout: single
+classes: wide
+author_profile: true
 ---
 
 In class today, we will:
