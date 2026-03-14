@@ -17,3 +17,5 @@ In class today, we will:
 ## Homework
 - Submit your mapping and summary activities on Moodle
 - Complete the **Poster: Methods Part 1** assignment in moodle. 
+
+![](./exam_homework.png)
