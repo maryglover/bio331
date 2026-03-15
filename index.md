@@ -28,7 +28,7 @@ The following schedule links to the information you will need for each lesson. *
 || Thursday, Mar. 5 | Data Ethics guest speaker| | |
 |9| Mar. 9-13 | *Spring Break; no classes*| | |
 |10| Tuesday, Mar. 17 | [Spatial analysis](lessons/mapping/mapping-lesson)| [Review Activity](lessons/mapping/summary_wq.html) <br> [Mapping Activity](lessons/mapping/mapping-exercise.html) | |
-|| Thursday, Mar. 19| Class project work | | |
+|| Thursday, Mar. 19| [Class project work(lessons/work_days/work-day1)] |[Activity](lessons/workday1.html) | |
 |11| Tuesday, Mar. 23| Class project Work| | |
 || Thursday, Mar. 25| Project write up and discussions <br> Last Day to Withdraw with "W" | | |
 |12| Tuesday, Mar. 31|Physical characteristics in the field | | |

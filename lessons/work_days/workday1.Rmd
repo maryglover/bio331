@@ -1,0 +1,62 @@
+---
+title: "Summarizing Water Quality Trends"
+output:
+  html_document:
+    toc: true 
+    toc_float: true
+    toc_collapsed: true
+    toc_depth: 3  
+layout: default
+---
+
+```{r klippy, echo=FALSE, include=TRUE}
+klippy::klippy()
+```
+
+In this activity, we will continue to work with the water quality data, working on more summary tables and analyses. 
+
+To complete this activity, you will submit:
+
+1. **Code**. Keep a good record of the code you use to complete this activity. In your R script, take notes (using the # sign) to describe what you are doing. 
+1. **A summary**: Record your observations and findings in a google document. In your gogle document, you can copy the figures you make and describe your results in each part of the activity.
+1. **Code Questions**: Write down any questions that you have about the data. 
+1. **Next steps**: Reflect on what else you could explore using the water quality data. Write up a paragraph describe what you think you could do next. These next steps should be *do-able* and *realistic* for our class. 
+1. Submit the code and the summary file in the initial code and questions file in Moodle. 
+
+First, go ahead and read in your water quality data file from where ever you have it saved. 
+
+```{r}
+wq <- read.csv('data/raleigh_water_analysis.csv')
+```
+
+## Summarizing sites
+
+First, we will work on look at the differences among the different sites. In groups, have each group member pick a different stream metric to explore. 
+
+1. Use a summary table to determine how the sites differ with respect to your chosen metric (ex. total nitrogen, dissolved oxygen etc.)
+2. Make a boxplot to show the differences between the sites. 
+3. Share your results with your group members. Do you notice any similarities or diffences when comparing with your group members?
+
+Need help with summary tables? Review the lesson on [summary tables](../summaries/summaries.html#Water_quality_data) and the [activity](../mapping/summary_wq.html) we did last class.
+
+## Summarizing over time
+
+Next, let's look at how water quality has changed over the years in Raleigh. In groups, have each group member pick a different stream metric to explore. 
+
+1. Use what you learned in the [advanced R lesson](lessons/advanced-R/advancedR-exercise.html#Extracting_date_variables) on dates to make a new column with the year that water quality was measured. 
+1. Make a summary table summaries the water quality metric for each year. Arrange the summary table in order of years. 
+2. Make a line graph showing the the metric you chose over the years. There are different ways that you can make this graph (with each site it's own line or a summary of all sites).  
+1. Share your results with your group.
+
+## Precipitation 
+
+Next, we will look at how precipitation values can impact the water quality measurements. 
+
+1. Go back to your [advanced R homework](https://maryglover.github.io/bio331/lessons/advanced-R/advancedR-exercise.html#Part_2:_Water_quality_and_precipitation), where you joined the precipiation data with the water quality data and explored the relationship between turbidity and precipitation. What did you notice about the relationship?
+1. Analyze the relationship between turbidity and precipitation with a statistical test (`lm()`)
+1. Write up a summary of your results. 
+1. In your group, each person should pick *one* other metric to observe to see if it is effected by precipitation. 
+1. Use a statistical test to see if there is a relationship between the metric you chose and precipitation. 
+1. Make a pretty figure to show your result. 
+1. Write a figure caption to summarize your result. 
+1. Share your results with your group. 
