@@ -1,5 +1,5 @@
 ---
-title: 'Water Quality Analysis - Work Day 1'
+title: 'Water Quality Analysis - Work Day 2'
 layout: single
 classes: wide
 author_profile: true
