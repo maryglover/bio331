@@ -31,10 +31,10 @@ The following schedule links to the information you will need for each lesson. *
 || Thursday, Mar. 19| [Class project work](lessons/work_days/work-day1) |[Activity](lessons/work_days/workday1.html) | |
 |11| Tuesday, Mar. 23| [Class project work day](lessons/work_days/work-day2)|[Activity](lessons/work_days/workday2.html) | |
 || Thursday, Mar. 25| [Project write up and discussions](lessons/work_days/work-day3) <br> Last Day to Withdraw with "W" | | |
-|12| Tuesday, Mar. 31|Physical characteristics in the field | | |
-|| Thursday, Apr. 2| Chemical Characteristics in the field | | |
-|13| Tuesday, Apr. 7|Chemical characteristics in the lab | | |
-|| Thursday, Apr. 9| Field work conclusions <br> Quiz on field work | | |
+|12| Tuesday, Mar. 31| [Physical characteristics in the field](lessons/field_work/field1) | | |
+|| Thursday, Apr. 2| [Chemical Characteristics in the field](lessons/field_work/field1) | | |
+|13| Tuesday, Apr. 7|[Chemical characteristics in the lab](lessons/field_work/field1) | | |
+|| Thursday, Apr. 9| [Field work conclusions](lessons/field_work/field1) <br> Quiz on field work | | |
 |14| Tuesday, Apr. 14| Showcase Practice| | |
 || Thursday, Apr. 16| Project work day | | |
 |15| Tuesday, Apr. 21| *WPU Showcase; Our class will present! Time TBD* | | |
