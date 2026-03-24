@@ -21,6 +21,14 @@ Impervious surfaces are hard surfaces that do not let water penetrate, for examp
 
 In this analysis, we have the percent impervious surfaces for years 2008, 2011, 2013, 2016, 2019, and 2021. This data was obtained from the U.S. Geological Service's [Multi-resolution Land Characteristics Consortium](https://www.mrlc.gov/data). It has been joined with your water quality data for you. The impervious surface in this data set is the average impervious surface percent in a 500 meter radius of the stream collection site. 
 
+Use the following code to import the water quality data with impervious surface values. This data also has the water quality scores that we created last class. 
+
+```{r}
+impervious <- read.csv('https://maryglover.github.io/bio331/impervious_surface/raleigh_water_impervious.csv')
+
+head(impervious)
+```
+
 In this activity, analyze the data to explore:
 
 1. Does impervious surface have an effect on some of the individual parameters? Which ones do you think it makes sense to explore?
