@@ -3,6 +3,7 @@
 
 library(FedData)
 library(sf)
+# install_github("r-spatial/sf")
 
 county <- st_read('data/Wake_County_Line-shp/')
 county <- st_transform(county, crs = 4269)
