@@ -1,0 +1,38 @@
+---
+title: "Impervious Surface Analysis"
+output:
+  html_document:
+    toc: true 
+    toc_float: true
+    toc_collapsed: true
+    toc_depth: 3  
+layout: default
+---
+
+```{r klippy, echo=FALSE, include=TRUE}
+klippy::klippy()
+```
+
+In this activity, we will do one final analysis for our water quality data. 
+
+## Impervious surface analysis
+
+Impervious surfaces are hard surfaces that do not let water penetrate, for example roads, sidewalks, artificial turf, and even very hard packed earth. Impervious surfaces have an effect on water quality because it prevents rain or stormwater from penetrating into the ground. Instead, if flows on the surface towards the nearest stream. In the process, however, it picks up potential pollutants and waste, like fertilizers, heavy metals, and other chemicals. 
+
+In this analysis, we have the percent impervious surfaces for years 2008, 2011, 2013, 2016, 2019, and 2021. This data was obtained from the U.S. Geological Service's [Multi-resolution Land Characteristics Consortium](https://www.mrlc.gov/data). It has been joined with your water quality data for you. The impervious surface in this data set is the average impervious surface percent in a 500 meter radius of the stream collection site. 
+
+In this activity, analyze the data to explore:
+
+1. Does impervious surface have an effect on some of the individual parameters? Which ones do you think it makes sense to explore?
+1. What sites have the highest impervious surface percentage?
+1. Is the overall water quality score correlated with impervious surface?
+
+
+### Homework 
+
+For homework, at the end of class you should submit **Coding: Final Project Code** assignment in moodle, with all your code for the water quality analysis. **It is up to you to work at summarizing the water quality score and making the most appropriate graphs, which means that this will take some out of class work.**
+
+1. **Code**. Keep a good record of the code you use to complete this activity. In your R script, take notes (using the # sign) to describe what you are doing. 
+1. **A summary**: Record your observations and findings in a google document. In your gogle document, you can copy the figures you make and describe your results in each part of the activity.
+1. **Code Questions**: Write down any questions that you have about the data. 
+1. Submit the code and the summary file in the Coding: Final Project code assignment in Moodle. 
