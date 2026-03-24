@@ -75,9 +75,9 @@ Based on what we discuss as a class, you will make graphs and summary tables usi
 
 ### Homework 
 
-For homework, you will submit the **Coding: Final Project Code** assignment in moodle, with all your code for the water quality analysis. 
+For homework, you will work to analyze the water quality data in depth, using this activity. At the end of the next class, you will submit the **Coding: Final Project Code** assignment in moodle, with all your code for the water quality analysis. **It is up to you to work at summarizing the water quality score and making the most appropriate graphs, which means that this will take some out of class work.**
 
 1. **Code**. Keep a good record of the code you use to complete this activity. In your R script, take notes (using the # sign) to describe what you are doing. 
 1. **A summary**: Record your observations and findings in a google document. In your gogle document, you can copy the figures you make and describe your results in each part of the activity.
 1. **Code Questions**: Write down any questions that you have about the data. 
-1. Submit the code and the summary file in the initial code and questions file in Moodle. 
+1. Submit the code and the summary file in the Coding: Final Project code assignment in Moodle. 
