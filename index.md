@@ -30,7 +30,7 @@ The following schedule links to the information you will need for each lesson. *
 |10| Tuesday, Mar. 17 | [Spatial analysis](lessons/mapping/mapping-lesson)| [Review Activity](lessons/mapping/summary_wq.html) <br> [Mapping Activity](lessons/mapping/mapping-exercise.html) | |
 || Thursday, Mar. 19| [Class project work](lessons/work_days/work-day1) |[Activity](lessons/work_days/workday1.html) | |
 |11| Tuesday, Mar. 23| [Class project work day](lessons/work_days/work-day2)|[Activity](lessons/work_days/workday2.html) | |
-|| Thursday, Mar. 25| [Project write up and discussions](lessons/work_days/work-day3) <br> Last Day to Withdraw with "W" | | |
+|| Thursday, Mar. 25| [Project write up and discussions](lessons/work_days/work-day3) <br> Last Day to Withdraw with "W" |[Activity](lessons/work_days/workday3.html) | |
 |12| Tuesday, Mar. 31| [Physical characteristics in the field](lessons/field_work/field1) | | |
 || Thursday, Apr. 2| [Chemical Characteristics in the field](lessons/field_work/field1) | | |
 |13| Tuesday, Apr. 7|[Chemical characteristics in the lab](lessons/field_work/field1) | | |
