@@ -1666,7 +1666,33 @@ surface percent in a 500 meter radius of the stream collection site.</p>
 <p>Use the following code to import the water quality data with
 impervious surface values. This data also has the water quality scores
 that we created last class.</p>
-<pre class="r"><code>impervious &lt;- read.csv(&#39;https://maryglover.github.io/bio331/impervious_surface/raleigh_water_impervious.csv&#39;)</code></pre>
+<pre class="r"><code>impervious &lt;- read.csv(&#39;https://maryglover.github.io/bio331/impervious_surface/raleigh_water_impervious.csv&#39;)
+
+head(impervious, 3)</code></pre>
+<pre><code>##   Site       Date  Time Calcium_mg_L Hardness_total_mg_L Magnesium_mg_L
+## 1  BB2 2008-09-30  9:52           NA                  NA             NA
+## 2  BB2 2008-12-16  9:50           NA                  NA             NA
+## 3  BB2 2009-03-17 10:20           NA                  NA             NA
+##   Salinity_ppt Phosphorus_total_mg_L NH3_mg_L Copper_mg_L E_coli_MPN_100mL
+## 1           NA                     0        0           0              236
+## 2           NA                     0        0           0              140
+## 3           NA                     0        0           0              579
+##   Conductivity_uS do_percent_sat Temperature_C do_mg_L   pH Turbidity_NTU
+## 1           106.8           88.5          19.9    8.10 6.50           4.9
+## 2           119.9           97.2          12.0   10.44 6.36           4.7
+## 3           107.2           99.0          10.2   11.09 5.87          17.4
+##   TSS_mg_L Nitrogen_total_mg_L NO2_NO3_mg_L TKN_mg_L Zinc_mg_L Salinity_uS
+## 1      2.2                0.74         0.41     0.33     0.029          NA
+## 2      3.1                0.55         0.55     0.00     0.013          NA
+## 3      7.3                1.27         0.68     0.59     0.020          NA
+##   E_coli_CFU_100mL DO_rank ph_rank nitrate_rank phosp_rank turbidity_rank
+## 1               NA       3       4            3          4              3
+## 2               NA       4       4            3          4              3
+## 3               NA       4       3            3          4              3
+##   E_coli_rank wq_score impervious_surface     Stream      lat      long
+## 1           1       18           24.30805 Big Branch 35.82264 -78.62973
+## 2           1       19           24.30805 Big Branch 35.82264 -78.62973
+## 3           1       18                 NA Big Branch 35.82264 -78.62973</code></pre>
 <p>In this activity, analyze the data to explore:</p>
 <ol style="list-style-type: decimal">
 <li>Does impervious surface have an effect on some of the individual
